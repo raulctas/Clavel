@@ -8,10 +8,11 @@ import { Contact } from 'pages/contact';
 import { Home } from 'pages/home';
 import { News } from 'pages/news';
 import { NotFound } from 'pages/not-found';
+import { PrivacyPolicy } from 'pages/privacy-policy';
 import { Team } from 'pages/team';
 
 /**
- * Importación directa (eager) de las páginas: con cinco páginas ligeras el
+ * Importación directa (eager) de las páginas: con tan pocas páginas, y ligeras, el
  * code-splitting por ruta no aporta nada. La frontera de error va en una ruta
  * sin path dentro del layout, para que un error conserve cabecera y pie.
  */
@@ -23,6 +24,7 @@ export const routes = (
       <Route path={routePaths.news} element={<News />} />
       <Route path={routePaths.team} element={<Team />} />
       <Route path={routePaths.contact} element={<Contact />} />
+      <Route path={routePaths.privacyPolicy} element={<PrivacyPolicy />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   </Route>

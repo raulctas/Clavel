@@ -43,8 +43,8 @@
 }
 
 .logo {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
 }
 
 .claim {
@@ -125,6 +125,18 @@ a.socialLink:hover {
   gap: 16px 28px;
   padding-top: 24px;
   border-top: 1px solid var(--color-footer-rule);
+}
+
+.legalLink {
+  font-size: 14px;
+  color: var(--color-footer-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+.legalLink:hover {
+  color: var(--color-pink-petal);
 }
 
 .copyright {

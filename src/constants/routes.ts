@@ -8,6 +8,7 @@ export const routes = {
   news: '/news',
   team: '/team',
   contact: '/contact',
+  privacyPolicy: '/privacy-policy',
 } as const;
 
 /** Parámetro de la URL de Contactar que preselecciona el motivo de la consulta. */

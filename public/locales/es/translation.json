@@ -18,7 +18,8 @@
     "team": "Equipo",
     "contact": "Contactar",
     "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "closeMenu": "Cerrar menú",
+    "privacyPolicy": "Política de privacidad"
   },
   "pillars": {
     "sustainableFarming": {
@@ -189,7 +190,7 @@
       "optional": "opcional",
       "message": "Mensaje",
       "messageHelp": "Cuéntanos tu cultivo, la superficie o el producto que te interesa.",
-      "privacy": "He leído y acepto la política de privacidad.",
+      "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
       "errorName": "Escribe tu nombre.",
       "errorEmail": "Escribe un correo válido.",
@@ -199,6 +200,42 @@
       "sendAnother": "Enviar otro mensaje",
       "mailSubject": "{{reason}} · {{name}}"
     }
+  },
+  "privacyPolicy": {
+    "title": "Política de privacidad",
+    "intro": "Qué datos recogemos a través de esta web, para qué los usamos y qué derechos tienes.",
+    "lead": "En Clavel nos tomamos en serio la protección de tus datos personales. Los tratamos conforme al Reglamento (UE) 2016/679, General de Protección de Datos (RGPD), y a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).",
+    "sections": {
+      "controller": {
+        "title": "Responsable del tratamiento",
+        "text": "El responsable del tratamiento de tus datos es {{company}}, con domicilio en {{address}}. Puedes contactar con nosotros en {{email}} o en el teléfono {{phone}}."
+      },
+      "data": {
+        "title": "Qué datos recogemos",
+        "text": "Solo los que nos facilitas en el formulario de contacto: nombre y apellidos, correo electrónico y, si decides indicarlos, empresa o explotación, teléfono y el mensaje que nos escribas."
+      },
+      "purpose": {
+        "title": "Para qué los usamos",
+        "text": "Para responder a tu consulta y enviarte el catálogo o la información sobre productos que nos pidas. No los usamos para enviarte comunicaciones comerciales que no hayas solicitado ni para elaborar perfiles."
+      },
+      "legalBasis": {
+        "title": "Base legal",
+        "text": "Tu consentimiento, que nos das al marcar la casilla del formulario. Puedes retirarlo en cualquier momento, sin que ello afecte a la licitud del tratamiento realizado antes de retirarlo."
+      },
+      "retention": {
+        "title": "Cuánto tiempo los conservamos",
+        "text": "Mientras sea necesario para atender tu consulta y, después, durante los plazos que exija la ley para atender posibles responsabilidades."
+      },
+      "recipients": {
+        "title": "Destinatarios",
+        "text": "No cedemos tus datos a terceros, salvo obligación legal. Los proveedores que nos prestan servicios técnicos, como el correo electrónico o el alojamiento de la web, solo acceden a ellos para prestarnos ese servicio y con las garantías que exige el RGPD."
+      },
+      "rights": {
+        "title": "Tus derechos",
+        "text": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiéndonos a {{email}}. Si consideras que no hemos atendido correctamente tu solicitud, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+      }
+    },
+    "updated": "Última actualización: septiembre de 2026."
   },
   "footer": {
     "claim": "Soluciones agrícolas sostenibles, con experiencia, innovación y compromiso con el futuro del campo.",

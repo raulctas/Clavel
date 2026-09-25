@@ -57,6 +57,5 @@
 }
 
 .light:hover {
-  background-color: var(--color-pink-petal);
-  color: var(--color-green-night);
+  background-color: var(--color-sprout);
 }

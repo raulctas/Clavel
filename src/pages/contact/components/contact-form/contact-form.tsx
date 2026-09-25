@@ -1,11 +1,13 @@
 import { FormEvent, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Check, CircleCheck, Send } from 'lucide-react';
 
 import { Button } from 'components/button';
 import { IconCircle } from 'components/icon-circle';
 import { TextLink } from 'components/text-link';
 import { CONTACT_REASONS, ContactReason } from 'constants/contact-reasons';
+import { routes } from 'constants/routes';
 import { sendContactRequest } from 'libs/contact-request';
 
 import styles from './contact-form.module.css';
@@ -205,7 +207,22 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
           <Check size={14} strokeWidth={3} />
         </span>
         <span className={styles.privacyText}>
-          <span>{t('contact.form.privacy')}</span>
+          <span>
+            {/* Se abre en otra pestaña para no perder lo que ya se ha escrito. */}
+            <Trans
+              i18nKey="contact.form.privacy"
+              components={{
+                policyLink: (
+                  <Link
+                    to={routes.privacyPolicy}
+                    target="_blank"
+                    rel="noopener"
+                    className={styles.policyLink}
+                  />
+                ),
+              }}
+            />
+          </span>
           <span id="contact-privacy-error" className={styles.error}>
             {errors.privacy && t(errors.privacy)}
           </span>

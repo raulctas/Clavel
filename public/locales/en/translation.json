@@ -18,7 +18,8 @@
     "team": "Team",
     "contact": "Contact",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "privacyPolicy": "Privacy policy"
   },
   "pillars": {
     "sustainableFarming": {
@@ -189,7 +190,7 @@
       "optional": "optional",
       "message": "Message",
       "messageHelp": "Tell us about your crop, the area or the product you are interested in.",
-      "privacy": "I have read and accept the privacy policy.",
+      "privacy": "I have read and accept the <policyLink>privacy policy</policyLink>.",
       "submit": "Send",
       "errorName": "Please enter your name.",
       "errorEmail": "Please enter a valid email.",
@@ -199,6 +200,42 @@
       "sendAnother": "Send another message",
       "mailSubject": "{{reason}} · {{name}}"
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy policy",
+    "intro": "What data we collect through this website, what we use it for and what rights you have.",
+    "lead": "At Clavel we take the protection of your personal data seriously. We process it in accordance with Regulation (EU) 2016/679, the General Data Protection Regulation (GDPR), and Spanish Organic Law 3/2018 on the Protection of Personal Data and the Guarantee of Digital Rights (LOPDGDD).",
+    "sections": {
+      "controller": {
+        "title": "Data controller",
+        "text": "The controller of your data is {{company}}, with registered address at {{address}}. You can contact us at {{email}} or by phone on {{phone}}."
+      },
+      "data": {
+        "title": "What data we collect",
+        "text": "Only the data you give us in the contact form: full name, email address and, if you choose to provide them, company or farm, phone number and the message you write to us."
+      },
+      "purpose": {
+        "title": "What we use it for",
+        "text": "To answer your enquiry and send you the catalogue or the product information you request. We do not use it to send you commercial communications you have not requested or to build profiles."
+      },
+      "legalBasis": {
+        "title": "Legal basis",
+        "text": "Your consent, which you give us by ticking the box on the form. You can withdraw it at any time, without affecting the lawfulness of the processing carried out before its withdrawal."
+      },
+      "retention": {
+        "title": "How long we keep it",
+        "text": "For as long as necessary to handle your enquiry and, afterwards, for the periods required by law to deal with any possible liabilities."
+      },
+      "recipients": {
+        "title": "Recipients",
+        "text": "We do not share your data with third parties unless required by law. Providers of technical services, such as email or website hosting, only access it to provide that service to us and with the safeguards required by the GDPR."
+      },
+      "rights": {
+        "title": "Your rights",
+        "text": "You can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to us at {{email}}. If you consider that we have not handled your request properly, you can lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+      }
+    },
+    "updated": "Last updated: September 2026."
   },
   "footer": {
     "claim": "Sustainable agricultural solutions, with experience, innovation and a commitment to the future of farming.",

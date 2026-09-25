@@ -6,7 +6,8 @@ import styles from './button.module.css';
 /**
  * - `primary`: verde relleno; al pasar el ratón, verde noche.
  * - `secondary`: blanco con borde verde, pareja del primario sobre fondo claro.
- * - `light`: blanco relleno para fondos verdes (banda final de Inicio).
+ * - `light`: blanco relleno para fondos verdes (banda final de Inicio); al pasar
+ *   el ratón, brote, igual que `secondary`.
  */
 type Variant = 'primary' | 'secondary' | 'light';
 
