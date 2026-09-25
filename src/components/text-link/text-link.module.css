@@ -1,0 +1,16 @@
+.link {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid currentColor;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-green);
+  transition: color var(--transition);
+}
+
+.link:hover {
+  color: var(--color-pink-text);
+}

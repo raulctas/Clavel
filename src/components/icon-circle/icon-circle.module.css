@@ -1,0 +1,19 @@
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border-radius: 50%;
+  background-color: var(--color-sprout);
+  color: var(--color-green);
+}
+
+.md {
+  width: 52px;
+  height: 52px;
+}
+
+.lg {
+  width: 56px;
+  height: 56px;
+}

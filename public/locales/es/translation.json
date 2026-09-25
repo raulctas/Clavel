@@ -1,0 +1,209 @@
+{
+  "common": {
+    "companyName": "Clavel",
+    "homeLink": "Ir al inicio",
+    "languageSelector": "Seleccionar idioma",
+    "breadcrumb": "Ruta de navegación",
+    "readMore": "Leer más",
+    "requestCatalogue": "Solicitar catálogo",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "goToSlide": "Ir a la imagen {{index}}"
+  },
+  "nav": {
+    "main": "Navegación principal",
+    "home": "Inicio",
+    "aboutUs": "Quiénes somos",
+    "news": "Noticias",
+    "team": "Equipo",
+    "contact": "Contactar",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "pillars": {
+    "sustainableFarming": {
+      "title": "Agricultura sostenible",
+      "text": "Fertilizantes ecológicos y sostenibles con laboratorio propio y compromiso ambiental."
+    },
+    "innovation": {
+      "title": "Innovación tecnológica",
+      "text": "Soluciones técnicas adaptadas a cada cultivo, junto a centros de investigación."
+    },
+    "presence": {
+      "title": "Presencia y compromiso",
+      "text": "Desde Valencia, trabajamos por una agricultura alineada con la Agenda 2030."
+    },
+    "research": {
+      "title": "I+D agrícola",
+      "text": "Desarrollamos productos eficaces basados en estudios agronómicos reales."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Fertilizantes ecológicos · Valencia",
+      "title": "Nutrición natural para cultivos saludables",
+      "intro": "En Clavel desarrollamos soluciones agrícolas sostenibles, con experiencia, innovación y compromiso con el futuro del campo.",
+      "ctaAbout": "Conócenos"
+    },
+    "pillarsTitle": "Forma parte de nuestra comunidad agrícola",
+    "lab": {
+      "eyebrow": "Laboratorio",
+      "title": "Laboratorio y tecnología propia",
+      "text": "En nuestro centro ponemos a tu disposición tecnología avanzada, un equipo especializado y procesos de alta calidad para garantizar resultados precisos y confiables. Si deseas información detallada sobre nuestros servicios, solicitar asesoramiento o recibir una atención personalizada, estamos aquí para ayudarte.",
+      "cta": "Pide asesoramiento"
+    },
+    "manufacturing": {
+      "eyebrow": "Producción",
+      "title": "Proceso de fabricación",
+      "text1": "Contamos con procesos de fabricación eficientes y tecnológicamente avanzados que garantizan productos de alta calidad. Nuestro sistema de producción responde con agilidad a las necesidades del mercado, optimizando tiempos y recursos.",
+      "text2": "Una logística integral asegura el flujo continuo de materiales y la entrega puntual a cualquier destino. Desde la planificación hasta la distribución final, trabajamos con estándares estrictos para ofrecer un servicio confiable, seguro y competitivo."
+    },
+    "latestNews": "Últimas noticias",
+    "seeAllNews": "Ver todas las noticias",
+    "cta": {
+      "title": "¿Quieres conocer nuestros productos?",
+      "text": "Pídenos el catálogo y te lo enviamos por correo, con toda la información técnica de cada fertilizante."
+    }
+  },
+  "aboutUs": {
+    "title": "Cultivamos confianza, innovación y sostenibilidad",
+    "intro": "En Clavel trabajamos cada día junto al agricultor, ofreciendo soluciones eficaces y respetuosas con el entorno.",
+    "blocks": {
+      "mission": {
+        "title": "Misión",
+        "text": "Promovemos una agricultura sostenible utilizando sustancias naturales y biodegradables que fortalecen la relación planta-microorganismo y respetan el equilibrio del entorno."
+      },
+      "goals": {
+        "title": "Objetivos",
+        "text": "Mejorar la productividad y calidad del cultivo, aumentar la resistencia de las plantas, garantizar cero residuos y proteger el medio ambiente."
+      },
+      "purpose": {
+        "title": "Propósito",
+        "text": "Nuestros productos mejoran el crecimiento y la protección de la planta, fortalecen raíces y frutos, aumentan la resistencia al estrés y ayudan a conservar la calidad después de la cosecha."
+      }
+    },
+    "whyTitle": "¿Por qué elegirnos?",
+    "whyIntro": "Los principales beneficios que nuestros productos y nuestra experiencia aportan al agricultor y a su cultivo.",
+    "quality": {
+      "eyebrow": "Calidad",
+      "title": "Calidad ecológica certificada",
+      "text": "La tecnología actualizada y las sustancias biológicas que empleamos en la fabricación, avaladas por nuestro laboratorio de control de calidad, garantizan la eficiencia y unos excelentes resultados en campo.",
+      "certificate": "Certificado ecológico UNE 142500:2017 · Insumos"
+    },
+    "organic": {
+      "title": "Ecológico es mejor",
+      "text": "Nuestros fertilizantes ecológicos, con fórmulas concentradas, garantizan un mejor rendimiento y calidad, usando menos producto y reduciendo residuos. Además, diseñamos planes personalizados para optimizar cada cultivo, contribuyendo a una agricultura sostenible y eficiente."
+    }
+  },
+  "news": {
+    "title": "Actualidad del campo y de Clavel",
+    "intro": "Investigación, cultivos y agricultura sostenible.",
+    "filterLabel": "Filtrar por categoría",
+    "empty": "No hay noticias en esta categoría.",
+    "categories": {
+      "all": "Todas",
+      "agriculture": "Agricultura",
+      "innovation": "Innovación y tecnología",
+      "fruitVegetables": "Frutas y verduras",
+      "organic": "Ecológico"
+    },
+    "items": {
+      "mohamedKamel": {
+        "title": "Dr. Mohamed Kamel: innovación en fertilización y nutrición vegetal",
+        "excerpt": "Cómo el Dr. Mohamed Kamel impulsa la agricultura sostenible mediante fertilización avanzada, nutrición vegetal y el potencial de los fosfitos."
+      },
+      "erasmusLaboratory": {
+        "title": "Jóvenes talentos Erasmus se incorporan al laboratorio",
+        "excerpt": "Cuatro estudiantes Erasmus se suman a nuestro equipo de I+D y laboratorio en Valencia para participar en proyectos de investigación aplicada."
+      },
+      "agenda2030": {
+        "title": "Agenda 2030 y agricultura sostenible",
+        "excerpt": "La Agenda 2030 de la ONU traza el camino hacia un futuro más justo y respetuoso con el planeta. La agricultura tiene un papel clave."
+      },
+      "soilQuality": {
+        "title": "Cómo mejorar la calidad del suelo y aumentar la productividad",
+        "excerpt": "El éxito de una cosecha empieza bajo tierra. Por qué enriquecer el suelo antes de la siembra y cómo hacerlo paso a paso."
+      },
+      "fruitVegetables": {
+        "title": "Mejora de frutas y verduras",
+        "excerpt": "La mejora del limonero de Carmen, paso a paso."
+      },
+      "citrusFertilisation": {
+        "title": "Abonado orgánico en cítricos",
+        "excerpt": "Grabamos con Juan Manuel Martínez en su explotación de cítricos."
+      },
+      "trialFields": {
+        "title": "El papel de los campos de ensayo",
+        "excerpt": "Los campos de ensayo son esenciales para validar el uso de fertilizantes ecológicos frente a la agricultura convencional."
+      },
+      "npkFertilisers": {
+        "title": "¿Son sostenibles los fertilizantes NPK?",
+        "excerpt": "Riesgos y consecuencias del uso intensivo de fertilizantes químicos para la salud del suelo a largo plazo."
+      },
+      "soilPreparation": {
+        "title": "Preparación del suelo en agricultura ecológica",
+        "excerpt": "Siete pasos clave para un cultivo saludable: un suelo bien trabajado retiene mejor el agua y aporta los nutrientes necesarios."
+      }
+    }
+  },
+  "team": {
+    "title": "Las personas detrás de Clavel",
+    "intro": "Un equipo pequeño y cercano, con experiencia en agronomía, laboratorio y atención al agricultor.",
+    "namePending": "Nombre Apellido",
+    "photoPending": "Foto próximamente",
+    "emailLabel": "Escribir a {{name}}",
+    "linkedinLabel": "LinkedIn de {{name}}",
+    "roles": {
+      "generalManagement": "Dirección general",
+      "technicalDirection": "Dirección técnica y laboratorio",
+      "salesSupport": "Atención comercial"
+    }
+  },
+  "contact": {
+    "title": "Hablemos de tu cultivo",
+    "intro": "Déjanos tus datos y te respondemos por correo. Si lo necesitas, te enviamos el catálogo de productos.",
+    "detailsTitle": "Datos de contacto",
+    "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia)",
+    "form": {
+      "reason": "¿Qué necesitas?",
+      "reasons": {
+        "catalogue": "Recibir el catálogo",
+        "productInfo": "Información sobre productos",
+        "other": "Otra consulta"
+      },
+      "name": "Nombre y apellidos",
+      "company": "Empresa o explotación",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "optional": "opcional",
+      "message": "Mensaje",
+      "messageHelp": "Cuéntanos tu cultivo, la superficie o el producto que te interesa.",
+      "privacy": "He leído y acepto la política de privacidad.",
+      "submit": "Enviar",
+      "errorName": "Escribe tu nombre.",
+      "errorEmail": "Escribe un correo válido.",
+      "errorPrivacy": "Debes aceptar la política de privacidad.",
+      "sentTitle": "Mensaje enviado",
+      "sentText": "Gracias. Te responderemos por correo en un plazo de 48 horas laborables.",
+      "sendAnother": "Enviar otro mensaje",
+      "mailSubject": "{{reason}} · {{name}}"
+    }
+  },
+  "footer": {
+    "claim": "Soluciones agrícolas sostenibles, con experiencia, innovación y compromiso con el futuro del campo.",
+    "pages": "Páginas",
+    "contact": "Contacto",
+    "social": "Redes sociales",
+    "copyright": "© {{year}} Clavel. Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "La página que buscas no existe o ha cambiado de dirección.",
+    "cta": "Volver al inicio"
+  },
+  "error": {
+    "title": "Algo ha salido mal",
+    "text": "Se ha producido un error inesperado. Vuelve a intentarlo en unos instantes.",
+    "cta": "Volver al inicio"
+  }
+}

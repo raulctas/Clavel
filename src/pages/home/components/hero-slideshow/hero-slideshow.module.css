@@ -1,0 +1,171 @@
+.hero {
+  position: relative;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-kraft-light);
+}
+
+@media (min-width: 900px) {
+  .hero {
+    min-height: max(680px, 88vh);
+  }
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition:
+    opacity 1.2s ease,
+    transform 7s ease-out;
+}
+
+.slideActive {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide {
+    transition: none;
+  }
+
+  .slideActive {
+    transform: none;
+  }
+}
+
+.veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.35) 45%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+/* 56px arriba en móvil; 166px en escritorio, por la cabecera flotante. */
+.content {
+  position: relative;
+  padding-top: 56px;
+  padding-bottom: 120px;
+}
+
+@media (min-width: 900px) {
+  .content {
+    padding-top: 166px;
+  }
+}
+
+.copy {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.title {
+  font-size: var(--text-display);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.intro {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--color-ink-hero);
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+/* ---------- Indicadores y flechas ---------- */
+
+.controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+}
+
+.controlsInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* El botón amplía la zona de pulsación; la barra de 6px es lo que se ve. */
+.dot {
+  display: flex;
+  padding-block: 8px;
+}
+
+.dotBar {
+  display: block;
+  width: 10px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: rgba(26, 92, 35, 0.3);
+  transition:
+    width 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.dotBarActive {
+  width: 36px;
+  background-color: var(--color-green);
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition);
+}
+
+.arrowPrevious {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-green);
+}
+
+.arrowPrevious:hover {
+  background-color: var(--color-white);
+}
+
+.arrowNext {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.arrowNext:hover {
+  background-color: var(--color-green-night);
+}

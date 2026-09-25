@@ -1,0 +1,82 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.photoWrapper {
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-image);
+  background-color: var(--color-kraft-light);
+}
+
+.photoTag {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-ink-soft);
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-size: 24px;
+  line-height: 1.15;
+  color: var(--color-ink);
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-pink-text);
+}
+
+.contact {
+  display: flex;
+  gap: 8px;
+  flex: none;
+}
+
+.contactButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-input);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-green);
+  transition:
+    background-color var(--transition),
+    border-color var(--transition);
+}
+
+.contactLink:hover {
+  background-color: var(--color-sprout);
+  border-color: var(--color-sprout);
+}

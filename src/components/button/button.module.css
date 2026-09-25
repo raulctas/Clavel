@@ -1,0 +1,62 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  line-height: 1.25;
+  border-radius: var(--radius-full);
+  border: 0;
+  white-space: nowrap;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.sm {
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.md {
+  padding: 15px 26px;
+  font-size: 16px;
+}
+
+.lg {
+  padding: 16px 28px;
+  font-size: 16px;
+}
+
+.primary {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.primary:hover {
+  background-color: var(--color-green-night);
+  color: var(--color-white);
+}
+
+/* El borde va por dentro (box-shadow) para que mida igual que el primario. */
+.secondary {
+  background-color: var(--color-white);
+  color: var(--color-green);
+  box-shadow: inset 0 0 0 1.5px var(--color-green);
+}
+
+.secondary:hover {
+  background-color: var(--color-sprout);
+}
+
+.light {
+  background-color: var(--color-white);
+  color: var(--color-green);
+}
+
+.light:hover {
+  background-color: var(--color-pink-petal);
+  color: var(--color-green-night);
+}

@@ -1,0 +1,209 @@
+{
+  "common": {
+    "companyName": "Clavel",
+    "homeLink": "Go to home page",
+    "languageSelector": "Select language",
+    "breadcrumb": "Breadcrumb",
+    "readMore": "Read more",
+    "requestCatalogue": "Request catalogue",
+    "previous": "Previous",
+    "next": "Next",
+    "goToSlide": "Go to image {{index}}"
+  },
+  "nav": {
+    "main": "Main navigation",
+    "home": "Home",
+    "aboutUs": "About us",
+    "news": "News",
+    "team": "Team",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "pillars": {
+    "sustainableFarming": {
+      "title": "Sustainable farming",
+      "text": "Organic, sustainable fertilisers backed by our own laboratory and an environmental commitment."
+    },
+    "innovation": {
+      "title": "Technological innovation",
+      "text": "Technical solutions tailored to each crop, developed with research centres."
+    },
+    "presence": {
+      "title": "Presence and commitment",
+      "text": "From Valencia, we work for agriculture aligned with the 2030 Agenda."
+    },
+    "research": {
+      "title": "Agricultural R&D",
+      "text": "We develop effective products based on real agronomic studies."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Organic fertilisers · Valencia",
+      "title": "Natural nutrition for healthy crops",
+      "intro": "At Clavel we develop sustainable agricultural solutions, with experience, innovation and a commitment to the future of farming.",
+      "ctaAbout": "About us"
+    },
+    "pillarsTitle": "Join our farming community",
+    "lab": {
+      "eyebrow": "Laboratory",
+      "title": "Our own laboratory and technology",
+      "text": "Our centre offers advanced technology, a specialised team and high-quality processes to deliver precise, reliable results. If you would like detailed information about our services, technical advice or personal support, we are here to help.",
+      "cta": "Ask for advice"
+    },
+    "manufacturing": {
+      "eyebrow": "Production",
+      "title": "Manufacturing process",
+      "text1": "Our efficient, technologically advanced manufacturing processes guarantee high-quality products. Our production system responds quickly to market needs, optimising time and resources.",
+      "text2": "Integrated logistics ensure a continuous flow of materials and on-time delivery to any destination. From planning to final distribution, we work to strict standards to offer a reliable, safe and competitive service."
+    },
+    "latestNews": "Latest news",
+    "seeAllNews": "See all news",
+    "cta": {
+      "title": "Want to know our products?",
+      "text": "Ask us for the catalogue and we will email it to you, with full technical information on every fertiliser."
+    }
+  },
+  "aboutUs": {
+    "title": "We grow trust, innovation and sustainability",
+    "intro": "At Clavel we work alongside farmers every day, offering effective solutions that respect the environment.",
+    "blocks": {
+      "mission": {
+        "title": "Mission",
+        "text": "We promote sustainable agriculture using natural, biodegradable substances that strengthen the plant–microorganism relationship and respect the balance of the environment."
+      },
+      "goals": {
+        "title": "Goals",
+        "text": "Improve crop productivity and quality, increase plant resistance, guarantee zero residues and protect the environment."
+      },
+      "purpose": {
+        "title": "Purpose",
+        "text": "Our products improve plant growth and protection, strengthen roots and fruit, increase stress resistance and help preserve quality after harvest."
+      }
+    },
+    "whyTitle": "Why choose us?",
+    "whyIntro": "The main benefits our products and experience bring to farmers and their crops.",
+    "quality": {
+      "eyebrow": "Quality",
+      "title": "Certified organic quality",
+      "text": "The up-to-date technology and biological substances we use in manufacturing, validated by our quality-control laboratory, guarantee efficiency and excellent results in the field.",
+      "certificate": "Organic certificate UNE 142500:2017 · Inputs"
+    },
+    "organic": {
+      "title": "Organic is better",
+      "text": "Our concentrated organic fertilisers deliver better yield and quality while using less product and reducing waste. We also design personalised plans to optimise each crop, contributing to sustainable, efficient agriculture."
+    }
+  },
+  "news": {
+    "title": "News from the field and from Clavel",
+    "intro": "Research, crops and sustainable agriculture.",
+    "filterLabel": "Filter by category",
+    "empty": "There is no news in this category.",
+    "categories": {
+      "all": "All",
+      "agriculture": "Agriculture",
+      "innovation": "Innovation and technology",
+      "fruitVegetables": "Fruit and vegetables",
+      "organic": "Organic"
+    },
+    "items": {
+      "mohamedKamel": {
+        "title": "Dr. Mohamed Kamel: innovation in fertilisation and plant nutrition",
+        "excerpt": "How Dr. Mohamed Kamel drives sustainable agriculture through advanced fertilisation, plant nutrition and the potential of phosphites."
+      },
+      "erasmusLaboratory": {
+        "title": "Young Erasmus talent joins the laboratory",
+        "excerpt": "Four Erasmus students join our R&D and laboratory team in Valencia to take part in applied research projects."
+      },
+      "agenda2030": {
+        "title": "The 2030 Agenda and sustainable agriculture",
+        "excerpt": "The UN 2030 Agenda sets the path towards a fairer future that respects the planet. Agriculture plays a key role."
+      },
+      "soilQuality": {
+        "title": "How to improve soil quality and boost productivity",
+        "excerpt": "A successful harvest starts underground. Why enriching the soil before sowing matters and how to do it step by step."
+      },
+      "fruitVegetables": {
+        "title": "Improving fruit and vegetables",
+        "excerpt": "Improving Carmen’s lemon tree, step by step."
+      },
+      "citrusFertilisation": {
+        "title": "Organic fertilisation in citrus",
+        "excerpt": "We filmed with Juan Manuel Martínez on his citrus farm."
+      },
+      "trialFields": {
+        "title": "The role of trial fields",
+        "excerpt": "Trial fields are essential to validate organic fertilisers against conventional agriculture."
+      },
+      "npkFertilisers": {
+        "title": "Are NPK fertilisers sustainable?",
+        "excerpt": "Risks and long-term consequences of intensive chemical fertiliser use for soil health."
+      },
+      "soilPreparation": {
+        "title": "Soil preparation in organic farming",
+        "excerpt": "Seven key steps to a healthy crop: well-worked soil retains water better and provides the nutrients plants need."
+      }
+    }
+  },
+  "team": {
+    "title": "The people behind Clavel",
+    "intro": "A small, approachable team with experience in agronomy, laboratory work and farmer support.",
+    "namePending": "First Last",
+    "photoPending": "Photo coming soon",
+    "emailLabel": "Email {{name}}",
+    "linkedinLabel": "{{name}} on LinkedIn",
+    "roles": {
+      "generalManagement": "Managing director",
+      "technicalDirection": "Technical and laboratory director",
+      "salesSupport": "Sales support"
+    }
+  },
+  "contact": {
+    "title": "Let’s talk about your crop",
+    "intro": "Leave your details and we will reply by email. If you need it, we will send you our product catalogue.",
+    "detailsTitle": "Contact details",
+    "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia, Spain)",
+    "form": {
+      "reason": "What do you need?",
+      "reasons": {
+        "catalogue": "Receive the catalogue",
+        "productInfo": "Product information",
+        "other": "Other enquiry"
+      },
+      "name": "Full name",
+      "company": "Company or farm",
+      "email": "Email",
+      "phone": "Phone",
+      "optional": "optional",
+      "message": "Message",
+      "messageHelp": "Tell us about your crop, the area or the product you are interested in.",
+      "privacy": "I have read and accept the privacy policy.",
+      "submit": "Send",
+      "errorName": "Please enter your name.",
+      "errorEmail": "Please enter a valid email.",
+      "errorPrivacy": "You must accept the privacy policy.",
+      "sentTitle": "Message sent",
+      "sentText": "Thank you. We will reply by email within 48 working hours.",
+      "sendAnother": "Send another message",
+      "mailSubject": "{{reason}} · {{name}}"
+    }
+  },
+  "footer": {
+    "claim": "Sustainable agricultural solutions, with experience, innovation and a commitment to the future of farming.",
+    "pages": "Pages",
+    "contact": "Contact",
+    "social": "Social media",
+    "copyright": "© {{year}} Clavel. All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved.",
+    "cta": "Back to home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "text": "An unexpected error occurred. Please try again in a moment.",
+    "cta": "Back to home"
+  }
+}

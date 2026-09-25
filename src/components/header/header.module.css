@@ -1,0 +1,160 @@
+/* ---------- Escritorio: cápsula «Mínimo» ---------- */
+
+/* Sticky y de altura 0: la cápsula flota sobre el primer bloque de la página. */
+.desktop {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 0;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 24px;
+  pointer-events: none;
+}
+
+.capsule {
+  pointer-events: auto;
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 6px 6px 6px 0;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border-floating);
+  box-shadow: var(--shadow-floating);
+}
+
+/* Reserva el sitio del logo; el círculo se sale por arriba y por abajo. */
+.logoSlot {
+  position: relative;
+  width: 110px;
+  height: 52px;
+  flex: none;
+}
+
+/* `left: -1px` compensa el borde: el círculo coincide con el de la cápsula. */
+.logoBadge {
+  position: absolute;
+  left: -1px;
+  top: -30px;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-logo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoBadge img {
+  width: 102px;
+  height: 102px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.navLink {
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--color-ink-soft);
+  transition: color var(--transition);
+}
+
+.navLink:hover,
+.navLink.active {
+  color: var(--color-green);
+}
+
+/* ---------- Móvil: barra con menú desplegable ---------- */
+
+.mobile {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border-card);
+}
+
+.bar {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 8px var(--container-pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.mobileLogo {
+  flex: none;
+}
+
+.mobileLogo img {
+  width: 84px;
+  height: 84px;
+}
+
+.barActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: none;
+}
+
+.menuButton {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-input);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-green);
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 20px 20px;
+  border-top: 1px solid var(--color-border-card);
+  background-color: var(--color-white);
+}
+
+.mobileLink {
+  display: block;
+  padding: 14px 8px;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-ink-soft);
+  border-bottom: 1px solid var(--color-border-menu);
+}
+
+.mobileLink.active {
+  color: var(--color-green);
+}
+
+@media (max-width: 899px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
