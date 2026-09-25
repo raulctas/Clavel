@@ -12,17 +12,62 @@ export const NEWS_CATEGORIES: NewsCategory[] = [
 
 /**
  * Noticias, de la más reciente a la más antigua (Inicio muestra las tres
- * primeras). Para añadir una: darla de alta aquí y añadir su título y extracto
- * en cada `translation.json` (news.items.<id>).
+ * primeras). Para añadir una: darla de alta aquí y añadir su título, extracto
+ * y cuerpo en cada `translation.json` (news.items.<id>).
  */
 export const NEWS: NewsItem[] = [
-  { id: 'mohamedKamel', category: 'innovation', image: PROVISIONAL_IMAGE },
-  { id: 'erasmusLaboratory', category: 'innovation', image: PROVISIONAL_IMAGE },
-  { id: 'agenda2030', category: 'agriculture', image: PROVISIONAL_IMAGE },
-  { id: 'soilQuality', category: 'agriculture', image: PROVISIONAL_IMAGE },
-  { id: 'fruitVegetables', category: 'fruitVegetables', image: PROVISIONAL_IMAGE },
-  { id: 'citrusFertilisation', category: 'fruitVegetables', image: PROVISIONAL_IMAGE },
-  { id: 'trialFields', category: 'organic', image: PROVISIONAL_IMAGE },
-  { id: 'npkFertilisers', category: 'agriculture', image: PROVISIONAL_IMAGE },
-  { id: 'soilPreparation', category: 'agriculture', image: PROVISIONAL_IMAGE },
+  {
+    id: 'mohamedKamel',
+    slug: 'mohamed-kamel-plant-nutrition',
+    category: 'innovation',
+    image: PROVISIONAL_IMAGE,
+  },
+  {
+    id: 'erasmusLaboratory',
+    slug: 'erasmus-laboratory',
+    category: 'innovation',
+    image: PROVISIONAL_IMAGE,
+  },
+  { id: 'agenda2030', slug: 'agenda-2030', category: 'agriculture', image: PROVISIONAL_IMAGE },
+  { id: 'soilQuality', slug: 'soil-quality', category: 'agriculture', image: PROVISIONAL_IMAGE },
+  {
+    id: 'fruitVegetables',
+    slug: 'fruit-vegetables',
+    category: 'fruitVegetables',
+    image: PROVISIONAL_IMAGE,
+    videos: ['4hBg74CwdrA', 'YRNSerMEc04'],
+  },
+  {
+    id: 'citrusFertilisation',
+    slug: 'citrus-fertilisation',
+    category: 'fruitVegetables',
+    image: PROVISIONAL_IMAGE,
+    videos: ['Av6-vaycs7U'],
+  },
+  { id: 'trialFields', slug: 'trial-fields', category: 'organic', image: PROVISIONAL_IMAGE },
+  {
+    id: 'npkFertilisers',
+    slug: 'npk-fertilisers',
+    category: 'agriculture',
+    image: PROVISIONAL_IMAGE,
+  },
+  {
+    id: 'soilPreparation',
+    slug: 'soil-preparation',
+    category: 'agriculture',
+    image: PROVISIONAL_IMAGE,
+  },
 ];
+
+export const findNewsBySlug = (slug: string | undefined) => NEWS.find((item) => item.slug === slug);
+
+/**
+ * Noticias relacionadas: primero las de la misma categoría y, si no llegan,
+ * las más recientes. Nunca incluye la propia noticia.
+ */
+export const getRelatedNews = (item: NewsItem, count = 3) => {
+  const others = NEWS.filter((other) => other.id !== item.id);
+  const sameCategory = others.filter((other) => other.category === item.category);
+  const rest = others.filter((other) => other.category !== item.category);
+  return [...sameCategory, ...rest].slice(0, count);
+};

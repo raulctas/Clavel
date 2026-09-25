@@ -1,0 +1,106 @@
+.section {
+  padding-top: 48px;
+  padding-bottom: 88px;
+}
+
+/* Índice a la izquierda (fijo al hacer scroll) y apartados a la derecha. */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 40px;
+}
+
+@media (min-width: 960px) {
+  .layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 64px;
+    align-items: start;
+  }
+
+  .index {
+    position: sticky;
+    top: 150px;
+  }
+}
+
+/* ---------- Índice ---------- */
+
+.index {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border: 1px solid var(--color-border-card);
+  border-radius: var(--radius-card);
+  background-color: var(--color-white);
+}
+
+.updated {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-sprout);
+  color: var(--color-green);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.indexTitle {
+  font-size: 19px;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.indexList {
+  list-style: decimal;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--color-ink-soft);
+}
+
+.indexList li::marker {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.indexLink {
+  color: var(--color-ink-soft);
+  transition: color var(--transition);
+}
+
+.indexLink:hover {
+  color: var(--color-green);
+}
+
+/* ---------- Apartados ---------- */
+
+.content {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Al saltar desde el índice, el título no queda tapado por la cabecera flotante. */
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  scroll-margin-top: 150px;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.number {
+  color: var(--color-pink);
+}

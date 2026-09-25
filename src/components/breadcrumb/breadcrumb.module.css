@@ -1,7 +1,8 @@
 .list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 4px 10px;
   list-style: none;
   padding: 0;
   font-size: 14px;
@@ -19,7 +20,7 @@
 }
 
 /* El separador va en CSS: es decoración y no debe leerse ni traducirse. */
-.current::before {
+.separated::before {
   content: '/';
   margin-right: 10px;
   font-weight: 500;

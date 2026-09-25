@@ -72,9 +72,12 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 
 ## Contenido
 
-- **Noticias**: `src/data/news.ts` (categoría e imagen) + `news.items.<id>` en cada
-  `translation.json` (título y extracto). Si una noticia tiene página propia, basta con añadir
-  `href` y su tarjeta enlazará a ella.
+- **Noticias**: `src/data/news.ts` (slug, categoría, imagen y vídeos de YouTube opcionales) +
+  `news.items.<id>` en cada `translation.json` (título, extracto y cuerpo). Cada noticia tiene su
+  página en `/news/<slug>`.
+- **Textos largos** (cuerpo de las noticias y política de privacidad): son listas de bloques en
+  `translation.json`. Un bloque que empieza por `## ` es un subtítulo, por `### ` un subtítulo
+  menor y por `- ` un elemento de lista; el resto son párrafos. Así se traducen sin tocar código.
 - **Equipo**: `src/data/team.ts`. Cuando lleguen las fotos (4:5), copiarlas a
   `public/images/team/` y rellenar `photo`, `name`, `email` y `linkedin` de cada miembro. Sin
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
@@ -95,7 +98,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Redes sociales**: URLs en `SOCIAL_LINKS` (`src/constants/company.ts`). Mientras valgan
   `undefined`, el icono se muestra en el pie pero no enlaza.
 - **Nombres, cargos y fotos del equipo**.
-- **Revisión legal de la política de privacidad** (`/privacy-policy`, textos en `privacyPolicy` de
+- **Revisión legal de la política de privacidad** (`/privacy`, textos en `privacy` de
   cada `translation.json`): el texto es una base estándar del RGPD y conviene que lo revise un
   asesor antes de publicar, añadiendo la razón social y el NIF definitivos de Clavel.
 - **Logo vectorial**: el logo es un PNG; conviene vectorizarlo.

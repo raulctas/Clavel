@@ -110,8 +110,8 @@ export const Footer = () => {
           <p className={styles.copyright}>
             {t('footer.copyright', { year: new Date().getFullYear() })}
           </p>
-          <Link to={routes.privacyPolicy} className={styles.legalLink}>
-            {t('nav.privacyPolicy')}
+          <Link to={routes.privacy} className={styles.legalLink}>
+            {t('nav.privacy')}
           </Link>
         </div>
       </Container>

@@ -7,8 +7,9 @@ import { AboutUs } from 'pages/about-us';
 import { Contact } from 'pages/contact';
 import { Home } from 'pages/home';
 import { News } from 'pages/news';
+import { NewsDetail } from 'pages/news-detail';
 import { NotFound } from 'pages/not-found';
-import { PrivacyPolicy } from 'pages/privacy-policy';
+import { Privacy } from 'pages/privacy';
 import { Team } from 'pages/team';
 
 /**
@@ -22,9 +23,10 @@ export const routes = (
       <Route index element={<Home />} />
       <Route path={routePaths.aboutUs} element={<AboutUs />} />
       <Route path={routePaths.news} element={<News />} />
+      <Route path={routePaths.newsDetail} element={<NewsDetail />} />
       <Route path={routePaths.team} element={<Team />} />
       <Route path={routePaths.contact} element={<Contact />} />
-      <Route path={routePaths.privacyPolicy} element={<PrivacyPolicy />} />
+      <Route path={routePaths.privacy} element={<Privacy />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   </Route>

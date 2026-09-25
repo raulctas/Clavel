@@ -19,7 +19,7 @@
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "privacyPolicy": "Privacy policy"
+    "privacy": "Privacy policy"
   },
   "pillars": {
     "sustainableFarming": {
@@ -111,41 +111,237 @@
     "items": {
       "mohamedKamel": {
         "title": "Dr. Mohamed Kamel: innovation in fertilisation and plant nutrition",
-        "excerpt": "How Dr. Mohamed Kamel drives sustainable agriculture through advanced fertilisation, plant nutrition and the potential of phosphites."
+        "excerpt": "How Dr. Mohamed Kamel drives sustainable agriculture through advanced fertilisation, plant nutrition and the potential of phosphites.",
+        "body": [
+          "## An international reference in sustainable agriculture",
+          "Dr. Mohamed Kamel is a renowned international expert in fertilisation and plant nutrition, with extensive experience in agronomic research and technical advice for growers and agri-food companies across Europe.",
+          "His work combines applied science and practical innovation with a clear purpose:",
+          "- Promoting productive and sustainable agriculture.",
+          "- Optimising nutrient use efficiency.",
+          "- Reducing the environmental impact of farming practices.",
+          "Thanks to his scientific vision and commitment to farming, Dr. Kamel drives solutions that transform productivity without compromising the environmental balance.",
+          "## Phosphites: the innovation driving modern plant nutrition",
+          "### What are phosphites and why do they matter?",
+          "Phosphites are compounds that stimulate plant growth and strengthen plants' natural defences against disease and environmental stress. Their main benefits are:",
+          "- They improve resistance to fungi and adverse conditions.",
+          "- They increase nutrient uptake and mobility.",
+          "- They stimulate rooting and flowering.",
+          "- They raise crop productivity and quality.",
+          "Recent studies show that phosphites can significantly increase yields, making them a key tool for modern, sustainable and organic agriculture.",
+          "### The regulatory challenge in Europe",
+          "Phosphites are not currently officially recognised by European regulations as fertilisers or plant protection products, which limits their commercial use. Even so, many experts and researchers support their potential and see them as a strategic solution for the future of sustainable plant nutrition.",
+          "Dr. Kamel works actively to promote a balanced, science-based regulatory framework that allows the full potential of these compounds to benefit the European farming sector.",
+          "## Scientific leadership at Clavel",
+          "At Clavel, Dr. Mohamed Kamel works as an international scientific adviser on the development of sustainable fertilisers and advanced plant nutrition technologies. His contribution strengthens three of the company's pillars:",
+          "- Innovation: products based on science and applied biotechnology.",
+          "- Sustainability: a balance between productivity and respect for the environment.",
+          "- Efficiency: safe, cost-effective formulations that comply with current European regulations.",
+          "### Added value for farmers",
+          "Thanks to this work, Clavel offers farmers organic and sustainable fertilisers, advanced plant nutrition solutions, specialised technical advice and technologies that improve productivity without harming the environment.",
+          "## Science and innovation for sustainable agriculture",
+          "This collaboration is a firm commitment to scientific research, sustainability and responsible agronomic development: a new generation of farming solutions in which innovation in fertilisation and plant nutrition translates into productivity, resilience and respect for the environment."
+        ]
       },
       "erasmusLaboratory": {
         "title": "Young Erasmus talent joins the laboratory",
-        "excerpt": "Four Erasmus students join our R&D and laboratory team in Valencia to take part in applied research projects."
+        "excerpt": "Four Erasmus students join our R&D and laboratory team in Valencia to take part in applied research projects.",
+        "body": [
+          "At Clavel we are proud to welcome four Erasmus students who are joining our R&D and laboratory team in Valencia. Over the coming months they will take part in applied research projects, working side by side with our technicians and bringing an international perspective to the innovation process.",
+          "## An Erasmus focused on science and sustainability",
+          "This experience is a genuine exchange of value. For the students, it is a unique opportunity to learn in a laboratory specialised in organic and sustainable fertilisers. For Clavel, it is a source of new methods, enthusiasm and young talent that strengthens our commitment to agricultural innovation.",
+          "During their stay, the students will collaborate on:",
+          "- Laboratory analysis to improve fertiliser efficiency.",
+          "- Quality testing and process control.",
+          "- Developing sustainable solutions that add value for farmers.",
+          "## Commitment to training and the future of farming",
+          "With this initiative, Clavel reaffirms its commitment to:",
+          "- Hands-on training for future scientific professionals.",
+          "- Internationalisation as a driver of innovation.",
+          "- Developing new technical skills applied to the farming sector.",
+          "## Research with an international outlook",
+          "The arrival of these four students strengthens our laboratory and confirms our vision: a farming future built on science, sustainability and young talent. Welcome to this new stage of learning and discovery!"
+        ]
       },
       "agenda2030": {
         "title": "The 2030 Agenda and sustainable agriculture",
-        "excerpt": "The UN 2030 Agenda sets the path towards a fairer future that respects the planet. Agriculture plays a key role."
+        "excerpt": "The UN 2030 Agenda sets the path towards a fairer future that respects the planet. Agriculture plays a key role.",
+        "body": [
+          "In a constantly changing world, agriculture plays a key role in global sustainability. The UN 2030 Agenda, with its 17 Sustainable Development Goals (SDGs), sets the path towards a fairer future that respects the planet. In this context, the organic fertiliser industry is called on to lead a cleaner, more efficient and more responsible agriculture.",
+          "## Sustainable Development Goals and agriculture",
+          "The 2030 Agenda addresses major global challenges, many of them directly linked to farming. These are some of the SDGs most relevant to organic fertilisers:",
+          "### SDG 2: Zero hunger",
+          "Guaranteeing food security means improving agricultural productivity without harming ecosystems. Organic fertilisers support balanced plant nutrition, look after soil health and reduce the use of synthetic inputs.",
+          "### SDG 6: Clean water and sanitation",
+          "These fertilisers reduce the risk of aquifer contamination by minimising nutrient leaching, which helps preserve water quality.",
+          "### SDG 15: Life on land",
+          "By promoting biodiversity and microbial activity in the soil, organic fertilisers regenerate farming ecosystems and strengthen long-term sustainability.",
+          "## Benefits of organic fertilisers",
+          "Organic fertilisers are essential allies for regenerative agriculture. Their main advantages include:",
+          "- Balanced nutrition: they provide the essential nutrients plants need, naturally and gradually.",
+          "- Reduced environmental impact: they minimise soil and water pollution and protect farming ecosystems.",
+          "- More biodiversity: they support microbial life in the soil and reduce dependence on agrochemicals.",
+          "## Leading the shift to sustainable agriculture",
+          "The organic fertiliser industry has a great opportunity: to lead the way towards more sustainable agriculture, in line with the principles of the 2030 Agenda. This means:",
+          "- Investing in innovation in natural, sustainable products.",
+          "- Training farmers in responsible practices.",
+          "- Promoting farming solutions tailored to each crop and environment.",
+          "## Conclusion",
+          "The 2030 Agenda is a clear roadmap for transforming the agriculture of the future. The organic fertiliser industry can and should be a key driver of that transformation, helping to grow a green, productive future that respects the planet."
+        ]
       },
       "soilQuality": {
         "title": "How to improve soil quality and boost productivity",
-        "excerpt": "A successful harvest starts underground. Why enriching the soil before sowing matters and how to do it step by step."
+        "excerpt": "A successful harvest starts underground. Why enriching the soil before sowing matters and how to do it step by step.",
+        "body": [
+          "In farming, a successful harvest starts underground. Optimising soil quality is key to more productive, healthier and more sustainable crops. In this article we explain why enriching the soil before sowing is a fundamental strategy and how to do it step by step.",
+          "## Why does soil quality matter so much?",
+          "Soil is not just the physical support for plants: it is a living ecosystem that directly affects their nutrition, growth and resilience. Healthy soil:",
+          "- Retains water and nutrients better.",
+          "- Supports beneficial microbial activity.",
+          "- Makes crops more resistant to disease and stress.",
+          "## What is nutrient enrichment?",
+          "It means preparing the soil before sowing by adding key nutrients such as nitrogen, phosphorus and potassium, either with organic fertilisers or organic matter. This strengthens the soil and gets it ready for more efficient production. Its main benefits are:",
+          "- Better nutrient uptake: improved root development and plant health.",
+          "- Higher productivity: more vigorous crops with higher yields.",
+          "- Better final produce: more nutritious and resilient food.",
+          "- A sustainable practice: less excessive fertiliser use and less pollution.",
+          "## Key strategies to enrich the soil",
+          "### 1. Test your soil",
+          "Before applying fertilisers, analyse your soil. This will show specific deficiencies and help you choose the right nutrients for each crop.",
+          "### 2. Use organic fertilisers",
+          "Composted manure, biofertilisers and green manure are excellent allies: they release nutrients gradually and improve soil structure in the long term.",
+          "### 3. Rotate crops",
+          "Alternating plant species prevents specific nutrients from being depleted and improves soil biodiversity.",
+          "### 4. Protect the soil with ground cover",
+          "Mulching or cover crops protect the soil from erosion, improve its structure and retain moisture, which supports microbial activity.",
+          "## Conclusion",
+          "Investing in soil health is investing in the future of farming. Fertile, balanced soil is the basis for more productive, sustainable, higher-quality crops. With responsible enrichment practices you will not only get better harvests: you will also contribute to farming that respects the environment and future generations."
+        ]
       },
       "fruitVegetables": {
         "title": "Improving fruit and vegetables",
-        "excerpt": "Improving Carmen’s lemon tree, step by step."
+        "excerpt": "Improving Carmen’s lemon tree, step by step.",
+        "body": [
+          "We show you, step by step, how we improved Carmen's lemon tree: the tree's starting condition, the organic fertiliser treatment we applied and the results you can see in the field."
+        ]
       },
       "citrusFertilisation": {
         "title": "Organic fertilisation in citrus",
-        "excerpt": "We filmed with Juan Manuel Martínez on his citrus farm."
+        "excerpt": "We filmed with Juan Manuel Martínez on his citrus farm.",
+        "body": [
+          "We filmed with Juan Manuel Martínez on his citrus farm, where he tells us about his experience with organic fertilisation and the results he has seen on his trees."
+        ]
       },
       "trialFields": {
         "title": "The role of trial fields",
-        "excerpt": "Trial fields are essential to validate organic fertilisers against conventional agriculture."
+        "excerpt": "Trial fields are essential to validate organic fertilisers against conventional agriculture.",
+        "body": [
+          "Modern farming demands efficient, sustainable solutions adapted to a changing environment. In this context, trial fields are essential tools for validating organic fertilisers, a key alternative to conventional agriculture.",
+          "## What are agricultural trial fields?",
+          "They are plots designed for agricultural research and experimentation. On them, agronomists, farmers and researchers test new techniques, products and solutions in real but controlled conditions. This makes it possible to:",
+          "- Compare different growing methods.",
+          "- Measure results in the short, medium and long term.",
+          "- Adapt solutions to specific climate and soil conditions.",
+          "## Organic fertilisers: a necessary alternative",
+          "Organic fertilisers are made from natural materials such as compost, manure, plant residues or minerals of organic origin. Unlike synthetic fertilisers, they do not pollute the soil or aquifers, and they also:",
+          "- Regenerate soil microbiology.",
+          "- Release nutrients gradually and in balance.",
+          "- Improve water retention and soil structure.",
+          "## Why are trial fields so important?",
+          "They make it possible to demonstrate, measure and refine the use of these sustainable inputs.",
+          "### 1. Real scientific validation",
+          "Applying organic fertilisers in controlled conditions provides measurable evidence of their effectiveness compared with traditional methods.",
+          "### 2. Adjustments by crop and area",
+          "Every soil and climate is unique. Trial fields allow dose and application frequency to be adjusted to maximise results for each crop and the needs of each region.",
+          "### 3. Technology and real-time monitoring",
+          "With sensors, drones and farm management software it is possible to measure crop growth, soil nutrient levels and changes in moisture and temperature.",
+          "### 4. Best practices",
+          "Trial results make it possible to define and share effective, sustainable application protocols that help other growers adopt solutions that have already been tested.",
+          "## Challenges to bear in mind",
+          "- Unpredictable weather that can affect results.",
+          "- Difficulty extrapolating data to large-scale farms.",
+          "- The need for active collaboration between farmers, technicians and rural communities.",
+          "## Conclusion: innovation and sustainability go hand in hand",
+          "Trial fields are living laboratories that help agriculture move towards more sustainable and profitable models. Thanks to them, organic fertilisers are no longer just an alternative but a proven, scalable tool for the farming of the future."
+        ]
       },
       "npkFertilisers": {
         "title": "Are NPK fertilisers sustainable?",
-        "excerpt": "Risks and long-term consequences of intensive chemical fertiliser use for soil health."
+        "excerpt": "Risks and long-term consequences of intensive chemical fertiliser use for soil health.",
+        "body": [
+          "Soil fertility is the foundation of sustainable, resilient agriculture. However, the intensive use of chemical fertilisers such as NPK is accelerating the degradation of farmland around the world. Although they can bring short-term benefits, their long-term effects put future productivity and the environmental balance at risk.",
+          "## What are NPK fertilisers?",
+          "They contain three macronutrients that are essential for plants:",
+          "- N (nitrogen), for leaf and stem growth.",
+          "- P (phosphorus), for root and fruit formation.",
+          "- K (potassium), for resilience and metabolism.",
+          "Although they stimulate plant growth, they do not provide the other micronutrients and elements that healthy soil needs.",
+          "## Problems with long-term use",
+          "### 1. Nutrient imbalance in the soil",
+          "By focusing on nitrogen, phosphorus and potassium, essential micronutrients such as calcium, magnesium, sulphur, iron, zinc and manganese are neglected, which affects plant health and microbial life in the soil.",
+          "### 2. Environmental pollution",
+          "Excess nitrogen and phosphorus can seep into groundwater or run off into rivers, causing water pollution and eutrophication.",
+          "### 3. Loss of soil biodiversity",
+          "Synthetic fertilisers can reduce microbial diversity and affect key processes such as the decomposition of organic matter and nitrogen fixation.",
+          "### 4. Erosion and loss of structure",
+          "Over time, soil treated only with chemicals loses organic matter and becomes more compact, less porous and more vulnerable to wind and rain erosion.",
+          "### 5. Lower natural fertility",
+          "An artificial dependence is created: the more they are applied, the more the soil's own fertility degrades, forcing higher doses to maintain production.",
+          "## Consequences for farmers",
+          "- Higher long-term costs due to the constant need for inputs.",
+          "- Lower yields after several consecutive seasons.",
+          "- Crops more vulnerable to disease and pests.",
+          "- Lower profitability and less resilience to climate change.",
+          "## Sustainable alternatives",
+          "The solution is to change the approach: feed not only the plants but also the soil. Some sustainable practices are:",
+          "- Adding organic matter such as compost, well-rotted manure or plant residues.",
+          "- Using green manure and cover crops to fix nitrogen, protect the soil and improve its structure.",
+          "- Applying organic fertilisers made with natural ingredients that respect soil biodiversity.",
+          "- Testing the soil to apply only the nutrients needed and avoid excess.",
+          "- Rotating crops to conserve nutrients and break pest and disease cycles.",
+          "## Conclusion: soil fertility is not bought, it is grown",
+          "NPK fertilisers can be useful at specific times, but they are not sustainable as the only fertilisation strategy. Profitable, resilient and responsible production requires strategies that regenerate the soil and work with nature, not against it."
+        ]
       },
       "soilPreparation": {
         "title": "Soil preparation in organic farming",
-        "excerpt": "Seven key steps to a healthy crop: well-worked soil retains water better and provides the nutrients plants need."
+        "excerpt": "Seven key steps to a healthy crop: well-worked soil retains water better and provides the nutrients plants need.",
+        "body": [
+          "Good soil preparation is the first step towards a healthy, sustainable crop, especially in organic farming, where the natural balance of the ecosystem is essential. Well-worked soil has a better structure, retains water better and provides the nutrients plants need to grow. These are the seven key steps to prepare it effectively and in a way that respects the environment.",
+          "## 1. Soil analysis and assessment",
+          "First of all, you need to know the condition of the soil. A soil test lets you assess:",
+          "- Texture (sandy, clay, silty…).",
+          "- pH (acid or alkaline).",
+          "- Nutrient and organic matter content.",
+          "With this information you can make decisions tailored to the needs of the land and the crop.",
+          "## 2. Weed removal",
+          "Weeds compete with crops for water and nutrients. The most common methods are:",
+          "- Manual or mechanical: hoes, brush cutters or hand pulling.",
+          "- Mulching: covering the soil to stop new weeds from germinating.",
+          "- Solarisation: covering the soil with clear plastic to disinfect it and kill seeds.",
+          "## 3. Tillage or minimum tillage",
+          "- Conventional tillage: the soil is turned over to aerate it and bury plant residues.",
+          "- Minimum tillage: only what is necessary is disturbed, respecting soil structure and biodiversity.",
+          "The choice depends on the crop, the condition of the soil and the organic approach you take.",
+          "## 4. Adding organic matter",
+          "It is essential in any organic system: it provides essential nutrients, improves soil structure and aeration and increases moisture retention. You can use well-matured compost, composted manure or decomposed plant residues, mixing them evenly into the soil.",
+          "## 5. pH adjustment and organic fertilisation",
+          "Based on the earlier analysis, correct the pH if necessary:",
+          "- Low (acid) pH: apply agricultural lime.",
+          "- High (alkaline) pH: apply agricultural sulphur.",
+          "Then add organic fertilisers such as rock dust, worm castings, seaweed extracts or microbial biofertilisers. The aim is to feed without polluting.",
+          "## 6. Levelling and forming beds",
+          "Levelling the surface prevents waterlogging, makes irrigation more even and improves drainage. On heavy or poorly drained soils, and for intensive crops, raised beds can be formed.",
+          "## 7. Ground cover",
+          "Covering the soil with organic matter (straw, shredded leaves, wood chips or compost) helps retain moisture, reduce erosion, control weeds and encourage microbial activity.",
+          "## Conclusion",
+          "Preparing the soil in organic farming is not a mere formality: it is a long-term investment in the health of the agroecosystem. Well-treated soil is more fertile, more resilient to climate stress and more productive without agrochemicals. Look after the soil and it will look after your crops."
+        ]
       }
-    }
+    },
+    "backToNews": "Back to News",
+    "relatedTitle": "More news",
+    "videoTitle": "Video: {{title}}"
   },
   "team": {
     "title": "The people behind Clavel",
@@ -201,41 +397,132 @@
       "mailSubject": "{{reason}} · {{name}}"
     }
   },
-  "privacyPolicy": {
+  "privacy": {
     "title": "Privacy policy",
-    "intro": "What data we collect through this website, what we use it for and what rights you have.",
-    "lead": "At Clavel we take the protection of your personal data seriously. We process it in accordance with Regulation (EU) 2016/679, the General Data Protection Regulation (GDPR), and Spanish Organic Law 3/2018 on the Protection of Personal Data and the Guarantee of Digital Rights (LOPDGDD).",
+    "intro": "What data we collect through this website, what we use it for, what rights you have and the terms on which you may use the site.",
+    "updated": "Last updated: September 2026",
+    "indexTitle": "Contents",
     "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "body": [
+          "At {{company}} we take the protection of your personal data seriously. This policy explains how we process the information you give us through this website and the terms of use of the site.",
+          "We process your data in accordance with Regulation (EU) 2016/679, the General Data Protection Regulation (GDPR), Spanish Organic Law 3/2018 on the Protection of Personal Data and the Guarantee of Digital Rights (LOPDGDD), and Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI).",
+          "By using this website, and in particular by sending us the contact form, you confirm that you have read this policy."
+        ]
+      },
       "controller": {
         "title": "Data controller",
-        "text": "The controller of your data is {{company}}, with registered address at {{address}}. You can contact us at {{email}} or by phone on {{phone}}."
+        "body": [
+          "The controller of your data is {{company}}, with registered address at {{address}}.",
+          "- Email: {{email}}",
+          "- Phone: {{phone}}",
+          "For any question about your personal data you can write to us at that email address."
+        ]
       },
       "data": {
         "title": "What data we collect",
-        "text": "Only the data you give us in the contact form: full name, email address and, if you choose to provide them, company or farm, phone number and the message you write to us."
+        "body": [
+          "We only process the data you voluntarily give us in the contact form:",
+          "- Full name and email address, which are required so that we can reply to you.",
+          "- Company or farm and phone number, if you choose to provide them.",
+          "- The reason for your enquiry and the message you write to us.",
+          "We do not ask for special categories of data. Please do not include them in your message. If you give us data about third parties, you confirm that you have informed them and have their consent."
+        ]
       },
       "purpose": {
-        "title": "What we use it for",
-        "text": "To answer your enquiry and send you the catalogue or the product information you request. We do not use it to send you commercial communications you have not requested or to build profiles."
+        "title": "What we use your data for",
+        "body": [
+          "- To answer your enquiry.",
+          "- To send you the product catalogue or the technical information you request.",
+          "- To maintain any business relationship that may arise from your enquiry.",
+          "We do not use your data to send you commercial communications you have not requested, we do not build profiles and we do not make automated decisions about you."
+        ]
       },
       "legalBasis": {
-        "title": "Legal basis",
-        "text": "Your consent, which you give us by ticking the box on the form. You can withdraw it at any time, without affecting the lawfulness of the processing carried out before its withdrawal."
+        "title": "Legal basis for processing",
+        "body": [
+          "The legal basis is your consent, which you give us by ticking the box on the form, and, where your enquiry concerns purchasing our products, taking pre-contractual steps at your request.",
+          "You can withdraw your consent at any time, without affecting the lawfulness of the processing carried out before its withdrawal."
+        ]
       },
       "retention": {
-        "title": "How long we keep it",
-        "text": "For as long as necessary to handle your enquiry and, afterwards, for the periods required by law to deal with any possible liabilities."
+        "title": "How long we keep your data",
+        "body": [
+          "We keep your data for as long as necessary to handle your enquiry and, where applicable, for the duration of the business relationship. After that we keep it blocked for the legal periods during which liabilities may arise, and we delete it when those periods end."
+        ]
       },
       "recipients": {
         "title": "Recipients",
-        "text": "We do not share your data with third parties unless required by law. Providers of technical services, such as email or website hosting, only access it to provide that service to us and with the safeguards required by the GDPR."
+        "body": [
+          "We do not share your data with third parties unless required by law.",
+          "Providers of technical services, such as email or website hosting, may access it only to provide that service to us, under contract and with the safeguards required by the GDPR. If any of them were located outside the European Economic Area, the transfer would be made with appropriate safeguards, such as the European Commission's standard contractual clauses."
+        ]
       },
       "rights": {
         "title": "Your rights",
-        "text": "You can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to us at {{email}}. If you consider that we have not handled your request properly, you can lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+        "body": [
+          "You can exercise the following rights at any time:",
+          "- Access: find out whether we process your data and which data.",
+          "- Rectification: correct inaccurate or incomplete data.",
+          "- Erasure: ask us to delete your data when it is no longer needed.",
+          "- Objection and restriction: object to processing or ask us to restrict it in certain cases.",
+          "- Portability: receive your data in a structured, commonly used format.",
+          "- Withdraw your consent at any time.",
+          "To exercise them, write to us at {{email}} stating which right you wish to exercise. If you consider that we have not handled your request properly, you can lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+        ]
+      },
+      "security": {
+        "title": "Security measures",
+        "body": [
+          "We apply appropriate technical and organisational measures to protect your data against loss, misuse, alteration or unauthorised access, taking into account the state of the art and the nature of the data. The website is served over an encrypted connection (HTTPS).",
+          "Even so, no system is completely secure. If we detect a security breach affecting your data, we will act as required by law."
+        ]
+      },
+      "thirdParties": {
+        "title": "Third-party links and content",
+        "body": [
+          "This website may include links to third-party sites, such as our social media, and videos hosted on YouTube. We are not responsible for the content or privacy policies of those sites, which we recommend you review.",
+          "Videos are embedded in privacy-enhanced mode (youtube-nocookie.com): YouTube does not store information in your browser until you play the video. When you play it, Google's terms and privacy policy apply."
+        ]
+      },
+      "cookies": {
+        "title": "Browsing and cookies",
+        "body": [
+          "This website does not use analytics or advertising cookies.",
+          "We only store the language you choose in your browser (local storage), so that the website is shown in that language on your next visits. It is a technical setting needed for the feature you choose and does not identify you. You can delete it at any time from your browser settings.",
+          "If we add other cookies in the future, we will say so here and ask for your consent where required."
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Intellectual and industrial property",
+        "body": [
+          "The content of this website (texts, images, design, logos and trademarks) belongs to {{company}} or to third parties who have authorised its use, and is protected by intellectual and industrial property law.",
+          "Reproducing, distributing, publicly communicating or transforming it, in whole or in part, is not permitted without express authorisation, except for personal and private use."
+        ]
+      },
+      "userObligations": {
+        "title": "User obligations",
+        "body": [
+          "By using this website you agree to:",
+          "- Provide truthful information in the contact form.",
+          "- Not use the website for unlawful purposes or in ways that harm {{company}} or third parties.",
+          "- Not introduce viruses or take any action that could damage or overload the site."
+        ]
+      },
+      "law": {
+        "title": "Applicable law and jurisdiction",
+        "body": [
+          "This policy and the use of the website are governed by Spanish law. For any dispute, the parties submit to the courts that are competent by law; if you are a consumer, those of your place of residence."
+        ]
+      },
+      "updates": {
+        "title": "Updates to this policy",
+        "body": [
+          "We may change this policy to reflect legal changes or changes to our services. We will always publish the current version on this page, with its update date, so we recommend that you review it periodically."
+        ]
       }
-    },
-    "updated": "Last updated: September 2026."
+    }
   },
   "footer": {
     "claim": "Sustainable agricultural solutions, with experience, innovation and a commitment to the future of farming.",
