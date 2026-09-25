@@ -1,10 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
+import { Clock } from 'lucide-react';
 
-import { Breadcrumb } from 'components/breadcrumb';
 import { Container } from 'components/container';
+import { PageHeader } from 'components/page-header';
 import { isContactReason } from 'constants/contact-reasons';
 import { CONTACT_REASON_PARAM } from 'constants/routes';
+import { OPENING_HOURS } from 'data/opening-hours';
+import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { useContactDetails } from 'hooks/use-contact-details';
 import { usePageTitle } from 'hooks/use-page-title';
 
@@ -22,15 +25,18 @@ export const Contact = () => {
   const initialReason = isContactReason(reasonParam) ? reasonParam : undefined;
 
   return (
-    <div className={styles.page}>
-      <Container as="section" className={styles.layout}>
-        <div className={styles.intro}>
-          <Breadcrumb current={t('nav.contact')} />
-          <h1 className={styles.title}>{t('contact.title')}</h1>
-          <p className={styles.lead}>{t('contact.intro')}</p>
+    <>
+      <PageHeader
+        page={t('nav.contact')}
+        title={t('contact.title')}
+        intro={t('contact.intro')}
+        image={PAGE_HEADER_IMAGES.contact}
+      />
 
-          <div className={styles.detailsCard}>
-            <h2 className={styles.detailsTitle}>{t('contact.detailsTitle')}</h2>
+      <Container as="section" className={styles.layout}>
+        <div className={styles.info}>
+          <div className={styles.card}>
+            <h2 className={styles.cardTitle}>{t('contact.detailsTitle')}</h2>
             <ul className={styles.details}>
               {contactDetails.map(({ key, icon: Icon, text, href }) => (
                 <li key={key} className={styles.detail}>
@@ -46,6 +52,21 @@ export const Contact = () => {
               ))}
             </ul>
           </div>
+
+          <div className={styles.card}>
+            <h2 className={styles.cardTitle}>
+              <Clock size={20} className={styles.detailIcon} aria-hidden />
+              {t('contact.hours.title')}
+            </h2>
+            <dl className={styles.hours}>
+              {OPENING_HOURS.map(({ day, open, close }) => (
+                <div key={day} className={styles.hoursRow}>
+                  <dt className={styles.hoursDay}>{t(`contact.hours.days.${day}`)}</dt>
+                  <dd className={styles.hoursRange}>{t('contact.hours.range', { open, close })}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
 
         <div className={styles.formCard}>
@@ -53,6 +74,6 @@ export const Contact = () => {
           <ContactForm key={initialReason} initialReason={initialReason} />
         </div>
       </Container>
-    </div>
+    </>
   );
 };

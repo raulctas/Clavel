@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
+import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { TEAM } from 'data/team';
 import { usePageTitle } from 'hooks/use-page-title';
 
@@ -14,7 +15,13 @@ export const Team = () => {
 
   return (
     <>
-      <PageHeader page={t('nav.team')} title={t('team.title')} intro={t('team.intro')} narrow />
+      <PageHeader
+        page={t('nav.team')}
+        title={t('team.title')}
+        intro={t('team.intro')}
+        image={PAGE_HEADER_IMAGES.team}
+        narrow
+      />
 
       <Container as="section" className={styles.section}>
         <ul className={styles.grid}>

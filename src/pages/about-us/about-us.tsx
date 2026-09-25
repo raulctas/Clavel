@@ -6,6 +6,7 @@ import { Eyebrow } from 'components/eyebrow';
 import { IconCircle } from 'components/icon-circle';
 import { PageHeader } from 'components/page-header';
 import { ABOUT_BLOCKS } from 'data/about-blocks';
+import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { PILLARS } from 'data/pillars';
 import { usePageTitle } from 'hooks/use-page-title';
 
@@ -21,6 +22,7 @@ export const AboutUs = () => {
         page={t('nav.aboutUs')}
         title={t('aboutUs.title')}
         intro={t('aboutUs.intro')}
+        image={PAGE_HEADER_IMAGES.aboutUs}
         spacious
       />
 
