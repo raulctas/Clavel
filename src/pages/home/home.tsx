@@ -89,7 +89,7 @@ export const Home = () => {
           </div>
           <div className={styles.newsGrid}>
             {LATEST_NEWS.map((item) => (
-              <NewsCard key={item.id} item={item} variant="compact" to={routes.news} />
+              <NewsCard key={item.id} item={item} variant="compact" />
             ))}
           </div>
         </Container>

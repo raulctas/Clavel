@@ -1,0 +1,49 @@
+.article {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+/* Ancho de lectura cómodo; la imagen y los vídeos ocupan el mismo ancho. */
+.content {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-image);
+  background-color: var(--color-kraft-light);
+}
+
+.back {
+  margin-top: 8px;
+}
+
+/* ---------- Otras noticias ---------- */
+
+.related {
+  background-color: var(--color-cream);
+}
+
+.relatedInner {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.relatedTitle {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}

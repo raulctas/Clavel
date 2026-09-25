@@ -6,10 +6,14 @@ export const routes = {
   home: '/',
   aboutUs: '/about-us',
   news: '/news',
+  newsDetail: '/news/:slug',
   team: '/team',
   contact: '/contact',
-  privacyPolicy: '/privacy-policy',
+  privacy: '/privacy',
 } as const;
+
+/** Construye la ruta de una noticia a partir de su slug. */
+export const newsDetailPath = (slug: string) => `${routes.news}/${slug}`;
 
 /** Parámetro de la URL de Contactar que preselecciona el motivo de la consulta. */
 export const CONTACT_REASON_PARAM = 'reason';

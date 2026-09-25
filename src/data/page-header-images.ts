@@ -9,5 +9,5 @@ export const PAGE_HEADER_IMAGES = {
   news: '/images/provisional/hero-3.png',
   team: '/images/provisional/hero-1.png',
   contact: '/images/provisional/hero-2.png',
-  privacyPolicy: '/images/provisional/hero-3.png',
+  privacy: '/images/provisional/hero-3.png',
 } as const;

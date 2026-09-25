@@ -1,13 +1,14 @@
 export type NewsCategory = 'agriculture' | 'innovation' | 'fruitVegetables' | 'organic';
 
 /**
- * Noticia. El título y el extracto están en `translation.json`
- * (news.items.<id>). `href` es opcional: cuando la noticia tenga página propia,
- * la tarjeta enlazará a ella.
+ * Noticia. El título, el extracto y el cuerpo están en `translation.json`
+ * (news.items.<id>); `slug` es su dirección: /news/<slug>.
  */
 export interface NewsItem {
   id: string;
+  slug: string;
   category: NewsCategory;
   image: string;
-  href?: string;
+  /** Identificadores de vídeos de YouTube que acompañan a la noticia. */
+  videos?: string[];
 }

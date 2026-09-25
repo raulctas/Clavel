@@ -19,7 +19,7 @@
     "contact": "Contactar",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
-    "privacyPolicy": "Política de privacidad"
+    "privacy": "Política de privacidad"
   },
   "pillars": {
     "sustainableFarming": {
@@ -111,41 +111,237 @@
     "items": {
       "mohamedKamel": {
         "title": "Dr. Mohamed Kamel: innovación en fertilización y nutrición vegetal",
-        "excerpt": "Cómo el Dr. Mohamed Kamel impulsa la agricultura sostenible mediante fertilización avanzada, nutrición vegetal y el potencial de los fosfitos."
+        "excerpt": "Cómo el Dr. Mohamed Kamel impulsa la agricultura sostenible mediante fertilización avanzada, nutrición vegetal y el potencial de los fosfitos.",
+        "body": [
+          "## Un referente internacional en agricultura sostenible",
+          "El Dr. Mohamed Kamel es un reconocido experto internacional en fertilización y nutrición vegetal, con amplia experiencia en investigación agronómica y asesoramiento técnico a productores y empresas agroalimentarias de toda Europa.",
+          "Su trabajo combina ciencia aplicada e innovación práctica con un propósito claro:",
+          "- Promover una agricultura productiva y sostenible.",
+          "- Optimizar la eficiencia en el uso de nutrientes.",
+          "- Reducir el impacto ambiental de las prácticas agrícolas.",
+          "Gracias a su visión científica y a su compromiso con el campo, el Dr. Kamel impulsa soluciones que transforman la productividad sin comprometer el equilibrio ambiental.",
+          "## Fosfitos: la innovación que impulsa la nutrición vegetal moderna",
+          "### ¿Qué son los fosfitos y por qué son esenciales?",
+          "Los fosfitos son compuestos que estimulan el crecimiento vegetal y refuerzan las defensas naturales de las plantas frente a enfermedades y estrés ambiental. Sus principales beneficios son:",
+          "- Mejoran la resistencia frente a hongos y condiciones adversas.",
+          "- Incrementan la absorción y la movilidad de los nutrientes.",
+          "- Estimulan el enraizamiento y la floración.",
+          "- Aumentan la productividad y la calidad del cultivo.",
+          "Estudios recientes demuestran que los fosfitos pueden elevar significativamente el rendimiento agrícola, lo que los convierte en una herramienta clave para una agricultura moderna, sostenible y ecológica.",
+          "### El reto regulatorio en Europa",
+          "Actualmente, los fosfitos no están reconocidos oficialmente por la normativa europea como fertilizantes ni como productos fitosanitarios, lo que limita su uso comercial. Aun así, numerosos expertos e investigadores respaldan su potencial y los consideran una solución estratégica para el futuro de la nutrición vegetal sostenible.",
+          "El Dr. Kamel trabaja activamente para promover un marco regulatorio científico y equilibrado que permita aprovechar todo el potencial de estos compuestos en beneficio del sector agrícola europeo.",
+          "## Liderazgo científico al servicio de Clavel",
+          "En Clavel, el Dr. Mohamed Kamel colabora como asesor científico internacional en el desarrollo de fertilizantes sostenibles y tecnologías avanzadas de nutrición vegetal. Su aportación refuerza tres pilares de la empresa:",
+          "- Innovación: productos basados en la ciencia y en la biotecnología aplicada.",
+          "- Sostenibilidad: equilibrio entre productividad y respeto ambiental.",
+          "- Eficiencia: formulaciones seguras, rentables y conformes con la normativa europea vigente.",
+          "### Valor añadido para los agricultores",
+          "Gracias a este trabajo, Clavel ofrece a los profesionales del campo fertilizantes ecológicos y sostenibles, soluciones avanzadas de nutrición vegetal, asesoramiento técnico especializado y tecnologías que mejoran la productividad sin dañar el entorno.",
+          "## Ciencia e innovación para una agricultura sostenible",
+          "Esta colaboración representa un compromiso firme con la investigación científica, la sostenibilidad y el desarrollo agronómico responsable: una nueva generación de soluciones agrícolas en la que la innovación en fertilización y nutrición vegetal se traduce en productividad, resiliencia y respeto ambiental."
+        ]
       },
       "erasmusLaboratory": {
         "title": "Jóvenes talentos Erasmus se incorporan al laboratorio",
-        "excerpt": "Cuatro estudiantes Erasmus se suman a nuestro equipo de I+D y laboratorio en Valencia para participar en proyectos de investigación aplicada."
+        "excerpt": "Cuatro estudiantes Erasmus se suman a nuestro equipo de I+D y laboratorio en Valencia para participar en proyectos de investigación aplicada.",
+        "body": [
+          "En Clavel nos sentimos orgullosos de dar la bienvenida a cuatro estudiantes Erasmus que se suman a nuestro equipo de I+D y laboratorio en Valencia. Durante los próximos meses participarán en proyectos de investigación aplicada, trabajando codo a codo con nuestros técnicos y aportando una visión internacional al proceso de innovación.",
+          "## Un Erasmus orientado a la ciencia y la sostenibilidad",
+          "Esta experiencia supone un verdadero intercambio de valor. Para los estudiantes, es una oportunidad única de aprender en un laboratorio especializado en fertilizantes ecológicos y sostenibles. Para Clavel, una fuente de nuevas metodologías, entusiasmo y talento joven que fortalece nuestro compromiso con la innovación agrícola.",
+          "Durante su estancia, los estudiantes colaborarán en:",
+          "- Análisis de laboratorio para mejorar la eficiencia de los fertilizantes.",
+          "- Ensayos de calidad y control de procesos.",
+          "- Desarrollo de soluciones sostenibles que aporten valor al agricultor.",
+          "## Compromiso con la formación y el futuro del campo",
+          "Con esta iniciativa, Clavel reafirma su apuesta por:",
+          "- La formación práctica de futuros profesionales científicos.",
+          "- La internacionalización como motor de innovación.",
+          "- El desarrollo de nuevas competencias técnicas aplicadas al sector agrícola.",
+          "## Investigación con proyección internacional",
+          "La llegada de estos cuatro estudiantes fortalece nuestro laboratorio y confirma nuestra visión: un futuro agrícola basado en la ciencia, la sostenibilidad y el talento joven. ¡Bienvenidos a esta nueva etapa de aprendizaje y descubrimiento!"
+        ]
       },
       "agenda2030": {
         "title": "Agenda 2030 y agricultura sostenible",
-        "excerpt": "La Agenda 2030 de la ONU traza el camino hacia un futuro más justo y respetuoso con el planeta. La agricultura tiene un papel clave."
+        "excerpt": "La Agenda 2030 de la ONU traza el camino hacia un futuro más justo y respetuoso con el planeta. La agricultura tiene un papel clave.",
+        "body": [
+          "En un mundo en constante cambio, la agricultura tiene un papel clave en la sostenibilidad global. La Agenda 2030 de la ONU, con sus 17 Objetivos de Desarrollo Sostenible (ODS), traza el camino hacia un futuro más justo y respetuoso con el planeta. En este contexto, la industria de los fertilizantes ecológicos está llamada a ser protagonista de una agricultura más limpia, eficiente y responsable.",
+          "## Objetivos de Desarrollo Sostenible y agricultura",
+          "La Agenda 2030 aborda grandes desafíos globales, muchos de ellos ligados directamente al sector agrícola. Estos son algunos de los ODS más relevantes para los fertilizantes ecológicos:",
+          "### ODS 2: Hambre cero",
+          "Garantizar la seguridad alimentaria pasa por mejorar la productividad agrícola sin perjudicar los ecosistemas. Los fertilizantes ecológicos favorecen una nutrición vegetal equilibrada, cuidan la salud del suelo y reducen el uso de insumos sintéticos.",
+          "### ODS 6: Agua limpia y saneamiento",
+          "Estos fertilizantes reducen el riesgo de contaminación de los acuíferos al minimizar la lixiviación de nutrientes, lo que ayuda a conservar la calidad del agua.",
+          "### ODS 15: Vida de ecosistemas terrestres",
+          "Al promover la biodiversidad y la actividad microbiana del suelo, los fertilizantes ecológicos regeneran los ecosistemas agrarios y fortalecen la sostenibilidad a largo plazo.",
+          "## Beneficios de los fertilizantes ecológicos",
+          "Los fertilizantes ecológicos son aliados esenciales para una agricultura regenerativa. Entre sus principales ventajas destacan:",
+          "- Nutrición equilibrada: aportan los nutrientes esenciales que las plantas necesitan de forma natural y progresiva.",
+          "- Impacto ambiental reducido: minimizan la contaminación de suelos y aguas y cuidan los ecosistemas agrarios.",
+          "- Fomento de la biodiversidad: favorecen la vida microbiana del suelo y reducen la dependencia de agroquímicos.",
+          "## Liderando el cambio hacia una agricultura sostenible",
+          "La industria de los fertilizantes ecológicos tiene una gran oportunidad: liderar el camino hacia una agricultura más sostenible, en línea con los principios de la Agenda 2030. Esto implica:",
+          "- Apostar por la innovación en productos naturales y sostenibles.",
+          "- Formar a los agricultores en prácticas responsables.",
+          "- Promover soluciones agrícolas adaptadas a cada cultivo y entorno.",
+          "## Conclusión",
+          "La Agenda 2030 es una hoja de ruta clara para transformar la agricultura del futuro. La industria de los fertilizantes ecológicos puede y debe ser un motor clave de esa transformación, ayudando a cultivar un futuro verde, productivo y respetuoso con el planeta."
+        ]
       },
       "soilQuality": {
         "title": "Cómo mejorar la calidad del suelo y aumentar la productividad",
-        "excerpt": "El éxito de una cosecha empieza bajo tierra. Por qué enriquecer el suelo antes de la siembra y cómo hacerlo paso a paso."
+        "excerpt": "El éxito de una cosecha empieza bajo tierra. Por qué enriquecer el suelo antes de la siembra y cómo hacerlo paso a paso.",
+        "body": [
+          "En agricultura, el éxito de una cosecha empieza bajo tierra. Optimizar la calidad del suelo es clave para obtener cultivos más productivos, saludables y sostenibles. En este artículo te contamos por qué enriquecer el suelo antes de la siembra es una estrategia fundamental y cómo hacerlo paso a paso.",
+          "## ¿Por qué es tan importante la calidad del suelo?",
+          "El suelo no es solo el soporte físico de las plantas: es un ecosistema vivo que afecta directamente a su nutrición, crecimiento y resistencia. Un suelo sano:",
+          "- Mejora la retención de agua y nutrientes.",
+          "- Favorece la actividad microbiana beneficiosa.",
+          "- Aumenta la resistencia del cultivo ante enfermedades y estrés.",
+          "## ¿Qué es el enriquecimiento de nutrientes?",
+          "Consiste en preparar el suelo antes de la siembra incorporando nutrientes clave como el nitrógeno, el fósforo y el potasio, ya sea mediante fertilizantes ecológicos o materia orgánica. Este proceso fortalece el suelo y lo deja listo para una producción más eficiente. Sus principales beneficios son:",
+          "- Mayor absorción de nutrientes: mejora el desarrollo radicular y la salud de la planta.",
+          "- Más productividad: cultivos más vigorosos y con mayores rendimientos.",
+          "- Mejor calidad del producto final: alimentos más nutritivos y resistentes.",
+          "- Práctica sostenible: reduce el uso excesivo de fertilizantes y la contaminación.",
+          "## Estrategias clave para enriquecer el suelo",
+          "### 1. Haz un análisis de suelo",
+          "Antes de aplicar fertilizantes, analiza tu suelo. Así podrás identificar carencias concretas y elegir los nutrientes adecuados para cada tipo de cultivo.",
+          "### 2. Usa fertilizantes orgánicos",
+          "El estiércol compostado, los biofertilizantes y el abono verde son excelentes aliados: aportan nutrientes de forma gradual y mejoran la estructura del suelo a largo plazo.",
+          "### 3. Aplica la rotación de cultivos",
+          "Alternar especies vegetales evita el agotamiento de nutrientes concretos y mejora la biodiversidad del suelo.",
+          "### 4. Protege el suelo con cubierta vegetal",
+          "El acolchado (mulching) o los cultivos de cobertura protegen el suelo de la erosión, mejoran su estructura y retienen la humedad, lo que favorece la actividad microbiana.",
+          "## Conclusión",
+          "Invertir en la salud del suelo es invertir en el futuro de la agricultura. Un suelo fértil y equilibrado es la base de cultivos más productivos, sostenibles y de mayor calidad. Con prácticas de enriquecimiento responsables no solo obtendrás mejores cosechas: también contribuirás a una agricultura más respetuosa con el medio ambiente y con las generaciones futuras."
+        ]
       },
       "fruitVegetables": {
         "title": "Mejora de frutas y verduras",
-        "excerpt": "La mejora del limonero de Carmen, paso a paso."
+        "excerpt": "La mejora del limonero de Carmen, paso a paso.",
+        "body": [
+          "Te enseñamos, paso a paso, cómo mejoramos el limonero de Carmen: el estado de partida del árbol, el tratamiento con fertilizantes ecológicos que aplicamos y los resultados que se pueden ver en campo."
+        ]
       },
       "citrusFertilisation": {
         "title": "Abonado orgánico en cítricos",
-        "excerpt": "Grabamos con Juan Manuel Martínez en su explotación de cítricos."
+        "excerpt": "Grabamos con Juan Manuel Martínez en su explotación de cítricos.",
+        "body": [
+          "Grabamos con Juan Manuel Martínez en su explotación de cítricos, donde nos cuenta su experiencia con el abonado orgánico y los resultados que ha obtenido en sus árboles."
+        ]
       },
       "trialFields": {
         "title": "El papel de los campos de ensayo",
-        "excerpt": "Los campos de ensayo son esenciales para validar el uso de fertilizantes ecológicos frente a la agricultura convencional."
+        "excerpt": "Los campos de ensayo son esenciales para validar el uso de fertilizantes ecológicos frente a la agricultura convencional.",
+        "body": [
+          "La agricultura moderna exige soluciones eficientes, sostenibles y adaptadas a un entorno cambiante. En este escenario, los campos de ensayo son herramientas esenciales para validar el uso de fertilizantes ecológicos, una alternativa clave frente a la agricultura convencional.",
+          "## ¿Qué son los campos de ensayo agrícolas?",
+          "Son parcelas diseñadas para la investigación y la experimentación agrícola. En ellas, agrónomos, agricultores e investigadores prueban nuevas técnicas, productos y soluciones en condiciones reales, pero controladas. Esto permite:",
+          "- Comparar diferentes métodos de cultivo.",
+          "- Medir resultados a corto, medio y largo plazo.",
+          "- Adaptar las soluciones a contextos climáticos y de suelo concretos.",
+          "## Fertilizantes ecológicos: una alternativa necesaria",
+          "Los fertilizantes ecológicos se elaboran a partir de materiales naturales como el compost, el estiércol, los restos vegetales o minerales de origen orgánico. A diferencia de los fertilizantes sintéticos, no contaminan el suelo ni los acuíferos y, además:",
+          "- Regeneran la microbiología del suelo.",
+          "- Aportan nutrientes de forma progresiva y equilibrada.",
+          "- Favorecen la retención de agua y la estructura del terreno.",
+          "## ¿Por qué son clave los campos de ensayo?",
+          "Permiten demostrar, medir y perfeccionar el uso de estos insumos sostenibles.",
+          "### 1. Validación científica real",
+          "Al aplicar fertilizantes ecológicos en condiciones controladas se obtiene evidencia medible de su eficacia frente a los métodos tradicionales.",
+          "### 2. Ajustes por tipo de cultivo y zona",
+          "Cada suelo y cada clima son únicos. En los campos de ensayo se puede ajustar la dosis y la frecuencia de aplicación para maximizar los resultados según el cultivo y las necesidades de cada región.",
+          "### 3. Tecnología y seguimiento en tiempo real",
+          "Con sensores, drones y programas de gestión agrícola es posible medir el crecimiento del cultivo, los niveles de nutrientes del suelo y los cambios de humedad y temperatura.",
+          "### 4. Mejores prácticas",
+          "Los resultados de los ensayos permiten definir y difundir protocolos de aplicación eficaces y sostenibles, que ayudan a otros productores a implantar soluciones ya probadas.",
+          "## Retos a tener en cuenta",
+          "- Condiciones climáticas impredecibles que pueden afectar a los resultados.",
+          "- Dificultades para extrapolar los datos a explotaciones de gran escala.",
+          "- Necesidad de colaboración activa entre agricultores, técnicos y comunidades rurales.",
+          "## Conclusión: innovación y sostenibilidad van de la mano",
+          "Los campos de ensayo son laboratorios vivos que permiten a la agricultura avanzar hacia modelos más sostenibles y rentables. Gracias a ellos, los fertilizantes ecológicos dejan de ser una alternativa para convertirse en una herramienta contrastada y escalable para la agricultura del futuro."
+        ]
       },
       "npkFertilisers": {
         "title": "¿Son sostenibles los fertilizantes NPK?",
-        "excerpt": "Riesgos y consecuencias del uso intensivo de fertilizantes químicos para la salud del suelo a largo plazo."
+        "excerpt": "Riesgos y consecuencias del uso intensivo de fertilizantes químicos para la salud del suelo a largo plazo.",
+        "body": [
+          "La fertilidad del suelo es la base de una agricultura sostenible y resiliente. Sin embargo, el uso intensivo de fertilizantes químicos como los NPK está acelerando la degradación de los suelos agrícolas en todo el mundo. Aunque pueden aportar beneficios a corto plazo, sus efectos a largo plazo ponen en riesgo la productividad futura y el equilibrio ambiental.",
+          "## ¿Qué son los fertilizantes NPK?",
+          "Contienen tres macronutrientes esenciales para las plantas:",
+          "- N (nitrógeno), para el desarrollo de hojas y tallos.",
+          "- P (fósforo), para la formación de raíces y frutos.",
+          "- K (potasio), para la resistencia y el metabolismo.",
+          "Aunque estimulan el crecimiento vegetal, no cubren el resto de micronutrientes y elementos necesarios para un suelo sano.",
+          "## Problemas del uso prolongado",
+          "### 1. Desequilibrio nutricional del suelo",
+          "Al centrarse en el nitrógeno, el fósforo y el potasio, se dejan de lado micronutrientes esenciales como el calcio, el magnesio, el azufre, el hierro, el zinc o el manganeso, lo que afecta a la salud de las plantas y a la vida microbiana del suelo.",
+          "### 2. Contaminación ambiental",
+          "El exceso de nitrógeno y fósforo puede filtrarse a las aguas subterráneas o escurrir hacia los ríos, lo que provoca contaminación del agua y eutrofización.",
+          "### 3. Pérdida de biodiversidad del suelo",
+          "Los fertilizantes sintéticos pueden reducir la diversidad microbiana y afectar a procesos clave como la descomposición de la materia orgánica o la fijación de nitrógeno.",
+          "### 4. Erosión y pérdida de estructura",
+          "Con el tiempo, el suelo tratado solo con productos químicos pierde materia orgánica y se vuelve más compacto, menos poroso y más vulnerable a la erosión del viento y la lluvia.",
+          "### 5. Disminución de la fertilidad natural",
+          "Se crea una dependencia artificial: cuanto más se aplican, más se degrada la fertilidad propia del suelo, lo que obliga a aumentar las dosis para mantener la producción.",
+          "## Consecuencias para el agricultor",
+          "- Mayores costes a largo plazo por la necesidad constante de insumos.",
+          "- Menores rendimientos tras varias campañas seguidas.",
+          "- Más vulnerabilidad de los cultivos a enfermedades y plagas.",
+          "- Menor rentabilidad y menos resiliencia frente al cambio climático.",
+          "## Alternativas sostenibles",
+          "La solución pasa por cambiar el enfoque: alimentar no solo a las plantas, sino también al suelo. Algunas prácticas sostenibles son:",
+          "- Incorporar materia orgánica, como compost, estiércol bien fermentado o restos vegetales.",
+          "- Usar abonos verdes y cultivos de cobertura para fijar nitrógeno, proteger el suelo y mejorar su estructura.",
+          "- Aplicar fertilizantes ecológicos, formulados con ingredientes naturales que respetan la biodiversidad del suelo.",
+          "- Analizar el suelo para aportar solo los nutrientes necesarios y evitar excesos.",
+          "- Rotar los cultivos para conservar nutrientes y romper los ciclos de plagas y enfermedades.",
+          "## Conclusión: la fertilidad del suelo no se compra, se cultiva",
+          "Los fertilizantes NPK pueden ser útiles en momentos puntuales, pero no son sostenibles como única estrategia de fertilización. Para lograr una producción rentable, resiliente y responsable hay que apostar por estrategias que regeneren el suelo y trabajen con la naturaleza, no contra ella."
+        ]
       },
       "soilPreparation": {
         "title": "Preparación del suelo en agricultura ecológica",
-        "excerpt": "Siete pasos clave para un cultivo saludable: un suelo bien trabajado retiene mejor el agua y aporta los nutrientes necesarios."
+        "excerpt": "Siete pasos clave para un cultivo saludable: un suelo bien trabajado retiene mejor el agua y aporta los nutrientes necesarios.",
+        "body": [
+          "Una buena preparación del suelo es el primer paso hacia un cultivo sano y sostenible, sobre todo en agricultura ecológica, donde el equilibrio natural del ecosistema es esencial. Un suelo bien trabajado tiene mejor estructura, retiene mejor el agua y aporta los nutrientes que las plantas necesitan para crecer. Estos son los siete pasos fundamentales para prepararlo de forma eficaz y respetuosa con el medio ambiente.",
+          "## 1. Análisis y evaluación del suelo",
+          "Antes de nada, hay que conocer el estado del suelo. Una prueba de suelo permite evaluar:",
+          "- La textura (arenosa, arcillosa, limosa…).",
+          "- El pH (ácido o alcalino).",
+          "- El contenido de nutrientes y de materia orgánica.",
+          "Con esta información se pueden tomar decisiones ajustadas a las necesidades del terreno y del cultivo.",
+          "## 2. Eliminación de malas hierbas",
+          "Las malas hierbas compiten con los cultivos por el agua y los nutrientes. Los métodos más habituales son:",
+          "- Manual o mecánico: azadas, desbrozadoras o arranque a mano.",
+          "- Acolchado: cubrir el suelo para evitar que germinen nuevas hierbas.",
+          "- Solarización: cubrir el suelo con plástico transparente para desinfectarlo y eliminar semillas.",
+          "## 3. Labranza o labranza mínima",
+          "- Labranza convencional: se voltea el suelo para airearlo y enterrar los restos vegetales.",
+          "- Labranza mínima: se remueve solo lo necesario, respetando la estructura y la biodiversidad del suelo.",
+          "La elección depende del tipo de cultivo, del estado del suelo y del enfoque ecológico que se adopte.",
+          "## 4. Aporte de materia orgánica",
+          "Es fundamental en cualquier sistema ecológico: aporta nutrientes esenciales, mejora la estructura y la aireación del suelo y aumenta la retención de humedad. Puedes usar compost bien maduro, estiércol compostado o restos vegetales descompuestos, mezclándolos de forma uniforme con el suelo.",
+          "## 5. Ajuste del pH y fertilización orgánica",
+          "A partir del análisis previo, corrige el pH si hace falta:",
+          "- pH bajo (ácido): aplicar cal agrícola.",
+          "- pH alto (alcalino): aplicar azufre agrícola.",
+          "Después, incorpora fertilizantes orgánicos como harinas de roca, humus de lombriz, extractos de algas o biofertilizantes microbianos. El objetivo es nutrir sin contaminar.",
+          "## 6. Nivelado y formación de camas de cultivo",
+          "Nivelar la superficie evita encharcamientos, facilita un riego uniforme y mejora el drenaje. En suelos pesados o con mal drenaje, y en cultivos intensivos, se pueden formar camas elevadas o bancales.",
+          "## 7. Cobertura del suelo",
+          "Cubrir el suelo con materia orgánica (paja, hojas trituradas, virutas de madera o compost) ayuda a conservar la humedad, reducir la erosión, controlar las malas hierbas y fomentar la actividad microbiana.",
+          "## Conclusión",
+          "Preparar el suelo en agricultura ecológica no es un simple trámite: es una inversión a largo plazo en la salud del agroecosistema. Un suelo bien tratado es más fértil, más resistente al estrés climático y más productivo sin necesidad de agroquímicos. Cuida el suelo y él cuidará tus cultivos."
+        ]
       }
-    }
+    },
+    "backToNews": "Volver a Noticias",
+    "relatedTitle": "Otras noticias",
+    "videoTitle": "Vídeo: {{title}}"
   },
   "team": {
     "title": "Las personas detrás de Clavel",
@@ -201,41 +397,132 @@
       "mailSubject": "{{reason}} · {{name}}"
     }
   },
-  "privacyPolicy": {
+  "privacy": {
     "title": "Política de privacidad",
-    "intro": "Qué datos recogemos a través de esta web, para qué los usamos y qué derechos tienes.",
-    "lead": "En Clavel nos tomamos en serio la protección de tus datos personales. Los tratamos conforme al Reglamento (UE) 2016/679, General de Protección de Datos (RGPD), y a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).",
+    "intro": "Qué datos recogemos a través de esta web, para qué los usamos, qué derechos tienes y en qué condiciones puedes usar el sitio.",
+    "updated": "Última actualización: septiembre de 2026",
+    "indexTitle": "Contenido",
     "sections": {
+      "introduction": {
+        "title": "Introducción",
+        "body": [
+          "En {{company}} nos tomamos en serio la protección de tus datos personales. Esta política explica cómo tratamos la información que nos facilitas a través de esta web y las condiciones de uso del sitio.",
+          "Tratamos tus datos conforme al Reglamento (UE) 2016/679, General de Protección de Datos (RGPD), a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), y a la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI).",
+          "Al usar esta web y, en especial, al enviarnos el formulario de contacto, declaras haber leído esta política."
+        ]
+      },
       "controller": {
         "title": "Responsable del tratamiento",
-        "text": "El responsable del tratamiento de tus datos es {{company}}, con domicilio en {{address}}. Puedes contactar con nosotros en {{email}} o en el teléfono {{phone}}."
+        "body": [
+          "El responsable del tratamiento de tus datos es {{company}}, con domicilio en {{address}}.",
+          "- Correo electrónico: {{email}}",
+          "- Teléfono: {{phone}}",
+          "Para cualquier cuestión relacionada con tus datos personales puedes escribirnos a esa dirección de correo."
+        ]
       },
       "data": {
         "title": "Qué datos recogemos",
-        "text": "Solo los que nos facilitas en el formulario de contacto: nombre y apellidos, correo electrónico y, si decides indicarlos, empresa o explotación, teléfono y el mensaje que nos escribas."
+        "body": [
+          "Solo tratamos los datos que nos facilitas voluntariamente en el formulario de contacto:",
+          "- Nombre y apellidos y correo electrónico, que son obligatorios para poder responderte.",
+          "- Empresa o explotación y teléfono, si decides indicarlos.",
+          "- El motivo de tu consulta y el mensaje que nos escribas.",
+          "No pedimos datos especialmente protegidos. Te pedimos que no los incluyas en el mensaje. Si nos facilitas datos de terceros, garantizas que les has informado y que cuentas con su consentimiento."
+        ]
       },
       "purpose": {
-        "title": "Para qué los usamos",
-        "text": "Para responder a tu consulta y enviarte el catálogo o la información sobre productos que nos pidas. No los usamos para enviarte comunicaciones comerciales que no hayas solicitado ni para elaborar perfiles."
+        "title": "Para qué usamos tus datos",
+        "body": [
+          "- Responder a tu consulta.",
+          "- Enviarte el catálogo de productos o la información técnica que nos pidas.",
+          "- Mantener contigo la relación comercial que, en su caso, se derive de tu consulta.",
+          "No usamos tus datos para enviarte comunicaciones comerciales que no hayas solicitado, no elaboramos perfiles y no tomamos decisiones automatizadas sobre ti."
+        ]
       },
       "legalBasis": {
-        "title": "Base legal",
-        "text": "Tu consentimiento, que nos das al marcar la casilla del formulario. Puedes retirarlo en cualquier momento, sin que ello afecte a la licitud del tratamiento realizado antes de retirarlo."
+        "title": "Base legal del tratamiento",
+        "body": [
+          "La base legal es tu consentimiento, que nos das al marcar la casilla del formulario, y, cuando tu consulta tenga por objeto la contratación de nuestros productos, la aplicación de medidas precontractuales a petición tuya.",
+          "Puedes retirar tu consentimiento en cualquier momento, sin que ello afecte a la licitud del tratamiento realizado antes de retirarlo."
+        ]
       },
       "retention": {
-        "title": "Cuánto tiempo los conservamos",
-        "text": "Mientras sea necesario para atender tu consulta y, después, durante los plazos que exija la ley para atender posibles responsabilidades."
+        "title": "Cuánto tiempo conservamos tus datos",
+        "body": [
+          "Conservamos tus datos mientras sea necesario para atender tu consulta y, en su caso, mientras dure la relación comercial. Después los mantenemos bloqueados durante los plazos legales en los que puedan derivarse responsabilidades, y los suprimimos al terminar esos plazos."
+        ]
       },
       "recipients": {
         "title": "Destinatarios",
-        "text": "No cedemos tus datos a terceros, salvo obligación legal. Los proveedores que nos prestan servicios técnicos, como el correo electrónico o el alojamiento de la web, solo acceden a ellos para prestarnos ese servicio y con las garantías que exige el RGPD."
+        "body": [
+          "No cedemos tus datos a terceros, salvo obligación legal.",
+          "Los proveedores que nos prestan servicios técnicos, como el correo electrónico o el alojamiento de la web, pueden acceder a ellos solo para prestarnos ese servicio, bajo contrato y con las garantías que exige el RGPD. Si alguno de ellos estuviera fuera del Espacio Económico Europeo, la transferencia se haría con las garantías adecuadas, como las cláusulas contractuales tipo de la Comisión Europea."
+        ]
       },
       "rights": {
         "title": "Tus derechos",
-        "text": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiéndonos a {{email}}. Si consideras que no hemos atendido correctamente tu solicitud, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+        "body": [
+          "Puedes ejercer en cualquier momento los siguientes derechos:",
+          "- Acceso: saber si tratamos tus datos y cuáles.",
+          "- Rectificación: corregir los datos inexactos o incompletos.",
+          "- Supresión: pedir que borremos tus datos cuando ya no sean necesarios.",
+          "- Oposición y limitación: oponerte al tratamiento o pedir que lo limitemos en determinados casos.",
+          "- Portabilidad: recibir tus datos en un formato estructurado y de uso común.",
+          "- Retirar tu consentimiento en cualquier momento.",
+          "Para ejercerlos, escríbenos a {{email}} indicando qué derecho quieres ejercer. Si consideras que no hemos atendido correctamente tu solicitud, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+        ]
+      },
+      "security": {
+        "title": "Medidas de seguridad",
+        "body": [
+          "Aplicamos las medidas técnicas y organizativas adecuadas para proteger tus datos frente a su pérdida, uso indebido, alteración o acceso no autorizado, teniendo en cuenta el estado de la técnica y la naturaleza de los datos. La web se sirve mediante una conexión cifrada (HTTPS).",
+          "Aun así, ningún sistema es completamente seguro. Si detectamos una brecha de seguridad que afecte a tus datos, actuaremos según lo previsto en la normativa."
+        ]
+      },
+      "thirdParties": {
+        "title": "Enlaces y contenidos de terceros",
+        "body": [
+          "Esta web puede incluir enlaces a sitios de terceros, como nuestras redes sociales, y vídeos alojados en YouTube. No somos responsables del contenido ni de las políticas de privacidad de esos sitios, que te recomendamos revisar.",
+          "Los vídeos se insertan en modo de privacidad mejorada (youtube-nocookie.com): YouTube no guarda información en tu navegador hasta que reproduces el vídeo. Al reproducirlo, se aplican las condiciones y la política de privacidad de Google."
+        ]
+      },
+      "cookies": {
+        "title": "Navegación y cookies",
+        "body": [
+          "Esta web no usa cookies de análisis ni de publicidad.",
+          "Solo guardamos en tu navegador (almacenamiento local) el idioma que eliges, para mostrarte la web en ese idioma en tus próximas visitas. Es un dato técnico necesario para el funcionamiento que eliges y no permite identificarte. Puedes borrarlo en cualquier momento desde la configuración de tu navegador.",
+          "Si en el futuro incorporamos otras cookies, lo indicaremos aquí y te pediremos el consentimiento cuando sea necesario."
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Propiedad intelectual e industrial",
+        "body": [
+          "Los contenidos de esta web (textos, imágenes, diseño, logotipos y marcas) son propiedad de {{company}} o de terceros que han autorizado su uso, y están protegidos por la normativa de propiedad intelectual e industrial.",
+          "No está permitida su reproducción, distribución, comunicación pública o transformación, total o parcial, sin autorización expresa, salvo para uso personal y privado."
+        ]
+      },
+      "userObligations": {
+        "title": "Obligaciones del usuario",
+        "body": [
+          "Al usar esta web te comprometes a:",
+          "- Facilitar datos veraces en el formulario de contacto.",
+          "- No usar la web con fines ilícitos o que perjudiquen a {{company}} o a terceros.",
+          "- No introducir virus ni realizar acciones que puedan dañar o sobrecargar el sitio."
+        ]
+      },
+      "law": {
+        "title": "Legislación aplicable y jurisdicción",
+        "body": [
+          "Esta política y el uso de la web se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales que correspondan conforme a la ley; si eres consumidor, los de tu domicilio."
+        ]
+      },
+      "updates": {
+        "title": "Actualizaciones de esta política",
+        "body": [
+          "Podemos modificar esta política para adaptarla a cambios legales o en nuestros servicios. Publicaremos siempre la versión vigente en esta página, con su fecha de actualización, por lo que te recomendamos revisarla periódicamente."
+        ]
       }
-    },
-    "updated": "Última actualización: septiembre de 2026."
+    }
   },
   "footer": {
     "claim": "Soluciones agrícolas sostenibles, con experiencia, innovación y compromiso con el futuro del campo.",

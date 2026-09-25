@@ -5,13 +5,20 @@ import { routes } from 'constants/routes';
 
 import styles from './breadcrumb.module.css';
 
+export interface BreadcrumbParent {
+  label: string;
+  to: string;
+}
+
 interface Props {
   /** Nombre de la página actual. */
   current: string;
+  /** Nivel intermedio, p. ej. «Noticias» en la página de una noticia. */
+  parent?: BreadcrumbParent;
 }
 
-/** Ruta «Inicio / Página» de las bandas de título. */
-export const Breadcrumb = ({ current }: Props) => {
+/** Ruta «Inicio / [Sección /] Página» de las bandas de título. */
+export const Breadcrumb = ({ current, parent }: Props) => {
   const { t } = useTranslation();
 
   return (
@@ -22,7 +29,14 @@ export const Breadcrumb = ({ current }: Props) => {
             {t('nav.home')}
           </Link>
         </li>
-        <li className={styles.current} aria-current="page">
+        {parent && (
+          <li className={styles.separated}>
+            <Link to={parent.to} className={styles.link}>
+              {parent.label}
+            </Link>
+          </li>
+        )}
+        <li className={`${styles.separated} ${styles.current}`} aria-current="page">
           {current}
         </li>
       </ol>

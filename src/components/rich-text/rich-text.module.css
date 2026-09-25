@@ -1,0 +1,57 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading2 {
+  margin-top: 16px;
+  font-size: clamp(24px, 2.6vw, 30px);
+  line-height: 1.15;
+}
+
+.heading3 {
+  margin-top: 8px;
+  font-size: 21px;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+/* El primer bloque no necesita el aire extra de los subtítulos. */
+.text > :first-child {
+  margin-top: 0;
+}
+
+.paragraph {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+  text-wrap: pretty;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-ink-soft);
+}
+
+/* Viñeta propia en verde brote: el reset global quita la del navegador. */
+.list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.list li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  opacity: 0.55;
+}

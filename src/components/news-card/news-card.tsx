@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
+import { newsDetailPath } from 'constants/routes';
 import { NewsItem } from 'interfaces/news';
 
 import styles from './news-card.module.css';
@@ -12,11 +13,10 @@ interface Props {
    * `full`: la de la página de Noticias (con borde, extracto y «Leer más»).
    */
   variant?: 'compact' | 'full';
-  /** Enlace de la tarjeta. Si no se indica, se usa el de la propia noticia. */
-  to?: string;
 }
 
-export const NewsCard = ({ item, variant = 'full', to = item.href }: Props) => {
+/** Tarjeta de noticia. Toda la tarjeta enlaza a la página de la noticia. */
+export const NewsCard = ({ item, variant = 'full' }: Props) => {
   const { t } = useTranslation();
 
   const content = (
@@ -42,19 +42,11 @@ export const NewsCard = ({ item, variant = 'full', to = item.href }: Props) => {
     </>
   );
 
-  const classes = [styles.card, styles[variant], to && styles.interactive]
-    .filter(Boolean)
-    .join(' ');
-
   return (
-    <article className={classes}>
-      {to ? (
-        <Link to={to} className={styles.inner}>
-          {content}
-        </Link>
-      ) : (
-        <div className={styles.inner}>{content}</div>
-      )}
+    <article className={`${styles.card} ${styles[variant]}`}>
+      <Link to={newsDetailPath(item.slug)} className={styles.inner}>
+        {content}
+      </Link>
     </article>
   );
 };

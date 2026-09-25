@@ -214,7 +214,7 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
               components={{
                 policyLink: (
                   <Link
-                    to={routes.privacyPolicy}
+                    to={routes.privacy}
                     target="_blank"
                     rel="noopener"
                     className={styles.policyLink}

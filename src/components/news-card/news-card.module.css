@@ -69,12 +69,9 @@
   font-size: 15px;
   font-weight: 600;
   color: var(--color-green);
-}
-
-.interactive .readMore {
   transition: color var(--transition);
 }
 
-.interactive:hover .readMore {
+.card:hover .readMore {
   color: var(--color-pink-text);
 }
