@@ -164,6 +164,17 @@
     "intro": "Leave your details and we will reply by email. If you need it, we will send you our product catalogue.",
     "detailsTitle": "Contact details",
     "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia, Spain)",
+    "hours": {
+      "title": "Customer service hours",
+      "range": "{{open}} to {{close}}",
+      "days": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday"
+      }
+    },
     "form": {
       "reason": "What do you need?",
       "reasons": {

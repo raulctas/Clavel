@@ -5,6 +5,7 @@ import { Container } from 'components/container';
 import { NewsCard } from 'components/news-card';
 import { PageHeader } from 'components/page-header';
 import { NEWS, NEWS_CATEGORIES } from 'data/news';
+import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { usePageTitle } from 'hooks/use-page-title';
 import { NewsCategory } from 'interfaces/news';
 
@@ -24,7 +25,12 @@ export const News = () => {
 
   return (
     <>
-      <PageHeader page={t('nav.news')} title={t('news.title')} intro={t('news.intro')} />
+      <PageHeader
+        page={t('nav.news')}
+        title={t('news.title')}
+        intro={t('news.intro')}
+        image={PAGE_HEADER_IMAGES.news}
+      />
 
       <Container as="section" className={styles.section}>
         <div className={styles.filters} role="group" aria-label={t('news.filterLabel')}>

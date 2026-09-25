@@ -78,6 +78,10 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Equipo**: `src/data/team.ts`. Cuando lleguen las fotos (4:5), copiarlas a
   `public/images/team/` y rellenar `photo`, `name`, `email` y `linkedin` de cada miembro. Sin
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
+- **Horario de atención al cliente**: `src/data/opening-hours.ts` (días y tramos); los nombres
+  de los días y el formato del tramo están en `contact.hours` de cada `translation.json`.
+- **Fondos de las bandas de título** (Quiénes somos, Noticias, Equipo y Contactar):
+  `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
 - **Imágenes provisionales**: `public/images/provisional/`. Para cambiarlas, sustituir los
   ficheros (mismo nombre y proporción) o actualizar las rutas en `src/data/`.
 
