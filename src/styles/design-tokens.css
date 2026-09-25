@@ -1,0 +1,65 @@
+/**
+ * Tokens de diseño de Clavel. Son los del kit de marca
+ * (design_handoff_clavel_web/prototipo/assets/web-kit/clavel-web.css) ampliados
+ * con la escala, las formas y las sombras que usa el prototipo.
+ */
+:root {
+  /* Verde */
+  --color-green: #1a5c23; /* principal: titulares, botones, enlaces */
+  --color-green-night: #123f18; /* pie, hover del botón primario */
+  --color-sprout: #e4eedc; /* círculos de iconos, hover suave, foco de inputs */
+  --color-sprout-soft: #f2f5ee; /* hover de opciones del menú de idioma */
+
+  /* Rosa */
+  --color-pink: #e6286f; /* solo detalles o titulares de 24px o más */
+  --color-pink-text: #b8175a; /* antetítulos, cargos, categorías, errores */
+  --color-pink-petal: #f6a5c2; /* rosa sobre fondos oscuros */
+
+  /* Neutros */
+  --color-white: #ffffff;
+  --color-cream: #faf6ee; /* bandas de título de página, secciones alternas */
+  --color-kraft-light: #efe4d2; /* fondo de imágenes provisionales */
+  --color-ink: #1f2a1f; /* texto de lectura */
+  --color-ink-hero: #3f4a3b; /* entrada de la portada, sobre imagen */
+  --color-ink-soft: #5a6152; /* texto secundario */
+  --color-muted: #9aa394; /* borde de la casilla sin marcar */
+  --color-separator: #b7bfb2; /* barra de la ruta de navegación */
+
+  /* Bordes */
+  --color-border-card: #eee9de;
+  --color-border-input: #d6ddd0;
+  --color-border-floating: #e6e1d5; /* cápsula de cabecera y desplegables */
+  --color-border-menu: #f1ece2;
+
+  /* Pie */
+  --color-footer-text: #d6e3d2;
+  --color-footer-muted: #b9cdb5;
+  --color-footer-rule: #2e5c35;
+
+  /* Tipografía */
+  --font-heading: 'Barlow Semi Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+
+  --text-display: clamp(42px, 6vw, 76px);
+  --text-h1: clamp(38px, 5vw, 60px);
+  --text-h2: clamp(28px, 3.4vw, 40px);
+
+  /* Forma */
+  --radius-input: 12px;
+  --radius-card: 20px;
+  --radius-image: 24px;
+  --radius-block: 28px;
+  --radius-full: 999px;
+
+  --shadow-card-hover: 0 10px 28px rgba(31, 42, 31, 0.1);
+  --shadow-floating: 0 10px 30px rgba(31, 42, 31, 0.1);
+  --shadow-logo: 0 10px 26px rgba(31, 42, 31, 0.14);
+  --shadow-menu: 0 14px 32px rgba(31, 42, 31, 0.14);
+  --focus-ring: 0 0 0 3px var(--color-sprout);
+
+  /* Espaciado */
+  --container-max: 1200px;
+  --container-pad: 32px;
+
+  --transition: 180ms ease;
+}

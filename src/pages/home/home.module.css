@@ -1,0 +1,164 @@
+.cream {
+  background-color: var(--color-cream);
+}
+
+.sectionTitle {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+.paragraph {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--color-ink-soft);
+  text-wrap: pretty;
+}
+
+/* ---------- Pilares ---------- */
+
+.pillarsBlock {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.pillarsTitle {
+  max-width: 640px;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 26px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-card);
+}
+
+.pillarTitle {
+  font-size: 21px;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.pillarText {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-ink-soft);
+}
+
+/* ---------- Laboratorio y Fabricación ---------- */
+
+.features {
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.featureRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Al apilarse, la imagen de la segunda fila queda encima del texto. */
+.featureRowReverse {
+  flex-wrap: wrap-reverse;
+}
+
+.featureImage {
+  flex: 1 1 400px;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-image);
+  background-color: var(--color-kraft-light);
+}
+
+.featureText {
+  flex: 1 1 400px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ---------- Últimas noticias ---------- */
+
+.newsBlock {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.newsHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.newsHeader > a {
+  align-self: auto;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* ---------- Banda final ---------- */
+
+.ctaBlock {
+  padding-block: 80px;
+}
+
+.ctaBand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 48px;
+  border-radius: var(--radius-block);
+  background-color: var(--color-green);
+}
+
+.ctaText {
+  flex: 1 1 380px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ctaTitle {
+  color: var(--color-white);
+}
+
+.ctaParagraph {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-sprout);
+  max-width: 560px;
+}
+
+@media (max-width: 600px) {
+  .ctaBand {
+    padding: 32px 24px;
+  }
+}

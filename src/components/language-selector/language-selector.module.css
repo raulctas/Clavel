@@ -1,0 +1,116 @@
+/* ---------- Desplegable (cabecera de escritorio) ---------- */
+
+.selector {
+  position: relative;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: var(--radius-full);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-green);
+  transition: background-color var(--transition);
+}
+
+.trigger:hover {
+  background-color: var(--color-sprout-soft);
+}
+
+.chevron {
+  transition: transform var(--transition);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 168px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 14px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-floating);
+  box-shadow: var(--shadow-menu);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-ink);
+  text-align: left;
+  transition: background-color var(--transition);
+}
+
+.option:hover,
+.optionActive {
+  background-color: var(--color-sprout-soft);
+}
+
+.optionLabel {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.optionCode {
+  width: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-green);
+}
+
+.check {
+  flex: none;
+  color: transparent;
+}
+
+.checkVisible {
+  color: var(--color-green);
+}
+
+/* ---------- Interruptor (barra móvil) ---------- */
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--color-border-input);
+  border-radius: var(--radius-full);
+}
+
+.toggleOption {
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: var(--color-green);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.toggleOption.active {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
