@@ -95,5 +95,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Redes sociales**: URLs en `SOCIAL_LINKS` (`src/constants/company.ts`). Mientras valgan
   `undefined`, el icono se muestra en el pie pero no enlaza.
 - **Nombres, cargos y fotos del equipo**.
-- **Política de privacidad** a la que enlazar desde el formulario.
+- **Revisión legal de la política de privacidad** (`/privacy-policy`, textos en `privacyPolicy` de
+  cada `translation.json`): el texto es una base estándar del RGPD y conviene que lo revise un
+  asesor antes de publicar, añadiendo la razón social y el NIF definitivos de Clavel.
 - **Logo vectorial**: el logo es un PNG; conviene vectorizarlo.

@@ -164,6 +164,17 @@
   color: var(--color-ink);
 }
 
+.policyLink {
+  color: var(--color-green);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.policyLink:hover {
+  color: var(--color-pink-text);
+}
+
 .submit {
   align-self: flex-start;
   padding-inline: 28px;

@@ -45,8 +45,8 @@ export const Footer = () => {
             <img
               src="/images/logo/clavel-logo-inverse.png"
               alt={t('common.companyName')}
-              width={72}
-              height={72}
+              width={96}
+              height={96}
               className={styles.logo}
             />
             <p className={styles.claim}>{t('footer.claim')}</p>
@@ -110,6 +110,9 @@ export const Footer = () => {
           <p className={styles.copyright}>
             {t('footer.copyright', { year: new Date().getFullYear() })}
           </p>
+          <Link to={routes.privacyPolicy} className={styles.legalLink}>
+            {t('nav.privacyPolicy')}
+          </Link>
         </div>
       </Container>
     </footer>
