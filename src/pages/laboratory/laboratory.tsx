@@ -6,7 +6,7 @@ import { CtaBand } from 'components/cta-band';
 import { FeatureRow } from 'components/feature-row';
 import { InfoCard } from 'components/info-card';
 import { PageHeader } from 'components/page-header';
-import { routes } from 'constants/routes';
+import { adviceRequestPath } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { usePageTitle } from 'hooks/use-page-title';
 import { Feature } from 'interfaces/feature';
@@ -65,7 +65,7 @@ export const Laboratory = () => {
         title={t('laboratory.cta.title')}
         text={t('laboratory.cta.text')}
         buttonLabel={t('laboratory.cta.button')}
-        to={routes.contact}
+        to={adviceRequestPath}
       />
     </>
   );

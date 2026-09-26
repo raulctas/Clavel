@@ -25,7 +25,7 @@ interface FormValues {
  * Los errores se guardan como claves de traducción y no como textos: así, si
  * el usuario cambia de idioma con errores en pantalla, también se traducen.
  */
-type FormErrors = Partial<Record<'name' | 'email' | 'privacy', string>>;
+type FormErrors = Partial<Record<'reason' | 'name' | 'email' | 'privacy', string>>;
 
 type TextField = Exclude<keyof FormValues, 'privacy' | 'message'>;
 
@@ -50,7 +50,10 @@ const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string; optio
   ];
 
 interface Props {
-  /** Motivo preseleccionado (p. ej. «catálogo» desde «Solicitar catálogo»). */
+  /**
+   * Motivo preseleccionado (p. ej. «catálogo» desde «Solicitar catálogo»). Sin
+   * él (entrando desde «Contactar») no hay ninguno marcado y hay que elegirlo.
+   */
   initialReason?: ContactReason;
   /** Mensaje ya escrito (p. ej. el producto cuyo catálogo se pide). */
   initialMessage?: string;
@@ -60,15 +63,16 @@ interface Props {
  * Formulario de contacto: motivo en chips, datos, mensaje y casilla de
  * privacidad. Al enviarse se sustituye por la confirmación.
  */
-export const ContactForm = ({ initialReason = 'catalogue', initialMessage = '' }: Props) => {
+export const ContactForm = ({ initialReason, initialMessage = '' }: Props) => {
   const { t } = useTranslation();
-  const [reason, setReason] = useState<ContactReason>(initialReason);
+  const [reason, setReason] = useState<ContactReason | undefined>(initialReason);
   const initialValues = { ...EMPTY_FORM, message: initialMessage };
   const [values, setValues] = useState<FormValues>(initialValues);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
 
   const validate = (form: FormValues): FormErrors => ({
+    ...(!reason && { reason: 'contact.form.errorReason' }),
     ...(!form.name.trim() && { name: 'contact.form.errorName' }),
     ...(!EMAIL_REGEX.test(form.email.trim()) && { email: 'contact.form.errorEmail' }),
     ...(!form.privacy && { privacy: 'contact.form.errorPrivacy' }),
@@ -81,7 +85,7 @@ export const ContactForm = ({ initialReason = 'catalogue', initialMessage = '' }
     event.preventDefault();
     const nextErrors = validate(values);
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) {
+    if (Object.keys(nextErrors).length > 0 || !reason) {
       return;
     }
 
@@ -123,7 +127,11 @@ export const ContactForm = ({ initialReason = 'catalogue', initialMessage = '' }
 
   return (
     <form className={styles.form} onSubmit={handleSubmit} noValidate>
-      <fieldset className={styles.reasonGroup}>
+      <fieldset
+        className={styles.reasonGroup}
+        aria-invalid={Boolean(errors.reason)}
+        aria-describedby={errors.reason ? 'contact-reason-error' : undefined}
+      >
         <legend className={styles.label}>{t('contact.form.reason')}</legend>
         <div className={styles.chips}>
           {CONTACT_REASONS.map((option) => (
@@ -138,13 +146,20 @@ export const ContactForm = ({ initialReason = 'catalogue', initialMessage = '' }
                 name="reason"
                 value={option}
                 checked={option === reason}
-                onChange={() => setReason(option)}
+                onChange={() => {
+                  setReason(option);
+                  // Al elegir un motivo desaparece su error, sin esperar a reenviar.
+                  setErrors((previous) => ({ ...previous, reason: undefined }));
+                }}
                 className="visually-hidden"
               />
               {t(`contact.form.reasons.${option}`)}
             </label>
           ))}
         </div>
+        <span id="contact-reason-error" className={styles.error}>
+          {errors.reason && t(errors.reason)}
+        </span>
       </fieldset>
 
       <div className={styles.fields}>

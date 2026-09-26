@@ -6,7 +6,7 @@ import { FeatureRow } from 'components/feature-row';
 import { InfoCard } from 'components/info-card';
 import { NewsCard } from 'components/news-card';
 import { TextLink } from 'components/text-link';
-import { catalogueRequestPath, routes } from 'constants/routes';
+import { adviceRequestPath, catalogueRequestPath, routes } from 'constants/routes';
 import { NEWS } from 'data/news';
 import { PILLARS } from 'data/pillars';
 import { usePageTitle } from 'hooks/use-page-title';
@@ -54,7 +54,7 @@ export const Home = () => {
           <p>{t('home.lab.text')}</p>
           <div className={styles.links}>
             <TextLink to={routes.laboratory}>{t('common.discoverMore')}</TextLink>
-            <TextLink to={routes.contact}>{t('home.lab.cta')}</TextLink>
+            <TextLink to={adviceRequestPath}>{t('home.lab.cta')}</TextLink>
           </div>
         </FeatureRow>
 

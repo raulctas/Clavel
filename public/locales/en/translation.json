@@ -649,6 +649,7 @@
       "reason": "What do you need?",
       "reasons": {
         "catalogue": "Request catalogue",
+        "advice": "Ask for advice",
         "productInfo": "Product information",
         "other": "Other enquiry"
       },
@@ -661,6 +662,7 @@
       "messageHelp": "Tell us about your crop, the area or the product you are interested in.",
       "privacy": "I have read and accept the <policyLink>privacy policy</policyLink>.",
       "submit": "Send",
+      "errorReason": "Please choose what you need.",
       "errorName": "Please enter your name.",
       "errorEmail": "Please enter a valid email.",
       "errorPrivacy": "You must accept the privacy policy.",

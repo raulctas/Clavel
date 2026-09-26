@@ -649,6 +649,7 @@
       "reason": "¿Qué necesitas?",
       "reasons": {
         "catalogue": "Solicitar catálogo",
+        "advice": "Pedir asesoramiento",
         "productInfo": "Información sobre productos",
         "other": "Otra consulta"
       },
@@ -661,6 +662,7 @@
       "messageHelp": "Cuéntanos tu cultivo, la superficie o el producto que te interesa.",
       "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
+      "errorReason": "Elige qué necesitas.",
       "errorName": "Escribe tu nombre.",
       "errorEmail": "Escribe un correo válido.",
       "errorPrivacy": "Debes aceptar la política de privacidad.",

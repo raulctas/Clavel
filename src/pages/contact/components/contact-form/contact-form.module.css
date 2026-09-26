@@ -26,6 +26,7 @@
 }
 
 .chips {
+  margin-bottom: 6px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
