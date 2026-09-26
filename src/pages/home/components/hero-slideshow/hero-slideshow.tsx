@@ -40,10 +40,7 @@ export const HeroSlideshow = () => {
           <h1 className={styles.title}>{t('home.hero.title')}</h1>
           <p className={styles.intro}>{t('home.hero.intro')}</p>
           <div className={styles.actions}>
-            <Button to={catalogueRequestPath}>
-              {t('common.requestCatalogue')}
-              <ArrowRight size={18} aria-hidden />
-            </Button>
+            <Button to={catalogueRequestPath}>{t('common.requestCatalogue')}</Button>
             <Button to={routes.aboutUs} variant="secondary">
               {t('home.hero.ctaAbout')}
             </Button>

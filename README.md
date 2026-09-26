@@ -81,6 +81,17 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Equipo**: `src/data/team.ts`. Cuando lleguen las fotos (4:5), copiarlas a
   `public/images/team/` y rellenar `photo`, `name`, `email` y `linkedin` de cada miembro. Sin
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
+- **Productos y servicios** (`/products-services`): líneas, gamas y otras soluciones en
+  `src/data/products.ts`, textos en `productsServices`. Cada botón «Solicitar catálogo» abre
+  Contactar con el motivo «catálogo» y el catálogo de ese producto ya marcado
+  (`/contact?reason=catalogue&product=<clave>`).
+- **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
+  (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
+  varios catálogos, que son los de Productos y servicios (`CATALOGUES` en
+  `src/data/products.ts`).
+- **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
+  llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
+- **Clavel en cifras** (final de Quiénes somos): cifras e imágenes en `src/data/company-stats.ts`.
 - **Horario de atención al cliente**: `src/data/opening-hours.ts` (días y tramos); los nombres
   de los días y el formato del tramo están en `contact.hours` de cada `translation.json`.
 - **Fondos de las bandas de título** (Quiénes somos, Noticias, Equipo y Contactar):
@@ -93,6 +104,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Envío del formulario**: no hay backend. Mientras tanto, `src/libs/contact-request.ts`
   abre el cliente de correo del usuario con la consulta ya redactada para el correo de Clavel.
   Cuando exista el servicio, solo hay que cambiar esa función.
+- **Cifras de «Clavel en cifras»**: son las que publicaba Grupo Alfa; confirmarlas (y qué
+  significa la «(M)» de las hectáreas).
 - **Correo** (`info@clavel.es`, provisional) en `src/constants/company.ts`. La dirección y los
   teléfonos son los de Grupo Alfa.
 - **Redes sociales**: URLs en `SOCIAL_LINKS` (`src/constants/company.ts`). Mientras valgan

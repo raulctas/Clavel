@@ -8,6 +8,7 @@ import { IconCircle } from 'components/icon-circle';
 import { TextLink } from 'components/text-link';
 import { CONTACT_REASONS, ContactReason } from 'constants/contact-reasons';
 import { routes } from 'constants/routes';
+import { CATALOGUES, catalogueTitleKey } from 'data/products';
 import { sendContactRequest } from 'libs/contact-request';
 
 import styles from './contact-form.module.css';
@@ -25,7 +26,7 @@ interface FormValues {
  * Los errores se guardan como claves de traducción y no como textos: así, si
  * el usuario cambia de idioma con errores en pantalla, también se traducen.
  */
-type FormErrors = Partial<Record<'name' | 'email' | 'privacy', string>>;
+type FormErrors = Partial<Record<'reason' | 'catalogues' | 'name' | 'email' | 'privacy', string>>;
 
 type TextField = Exclude<keyof FormValues, 'privacy' | 'message'>;
 
@@ -50,26 +51,44 @@ const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string; optio
   ];
 
 interface Props {
-  /** Motivo preseleccionado (p. ej. «catálogo» desde «Solicitar catálogo»). */
+  /**
+   * Motivo preseleccionado (p. ej. «catálogo» desde «Solicitar catálogo»). Sin
+   * él (entrando desde «Contactar») no hay ninguno marcado y hay que elegirlo.
+   */
   initialReason?: ContactReason;
+  /** Catálogo ya marcado (el del producto desde el que se ha llegado). */
+  initialCatalogue?: string;
 }
 
 /**
  * Formulario de contacto: motivo en chips, datos, mensaje y casilla de
- * privacidad. Al enviarse se sustituye por la confirmación.
+ * privacidad. Si el motivo es «Solicitar catálogo», hay que elegir además qué
+ * catálogo (uno o varios). Al enviarse se sustituye por la confirmación.
  */
-export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
+export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
   const { t } = useTranslation();
-  const [reason, setReason] = useState<ContactReason>(initialReason);
+  const [reason, setReason] = useState<ContactReason | undefined>(initialReason);
+  const initialCatalogues = initialCatalogue ? [initialCatalogue] : [];
+  const [catalogues, setCatalogues] = useState<string[]>(initialCatalogues);
   const [values, setValues] = useState<FormValues>(EMPTY_FORM);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
 
   const validate = (form: FormValues): FormErrors => ({
+    ...(!reason && { reason: 'contact.form.errorReason' }),
+    ...(reason === 'catalogue' &&
+      catalogues.length === 0 && { catalogues: 'contact.form.errorCatalogue' }),
     ...(!form.name.trim() && { name: 'contact.form.errorName' }),
     ...(!EMAIL_REGEX.test(form.email.trim()) && { email: 'contact.form.errorEmail' }),
     ...(!form.privacy && { privacy: 'contact.form.errorPrivacy' }),
   });
+
+  const toggleCatalogue = (key: string) => {
+    setCatalogues((previous) =>
+      previous.includes(key) ? previous.filter((item) => item !== key) : [...previous, key],
+    );
+    setErrors((previous) => ({ ...previous, catalogues: undefined }));
+  };
 
   const setValue = <K extends keyof FormValues>(field: K, value: FormValues[K]) =>
     setValues((previous) => ({ ...previous, [field]: value }));
@@ -78,7 +97,7 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
     event.preventDefault();
     const nextErrors = validate(values);
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) {
+    if (Object.keys(nextErrors).length > 0 || !reason) {
       return;
     }
 
@@ -90,6 +109,15 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
       subject: t('contact.form.mailSubject', { reason: reasonLabel, name: values.name.trim() }),
       lines: [
         `${t('contact.form.reason')} ${reasonLabel}`,
+        ...(reason === 'catalogue'
+          ? [
+              `${t('contact.form.cataloguesLine')}: ${CATALOGUES.filter((key) =>
+                catalogues.includes(key),
+              )
+                .map((key) => t(catalogueTitleKey(key)))
+                .join(', ')}`,
+            ]
+          : []),
         ...line('contact.form.name', values.name),
         ...line('contact.form.company', values.company),
         ...line('contact.form.email', values.email),
@@ -104,6 +132,7 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
     setValues(EMPTY_FORM);
     setErrors({});
     setReason(initialReason);
+    setCatalogues(initialCatalogues);
     setSent(false);
   };
 
@@ -120,7 +149,11 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit} noValidate>
-      <fieldset className={styles.reasonGroup}>
+      <fieldset
+        className={styles.reasonGroup}
+        aria-invalid={Boolean(errors.reason)}
+        aria-describedby={errors.reason ? 'contact-reason-error' : undefined}
+      >
         <legend className={styles.label}>{t('contact.form.reason')}</legend>
         <div className={styles.chips}>
           {CONTACT_REASONS.map((option) => (
@@ -135,14 +168,59 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
                 name="reason"
                 value={option}
                 checked={option === reason}
-                onChange={() => setReason(option)}
+                onChange={() => {
+                  setReason(option);
+                  // Al elegir un motivo desaparece su error, sin esperar a reenviar.
+                  setErrors((previous) => ({ ...previous, reason: undefined }));
+                }}
                 className="visually-hidden"
               />
               {t(`contact.form.reasons.${option}`)}
             </label>
           ))}
         </div>
+        <span id="contact-reason-error" className={styles.error}>
+          {errors.reason && t(errors.reason)}
+        </span>
       </fieldset>
+
+      {reason === 'catalogue' && (
+        <fieldset
+          className={styles.reasonGroup}
+          aria-invalid={Boolean(errors.catalogues)}
+          aria-describedby={errors.catalogues ? 'contact-catalogues-error' : undefined}
+        >
+          <legend className={styles.label}>
+            {t('contact.form.catalogues')}{' '}
+            <span className={styles.hint}>{t('contact.form.cataloguesHint')}</span>
+          </legend>
+          <div className={styles.chips}>
+            {CATALOGUES.map((key) => {
+              const checked = catalogues.includes(key);
+              return (
+                <label
+                  key={key}
+                  className={[styles.chip, checked && styles.chipActive].filter(Boolean).join(' ')}
+                >
+                  <input
+                    type="checkbox"
+                    name="catalogues"
+                    value={key}
+                    checked={checked}
+                    onChange={() => toggleCatalogue(key)}
+                    className="visually-hidden"
+                  />
+                  {checked && <Check size={16} strokeWidth={3} aria-hidden />}
+                  {t(catalogueTitleKey(key))}
+                </label>
+              );
+            })}
+          </div>
+          <span id="contact-catalogues-error" className={styles.error}>
+            {errors.catalogues && t(errors.catalogues)}
+          </span>
+        </fieldset>
+      )}
 
       <div className={styles.fields}>
         {TEXT_FIELDS.map(({ field, type, autoComplete, optional }) => {

@@ -4,6 +4,12 @@
   gap: 20px;
 }
 
+/* Aclaración junto a una leyenda, p. ej. «(puedes elegir varios)». */
+.hint {
+  font-weight: 400;
+  color: var(--color-ink-soft);
+}
+
 .label {
   font-size: 15px;
   font-weight: 600;
@@ -26,6 +32,7 @@
 }
 
 .chips {
+  margin-bottom: 6px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -49,6 +56,13 @@
 
 .chip:hover {
   border-color: var(--color-green);
+}
+
+/* Espacio para la marca de los catálogos elegidos. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .chipActive {

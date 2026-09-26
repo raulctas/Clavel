@@ -7,13 +7,6 @@
   line-height: 1.1;
 }
 
-.paragraph {
-  font-size: 17px;
-  line-height: 1.65;
-  color: var(--color-ink-soft);
-  text-wrap: pretty;
-}
-
 /* ---------- Pilares ---------- */
 
 .pillarsBlock {
@@ -33,27 +26,6 @@
   gap: 20px;
 }
 
-.pillar {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding: 26px;
-  background-color: var(--color-white);
-  border-radius: var(--radius-card);
-}
-
-.pillarTitle {
-  font-size: 21px;
-  line-height: 1.2;
-  color: var(--color-ink);
-}
-
-.pillarText {
-  font-size: 16px;
-  line-height: 1.55;
-  color: var(--color-ink-soft);
-}
-
 /* ---------- Laboratorio y Fabricación ---------- */
 
 .features {
@@ -63,35 +35,11 @@
   gap: 72px;
 }
 
-.featureRow {
+/* «Descubre más» y «Pide asesoramiento», en la misma línea. */
+.links {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 48px;
-}
-
-/* Al apilarse, la imagen de la segunda fila queda encima del texto. */
-.featureRowReverse {
-  flex-wrap: wrap-reverse;
-}
-
-.featureImage {
-  flex: 1 1 400px;
-  min-width: 0;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border-radius: var(--radius-image);
-  background-color: var(--color-kraft-light);
-}
-
-.featureText {
-  flex: 1 1 400px;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  gap: 16px 28px;
 }
 
 /* ---------- Últimas noticias ---------- */
@@ -119,46 +67,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-}
-
-/* ---------- Banda final ---------- */
-
-.ctaBlock {
-  padding-block: 80px;
-}
-
-.ctaBand {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-  padding: 48px;
-  border-radius: var(--radius-block);
-  background-color: var(--color-green);
-}
-
-.ctaText {
-  flex: 1 1 380px;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.ctaTitle {
-  color: var(--color-white);
-}
-
-.ctaParagraph {
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--color-sprout);
-  max-width: 560px;
-}
-
-@media (max-width: 600px) {
-  .ctaBand {
-    padding: 32px 24px;
-  }
 }

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 import { newsDetailPath } from 'constants/routes';
 import { NewsItem } from 'interfaces/news';
@@ -35,7 +36,11 @@ export const NewsCard = ({ item, variant = 'full' }: Props) => {
         {variant === 'full' && (
           <>
             <p className={styles.excerpt}>{t(`news.items.${item.id}.excerpt`)}</p>
-            <span className={styles.readMore}>{t('common.readMore')}</span>
+            {/* Toda la tarjeta enlaza a la noticia: «Leer más» lleva la flecha de los enlaces. */}
+            <span className={styles.readMore}>
+              {t('common.readMore')}
+              <ArrowRight size={16} aria-hidden />
+            </span>
           </>
         )}
       </div>

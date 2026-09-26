@@ -6,6 +6,9 @@
  */
 export const PAGE_HEADER_IMAGES = {
   aboutUs: '/images/provisional/hero-2.png',
+  productsServices: '/images/provisional/hero-1.png',
+  laboratory: '/images/provisional/hero-3.png',
+  production: '/images/provisional/hero-1.png',
   news: '/images/provisional/hero-3.png',
   team: '/images/provisional/hero-1.png',
   contact: '/images/provisional/hero-2.png',

@@ -10,6 +10,7 @@ import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { PILLARS } from 'data/pillars';
 import { usePageTitle } from 'hooks/use-page-title';
 
+import { CompanyStats } from './components/company-stats';
 import styles from './about-us.module.css';
 
 export const AboutUs = () => {
@@ -82,6 +83,9 @@ export const AboutUs = () => {
           <p className={styles.paragraph}>{t('aboutUs.organic.text')}</p>
         </div>
       </Container>
+
+      {/* Clavel en cifras */}
+      <CompanyStats />
     </>
   );
 };

@@ -28,6 +28,12 @@ export const NEWS: NewsItem[] = [
     category: 'innovation',
     image: PROVISIONAL_IMAGE,
   },
+  {
+    id: 'erasmusMarketing',
+    slug: 'erasmus-marketing-team',
+    category: 'innovation',
+    image: PROVISIONAL_IMAGE,
+  },
   { id: 'agenda2030', slug: 'agenda-2030', category: 'agriculture', image: PROVISIONAL_IMAGE },
   { id: 'soilQuality', slug: 'soil-quality', category: 'agriculture', image: PROVISIONAL_IMAGE },
   {
@@ -55,6 +61,25 @@ export const NEWS: NewsItem[] = [
     id: 'soilPreparation',
     slug: 'soil-preparation',
     category: 'agriculture',
+    image: PROVISIONAL_IMAGE,
+  },
+  {
+    id: 'pollinators',
+    slug: 'organic-fertilisers-pollinators',
+    category: 'organic',
+    image: PROVISIONAL_IMAGE,
+  },
+  { id: 'organicCrops', slug: 'organic-crops', category: 'organic', image: PROVISIONAL_IMAGE },
+  {
+    id: 'agricultureDrones',
+    slug: 'fertilisers-applied-by-drone',
+    category: 'innovation',
+    image: PROVISIONAL_IMAGE,
+  },
+  {
+    id: 'organicConsumption',
+    slug: 'organic-fruit-vegetables-consumption',
+    category: 'fruitVegetables',
     image: PROVISIONAL_IMAGE,
   },
 ];

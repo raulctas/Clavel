@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
 
 import { Container } from 'components/container';
 import { NewsCard } from 'components/news-card';
@@ -49,8 +48,7 @@ const NewsArticle = ({ item }: { item: NewsItem }) => {
           {item.videos?.map((videoId) => (
             <VideoEmbed key={videoId} videoId={videoId} title={t('news.videoTitle', { title })} />
           ))}
-          <TextLink to={routes.news} className={styles.back}>
-            <ArrowLeft size={18} aria-hidden />
+          <TextLink to={routes.news} className={styles.back} back>
             {t('news.backToNews')}
           </TextLink>
         </div>
