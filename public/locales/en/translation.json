@@ -653,6 +653,9 @@
         "productInfo": "Product information",
         "other": "Other enquiry"
       },
+      "catalogues": "Which catalogue do you want?",
+      "cataloguesHint": "(you can choose more than one)",
+      "cataloguesLine": "Catalogues",
       "name": "Full name",
       "company": "Company or farm",
       "email": "Email",
@@ -663,14 +666,14 @@
       "privacy": "I have read and accept the <policyLink>privacy policy</policyLink>.",
       "submit": "Send",
       "errorReason": "Please choose what you need.",
+      "errorCatalogue": "Please choose at least one catalogue.",
       "errorName": "Please enter your name.",
       "errorEmail": "Please enter a valid email.",
       "errorPrivacy": "You must accept the privacy policy.",
       "sentTitle": "Message sent",
       "sentText": "Thank you. We will reply by email within 48 working hours.",
       "sendAnother": "Send another message",
-      "mailSubject": "{{reason}} · {{name}}",
-      "productInterest": "I'm interested in the catalogue for: {{product}}."
+      "mailSubject": "{{reason}} · {{name}}"
     }
   },
   "privacy": {

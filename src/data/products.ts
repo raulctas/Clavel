@@ -51,15 +51,16 @@ export const OTHER_SOLUTIONS: Product[] = [
 ];
 
 /**
- * Clave de traducción del nombre de un producto que se puede pedir desde
- * Contactar, o `undefined` si la clave no existe (p. ej. una URL manipulada).
+ * Catálogos que se pueden pedir desde Contactar: uno por cada línea principal y
+ * por cada una de las otras soluciones, en el orden de Productos y servicios.
  */
-export const productTitleKey = (key: string | null) => {
-  if (MAIN_LINES.some((product) => product.key === key)) {
-    return `productsServices.lines.${key}.title`;
-  }
-  if (OTHER_SOLUTIONS.some((product) => product.key === key)) {
-    return `productsServices.other.${key}.title`;
-  }
-  return undefined;
-};
+export const CATALOGUES = [...MAIN_LINES, ...OTHER_SOLUTIONS].map((product) => product.key);
+
+export const isCatalogue = (key: string | null): key is string =>
+  key !== null && CATALOGUES.includes(key);
+
+/** Clave de traducción del nombre de un catálogo (el de su línea o solución). */
+export const catalogueTitleKey = (key: string) =>
+  MAIN_LINES.some((product) => product.key === key)
+    ? `productsServices.lines.${key}.title`
+    : `productsServices.other.${key}.title`;

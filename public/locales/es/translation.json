@@ -653,6 +653,9 @@
         "productInfo": "Información sobre productos",
         "other": "Otra consulta"
       },
+      "catalogues": "¿Qué catálogo quieres?",
+      "cataloguesHint": "(puedes elegir varios)",
+      "cataloguesLine": "Catálogos",
       "name": "Nombre y apellidos",
       "company": "Empresa o explotación",
       "email": "Correo electrónico",
@@ -663,14 +666,14 @@
       "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
       "errorReason": "Elige qué necesitas.",
+      "errorCatalogue": "Elige al menos un catálogo.",
       "errorName": "Escribe tu nombre.",
       "errorEmail": "Escribe un correo válido.",
       "errorPrivacy": "Debes aceptar la política de privacidad.",
       "sentTitle": "Mensaje enviado",
       "sentText": "Gracias. Te responderemos por correo en un plazo de 48 horas laborables.",
       "sendAnother": "Enviar otro mensaje",
-      "mailSubject": "{{reason}} · {{name}}",
-      "productInterest": "Me interesa el catálogo de: {{product}}."
+      "mailSubject": "{{reason}} · {{name}}"
     }
   },
   "privacy": {

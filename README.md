@@ -83,8 +83,12 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
 - **Productos y servicios** (`/products-services`): líneas, gamas y otras soluciones en
   `src/data/products.ts`, textos en `productsServices`. Cada botón «Solicitar catálogo» abre
-  Contactar con el motivo «catálogo» y el producto ya escrito en el mensaje
+  Contactar con el motivo «catálogo» y el catálogo de ese producto ya marcado
   (`/contact?reason=catalogue&product=<clave>`).
+- **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
+  (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
+  varios catálogos, que son los de Productos y servicios (`CATALOGUES` en
+  `src/data/products.ts`).
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
 - **Clavel en cifras** (final de Quiénes somos): cifras e imágenes en `src/data/company-stats.ts`.
