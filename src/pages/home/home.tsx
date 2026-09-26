@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { ArrowRight } from 'lucide-react';
 
 import { Container } from 'components/container';
 import { CtaBand } from 'components/cta-band';
@@ -54,10 +53,7 @@ export const Home = () => {
         >
           <p>{t('home.lab.text')}</p>
           <div className={styles.links}>
-            <TextLink to={routes.laboratory}>
-              {t('common.discoverMore')}
-              <ArrowRight size={18} aria-hidden />
-            </TextLink>
+            <TextLink to={routes.laboratory}>{t('common.discoverMore')}</TextLink>
             <TextLink to={routes.contact}>{t('home.lab.cta')}</TextLink>
           </div>
         </FeatureRow>
@@ -70,10 +66,7 @@ export const Home = () => {
         >
           <p>{t('home.manufacturing.text1')}</p>
           <p>{t('home.manufacturing.text2')}</p>
-          <TextLink to={routes.production}>
-            {t('common.discoverMore')}
-            <ArrowRight size={18} aria-hidden />
-          </TextLink>
+          <TextLink to={routes.production}>{t('common.discoverMore')}</TextLink>
         </FeatureRow>
       </Container>
 

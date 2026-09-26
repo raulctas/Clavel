@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, BadgeCheck, Plane } from 'lucide-react';
+import { BadgeCheck, Plane } from 'lucide-react';
 
 import { Button } from 'components/button';
 import { Container } from 'components/container';
@@ -63,7 +63,6 @@ export const ProductsServices = () => {
               )}
               <Button to={productCatalogueRequestPath(key)} className={styles.lineButton}>
                 {t('common.requestCatalogue')}
-                <ArrowRight size={18} aria-hidden />
               </Button>
             </li>
           ))}
