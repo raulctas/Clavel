@@ -1,0 +1,66 @@
+.cream {
+  background-color: var(--color-cream);
+}
+
+.features {
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.stepsBlock {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.sectionTitle {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 26px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-card);
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Número grande y en rosa: decorativo, marca el orden de los pasos. */
+.stepNumber {
+  font-family: var(--font-heading);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-pink);
+}
+
+.stepTitle {
+  font-size: 21px;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.stepText {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-ink-soft);
+}

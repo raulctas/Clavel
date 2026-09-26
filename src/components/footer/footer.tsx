@@ -13,6 +13,7 @@ import styles from './footer.module.css';
 const PAGES = [
   { to: routes.home, labelKey: 'nav.home' },
   { to: routes.aboutUs, labelKey: 'nav.aboutUs' },
+  { to: routes.productsServices, labelKey: 'nav.productsServices' },
   { to: routes.news, labelKey: 'nav.news' },
   { to: routes.team, labelKey: 'nav.team' },
   { to: routes.contact, labelKey: 'nav.contact' },

@@ -1,0 +1,25 @@
+.cream {
+  background-color: var(--color-cream);
+}
+
+.overview {
+  padding-block: 80px;
+}
+
+.pillarsBlock {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.sectionTitle {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}

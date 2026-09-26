@@ -8,18 +8,22 @@
     "requestCatalogue": "Solicitar catálogo",
     "previous": "Anterior",
     "next": "Siguiente",
-    "goToSlide": "Ir a la imagen {{index}}"
+    "goToSlide": "Ir a la imagen {{index}}",
+    "discoverMore": "Descubre más"
   },
   "nav": {
     "main": "Navegación principal",
     "home": "Inicio",
     "aboutUs": "Quiénes somos",
+    "productsServices": "Productos y servicios",
     "news": "Noticias",
     "team": "Equipo",
     "contact": "Contactar",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
-    "privacy": "Política de privacidad"
+    "privacy": "Política de privacidad",
+    "laboratory": "Laboratorio",
+    "production": "Producción y logística"
   },
   "pillars": {
     "sustainableFarming": {
@@ -94,6 +98,154 @@
     "organic": {
       "title": "Ecológico es mejor",
       "text": "Nuestros fertilizantes ecológicos, con fórmulas concentradas, garantizan un mejor rendimiento y calidad, usando menos producto y reduciendo residuos. Además, diseñamos planes personalizados para optimizar cada cultivo, contribuyendo a una agricultura sostenible y eficiente."
+    },
+    "stats": {
+      "title": "Clavel en cifras",
+      "items": {
+        "farmers": "Agricultores satisfechos",
+        "products": "Productos certificados",
+        "hectares": "Hectáreas certificadas (M)",
+        "years": "Años de experiencia"
+      }
+    }
+  },
+  "productsServices": {
+    "title": "Productos y servicios",
+    "intro": "Fertilizantes, insumos, asesoramiento y tecnología para cada cultivo. Pídenos el catálogo con todos los detalles.",
+    "mainTitle": "Nuestras líneas principales",
+    "mainIntro": "Dos grandes líneas de fertilizantes adaptadas a las necesidades reales del agricultor.",
+    "lines": {
+      "organicFertilisers": {
+        "title": "Fertilizantes ecológicos",
+        "text": "Soluciones específicas para cada cultivo, formuladas con sustancias naturales y biodegradables y avaladas por nuestro laboratorio de control de calidad. Aptas para agricultura ecológica."
+      },
+      "sustainableFertilisers": {
+        "title": "Fertilizantes sostenibles",
+        "text": "Nutrición y protección para una agricultura más eficiente y respetuosa con el entorno, adaptadas a cada cultivo y a cada fase vegetativa."
+      }
+    },
+    "tags": {
+      "certified": "Certificado ecológico UNE 142500:2017",
+      "drone": "Compatible con dron"
+    },
+    "rangesTitle": "Gamas de producto",
+    "rangesIntro": "Nuestras dos líneas principales se organizan en cinco gamas, según lo que necesita el cultivo.",
+    "ranges": {
+      "terra": {
+        "title": "Terra",
+        "text": "Mejoran la salud del suelo regenerándolo y aportando materia orgánica, nitrógeno y nutrientes esenciales para el cultivo."
+      },
+      "protection": {
+        "title": "Protección",
+        "text": "Se absorben rápido, corrigen carencias y refuerzan las defensas de la planta frente a patógenos hasta el final del ciclo."
+      },
+      "booster": {
+        "title": "Potenciador",
+        "text": "Estimulan el crecimiento, equilibran la actividad hormonal y preparan la planta para afrontar el estrés."
+      },
+      "nutrition": {
+        "title": "Nutrición",
+        "text": "Optimizan el desarrollo de la planta en todo su ciclo para impulsar la floración, el cuajado y la maduración."
+      },
+      "correctors": {
+        "title": "Correctores",
+        "text": "Corrigen y previenen carencias nutricionales con un balance preciso de nutrientes, de forma preventiva o curativa."
+      }
+    },
+    "otherTitle": "Otras soluciones",
+    "otherIntro": "Líneas complementarias que amplían nuestra oferta para distintas necesidades del campo y del agricultor profesional.",
+    "other": {
+      "agriculturalInputs": {
+        "title": "Insumos agrícolas",
+        "text": "Productos y materiales complementarios para el día a día de la explotación, seleccionados para trabajar junto a nuestras soluciones de nutrición."
+      },
+      "cbdFertilisers": {
+        "title": "Fertilizantes CBD",
+        "text": "Nutrición específica para el cultivo de cáñamo industrial, adaptada a cada fase de su desarrollo."
+      },
+      "agriculturalAdvice": {
+        "title": "Asesoramiento agrícola",
+        "text": "Acompañamiento técnico en campo: análisis de suelo, planes de fertilización personalizados y seguimiento del cultivo."
+      },
+      "agriculturalTechnology": {
+        "title": "Tecnología agrícola",
+        "text": "Soluciones tecnológicas para una agricultura de precisión, como la aplicación de fertilizantes con dron."
+      },
+      "gardening": {
+        "title": "Jardinería y viveros",
+        "text": "Productos para jardinería, viveros y plantas ornamentales, con la misma calidad que nuestras soluciones para el campo."
+      }
+    },
+    "cta": {
+      "title": "¿No sabes qué producto necesitas?",
+      "text": "Cuéntanos tu cultivo y te enviamos el catálogo con la información técnica de las soluciones que mejor se adaptan a él."
+    }
+  },
+  "laboratory": {
+    "title": "Laboratorio de innovación y control de calidad",
+    "intro": "Análisis, ensayos y certificaciones que garantizan la confianza del agricultor.",
+    "overview": {
+      "eyebrow": "Nuestro laboratorio",
+      "title": "Ciencia aplicada a cada fertilizante",
+      "text1": "En nuestro laboratorio ponemos a tu disposición tecnología avanzada, un equipo especializado y procesos de alta calidad para garantizar resultados precisos y fiables.",
+      "text2": "Cada producto que sale de nuestra fábrica ha pasado antes por el laboratorio: allí se desarrollan las fórmulas, se validan en ensayos y se controla la calidad de cada lote."
+    },
+    "pillarsTitle": "Qué hacemos en el laboratorio",
+    "pillars": {
+      "research": {
+        "title": "Investigación y desarrollo",
+        "text": "Desarrollamos nuevas metodologías analíticas y ayudamos a nuestros clientes a optimizar las fórmulas para cada cultivo."
+      },
+      "compliance": {
+        "title": "Normativa y certificaciones",
+        "text": "Garantizamos el cumplimiento de la normativa nacional e internacional. Nuestros procesos están validados y el laboratorio trabaja con certificaciones de calidad reconocidas."
+      },
+      "quality": {
+        "title": "Control de calidad en cada lote",
+        "text": "Realizamos pruebas químicas, físicas y microbiológicas en cada lote para asegurar que materiales y productos cumplen los más altos estándares de seguridad y rendimiento."
+      }
+    },
+    "cta": {
+      "title": "¿Necesitas asesoramiento técnico?",
+      "text": "Cuéntanos tu cultivo y nuestro equipo técnico te recomendará la solución más adecuada.",
+      "button": "Pide asesoramiento"
+    }
+  },
+  "production": {
+    "title": "Proceso de producción y logística",
+    "intro": "Coordinamos cada fase para ofrecer seguridad, rapidez y excelencia.",
+    "manufacturing": {
+      "eyebrow": "Fabricación",
+      "title": "Fabricación de alta precisión",
+      "text": "En nuestra fábrica, cada etapa del proceso está cuidadosamente controlada para garantizar productos de la máxima calidad. Desde la selección de las materias primas hasta la producción en serie, aplicamos estándares rigurosos de seguridad y eficiencia para que cada lote cumpla la normativa nacional e internacional."
+    },
+    "logistics": {
+      "eyebrow": "Logística",
+      "title": "Envasado y logística segura",
+      "text": "Una vez terminada la producción, los productos se envasan de forma que se protegen su integridad y su calidad. Nuestro sistema logístico asegura que cada envío llegue a tiempo y en perfectas condiciones, combinando tecnología y control humano para ofrecer seguridad y confianza."
+    },
+    "stepsTitle": "De la materia prima a tu campo",
+    "steps": {
+      "rawMaterials": {
+        "title": "Materias primas",
+        "text": "Seleccionamos y analizamos cada materia prima antes de usarla."
+      },
+      "manufacturing": {
+        "title": "Fabricación",
+        "text": "Producimos con procesos controlados y eficientes en cada etapa."
+      },
+      "qualityControl": {
+        "title": "Control de calidad",
+        "text": "El laboratorio valida cada lote antes de envasarlo."
+      },
+      "delivery": {
+        "title": "Envasado y entrega",
+        "text": "Envasamos y enviamos a tiempo a cualquier destino."
+      }
+    },
+    "cta": {
+      "title": "¿Quieres conocer nuestros productos?",
+      "text": "Pídenos el catálogo y te lo enviamos por correo, con toda la información técnica de cada fertilizante."
     }
   },
   "news": {
@@ -337,6 +489,127 @@
           "## Conclusión",
           "Preparar el suelo en agricultura ecológica no es un simple trámite: es una inversión a largo plazo en la salud del agroecosistema. Un suelo bien tratado es más fértil, más resistente al estrés climático y más productivo sin necesidad de agroquímicos. Cuida el suelo y él cuidará tus cultivos."
         ]
+      },
+      "erasmusMarketing": {
+        "title": "Cinco nuevos talentos Erasmus se incorporan al equipo de marketing",
+        "excerpt": "El departamento de Comunicación y Marketing de Clavel da la bienvenida a cinco estudiantes Erasmus en Valencia.",
+        "body": [
+          "El departamento de Comunicación y Marketing de Clavel da la bienvenida a cinco estudiantes Erasmus que se incorporan a la empresa en Valencia. Durante los próximos meses participarán en proyectos reales, aportando su experiencia y nuevas perspectivas internacionales.",
+          "## Erasmus y marketing: una experiencia de aprendizaje mutuo",
+          "Este programa supone una doble oportunidad: para los estudiantes, que vivirán una experiencia profesional y cultural única, y para la empresa, que enriquece su equipo de marketing con ideas frescas e innovadoras. Gracias a esta colaboración, los jóvenes talentos podrán:",
+          "- Poner en práctica sus conocimientos de marketing digital, diseño gráfico y comunicación.",
+          "- Participar en proyectos reales de promoción de fertilizantes ecológicos y sostenibles.",
+          "- Contribuir a la internacionalización de Clavel compartiendo nuevas metodologías de trabajo.",
+          "## Compromiso con la sostenibilidad y la formación",
+          "Además de su apuesta por la innovación en fertilizantes ecológicos y sostenibles, Clavel reafirma con esta iniciativa su compromiso con:",
+          "- La formación continua de nuevos profesionales.",
+          "- El intercambio cultural y la internacionalización.",
+          "- El desarrollo de nuevas competencias en marketing y comunicación.",
+          "## Bienvenidos al futuro del marketing agrícola",
+          "Con la llegada de estos cinco estudiantes, Clavel refuerza su apuesta por un equipo de marketing dinámico, internacional y orientado a la sostenibilidad. ¡Bienvenidos a bordo y mucho éxito en esta nueva etapa!"
+        ]
+      },
+      "pollinators": {
+        "title": "Fertilizantes ecológicos y polinizadores",
+        "excerpt": "Una alianza vital para la biodiversidad: cómo los fertilizantes ecológicos favorecen a abejas, mariposas y otros polinizadores.",
+        "body": [
+          "La agricultura ecológica no solo protege el medio ambiente: también favorece a una de las piezas clave de nuestro ecosistema, los insectos polinizadores. Al utilizar fertilizantes naturales y evitar sustancias tóxicas, se crea un entorno más saludable para las abejas, las mariposas y otros polinizadores esenciales para la producción de alimentos.",
+          "## ¿Qué son los fertilizantes ecológicos?",
+          "Son productos de origen natural y orgánico que nutren el suelo y fortalecen el desarrollo de los cultivos. Entre los más comunes están:",
+          "- El compost.",
+          "- El estiércol animal.",
+          "- Los restos de cultivos.",
+          "- Las algas marinas.",
+          "- Los biofertilizantes microbianos.",
+          "A diferencia de los fertilizantes químicos, no contienen sustancias sintéticas que puedan alterar la biodiversidad o contaminar los recursos naturales.",
+          "## Insectos polinizadores: clave para la vida",
+          "Los polinizadores (abejas, mariposas, avispas, colibríes, escarabajos y muchos más) son esenciales para la reproducción de las plantas con flor. Gracias a ellos es posible la producción de frutas, verduras y frutos secos, la conservación de especies vegetales y el equilibrio de los ecosistemas. Más del 75 % de los cultivos alimentarios del mundo dependen, en parte, de la polinización animal.",
+          "## ¿Cómo ayudan los fertilizantes ecológicos a los polinizadores?",
+          "### 1. Plantas más sanas, polinizadores más sanos",
+          "Los fertilizantes ecológicos liberan los nutrientes de forma gradual y favorecen un crecimiento fuerte y equilibrado. El resultado son flores más abundantes, néctar y polen de mejor calidad y cultivos más atractivos para los polinizadores.",
+          "### 2. Cero contaminación química",
+          "No contaminan el suelo ni el agua, no alteran la flora microbiana natural y no perjudican directamente a los insectos beneficiosos, lo que reduce el riesgo de intoxicación o de desequilibrio en el ecosistema.",
+          "### 3. Más biodiversidad vegetal",
+          "Los sistemas que aplican fertilizantes orgánicos suelen incorporar prácticas como la rotación de cultivos, los setos florales o los cultivos de cobertura. Todo ello aumenta la diversidad de flores y hábitats, atrae a más especies de polinizadores y fomenta un entorno rico en vida silvestre.",
+          "## Un ecosistema interconectado",
+          "Cada acción que tomamos en la agricultura repercute en toda la cadena de la vida. Un suelo sano, plantas sanas y una comunidad diversa de polinizadores son la base de una agricultura regenerativa y sostenible.",
+          "## Conclusión: cuidar a los polinizadores es cuidar nuestro futuro",
+          "Los fertilizantes ecológicos no solo alimentan a las plantas: también preservan la vida que las rodea. Incorporarlos es una apuesta por la seguridad alimentaria, la biodiversidad y la resiliencia del planeta."
+        ]
+      },
+      "organicCrops": {
+        "title": "Cultivos ecológicos: tipos, planificación y productos clave",
+        "excerpt": "Qué tipos de cultivos ecológicos existen, cómo planificarlos y qué productos naturales son clave en cada etapa.",
+        "body": [
+          "La agricultura ecológica se ha consolidado como una alternativa responsable y eficiente frente a los métodos convencionales. No solo prioriza la salud del suelo y la calidad de los alimentos: también protege la biodiversidad y reduce el impacto ambiental. Te contamos qué tipos de cultivos ecológicos existen, cómo planificarlos y qué productos naturales son clave en cada etapa.",
+          "## Tipos de cultivos ecológicos",
+          "### 1. Cultivos anuales",
+          "Completan su ciclo de vida en menos de un año, como el maíz, el trigo, las legumbres o las hortalizas de hoja (lechuga, espinaca, acelga). En ellos, la rotación de cultivos es fundamental para no agotar el suelo y romper los ciclos de plagas y enfermedades.",
+          "### 2. Cultivos perennes",
+          "Se mantienen activos durante varios años y dan cosechas continuas: frutales (manzanos, perales, almendros), viñedos, olivos o arbustos de bayas. La poda, la fertilización natural y el seguimiento fitosanitario son clave para mantenerlos sanos y productivos.",
+          "### 3. Cultivos mixtos",
+          "Combinan distintos cultivos en un mismo espacio para crear un ecosistema más equilibrado, con asociaciones beneficiosas (como maíz, judía y calabaza) y cultivos de cobertura (avena, trébol, centeno) que mejoran la fertilidad del suelo y lo protegen de la erosión.",
+          "## Planificación del cultivo ecológico",
+          "### 1. Preparación del suelo",
+          "El suelo es la base: debe ser rico en materia orgánica, aireado y bien estructurado. Para ello se usan compost, estiércol maduro y restos vegetales fermentados, con una labranza mínima que no rompa la microbiota beneficiosa.",
+          "### 2. Siembra y plantación",
+          "- Usa semillas y plántulas ecológicas certificadas.",
+          "- Planifica la fecha de siembra según el clima y el calendario agrícola.",
+          "- Mantén una densidad adecuada para evitar la competencia entre plantas.",
+          "### 3. Cuidado natural de las plantas",
+          "- Riego eficiente según las necesidades reales del cultivo y del clima.",
+          "- Control ecológico de plagas con insecticidas naturales.",
+          "- Control de malas hierbas a mano o con acolchado.",
+          "## Productos ecológicos para cada etapa",
+          "- Fertilizantes orgánicos: compost, humus de lombriz, estiércol compostado y fertilizantes ecológicos aprobados para agricultura ecológica.",
+          "- Protección natural: aceite de neem, jabón potásico, ajo, extracto de cola de caballo o bicarbonato, que repelen plagas y previenen enfermedades sin dejar residuos tóxicos.",
+          "- Cobertura del suelo: acolchado orgánico (paja, restos de poda, hojas secas) que reduce la evaporación, controla las malas hierbas y mejora la vida del suelo.",
+          "- Riego sostenible: goteo o microaspersión, que ahorran agua y evitan enfermedades fúngicas.",
+          "## Una agricultura más verde y saludable",
+          "Los cultivos ecológicos permiten obtener alimentos de gran calidad, protegen los recursos naturales y fomentan el equilibrio de los ecosistemas agrícolas. Planifica con conciencia, usa productos naturales y cuida el suelo y la biodiversidad: cada decisión que tomas como agricultor tiene impacto."
+        ]
+      },
+      "agricultureDrones": {
+        "title": "Revolucionando la agricultura: fertilizantes aplicados con drones",
+        "excerpt": "Beneficios, costes y perspectivas de la aplicación de fertilizantes con drones agrícolas.",
+        "body": [
+          "La tecnología hace la agricultura moderna más eficiente y sostenible. La aplicación de fertilizantes con drones agrícolas se ha convertido en una solución innovadora que está transformando la forma en que los agricultores cuidan sus cultivos: mejora la productividad, reduce costes y minimiza el impacto ambiental al optimizar el uso de fertilizantes.",
+          "## Beneficios de aplicar fertilizantes con drones",
+          "### 1. Precisión",
+          "Los drones equipados con sensores y sistemas de mapeo permiten una aplicación precisa y localizada. Se evita el exceso de fertilización, se reduce el desperdicio de nutrientes y se aprovechan mejor los recursos, con un ahorro importante para el agricultor.",
+          "### 2. Ahorro de tiempo y de mano de obra",
+          "La aplicación tradicional suele requerir maquinaria pesada y personal especializado. Con drones se cubren grandes superficies de forma rápida y automática, y la mano de obra queda libre para otras tareas.",
+          "### 3. Acceso a zonas difíciles",
+          "Son ideales para terrenos irregulares o de difícil acceso, donde la maquinaria convencional tiene problemas, y garantizan una distribución uniforme incluso en las zonas más inaccesibles.",
+          "### 4. Menor impacto ambiental",
+          "La aplicación precisa evita la escorrentía de fertilizantes hacia las fuentes de agua, lo que reduce la contaminación y protege los ecosistemas acuáticos.",
+          "## Costes y aspectos a tener en cuenta",
+          "- Inversión inicial: los drones especializados y su software suponen un coste importante, aunque cada vez menor gracias a los avances tecnológicos.",
+          "- Formación y mantenimiento: manejarlos requiere formación, y el mantenimiento y las reparaciones son costes que hay que prever.",
+          "- Normativa: el uso de drones en agricultura está regulado y puede variar según la región; cumplir con los permisos es imprescindible.",
+          "## El futuro de la agricultura con drones",
+          "Con la rápida evolución de la tecnología, aplicar fertilizantes con drones será cada vez más accesible y eficiente. A pesar de los costes iniciales y de los requisitos legales, es una inversión inteligente para los agricultores que buscan eficiencia, ahorro y sostenibilidad a largo plazo."
+        ]
+      },
+      "organicConsumption": {
+        "title": "El auge del consumo de frutas y verduras ecológicas",
+        "excerpt": "Tendencias y perspectivas de un mercado que no deja de crecer: salud, sostenibilidad y transparencia.",
+        "body": [
+          "Cada vez más personas eligen frutas y verduras ecológicas en busca de un estilo de vida más saludable y sostenible. No es una moda pasajera, sino una tendencia sólida que está transformando el mercado mundial de alimentos ecológicos.",
+          "## La evolución del mercado ecológico",
+          "El consumo de frutas y verduras ecológicas ha crecido de forma constante en las últimas décadas, impulsado por la conciencia sobre la alimentación saludable y por la preocupación por el impacto ambiental de la agricultura convencional.",
+          "## Factores clave del crecimiento",
+          "### 1. Salud y bienestar",
+          "Los consumidores quieren evitar pesticidas, herbicidas y productos químicos sintéticos. Las frutas y verduras ecológicas, cultivadas sin ellos, son una opción más segura, nutritiva y natural.",
+          "### 2. Sostenibilidad ambiental",
+          "La agricultura ecológica promueve prácticas como la rotación de cultivos y el compostaje, que preservan la fertilidad del suelo y la biodiversidad.",
+          "### 3. Transparencia",
+          "El consumidor actual exige saber cómo se producen los alimentos y de dónde vienen. Los productos ecológicos suelen cumplir estos estándares de trazabilidad, lo que genera más confianza.",
+          "## Perspectivas de futuro",
+          "Los informes del sector prevén que el consumo siga creciendo en los próximos años gracias a la mayor conciencia sobre la salud, la adopción de técnicas agrícolas sostenibles y la mayor disponibilidad de productos ecológicos.",
+          "## Hacia una alimentación saludable y sostenible",
+          "Este auge refleja un cambio profundo hacia estilos de vida más saludables y responsables con el medio ambiente. La expansión del mercado ecológico beneficia a los consumidores, a los agricultores y al planeta."
+        ]
       }
     },
     "backToNews": "Volver a Noticias",
@@ -394,7 +667,8 @@
       "sentTitle": "Mensaje enviado",
       "sentText": "Gracias. Te responderemos por correo en un plazo de 48 horas laborables.",
       "sendAnother": "Enviar otro mensaje",
-      "mailSubject": "{{reason}} · {{name}}"
+      "mailSubject": "{{reason}} · {{name}}",
+      "productInterest": "Me interesa el catálogo de: {{product}}."
     }
   },
   "privacy": {

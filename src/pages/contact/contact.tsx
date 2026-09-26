@@ -5,9 +5,10 @@ import { Clock } from 'lucide-react';
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
 import { isContactReason } from 'constants/contact-reasons';
-import { CONTACT_REASON_PARAM } from 'constants/routes';
+import { CONTACT_PRODUCT_PARAM, CONTACT_REASON_PARAM } from 'constants/routes';
 import { OPENING_HOURS } from 'data/opening-hours';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
+import { productTitleKey } from 'data/products';
 import { useContactDetails } from 'hooks/use-contact-details';
 import { usePageTitle } from 'hooks/use-page-title';
 
@@ -23,6 +24,12 @@ export const Contact = () => {
   // «Solicitar catálogo» llega con ?reason=catalogue para preseleccionar el motivo.
   const reasonParam = searchParams.get(CONTACT_REASON_PARAM);
   const initialReason = isContactReason(reasonParam) ? reasonParam : undefined;
+  // Desde Productos y servicios llega además ?product=<clave>: el mensaje se
+  // rellena con el producto. Una clave desconocida se ignora.
+  const productKey = productTitleKey(searchParams.get(CONTACT_PRODUCT_PARAM));
+  const initialMessage = productKey
+    ? t('contact.form.productInterest', { product: t(productKey) })
+    : undefined;
 
   return (
     <>
@@ -70,8 +77,12 @@ export const Contact = () => {
         </div>
 
         <div className={styles.formCard}>
-          {/* La `key` reinicia el formulario si cambia el motivo pedido por URL. */}
-          <ContactForm key={initialReason} initialReason={initialReason} />
+          {/* La `key` reinicia el formulario si cambia lo pedido por URL. */}
+          <ContactForm
+            key={`${initialReason}-${productKey}`}
+            initialReason={initialReason}
+            initialMessage={initialMessage}
+          />
         </div>
       </Container>
     </>

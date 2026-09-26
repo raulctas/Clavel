@@ -1,0 +1,80 @@
+/* Las imágenes se solapan sobre la banda crema: la banda sube por debajo. */
+.section {
+  --overlap: 140px;
+}
+
+.images {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-bottom: calc(var(--overlap) * -1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-image);
+  background-color: var(--color-kraft-light);
+  box-shadow: 0 18px 40px rgba(31, 42, 31, 0.16);
+}
+
+.band {
+  background-color: var(--color-cream);
+  padding-top: calc(var(--overlap) + 56px);
+  padding-bottom: 64px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+/* Separador vertical entre cifras. */
+.stat + .stat {
+  border-left: 1px solid var(--color-border-input);
+}
+
+.value {
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 4.5vw, 52px);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-green);
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-pink-text);
+}
+
+/* En pantallas estrechas, dos por fila y sin separadores laterales. */
+@media (max-width: 720px) {
+  .section {
+    --overlap: 80px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+
+  .stat + .stat {
+    border-left: 0;
+  }
+}

@@ -52,16 +52,19 @@ const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string; optio
 interface Props {
   /** Motivo preseleccionado (p. ej. «catálogo» desde «Solicitar catálogo»). */
   initialReason?: ContactReason;
+  /** Mensaje ya escrito (p. ej. el producto cuyo catálogo se pide). */
+  initialMessage?: string;
 }
 
 /**
  * Formulario de contacto: motivo en chips, datos, mensaje y casilla de
  * privacidad. Al enviarse se sustituye por la confirmación.
  */
-export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
+export const ContactForm = ({ initialReason = 'catalogue', initialMessage = '' }: Props) => {
   const { t } = useTranslation();
   const [reason, setReason] = useState<ContactReason>(initialReason);
-  const [values, setValues] = useState<FormValues>(EMPTY_FORM);
+  const initialValues = { ...EMPTY_FORM, message: initialMessage };
+  const [values, setValues] = useState<FormValues>(initialValues);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
 
@@ -101,7 +104,7 @@ export const ContactForm = ({ initialReason = 'catalogue' }: Props) => {
   };
 
   const reset = () => {
-    setValues(EMPTY_FORM);
+    setValues(initialValues);
     setErrors({});
     setReason(initialReason);
     setSent(false);

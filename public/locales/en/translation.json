@@ -8,18 +8,22 @@
     "requestCatalogue": "Request catalogue",
     "previous": "Previous",
     "next": "Next",
-    "goToSlide": "Go to image {{index}}"
+    "goToSlide": "Go to image {{index}}",
+    "discoverMore": "Discover more"
   },
   "nav": {
     "main": "Main navigation",
     "home": "Home",
     "aboutUs": "About us",
+    "productsServices": "Products and services",
     "news": "News",
     "team": "Team",
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "privacy": "Privacy policy"
+    "privacy": "Privacy policy",
+    "laboratory": "Laboratory",
+    "production": "Production and logistics"
   },
   "pillars": {
     "sustainableFarming": {
@@ -94,6 +98,154 @@
     "organic": {
       "title": "Organic is better",
       "text": "Our concentrated organic fertilisers deliver better yield and quality while using less product and reducing waste. We also design personalised plans to optimise each crop, contributing to sustainable, efficient agriculture."
+    },
+    "stats": {
+      "title": "Clavel in figures",
+      "items": {
+        "farmers": "Satisfied farmers",
+        "products": "Certified products",
+        "hectares": "Certified hectares (M)",
+        "years": "Years of experience"
+      }
+    }
+  },
+  "productsServices": {
+    "title": "Products and services",
+    "intro": "Fertilisers, inputs, advice and technology for every crop. Ask us for the catalogue with all the details.",
+    "mainTitle": "Our main lines",
+    "mainIntro": "Two major fertiliser lines tailored to farmers' real needs.",
+    "lines": {
+      "organicFertilisers": {
+        "title": "Organic fertilisers",
+        "text": "Crop-specific solutions formulated with natural, biodegradable substances and backed by our quality-control laboratory. Suitable for organic farming."
+      },
+      "sustainableFertilisers": {
+        "title": "Sustainable fertilisers",
+        "text": "Nutrition and protection for more efficient farming that respects the environment, tailored to each crop and growth stage."
+      }
+    },
+    "tags": {
+      "certified": "Organic certificate UNE 142500:2017",
+      "drone": "Drone compatible"
+    },
+    "rangesTitle": "Product ranges",
+    "rangesIntro": "Our two main lines are organised into five ranges, according to what the crop needs.",
+    "ranges": {
+      "terra": {
+        "title": "Terra",
+        "text": "They improve soil health by regenerating it and providing organic matter, nitrogen and essential nutrients for the crop."
+      },
+      "protection": {
+        "title": "Protection",
+        "text": "They are absorbed quickly, correct deficiencies and strengthen the plant's defences against pathogens until the end of the cycle."
+      },
+      "booster": {
+        "title": "Booster",
+        "text": "They stimulate growth, balance hormonal activity and prepare the plant to cope with stress."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "text": "They optimise plant development throughout the cycle to boost flowering, fruit set and ripening."
+      },
+      "correctors": {
+        "title": "Correctors",
+        "text": "They correct and prevent nutrient deficiencies with a precise balance of nutrients, as a preventive or curative treatment."
+      }
+    },
+    "otherTitle": "Other solutions",
+    "otherIntro": "Complementary lines that broaden our offer for different needs in the field and for professional farmers.",
+    "other": {
+      "agriculturalInputs": {
+        "title": "Agricultural inputs",
+        "text": "Complementary products and materials for day-to-day farm work, selected to work alongside our nutrition solutions."
+      },
+      "cbdFertilisers": {
+        "title": "CBD fertilisers",
+        "text": "Specific nutrition for industrial hemp, tailored to each stage of its development."
+      },
+      "agriculturalAdvice": {
+        "title": "Agricultural advice",
+        "text": "Technical support in the field: soil analysis, personalised fertilisation plans and crop monitoring."
+      },
+      "agriculturalTechnology": {
+        "title": "Agricultural technology",
+        "text": "Technology solutions for precision farming, such as applying fertilisers by drone."
+      },
+      "gardening": {
+        "title": "Gardening and nurseries",
+        "text": "Products for gardening, nurseries and ornamental plants, with the same quality as our solutions for the field."
+      }
+    },
+    "cta": {
+      "title": "Not sure which product you need?",
+      "text": "Tell us about your crop and we will send you the catalogue with technical information on the solutions that best suit it."
+    }
+  },
+  "laboratory": {
+    "title": "Innovation and quality control laboratory",
+    "intro": "Analysis, testing and certification that guarantee farmers' trust.",
+    "overview": {
+      "eyebrow": "Our laboratory",
+      "title": "Science applied to every fertiliser",
+      "text1": "Our laboratory offers advanced technology, a specialised team and high-quality processes to deliver precise, reliable results.",
+      "text2": "Every product that leaves our factory has first been through the laboratory: that is where formulas are developed, validated in trials and where the quality of every batch is checked."
+    },
+    "pillarsTitle": "What we do in the laboratory",
+    "pillars": {
+      "research": {
+        "title": "Research and development",
+        "text": "We develop new analytical methods and help our customers optimise their formulas for each crop."
+      },
+      "compliance": {
+        "title": "Regulations and certification",
+        "text": "We guarantee compliance with national and international regulations. Our processes are validated and the laboratory works with recognised quality certifications."
+      },
+      "quality": {
+        "title": "Quality control on every batch",
+        "text": "We run chemical, physical and microbiological tests on every batch to make sure materials and products meet the highest safety and performance standards."
+      }
+    },
+    "cta": {
+      "title": "Need technical advice?",
+      "text": "Tell us about your crop and our technical team will recommend the most suitable solution.",
+      "button": "Ask for advice"
+    }
+  },
+  "production": {
+    "title": "Production process and logistics",
+    "intro": "We coordinate every stage to deliver safety, speed and excellence.",
+    "manufacturing": {
+      "eyebrow": "Manufacturing",
+      "title": "High-precision manufacturing",
+      "text": "In our factory, every stage of the process is carefully controlled to guarantee products of the highest quality. From selecting raw materials to series production, we apply strict safety and efficiency standards so that every batch meets national and international regulations."
+    },
+    "logistics": {
+      "eyebrow": "Logistics",
+      "title": "Safe packaging and logistics",
+      "text": "Once production is complete, products are packaged in a way that protects their integrity and quality. Our logistics system ensures that every shipment arrives on time and in perfect condition, combining technology and human control to deliver safety and trust."
+    },
+    "stepsTitle": "From raw material to your field",
+    "steps": {
+      "rawMaterials": {
+        "title": "Raw materials",
+        "text": "We select and analyse every raw material before using it."
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "text": "We produce with controlled, efficient processes at every stage."
+      },
+      "qualityControl": {
+        "title": "Quality control",
+        "text": "The laboratory validates every batch before it is packaged."
+      },
+      "delivery": {
+        "title": "Packaging and delivery",
+        "text": "We package and ship on time to any destination."
+      }
+    },
+    "cta": {
+      "title": "Want to know our products?",
+      "text": "Ask us for the catalogue and we will email it to you, with full technical information on every fertiliser."
     }
   },
   "news": {
@@ -337,6 +489,127 @@
           "## Conclusion",
           "Preparing the soil in organic farming is not a mere formality: it is a long-term investment in the health of the agroecosystem. Well-treated soil is more fertile, more resilient to climate stress and more productive without agrochemicals. Look after the soil and it will look after your crops."
         ]
+      },
+      "erasmusMarketing": {
+        "title": "Five new Erasmus talents join the marketing team",
+        "excerpt": "Clavel's Communication and Marketing department welcomes five Erasmus students in Valencia.",
+        "body": [
+          "Clavel's Communication and Marketing department welcomes five Erasmus students who are joining the company in Valencia. Over the coming months they will take part in real projects, bringing their experience and new international perspectives.",
+          "## Erasmus and marketing: a two-way learning experience",
+          "This programme is a double opportunity: for the students, who will enjoy a unique professional and cultural experience, and for the company, which enriches its marketing team with fresh, innovative ideas. Thanks to this collaboration, these young talents will be able to:",
+          "- Put their knowledge of digital marketing, graphic design and communication into practice.",
+          "- Take part in real projects promoting organic and sustainable fertilisers.",
+          "- Contribute to Clavel's internationalisation by sharing new ways of working.",
+          "## Commitment to sustainability and training",
+          "As well as its commitment to innovation in organic and sustainable fertilisers, Clavel reaffirms with this initiative its commitment to:",
+          "- Ongoing training for new professionals.",
+          "- Cultural exchange and internationalisation.",
+          "- Developing new skills in marketing and communication.",
+          "## Welcome to the future of agricultural marketing",
+          "With the arrival of these five students, Clavel strengthens its commitment to a dynamic, international marketing team focused on sustainability. Welcome aboard and every success in this new stage!"
+        ]
+      },
+      "pollinators": {
+        "title": "Organic fertilisers and pollinators",
+        "excerpt": "A vital alliance for biodiversity: how organic fertilisers benefit bees, butterflies and other pollinators.",
+        "body": [
+          "Organic farming does not just protect the environment: it also benefits one of the key pieces of our ecosystem, pollinating insects. By using natural fertilisers and avoiding toxic substances, we create a healthier environment for bees, butterflies and other pollinators that are essential for food production.",
+          "## What are organic fertilisers?",
+          "They are products of natural, organic origin that feed the soil and strengthen crop development. The most common include:",
+          "- Compost.",
+          "- Animal manure.",
+          "- Crop residues.",
+          "- Seaweed.",
+          "- Microbial biofertilisers.",
+          "Unlike chemical fertilisers, they contain no synthetic substances that could disrupt biodiversity or pollute natural resources.",
+          "## Pollinating insects: key to life",
+          "Pollinators (bees, butterflies, wasps, hummingbirds, beetles and many more) are essential for the reproduction of flowering plants. Thanks to them we can produce fruit, vegetables and nuts, preserve plant species and keep ecosystems in balance. More than 75% of the world's food crops depend, at least in part, on animal pollination.",
+          "## How do organic fertilisers help pollinators?",
+          "### 1. Healthier plants, healthier pollinators",
+          "Organic fertilisers release nutrients gradually and support strong, balanced growth. The result is more abundant flowers, better-quality nectar and pollen, and crops that are more attractive to pollinators.",
+          "### 2. Zero chemical pollution",
+          "They do not pollute soil or water, do not disrupt the natural microbial flora and do not directly harm beneficial insects, which reduces the risk of poisoning or ecosystem imbalance.",
+          "### 3. More plant biodiversity",
+          "Systems that use organic fertilisers often include practices such as crop rotation, flowering hedges or cover crops. All of this increases the diversity of flowers and habitats, attracts more pollinator species and encourages an environment rich in wildlife.",
+          "## An interconnected ecosystem",
+          "Every action we take in farming affects the whole chain of life. Healthy soil, healthy plants and a diverse community of pollinators are the foundation of regenerative, sustainable agriculture.",
+          "## Conclusion: caring for pollinators is caring for our future",
+          "Organic fertilisers do not just feed plants: they also preserve the life around them. Using them is a commitment to food security, biodiversity and the resilience of the planet."
+        ]
+      },
+      "organicCrops": {
+        "title": "Organic crops: types, planning and key products",
+        "excerpt": "What types of organic crops there are, how to plan them and which natural products are key at each stage.",
+        "body": [
+          "Organic farming has become a responsible and efficient alternative to conventional methods. It not only prioritises soil health and food quality: it also protects biodiversity and reduces environmental impact. Here we explain the types of organic crops, how to plan them and which natural products are key at each stage.",
+          "## Types of organic crops",
+          "### 1. Annual crops",
+          "They complete their life cycle in less than a year, such as maize, wheat, pulses or leafy vegetables (lettuce, spinach, chard). Crop rotation is essential to avoid exhausting the soil and to break pest and disease cycles.",
+          "### 2. Perennial crops",
+          "They stay productive for several years and give continuous harvests: fruit trees (apple, pear, almond), vineyards, olive groves or berry bushes. Pruning, natural fertilisation and plant health monitoring are key to keeping them healthy and productive.",
+          "### 3. Mixed crops",
+          "They combine different crops in the same space to create a more balanced ecosystem, with beneficial associations (such as maize, beans and squash) and cover crops (oats, clover, rye) that improve soil fertility and protect it from erosion.",
+          "## Planning an organic crop",
+          "### 1. Soil preparation",
+          "Soil is the foundation: it must be rich in organic matter, aerated and well structured. Compost, mature manure and fermented plant residues are used, with minimum tillage so as not to disturb beneficial microbiota.",
+          "### 2. Sowing and planting",
+          "- Use certified organic seeds and seedlings.",
+          "- Plan the sowing date according to the climate and the farming calendar.",
+          "- Keep an appropriate density to avoid competition between plants.",
+          "### 3. Natural plant care",
+          "- Efficient irrigation based on the real needs of the crop and the climate.",
+          "- Organic pest control with natural insecticides.",
+          "- Weed control by hand or with mulch.",
+          "## Organic products for each stage",
+          "- Organic fertilisers: compost, worm castings, composted manure and fertilisers approved for organic farming.",
+          "- Natural protection: neem oil, potassium soap, garlic, horsetail extract or bicarbonate, which repel pests and prevent disease without leaving toxic residues.",
+          "- Ground cover: organic mulch (straw, prunings, dry leaves) that reduces evaporation, controls weeds and improves soil life.",
+          "- Sustainable irrigation: drip or micro-sprinklers, which save water and prevent fungal diseases.",
+          "## Greener, healthier farming",
+          "Organic crops produce high-quality food, protect natural resources and encourage balance in farming ecosystems. Plan carefully, use natural products and look after the soil and biodiversity: every decision you make as a farmer has an impact."
+        ]
+      },
+      "agricultureDrones": {
+        "title": "Revolutionising agriculture: fertilisers applied by drone",
+        "excerpt": "Benefits, costs and outlook for applying fertilisers with agricultural drones.",
+        "body": [
+          "Technology is making modern agriculture more efficient and sustainable. Applying fertilisers with agricultural drones has become an innovative solution that is transforming the way farmers look after their crops: it improves productivity, cuts costs and minimises environmental impact by optimising fertiliser use.",
+          "## Benefits of applying fertilisers by drone",
+          "### 1. Precision",
+          "Drones equipped with sensors and mapping systems allow precise, targeted application. Over-fertilisation is avoided, nutrient waste is reduced and resources are used better, with significant savings for the farmer.",
+          "### 2. Time and labour savings",
+          "Traditional application usually requires heavy machinery and specialised staff. Drones cover large areas quickly and automatically, freeing up labour for other tasks.",
+          "### 3. Access to difficult areas",
+          "They are ideal for uneven or hard-to-reach land where conventional machinery struggles, and ensure even distribution even in the most inaccessible areas.",
+          "### 4. Lower environmental impact",
+          "Precise application prevents fertiliser run-off into water sources, reducing pollution and protecting aquatic ecosystems.",
+          "## Costs and considerations",
+          "- Initial investment: specialised drones and their software are a significant cost, although it keeps falling thanks to technological progress.",
+          "- Training and maintenance: operating them requires training, and maintenance and repairs are costs that need to be planned for.",
+          "- Regulations: the use of drones in agriculture is regulated and may vary by region; complying with permits is essential.",
+          "## The future of farming with drones",
+          "With technology evolving fast, applying fertilisers by drone will become ever more accessible and efficient. Despite the initial costs and legal requirements, it is a smart investment for farmers looking for efficiency, savings and long-term sustainability."
+        ]
+      },
+      "organicConsumption": {
+        "title": "The rise in organic fruit and vegetable consumption",
+        "excerpt": "Trends and outlook for a market that keeps growing: health, sustainability and transparency.",
+        "body": [
+          "More and more people are choosing organic fruit and vegetables in search of a healthier, more sustainable lifestyle. It is not a passing fad but a solid trend that is transforming the global organic food market.",
+          "## How the organic market has evolved",
+          "Consumption of organic fruit and vegetables has grown steadily over recent decades, driven by awareness of healthy eating and concern about the environmental impact of conventional agriculture.",
+          "## Key growth factors",
+          "### 1. Health and wellbeing",
+          "Consumers want to avoid pesticides, herbicides and synthetic chemicals. Organic fruit and vegetables, grown without them, are a safer, more nutritious and more natural choice.",
+          "### 2. Environmental sustainability",
+          "Organic farming promotes practices such as crop rotation and composting, which preserve soil fertility and biodiversity.",
+          "### 3. Transparency",
+          "Today's consumers want to know how their food is produced and where it comes from. Organic products usually meet these traceability standards, which builds trust.",
+          "## Outlook",
+          "Industry reports expect consumption to keep growing in the coming years thanks to greater health awareness, the adoption of sustainable farming techniques and wider availability of organic products.",
+          "## Towards healthy, sustainable food",
+          "This rise reflects a deep shift towards healthier lifestyles that are more respectful of the environment. The growth of the organic market benefits consumers, farmers and the planet."
+        ]
       }
     },
     "backToNews": "Back to News",
@@ -394,7 +667,8 @@
       "sentTitle": "Message sent",
       "sentText": "Thank you. We will reply by email within 48 working hours.",
       "sendAnother": "Send another message",
-      "mailSubject": "{{reason}} · {{name}}"
+      "mailSubject": "{{reason}} · {{name}}",
+      "productInterest": "I'm interested in the catalogue for: {{product}}."
     }
   },
   "privacy": {

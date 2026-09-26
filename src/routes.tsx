@@ -6,10 +6,13 @@ import { routes as routePaths } from 'constants/routes';
 import { AboutUs } from 'pages/about-us';
 import { Contact } from 'pages/contact';
 import { Home } from 'pages/home';
+import { Laboratory } from 'pages/laboratory';
 import { News } from 'pages/news';
 import { NewsDetail } from 'pages/news-detail';
 import { NotFound } from 'pages/not-found';
 import { Privacy } from 'pages/privacy';
+import { Production } from 'pages/production';
+import { ProductsServices } from 'pages/products-services';
 import { Team } from 'pages/team';
 
 /**
@@ -22,6 +25,9 @@ export const routes = (
     <Route errorElement={<RouteError />}>
       <Route index element={<Home />} />
       <Route path={routePaths.aboutUs} element={<AboutUs />} />
+      <Route path={routePaths.productsServices} element={<ProductsServices />} />
+      <Route path={routePaths.laboratory} element={<Laboratory />} />
+      <Route path={routePaths.production} element={<Production />} />
       <Route path={routePaths.news} element={<News />} />
       <Route path={routePaths.newsDetail} element={<NewsDetail />} />
       <Route path={routePaths.team} element={<Team />} />
