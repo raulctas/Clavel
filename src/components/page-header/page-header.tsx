@@ -15,32 +15,19 @@ interface Props {
   intro: string;
   /** Imagen de fondo, decorativa. Se muestra atenuada para que el texto se lea bien. */
   image: string;
-  /** Más aire (Quiénes somos): 72px abajo en lugar de 56px. */
-  spacious?: boolean;
-  /** Limita el bloque de texto a 680px (Equipo). */
-  narrow?: boolean;
 }
 
 /**
  * Banda de título de las páginas interiores: imagen de fondo atenuada sobre
- * crema, ruta, H1 y entrada. Es el primer bloque de la página, así que lleva
- * el hueco de la cabecera flotante.
+ * crema, ruta, H1 y entrada. Todas miden lo mismo. Es el primer bloque de la
+ * página, así que lleva el hueco de la cabecera flotante.
  */
-export const PageHeader = ({
-  page,
-  parent,
-  eyebrow,
-  title,
-  intro,
-  image,
-  spacious,
-  narrow,
-}: Props) => (
-  <section className={[styles.band, spacious && styles.spacious].filter(Boolean).join(' ')}>
+export const PageHeader = ({ page, parent, eyebrow, title, intro, image }: Props) => (
+  <section className={styles.band}>
     <img src={image} alt="" className={styles.background} />
     <div className={styles.veil} aria-hidden />
     <Container className={styles.container}>
-      <div className={[styles.content, narrow && styles.narrow].filter(Boolean).join(' ')}>
+      <div className={styles.content}>
         <Breadcrumb current={page} parent={parent} />
         {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
         <h1 className={styles.title}>{title}</h1>

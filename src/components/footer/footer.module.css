@@ -117,11 +117,12 @@ a.socialLink:hover {
   margin-top: 2px;
 }
 
+/* Derechos a la izquierda y política de privacidad a la derecha. */
 .bottom {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 16px 28px;
   padding-top: 24px;
   border-top: 1px solid var(--color-footer-rule);
@@ -142,5 +143,4 @@ a.socialLink:hover {
 .copyright {
   font-size: 14px;
   color: var(--color-footer-muted);
-  text-align: center;
 }

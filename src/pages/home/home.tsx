@@ -33,7 +33,7 @@ export const Home = () => {
           </h2>
           <ul className={styles.pillars}>
             {PILLARS.map(({ key, icon }) => (
-              <li key={key} className={styles.pillar}>
+              <li key={key} className={`${styles.pillar} hover-lift`}>
                 <IconCircle icon={icon} />
                 <h3 className={styles.pillarTitle}>{t(`pillars.${key}.title`)}</h3>
                 <p className={styles.pillarText}>{t(`pillars.${key}.text`)}</p>
