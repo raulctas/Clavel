@@ -23,14 +23,13 @@ export const AboutUs = () => {
         title={t('aboutUs.title')}
         intro={t('aboutUs.intro')}
         image={PAGE_HEADER_IMAGES.aboutUs}
-        spacious
       />
 
       {/* Misión, objetivos y propósito */}
       <Container as="section" className={styles.blocksSection}>
         <ul className={styles.blocks}>
           {ABOUT_BLOCKS.map(({ key, icon }) => (
-            <li key={key} className={styles.block}>
+            <li key={key} className={`${styles.block} hover-lift`}>
               <IconCircle icon={icon} />
               <h2 className={styles.blockTitle}>{t(`aboutUs.blocks.${key}.title`)}</h2>
               <p className={styles.blockText}>{t(`aboutUs.blocks.${key}.text`)}</p>
@@ -48,7 +47,7 @@ export const AboutUs = () => {
           </div>
           <ul className={styles.reasons}>
             {PILLARS.map(({ key, icon: Icon }) => (
-              <li key={key} className={styles.reason}>
+              <li key={key} className={`${styles.reason} hover-lift`}>
                 <Icon size={24} className={styles.reasonIcon} aria-hidden />
                 <div className={styles.reasonBody}>
                   <h3 className={styles.reasonTitle}>{t(`pillars.${key}.title`)}</h3>

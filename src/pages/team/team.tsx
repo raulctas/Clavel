@@ -20,7 +20,6 @@ export const Team = () => {
         title={t('team.title')}
         intro={t('team.intro')}
         image={PAGE_HEADER_IMAGES.team}
-        narrow
       />
 
       <Container as="section" className={styles.section}>

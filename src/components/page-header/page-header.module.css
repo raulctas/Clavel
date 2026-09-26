@@ -1,6 +1,17 @@
+/*
+ * Todas las bandas de título miden lo mismo (salvo la portada de Inicio, que
+ * es otro componente): altura mínima común y contenido centrado en vertical.
+ * La altura cubre el contenido más largo en escritorio (una noticia con
+ * antetítulo, título y entrada de dos líneas). En móvil cubre las páginas
+ * principales; solo las noticias de título largo quedan más altas.
+ */
 .band {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 460px;
   background-color: var(--color-cream);
   padding-top: 64px;
   padding-bottom: 56px;
@@ -33,19 +44,11 @@
   position: relative;
 }
 
-.spacious {
-  padding-top: 72px;
-  padding-bottom: 72px;
-}
-
 /* Hueco de la cabecera flotante «Mínimo», que no ocupa altura en el flujo. */
 @media (min-width: 900px) {
   .band {
+    min-height: 580px;
     padding-top: 166px;
-  }
-
-  .spacious {
-    padding-top: 172px;
   }
 }
 
@@ -55,22 +58,10 @@
   gap: 14px;
 }
 
-.spacious .content {
-  gap: 18px;
-}
-
-.narrow {
-  max-width: 680px;
-}
-
 .title {
   font-size: var(--text-h1);
   line-height: 1.05;
   max-width: 820px;
-}
-
-/* Solo Quiénes somos equilibra las líneas del titular, como en el diseño. */
-.spacious .title {
   text-wrap: balance;
 }
 

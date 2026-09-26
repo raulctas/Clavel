@@ -77,6 +77,28 @@ ul {
   outline-offset: 2px;
 }
 
+/**
+ * Efecto de las tarjetas al pasar el ratón: se elevan y se agrandan un poco,
+ * con sombra. Lo comparten las tarjetas informativas y las de noticias. Con
+ * «reducir movimiento» solo queda la sombra.
+ */
+.hover-lift {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--shadow-card-hover);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-lift:hover {
+    transform: none;
+  }
+}
+
 /* Oculta un texto a la vista y lo deja para los lectores de pantalla. */
 .visually-hidden {
   position: absolute;

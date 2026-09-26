@@ -43,7 +43,7 @@ export const NewsCard = ({ item, variant = 'full' }: Props) => {
   );
 
   return (
-    <article className={`${styles.card} ${styles[variant]}`}>
+    <article className={`${styles.card} ${styles[variant]} hover-lift`}>
       <Link to={newsDetailPath(item.slug)} className={styles.inner}>
         {content}
       </Link>

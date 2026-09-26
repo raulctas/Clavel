@@ -92,7 +92,7 @@ export const Header = () => {
         <div className={styles.capsule}>
           <Link to={routes.home} className={styles.logoSlot} aria-label={t('common.homeLink')}>
             <span className={styles.logoBadge}>
-              <img src={LOGO_SRC} alt={t('common.companyName')} width={102} height={102} />
+              <img src={LOGO_SRC} alt={t('common.companyName')} width={116} height={116} />
             </span>
           </Link>
 
@@ -119,7 +119,7 @@ export const Header = () => {
       <header className={styles.mobile} ref={mobileRef}>
         <div className={styles.bar}>
           <Link to={routes.home} className={styles.mobileLogo} aria-label={t('common.homeLink')}>
-            <img src={LOGO_SRC} alt={t('common.companyName')} width={84} height={84} />
+            <img src={LOGO_SRC} alt={t('common.companyName')} width={96} height={96} />
           </Link>
 
           <div className={styles.barActions}>
