@@ -28,9 +28,7 @@ export const Home = () => {
       {/* Pilares */}
       <section className={styles.cream}>
         <Container className={styles.pillarsBlock}>
-          <h2 className={`${styles.sectionTitle} ${styles.pillarsTitle}`}>
-            {t('home.pillarsTitle')}
-          </h2>
+          <h2 className={styles.sectionTitle}>{t('home.pillarsTitle')}</h2>
           <ul className={styles.pillars}>
             {PILLARS.map(({ key, icon }) => (
               <InfoCard

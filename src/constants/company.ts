@@ -22,5 +22,16 @@ export const SOCIAL_LINKS: Record<SocialNetwork, string | undefined> = {
   tiktok: undefined,
 };
 
+/**
+ * Dirección tal como la busca Google Maps. No se traduce: es la misma en todos
+ * los idiomas aunque el texto visible («(Valencia, Spain)») cambie.
+ */
+export const COMPANY_MAPS_QUERY = 'Paseo El Molí, 2C, 46980 Paterna, Valencia, España';
+
+/** Enlace que abre la dirección de Clavel en Google Maps. */
+export const COMPANY_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  COMPANY_MAPS_QUERY,
+)}`;
+
 /** Convierte un teléfono legible en un enlace `tel:` sin espacios. */
 export const toTelHref = (phone: string) => `tel:${phone.replace(/\s+/g, '')}`;

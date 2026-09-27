@@ -111,7 +111,9 @@ export const ProductsServices = () => {
         </ul>
       </Container>
 
+      {/* «Otras soluciones» va sobre blanco: la banda final, sobre crema. */}
       <CtaBand
+        background="cream"
         title={t('productsServices.cta.title')}
         text={t('productsServices.cta.text')}
         buttonLabel={t('common.requestCatalogue')}

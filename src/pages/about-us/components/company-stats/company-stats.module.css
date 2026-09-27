@@ -1,15 +1,17 @@
-/* Las imágenes se solapan sobre la banda crema: la banda sube por debajo. */
+/*
+ * Un solo fondo, crema, para alternar con la sección blanca anterior
+ * («Calidad ecológica certificada»).
+ */
 .section {
-  --overlap: 140px;
+  background-color: var(--color-cream);
+  padding-block: 80px 64px;
 }
 
 .images {
-  position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  margin-bottom: calc(var(--overlap) * -1);
+  margin-bottom: 56px;
 }
 
 .image {
@@ -20,12 +22,6 @@
   border-radius: var(--radius-image);
   background-color: var(--color-kraft-light);
   box-shadow: 0 18px 40px rgba(31, 42, 31, 0.16);
-}
-
-.band {
-  background-color: var(--color-cream);
-  padding-top: calc(var(--overlap) + 56px);
-  padding-bottom: 64px;
 }
 
 .stats {
@@ -65,10 +61,6 @@
 
 /* En pantallas estrechas, dos por fila y sin separadores laterales. */
 @media (max-width: 720px) {
-  .section {
-    --overlap: 80px;
-  }
-
   .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 28px;

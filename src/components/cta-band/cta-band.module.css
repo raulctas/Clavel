@@ -1,3 +1,11 @@
+.white {
+  background-color: var(--color-white);
+}
+
+.cream {
+  background-color: var(--color-cream);
+}
+
 .block {
   padding-block: 80px;
 }
@@ -31,7 +39,6 @@
   font-size: 17px;
   line-height: 1.6;
   color: var(--color-sprout);
-  max-width: 560px;
 }
 
 @media (max-width: 600px) {

@@ -43,8 +43,8 @@ const Stat = ({ value, label }: StatProps) => {
 };
 
 /**
- * Cierre de Quiénes somos: dos imágenes que se solapan sobre una banda crema
- * con las cifras de la empresa, que cuentan hacia arriba al aparecer.
+ * Cierre de Quiénes somos, sobre crema: dos imágenes y las cifras de la
+ * empresa, que cuentan hacia arriba al aparecer.
  */
 export const CompanyStats = () => {
   const { t } = useTranslation();
@@ -67,15 +67,13 @@ export const CompanyStats = () => {
           />
         ))}
       </Container>
-      <div className={styles.band}>
-        <Container>
-          <ul className={styles.stats}>
-            {COMPANY_STATS.map(({ key, value }) => (
-              <Stat key={key} value={value} label={t(`aboutUs.stats.items.${key}`)} />
-            ))}
-          </ul>
-        </Container>
-      </div>
+      <Container>
+        <ul className={styles.stats}>
+          {COMPANY_STATS.map(({ key, value }) => (
+            <Stat key={key} value={value} label={t(`aboutUs.stats.items.${key}`)} />
+          ))}
+        </ul>
+      </Container>
     </section>
   );
 };
