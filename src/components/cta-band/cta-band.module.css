@@ -35,10 +35,15 @@
   color: var(--color-white);
 }
 
+/*
+ * Si el texto no cabe en una línea, se reparte en líneas de igual longitud
+ * en lugar de dejar una línea larga y otra con dos palabras.
+ */
 .paragraph {
   font-size: 17px;
   line-height: 1.6;
   color: var(--color-sprout);
+  text-wrap: balance;
 }
 
 @media (max-width: 600px) {
