@@ -91,11 +91,15 @@ export const Footer = () => {
           <div className={styles.column}>
             <h2 className={styles.heading}>{t('footer.contact')}</h2>
             <ul className={styles.list}>
-              {contactDetails.map(({ key, icon: Icon, text, href }) => (
+              {contactDetails.map(({ key, icon: Icon, text, href, external }) => (
                 <li key={key} className={styles.detail}>
                   <Icon size={16} className={styles.detailIcon} aria-hidden />
                   {href ? (
-                    <a href={href} className={styles.link}>
+                    <a
+                      href={href}
+                      className={styles.link}
+                      {...(external && { target: '_blank', rel: 'noopener' })}
+                    >
                       {text}
                     </a>
                   ) : (

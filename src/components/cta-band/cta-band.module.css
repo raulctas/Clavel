@@ -1,3 +1,11 @@
+.white {
+  background-color: var(--color-white);
+}
+
+.cream {
+  background-color: var(--color-cream);
+}
+
 .block {
   padding-block: 80px;
 }
@@ -27,11 +35,15 @@
   color: var(--color-white);
 }
 
+/*
+ * Si el texto no cabe en una línea, se reparte en líneas de igual longitud
+ * en lugar de dejar una línea larga y otra con dos palabras.
+ */
 .paragraph {
   font-size: 17px;
   line-height: 1.6;
   color: var(--color-sprout);
-  max-width: 560px;
+  text-wrap: balance;
 }
 
 @media (max-width: 600px) {

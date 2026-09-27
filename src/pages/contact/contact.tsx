@@ -43,11 +43,15 @@ export const Contact = () => {
           <div className={styles.card}>
             <h2 className={styles.cardTitle}>{t('contact.detailsTitle')}</h2>
             <ul className={styles.details}>
-              {contactDetails.map(({ key, icon: Icon, text, href }) => (
+              {contactDetails.map(({ key, icon: Icon, text, href, external }) => (
                 <li key={key} className={styles.detail}>
                   <Icon size={20} className={styles.detailIcon} aria-hidden />
                   {href ? (
-                    <a href={href} className={styles.detailLink}>
+                    <a
+                      href={href}
+                      className={styles.detailLink}
+                      {...(external && { target: '_blank', rel: 'noopener' })}
+                    >
                       {text}
                     </a>
                   ) : (

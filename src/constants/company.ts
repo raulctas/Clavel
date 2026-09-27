@@ -22,5 +22,11 @@ export const SOCIAL_LINKS: Record<SocialNetwork, string | undefined> = {
   tiktok: undefined,
 };
 
+/**
+ * Enlace que abre la dirección de Clavel en Google Maps (ficha del lugar).
+ * No se traduce: es el mismo en todos los idiomas.
+ */
+export const COMPANY_MAPS_URL = 'https://maps.app.goo.gl/qV9Sh5HaZoUE2wx76';
+
 /** Convierte un teléfono legible en un enlace `tel:` sin espacios. */
 export const toTelHref = (phone: string) => `tel:${phone.replace(/\s+/g, '')}`;
