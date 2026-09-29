@@ -7,8 +7,9 @@
 export const PAGE_HEADER_IMAGES = {
   aboutUs: '/images/about-us/header.jpg',
   productsServices: '/images/provisional/hero-1.png',
-  laboratory: '/images/provisional/hero-3.png',
-  production: '/images/provisional/hero-1.png',
+  // La misma foto que la sección Laboratorio de Inicio.
+  laboratory: '/images/home/laboratory.jpg',
+  production: '/images/production/header.jpg',
   news: '/images/provisional/hero-3.png',
   team: '/images/provisional/hero-1.png',
   contact: '/images/contact/header.jpg',
