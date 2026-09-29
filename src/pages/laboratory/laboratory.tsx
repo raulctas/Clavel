@@ -1,12 +1,10 @@
 import { useTranslation } from 'react-i18next';
 
 import { Container } from 'components/container';
-import { CtaBand } from 'components/cta-band';
 import { FeatureRow } from 'components/feature-row';
 import { InfoCard } from 'components/info-card';
 import { PageHeader } from 'components/page-header';
 import { PhotoGallery } from 'components/photo-gallery';
-import { adviceRequestPath } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { usePageTitle } from 'hooks/use-page-title';
 
@@ -77,13 +75,6 @@ export const Laboratory = () => {
       </section>
 
       <PhotoGallery title={t('laboratory.galleryTitle')} images={GALLERY} />
-
-      <CtaBand
-        title={t('laboratory.cta.title')}
-        text={t('laboratory.cta.text')}
-        buttonLabel={t('laboratory.cta.button')}
-        to={adviceRequestPath}
-      />
     </>
   );
 };

@@ -6,6 +6,7 @@
     "breadcrumb": "Fil d'Ariane",
     "readMore": "Lire la suite",
     "requestCatalogue": "Demander le catalogue",
+    "viewProducts": "Voir les produits",
     "previous": "Précédent",
     "next": "Suivant",
     "goToSlide": "Aller à l'image {{index}}",
@@ -67,7 +68,7 @@
     "seeAllNews": "Voir toutes les actualités",
     "cta": {
       "title": "Vous souhaitez découvrir nos produits ?",
-      "text": "Demandez-nous le catalogue : nous vous l'envoyons par e-mail, avec toutes les informations techniques de chaque engrais."
+      "text": "Découvrez nos gammes d'engrais et nos autres solutions, et demandez le catalogue de celle qui vous intéresse."
     }
   },
   "aboutUs": {
@@ -159,10 +160,6 @@
         "title": "Intrants agricoles",
         "text": "Des produits et matériels complémentaires pour le quotidien de l'exploitation, sélectionnés pour fonctionner avec nos solutions de nutrition."
       },
-      "cbdFertilisers": {
-        "title": "Engrais CBD",
-        "text": "Une nutrition spécifique pour la culture du chanvre industriel, adaptée à chaque stade de son développement."
-      },
       "agriculturalAdvice": {
         "title": "Conseil agricole",
         "text": "Un accompagnement technique sur le terrain : analyse de sol, plans de fertilisation personnalisés et suivi des cultures."
@@ -205,12 +202,7 @@
         "text": "Nous réalisons des analyses chimiques, physiques et microbiologiques sur chaque lot afin de garantir que les matières et les produits répondent aux normes de sécurité et de performance les plus exigeantes."
       }
     },
-    "galleryTitle": "Le laboratoire de l'intérieur",
-    "cta": {
-      "title": "Besoin d'un conseil technique ?",
-      "text": "Parlez-nous de votre culture et notre équipe technique vous recommandera la solution la plus adaptée.",
-      "button": "Demandez conseil"
-    }
+    "galleryTitle": "Le laboratoire de l'intérieur"
   },
   "production": {
     "title": "Processus de production et logistique",
@@ -246,7 +238,7 @@
     },
     "cta": {
       "title": "Vous souhaitez découvrir nos produits ?",
-      "text": "Demandez-nous le catalogue : nous vous l'envoyons par e-mail, avec toutes les informations techniques de chaque engrais."
+      "text": "Découvrez nos gammes d'engrais et nos autres solutions, et demandez le catalogue de celle qui vous intéresse."
     }
   },
   "news": {

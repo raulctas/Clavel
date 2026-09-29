@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Button } from 'components/button';
 import { Container } from 'components/container';
 import { Eyebrow } from 'components/eyebrow';
-import { catalogueRequestPath, routes } from 'constants/routes';
+import { routes } from 'constants/routes';
 import { HERO_SLIDES, HERO_SLIDE_INTERVAL } from 'data/hero-slides';
 import { useSlideshow } from 'hooks/use-slideshow';
 
@@ -42,7 +42,7 @@ export const HeroSlideshow = () => {
           <h1 className={styles.title}>{t('home.hero.title')}</h1>
           <p className={styles.intro}>{t('home.hero.intro')}</p>
           <div className={styles.actions}>
-            <Button to={catalogueRequestPath}>{t('common.requestCatalogue')}</Button>
+            <Button to={routes.productsServices}>{t('common.viewProducts')}</Button>
             <Button to={routes.aboutUs} variant="secondary">
               {t('home.hero.ctaAbout')}
             </Button>

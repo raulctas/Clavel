@@ -6,7 +6,7 @@ import { CtaBand } from 'components/cta-band';
 import { FeatureRow } from 'components/feature-row';
 import { IconCircle } from 'components/icon-circle';
 import { PageHeader } from 'components/page-header';
-import { catalogueRequestPath } from 'constants/routes';
+import { routes } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { usePageTitle } from 'hooks/use-page-title';
 import { Feature } from 'interfaces/feature';
@@ -76,8 +76,8 @@ export const Production = () => {
       <CtaBand
         title={t('production.cta.title')}
         text={t('production.cta.text')}
-        buttonLabel={t('common.requestCatalogue')}
-        to={catalogueRequestPath}
+        buttonLabel={t('common.viewProducts')}
+        to={routes.productsServices}
       />
     </>
   );

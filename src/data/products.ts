@@ -11,7 +11,6 @@ import {
   ShieldCheck,
   Sprout,
   TrendingUp,
-  Wheat,
 } from 'lucide-react';
 
 export type ProductTag = 'certified' | 'drone';
@@ -44,23 +43,16 @@ export const PRODUCT_RANGES: Product[] = [
 
 export const OTHER_SOLUTIONS: Product[] = [
   { key: 'agriculturalInputs', icon: Package },
-  { key: 'cbdFertilisers', icon: Wheat },
   { key: 'agriculturalAdvice', icon: Handshake },
   { key: 'agriculturalTechnology', icon: Cpu },
   { key: 'gardening', icon: Flower2 },
 ];
 
-/** Soluciones que se muestran en Productos y servicios pero no tienen catálogo. */
-const WITHOUT_CATALOGUE = ['cbdFertilisers'];
-
 /**
  * Catálogos que se pueden pedir desde Contactar: uno por cada línea principal y
- * por cada una de las otras soluciones (salvo las que no tienen catálogo), en el
- * orden de Productos y servicios.
+ * por cada una de las otras soluciones, en el orden de Productos y servicios.
  */
-export const CATALOGUES = [...MAIN_LINES, ...OTHER_SOLUTIONS]
-  .map((product) => product.key)
-  .filter((key) => !WITHOUT_CATALOGUE.includes(key));
+export const CATALOGUES = [...MAIN_LINES, ...OTHER_SOLUTIONS].map((product) => product.key);
 
 export const isCatalogue = (key: string | null): key is string =>
   key !== null && CATALOGUES.includes(key);
