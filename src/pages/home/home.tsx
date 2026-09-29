@@ -87,7 +87,7 @@ export const Home = () => {
         title={t('home.cta.title')}
         text={t('home.cta.text')}
         buttonLabel={t('common.viewProducts')}
-        to={routes.productsServices}
+        to={routes.products}
       />
     </>
   );

@@ -16,7 +16,7 @@
     "main": "Navigazione principale",
     "home": "Home",
     "aboutUs": "Chi siamo",
-    "productsServices": "Prodotti e servizi",
+    "products": "Prodotti",
     "news": "Notizie",
     "team": "Team",
     "contact": "Contatti",
@@ -67,7 +67,7 @@
     "seeAllNews": "Vedi tutte le notizie",
     "cta": {
       "title": "Vuoi conoscere i nostri prodotti?",
-      "text": "Scopri le nostre linee di fertilizzanti e le altre soluzioni, e richiedi il catalogo di quella che ti interessa."
+      "text": "Scopri i nostri marchi Clavel e Agrentis e le loro cinque linee di fertilizzanti."
     }
   },
   "aboutUs": {
@@ -109,18 +109,18 @@
       }
     }
   },
-  "productsServices": {
-    "title": "Prodotti e servizi",
-    "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura. Richiedici il catalogo con tutti i dettagli.",
-    "mainTitle": "Le nostre linee principali",
-    "mainIntro": "Due grandi linee di fertilizzanti pensate per le reali esigenze dell'agricoltore.",
-    "lines": {
-      "organicFertilisers": {
-        "title": "Fertilizzanti biologici",
+  "products": {
+    "title": "Prodotti",
+    "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura.",
+    "brands": {
+      "clavel": {
+        "name": "Clavel",
+        "line": "Fertilizzanti biologici",
         "text": "Soluzioni specifiche per ogni coltura, formulate con sostanze naturali e biodegradabili e convalidate dal nostro laboratorio di controllo qualità. Consentiti in agricoltura biologica."
       },
-      "sustainableFertilisers": {
-        "title": "Fertilizzanti sostenibili",
+      "agrentis": {
+        "name": "Agrentis",
+        "line": "Fertilizzanti sostenibili",
         "text": "Nutrizione e protezione per un'agricoltura più efficiente e rispettosa dell'ambiente, su misura per ogni coltura e ogni fase vegetativa."
       }
     },
@@ -128,8 +128,8 @@
       "certified": "Certificato biologico UNE 142500:2017",
       "drone": "Compatibile con drone"
     },
+    "viewRanges": "Vedi le sue linee",
     "rangesTitle": "Gamme di prodotto",
-    "rangesIntro": "Le nostre due linee principali si articolano in cinque gamme, in base alle esigenze della coltura.",
     "ranges": {
       "terra": {
         "title": "Terra",
@@ -151,30 +151,6 @@
         "title": "Correttivi",
         "text": "Correggono e prevengono le carenze nutrizionali con un equilibrio preciso di nutrienti, in via preventiva o curativa."
       }
-    },
-    "otherTitle": "Altre soluzioni",
-    "otherIntro": "Linee complementari che ampliano la nostra offerta per le diverse esigenze del campo e dell'agricoltore professionale.",
-    "other": {
-      "agriculturalInputs": {
-        "title": "Mezzi tecnici agricoli",
-        "text": "Prodotti e materiali complementari per la gestione quotidiana dell'azienda agricola, selezionati per lavorare insieme alle nostre soluzioni nutrizionali."
-      },
-      "agriculturalAdvice": {
-        "title": "Consulenza agronomica",
-        "text": "Assistenza tecnica in campo: analisi del suolo, piani di concimazione personalizzati e monitoraggio della coltura."
-      },
-      "agriculturalTechnology": {
-        "title": "Tecnologia agricola",
-        "text": "Soluzioni tecnologiche per l'agricoltura di precisione, come la distribuzione di fertilizzanti con drone."
-      },
-      "gardening": {
-        "title": "Giardinaggio e vivai",
-        "text": "Prodotti per giardinaggio, vivai e piante ornamentali, con la stessa qualità delle nostre soluzioni per il campo."
-      }
-    },
-    "cta": {
-      "title": "Non sai quale prodotto ti serve?",
-      "text": "Parlaci della tua coltura e ti invieremo il catalogo con le informazioni tecniche sulle soluzioni più adatte."
     }
   },
   "laboratory": {

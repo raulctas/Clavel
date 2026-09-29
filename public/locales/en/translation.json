@@ -16,7 +16,7 @@
     "main": "Main navigation",
     "home": "Home",
     "aboutUs": "About us",
-    "productsServices": "Products and services",
+    "products": "Products",
     "news": "News",
     "team": "Team",
     "contact": "Contact",
@@ -67,7 +67,7 @@
     "seeAllNews": "See all news",
     "cta": {
       "title": "Want to know our products?",
-      "text": "Discover our fertiliser lines and our other solutions, and request the catalogue for the one you are interested in."
+      "text": "Discover our Clavel and Agrentis brands and their five fertiliser ranges."
     }
   },
   "aboutUs": {
@@ -109,18 +109,18 @@
       }
     }
   },
-  "productsServices": {
-    "title": "Products and services",
-    "intro": "Fertilisers, inputs, advice and technology for every crop. Ask us for the catalogue with all the details.",
-    "mainTitle": "Our main lines",
-    "mainIntro": "Two major fertiliser lines tailored to farmers' real needs.",
-    "lines": {
-      "organicFertilisers": {
-        "title": "Organic fertilisers",
+  "products": {
+    "title": "Products",
+    "intro": "Fertilisers, inputs, advice and technology for every crop.",
+    "brands": {
+      "clavel": {
+        "name": "Clavel",
+        "line": "Organic fertilisers",
         "text": "Crop-specific solutions formulated with natural, biodegradable substances and backed by our quality-control laboratory. Suitable for organic farming."
       },
-      "sustainableFertilisers": {
-        "title": "Sustainable fertilisers",
+      "agrentis": {
+        "name": "Agrentis",
+        "line": "Sustainable fertilisers",
         "text": "Nutrition and protection for more efficient farming that respects the environment, tailored to each crop and growth stage."
       }
     },
@@ -128,8 +128,8 @@
       "certified": "Organic certificate UNE 142500:2017",
       "drone": "Drone compatible"
     },
+    "viewRanges": "See its ranges",
     "rangesTitle": "Product ranges",
-    "rangesIntro": "Our two main lines are organised into five ranges, according to what the crop needs.",
     "ranges": {
       "terra": {
         "title": "Terra",
@@ -151,30 +151,6 @@
         "title": "Correctors",
         "text": "They correct and prevent nutrient deficiencies with a precise balance of nutrients, as a preventive or curative treatment."
       }
-    },
-    "otherTitle": "Other solutions",
-    "otherIntro": "Complementary lines that broaden our offer for different needs in the field and for professional farmers.",
-    "other": {
-      "agriculturalInputs": {
-        "title": "Agricultural inputs",
-        "text": "Complementary products and materials for day-to-day farm work, selected to work alongside our nutrition solutions."
-      },
-      "agriculturalAdvice": {
-        "title": "Agricultural advice",
-        "text": "Technical support in the field: soil analysis, personalised fertilisation plans and crop monitoring."
-      },
-      "agriculturalTechnology": {
-        "title": "Agricultural technology",
-        "text": "Technology solutions for precision farming, such as applying fertilisers by drone."
-      },
-      "gardening": {
-        "title": "Gardening and nurseries",
-        "text": "Products for gardening, nurseries and ornamental plants, with the same quality as our solutions for the field."
-      }
-    },
-    "cta": {
-      "title": "Not sure which product you need?",
-      "text": "Tell us about your crop and we will send you the catalogue with technical information on the solutions that best suit it."
     }
   },
   "laboratory": {

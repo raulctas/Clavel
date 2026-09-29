@@ -19,7 +19,7 @@ interface NavItem {
 /** Páginas de la cápsula de escritorio: Inicio va en el logo y Contactar en el botón. */
 const DESKTOP_NAV: NavItem[] = [
   { to: routes.aboutUs, labelKey: 'nav.aboutUs' },
-  { to: routes.productsServices, labelKey: 'nav.productsServices' },
+  { to: routes.products, labelKey: 'nav.products' },
   { to: routes.news, labelKey: 'nav.news' },
   { to: routes.team, labelKey: 'nav.team' },
 ];

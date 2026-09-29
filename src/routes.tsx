@@ -1,8 +1,8 @@
-import { Route } from 'react-router-dom';
+import { Navigate, Route } from 'react-router-dom';
 
 import { MainLayout } from 'components/main-layout';
 import { RouteError } from 'components/route-error';
-import { routes as routePaths } from 'constants/routes';
+import { legacyRedirects, routes as routePaths } from 'constants/routes';
 import { AboutUs } from 'pages/about-us';
 import { Contact } from 'pages/contact';
 import { Home } from 'pages/home';
@@ -12,7 +12,8 @@ import { NewsDetail } from 'pages/news-detail';
 import { NotFound } from 'pages/not-found';
 import { Privacy } from 'pages/privacy';
 import { Production } from 'pages/production';
-import { ProductsServices } from 'pages/products-services';
+import { ProductBrand } from 'pages/product-brand';
+import { Products } from 'pages/products';
 import { Team } from 'pages/team';
 
 /**
@@ -25,7 +26,8 @@ export const routes = (
     <Route errorElement={<RouteError />}>
       <Route index element={<Home />} />
       <Route path={routePaths.aboutUs} element={<AboutUs />} />
-      <Route path={routePaths.productsServices} element={<ProductsServices />} />
+      <Route path={routePaths.products} element={<Products />} />
+      <Route path={routePaths.productBrand} element={<ProductBrand />} />
       <Route path={routePaths.laboratory} element={<Laboratory />} />
       <Route path={routePaths.production} element={<Production />} />
       <Route path={routePaths.news} element={<News />} />
@@ -33,6 +35,9 @@ export const routes = (
       <Route path={routePaths.team} element={<Team />} />
       <Route path={routePaths.contact} element={<Contact />} />
       <Route path={routePaths.privacy} element={<Privacy />} />
+      {legacyRedirects.map(({ from, to }) => (
+        <Route key={from} path={from} element={<Navigate to={to} replace />} />
+      ))}
       <Route path="*" element={<NotFound />} />
     </Route>
   </Route>

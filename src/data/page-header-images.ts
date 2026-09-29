@@ -7,7 +7,7 @@
 export const PAGE_HEADER_IMAGES = {
   aboutUs: '/images/about-us/header.jpg',
   // La misma que Contactar.
-  productsServices: '/images/contact/header.jpg',
+  products: '/images/contact/header.jpg',
   laboratory: '/images/laboratory/header.jpg',
   production: '/images/production/header.jpg',
   // La misma que la portada de Inicio.

@@ -48,6 +48,7 @@ public/
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
+    products/       # Productos: ilustración de cada gama (WebP transparentes)
     provisional/    # foto de muestra del equipo (4:5), hasta tener las reales
     social/         # imagen para compartir en redes (1200×630)
   locales/<idioma>/ # textos estáticos, un fichero por idioma
@@ -89,14 +90,15 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Equipo**: `src/data/team.ts`. Cuando lleguen las fotos (4:5), copiarlas a
   `public/images/team/` y rellenar `photo`, `name`, `email` y `linkedin` de cada miembro. Sin
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
-- **Productos y servicios** (`/products-services`): líneas, gamas y otras soluciones en
-  `src/data/products.ts`, textos en `productsServices`. Cada botón «Solicitar catálogo» abre
-  Contactar con el motivo «catálogo» y el catálogo de ese producto ya marcado
-  (`/contact?reason=catalogue&product=<clave>`).
+- **Productos** (`/products`; la dirección antigua `/products-services` redirige aquí): las
+  dos marcas, Clavel y Agrentis, en tarjetas grandes. Cada una lleva a su página
+  (`/products/clavel` y `/products/agrentis`) con sus cinco gamas (Terra, Protección,
+  Potenciador, Nutrición y Correctores). Marcas y gamas en `src/data/products.ts`, textos en
+  `products`. Una marca desconocida muestra la página 404.
 - **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
   (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
-  varios catálogos, que son los de Productos y servicios (`CATALOGUES` en
-  `src/data/products.ts`).
+  varios catálogos, uno por marca (`CATALOGUES` en `src/data/products.ts`). Con
+  `/contact?reason=catalogue&product=<marca>` el de esa marca sale ya marcado.
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
 - **Clavel en cifras** (al final de «¿Por qué elegirnos?», en Quiénes somos): cifras en
@@ -105,7 +107,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   flechas ni indicadores); con varias, se alternan cada 6 s.
 - **Fondos de las bandas de título** (todas las páginas interiores):
   `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
-  Productos y servicios, Noticias, Equipo y Privacidad reutilizan las fotos de Contactar, la
+  Productos, Noticias, Equipo y Privacidad reutilizan las fotos de Contactar, la
   portada de Inicio y Quiénes somos.
 - **Imagen provisional**: `public/images/provisional/team-4x5.png`, la foto de muestra de las
   fichas del equipo mientras no haya fotos reales (ver «Equipo»).
