@@ -560,7 +560,7 @@
   "contact": {
     "title": "Let’s talk about your crop",
     "intro": "Leave your details and we will reply by email. If you need it, we will send you our product catalogue.",
-    "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia, Spain)",
+    "address": "Avenida Mila Real 43, 46117 Bétera (Valencia, Spain)",
     "form": {
       "reason": "What do you need?",
       "reasons": {
@@ -609,8 +609,9 @@
       "controller": {
         "title": "Data controller",
         "body": [
-          "The controller of your data is {{company}}.",
+          "The controller of your data is {{company}}, with registered address at {{address}}.",
           "- Email: {{email}}",
+          "- Phone: {{phone}}",
           "For any question about your personal data you can write to us at that email address."
         ]
       },

@@ -8,8 +8,7 @@
 export const COMPANY = {
   name: 'Clavel',
   email: 'info@agro-clavel.com',
-  phone: '+34 617 288 900',
-  mobile: '+34 617 288 909',
+  phone: '+34 629 49 17 60',
 } as const;
 
 export type SocialNetwork = 'facebook' | 'instagram' | 'youtube' | 'linkedin' | 'tiktok';
@@ -21,12 +20,6 @@ export const SOCIAL_LINKS: Record<SocialNetwork, string | undefined> = {
   linkedin: undefined,
   tiktok: undefined,
 };
-
-/**
- * Enlace que abre la dirección de Clavel en Google Maps (ficha del lugar).
- * No se traduce: es el mismo en todos los idiomas.
- */
-export const COMPANY_MAPS_URL = 'https://maps.app.goo.gl/qV9Sh5HaZoUE2wx76';
 
 /** Convierte un teléfono legible en un enlace `tel:` sin espacios. */
 export const toTelHref = (phone: string) => `tel:${phone.replace(/\s+/g, '')}`;

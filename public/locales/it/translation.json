@@ -560,7 +560,7 @@
   "contact": {
     "title": "Parliamo della tua coltura",
     "intro": "Lasciaci i tuoi dati e ti risponderemo via e-mail. Se ne hai bisogno, ti invieremo il catalogo dei prodotti.",
-    "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia, Spagna)",
+    "address": "Avenida Mila Real 43, 46117 Bétera (Valencia, Spagna)",
     "form": {
       "reason": "Di cosa hai bisogno?",
       "reasons": {
@@ -609,8 +609,9 @@
       "controller": {
         "title": "Titolare del trattamento",
         "body": [
-          "Il titolare del trattamento dei tuoi dati è {{company}}.",
+          "Il titolare del trattamento dei tuoi dati è {{company}}, con sede in {{address}}.",
           "- E-mail: {{email}}",
+          "- Telefono: {{phone}}",
           "Per qualsiasi questione relativa ai tuoi dati personali puoi scriverci a questo indirizzo e-mail."
         ]
       },

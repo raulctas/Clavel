@@ -560,7 +560,7 @@
   "contact": {
     "title": "Parlons de votre culture",
     "intro": "Laissez-nous vos coordonnées et nous vous répondrons par e-mail. Si vous le souhaitez, nous vous enverrons notre catalogue de produits.",
-    "address": "Paseo El Molí, 2C · 46980 Paterna (Valence, Espagne)",
+    "address": "Avenida Mila Real 43, 46117 Bétera (Valence, Espagne)",
     "form": {
       "reason": "De quoi avez-vous besoin ?",
       "reasons": {
@@ -609,8 +609,9 @@
       "controller": {
         "title": "Responsable du traitement",
         "body": [
-          "Le responsable du traitement de vos données est {{company}}.",
+          "Le responsable du traitement de vos données est {{company}}, dont le siège social est situé {{address}}.",
           "- E-mail : {{email}}",
+          "- Téléphone : {{phone}}",
           "Pour toute question relative à vos données personnelles, vous pouvez nous écrire à cette adresse e-mail."
         ]
       },
