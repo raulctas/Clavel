@@ -55,8 +55,7 @@
     "lab": {
       "eyebrow": "Laboratory",
       "title": "Our own laboratory and technology",
-      "text": "Our centre offers advanced technology, a specialised team and high-quality processes to deliver precise, reliable results. If you would like detailed information about our services, technical advice or personal support, we are here to help.",
-      "cta": "Ask for advice"
+      "text": "Our centre offers advanced technology, a specialised team and high-quality processes to deliver precise, reliable results. If you would like detailed information about our services, technical advice or personal support, we are here to help."
     },
     "manufacturing": {
       "eyebrow": "Production",
@@ -235,10 +234,6 @@
         "title": "Packaging and delivery",
         "text": "We package and ship on time to any destination."
       }
-    },
-    "cta": {
-      "title": "Want to know our products?",
-      "text": "Discover our fertiliser lines and our other solutions, and request the catalogue for the one you are interested in."
     }
   },
   "news": {

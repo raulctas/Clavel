@@ -32,12 +32,6 @@
 }
 
 /* «Descubre más» y «Pide asesoramiento», en la misma línea. */
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px 28px;
-}
-
 /* ---------- Últimas noticias ---------- */
 
 .newsBlock {

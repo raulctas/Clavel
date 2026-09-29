@@ -55,8 +55,7 @@
     "lab": {
       "eyebrow": "Laboratorio",
       "title": "Laboratorio e tecnologia propri",
-      "text": "Nel nostro centro mettiamo a tua disposizione tecnologia avanzata, un team specializzato e processi di alta qualità per garantire risultati precisi e affidabili. Se desideri informazioni dettagliate sui nostri servizi, una consulenza o un'assistenza personalizzata, siamo qui per aiutarti.",
-      "cta": "Richiedi una consulenza"
+      "text": "Nel nostro centro mettiamo a tua disposizione tecnologia avanzata, un team specializzato e processi di alta qualità per garantire risultati precisi e affidabili. Se desideri informazioni dettagliate sui nostri servizi, una consulenza o un'assistenza personalizzata, siamo qui per aiutarti."
     },
     "manufacturing": {
       "eyebrow": "Produzione",
@@ -235,10 +234,6 @@
         "title": "Confezionamento e consegna",
         "text": "Confezioniamo e spediamo puntualmente in qualsiasi destinazione."
       }
-    },
-    "cta": {
-      "title": "Vuoi conoscere i nostri prodotti?",
-      "text": "Scopri le nostre linee di fertilizzanti e le altre soluzioni, e richiedi il catalogo di quella che ti interessa."
     }
   },
   "news": {

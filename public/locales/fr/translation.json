@@ -55,8 +55,7 @@
     "lab": {
       "eyebrow": "Laboratoire",
       "title": "Un laboratoire et une technologie propres",
-      "text": "Dans notre centre, nous mettons à votre disposition une technologie de pointe, une équipe spécialisée et des processus de haute qualité pour garantir des résultats précis et fiables. Pour obtenir des informations détaillées sur nos services, demander des conseils ou bénéficier d'un accompagnement personnalisé, nous sommes à votre écoute.",
-      "cta": "Demandez conseil"
+      "text": "Dans notre centre, nous mettons à votre disposition une technologie de pointe, une équipe spécialisée et des processus de haute qualité pour garantir des résultats précis et fiables. Pour obtenir des informations détaillées sur nos services, demander des conseils ou bénéficier d'un accompagnement personnalisé, nous sommes à votre écoute."
     },
     "manufacturing": {
       "eyebrow": "Production",
@@ -235,10 +234,6 @@
         "title": "Conditionnement et livraison",
         "text": "Nous conditionnons et expédions à temps vers toutes les destinations."
       }
-    },
-    "cta": {
-      "title": "Vous souhaitez découvrir nos produits ?",
-      "text": "Découvrez nos gammes d'engrais et nos autres solutions, et demandez le catalogue de celle qui vous intéresse."
     }
   },
   "news": {
