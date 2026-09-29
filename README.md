@@ -81,7 +81,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Noticias**: `src/data/news.ts` (slug, categoría, imagen y vídeos de YouTube opcionales) +
   `news.items.<id>` en cada `translation.json` (título, extracto y cuerpo). Cada noticia tiene su
   página en `/news/<slug>`. Su imagen es `public/images/news/<slug>.jpg`: JPG de unos 1200 px
-  de ancho; se muestra recortada a 3:2, así que lo importante debe quedar en el centro.
+  de ancho. Se muestra en su tarjeta (recortada a 3:2) y como fondo de la banda de título de
+  la noticia, así que lo importante debe quedar en el centro.
 - **Textos largos** (cuerpo de las noticias y política de privacidad): son listas de bloques en
   `translation.json`. Un bloque que empieza por `## ` es un subtítulo, por `### ` un subtítulo
   menor y por `- ` un elemento de lista; el resto son párrafos. Así se traducen sin tocar código.
