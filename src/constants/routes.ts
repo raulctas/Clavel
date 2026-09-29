@@ -6,6 +6,7 @@ export const routes = {
   home: '/',
   aboutUs: '/about-us',
   products: '/products',
+  productBrand: '/products/:brand',
   laboratory: '/laboratory',
   production: '/production-logistics',
   news: '/news',
@@ -17,6 +18,9 @@ export const routes = {
 
 /** Direcciones antiguas que redirigen a la actual (para no romper enlaces guardados). */
 export const legacyRedirects = [{ from: '/products-services', to: routes.products }] as const;
+
+/** Construye la ruta de la página de una marca (sus gamas). */
+export const productBrandPath = (brand: string) => `${routes.products}/${brand}`;
 
 /** Construye la ruta de una noticia a partir de su slug. */
 export const newsDetailPath = (slug: string) => `${routes.news}/${slug}`;

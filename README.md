@@ -91,8 +91,10 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   `public/images/team/` y rellenar `photo`, `name`, `email` y `linkedin` de cada miembro. Sin
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
 - **Productos** (`/products`; la dirección antigua `/products-services` redirige aquí): las
-  dos marcas, Clavel y Agrentis, cada una con sus cinco gamas (Terra, Protección, Potenciador,
-  Nutrición y Correctores). Marcas y gamas en `src/data/products.ts`, textos en `products`.
+  dos marcas, Clavel y Agrentis, en tarjetas grandes. Cada una lleva a su página
+  (`/products/clavel` y `/products/agrentis`) con sus cinco gamas (Terra, Protección,
+  Potenciador, Nutrición y Correctores). Marcas y gamas en `src/data/products.ts`, textos en
+  `products`. Una marca desconocida muestra la página 404.
 - **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
   (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
   varios catálogos, uno por marca (`CATALOGUES` en `src/data/products.ts`). Con

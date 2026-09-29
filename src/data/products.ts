@@ -40,6 +40,9 @@ export const PRODUCT_RANGES: ProductRange[] = [
  */
 export const CATALOGUES: string[] = BRANDS.map((brand) => brand.key);
 
+/** Marca a partir del segmento de la URL (/products/<marca>); `undefined` si no existe. */
+export const findBrand = (key: string | undefined) => BRANDS.find((brand) => brand.key === key);
+
 export const isCatalogue = (key: string | null): key is string =>
   key !== null && CATALOGUES.includes(key);
 

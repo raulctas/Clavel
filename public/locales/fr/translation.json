@@ -128,6 +128,7 @@
       "certified": "Certificat biologique UNE 142500:2017",
       "drone": "Compatible drone"
     },
+    "viewRanges": "Voir ses gammes",
     "rangesTitle": "Gammes de produits",
     "ranges": {
       "terra": {

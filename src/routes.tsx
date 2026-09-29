@@ -12,6 +12,7 @@ import { NewsDetail } from 'pages/news-detail';
 import { NotFound } from 'pages/not-found';
 import { Privacy } from 'pages/privacy';
 import { Production } from 'pages/production';
+import { ProductBrand } from 'pages/product-brand';
 import { Products } from 'pages/products';
 import { Team } from 'pages/team';
 
@@ -26,6 +27,7 @@ export const routes = (
       <Route index element={<Home />} />
       <Route path={routePaths.aboutUs} element={<AboutUs />} />
       <Route path={routePaths.products} element={<Products />} />
+      <Route path={routePaths.productBrand} element={<ProductBrand />} />
       <Route path={routePaths.laboratory} element={<Laboratory />} />
       <Route path={routePaths.production} element={<Production />} />
       <Route path={routePaths.news} element={<News />} />
