@@ -107,7 +107,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Cifras de «Clavel en cifras»**: son las que publicaba Grupo Alfa; confirmarlas (y qué
   significa la «(M)» de las hectáreas).
 - **Correo** (`info@agro-clavel.com`) en `src/constants/company.ts`. La dirección y los
-  teléfonos son los de Grupo Alfa; de momento la página de Contactar no los muestra.
+  teléfonos son los de Grupo Alfa; de momento no se muestran en la web (ni en Contactar, ni en el pie, ni
+  en la política de privacidad).
 - **Redes sociales**: URLs en `SOCIAL_LINKS` (`src/constants/company.ts`). Mientras valgan
   `undefined`, el icono se muestra en el pie pero no enlaza.
 - **Nombres, cargos y fotos del equipo**.

@@ -31,8 +31,8 @@ const SECTIONS = [
 /**
  * Política de privacidad y condiciones de uso: /privacy. Enlazada desde la
  * casilla del formulario de contacto y desde el pie. Los datos de la empresa
- * se toman de `COMPANY` y de la dirección traducida, para no repetirlos en los
- * textos.
+ * se toman de `COMPANY`, para no repetirlos en los textos. Por el momento no
+ * se muestran la dirección ni el teléfono.
  */
 export const Privacy = () => {
   const { t } = useTranslation();
@@ -40,9 +40,7 @@ export const Privacy = () => {
 
   const companyData = {
     company: COMPANY.name,
-    address: t('contact.address'),
     email: COMPANY.email,
-    phone: COMPANY.phone,
   };
 
   return (
