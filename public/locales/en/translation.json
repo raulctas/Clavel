@@ -609,8 +609,9 @@
       "controller": {
         "title": "Data controller",
         "body": [
-          "The controller of your data is {{company}}.",
+          "The controller of your data is {{company}}, with registered address at {{address}}.",
           "- Email: {{email}}",
+          "- Phone: {{phone}}",
           "For any question about your personal data you can write to us at that email address."
         ]
       },

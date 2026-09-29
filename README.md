@@ -110,8 +110,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   significa la «(M)» de las hectáreas).
 - **Correo y teléfono** (`info@agro-clavel.com`, `+34 629 49 17 60`) en
   `src/constants/company.ts`. La dirección (Bétera) está en `contact.address` de cada
-  `translation.json` y se muestra como texto, sin enlace. Se ven en el pie; ni Contactar ni la
-  política de privacidad los citan.
+  `translation.json` y se muestra como texto, sin enlace. Se ven en el pie y en el apartado
+  «Responsable del tratamiento» de la política de privacidad; Contactar no los muestra.
 - **Redes sociales**: URLs en `SOCIAL_LINKS` (`src/constants/company.ts`). Mientras valgan
   `undefined`, el icono se muestra en el pie pero no enlaza.
 - **Nombres, cargos y fotos del equipo**.

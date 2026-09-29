@@ -609,8 +609,9 @@
       "controller": {
         "title": "Responsável pelo tratamento",
         "body": [
-          "O responsável pelo tratamento dos seus dados é a {{company}}.",
+          "O responsável pelo tratamento dos seus dados é a {{company}}, com sede em {{address}}.",
           "- E-mail: {{email}}",
+          "- Telefone: {{phone}}",
           "Para qualquer questão relacionada com os seus dados pessoais, pode escrever-nos para esse endereço de e-mail."
         ]
       },

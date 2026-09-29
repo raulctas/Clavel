@@ -609,8 +609,9 @@
       "controller": {
         "title": "Titolare del trattamento",
         "body": [
-          "Il titolare del trattamento dei tuoi dati è {{company}}.",
+          "Il titolare del trattamento dei tuoi dati è {{company}}, con sede in {{address}}.",
           "- E-mail: {{email}}",
+          "- Telefono: {{phone}}",
           "Per qualsiasi questione relativa ai tuoi dati personali puoi scriverci a questo indirizzo e-mail."
         ]
       },
