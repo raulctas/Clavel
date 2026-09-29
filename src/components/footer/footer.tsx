@@ -25,9 +25,6 @@ interface SocialItem {
   href?: string;
 }
 
-/** Por el momento el pie no muestra la dirección ni los teléfonos. */
-const FOOTER_DETAILS = ['email'];
-
 const SOCIAL: SocialItem[] = [
   { name: 'Facebook', icon: Facebook, href: SOCIAL_LINKS.facebook },
   { name: 'Instagram', icon: Instagram, href: SOCIAL_LINKS.instagram },
@@ -39,7 +36,7 @@ const SOCIAL: SocialItem[] = [
 
 export const Footer = () => {
   const { t } = useTranslation();
-  const contactDetails = useContactDetails().filter(({ key }) => FOOTER_DETAILS.includes(key));
+  const contactDetails = useContactDetails();
 
   return (
     <footer className={styles.footer}>

@@ -7,26 +7,16 @@ import { isContactReason } from 'constants/contact-reasons';
 import { CONTACT_PRODUCT_PARAM, CONTACT_REASON_PARAM } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { isCatalogue } from 'data/products';
-import { ContactDetail, useContactDetails } from 'hooks/use-contact-details';
+import { useContactDetails } from 'hooks/use-contact-details';
 import { usePageTitle } from 'hooks/use-page-title';
 
 import { ContactForm } from './components/contact-form';
 import styles from './contact.module.css';
 
-/** Datos que, por el momento, Contactar muestra solo con su icono, sin texto. */
-const DETAILS_WITHOUT_TEXT = ['address', 'phone'];
-/** Datos que, por el momento, Contactar no muestra. */
-const HIDDEN_DETAILS = ['mobile'];
-
-const withoutText = (detail: ContactDetail): ContactDetail =>
-  DETAILS_WITHOUT_TEXT.includes(detail.key) ? { ...detail, text: '', href: undefined } : detail;
-
 export const Contact = () => {
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
-  const contactDetails = useContactDetails()
-    .filter(({ key }) => !HIDDEN_DETAILS.includes(key))
-    .map(withoutText);
+  const contactDetails = useContactDetails();
   usePageTitle(t('nav.contact'));
 
   // «Solicitar catálogo» llega con ?reason=catalogue para preseleccionar el motivo.
