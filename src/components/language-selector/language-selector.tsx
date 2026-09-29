@@ -7,15 +7,12 @@ import { SUPPORTED_LANGUAGES } from 'constants/languages';
 
 import styles from './language-selector.module.css';
 
-interface Props {
-  /**
-   * `menu`: globo + código + chevron con desplegable (cabecera de escritorio).
-   * `toggle`: interruptor con todos los códigos a la vista (barra móvil).
-   */
-  variant?: 'menu' | 'toggle';
-}
-
-export const LanguageSelector = ({ variant = 'menu' }: Props) => {
+/**
+ * Selector de idioma: globo + código + chevron con desplegable. Se usa igual en
+ * la cabecera de escritorio y en la barra móvil (con cinco idiomas no caben
+ * todos los códigos a la vista en un móvil).
+ */
+export const LanguageSelector = () => {
   const { i18n, t } = useTranslation();
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
@@ -59,28 +56,6 @@ export const LanguageSelector = ({ variant = 'menu' }: Props) => {
     i18n.changeLanguage(code);
     setOpen(false);
   };
-
-  if (variant === 'toggle') {
-    return (
-      <div className={styles.toggle} role="group" aria-label={t('common.languageSelector')}>
-        {SUPPORTED_LANGUAGES.map((language) => (
-          <button
-            key={language.code}
-            type="button"
-            lang={language.code}
-            aria-label={language.label}
-            aria-pressed={language.code === current.code}
-            className={[styles.toggleOption, language.code === current.code && styles.active]
-              .filter(Boolean)
-              .join(' ')}
-            onClick={() => changeLanguage(language.code)}
-          >
-            {language.code.toUpperCase()}
-          </button>
-        ))}
-      </div>
-    );
-  }
 
   return (
     <div className={styles.selector} ref={ref}>

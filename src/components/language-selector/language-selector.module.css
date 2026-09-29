@@ -1,4 +1,4 @@
-/* ---------- Desplegable (cabecera de escritorio) ---------- */
+/* ---------- Desplegable (cabecera de escritorio y barra móvil) ---------- */
 
 .selector {
   position: relative;
@@ -84,33 +84,4 @@
 
 .checkVisible {
   color: var(--color-green);
-}
-
-/* ---------- Interruptor (barra móvil) ---------- */
-
-.toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  padding: 3px;
-  border: 1px solid var(--color-border-input);
-  border-radius: var(--radius-full);
-}
-
-.toggleOption {
-  padding: 5px 12px;
-  border-radius: var(--radius-full);
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0.04em;
-  color: var(--color-green);
-  transition:
-    background-color var(--transition),
-    color var(--transition);
-}
-
-.toggleOption.active {
-  background-color: var(--color-green);
-  color: var(--color-white);
 }
