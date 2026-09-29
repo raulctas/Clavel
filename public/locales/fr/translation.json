@@ -16,7 +16,7 @@
     "main": "Navigation principale",
     "home": "Accueil",
     "aboutUs": "Qui sommes-nous",
-    "productsServices": "Produits et services",
+    "products": "Produits",
     "news": "Actualités",
     "team": "Équipe",
     "contact": "Contact",
@@ -67,7 +67,7 @@
     "seeAllNews": "Voir toutes les actualités",
     "cta": {
       "title": "Vous souhaitez découvrir nos produits ?",
-      "text": "Découvrez nos gammes d'engrais et nos autres solutions, et demandez le catalogue de celle qui vous intéresse."
+      "text": "Découvrez nos marques Clavel et Agrentis et leurs cinq gammes d'engrais."
     }
   },
   "aboutUs": {
@@ -109,18 +109,18 @@
       }
     }
   },
-  "productsServices": {
-    "title": "Produits et services",
-    "intro": "Engrais, intrants, conseil et technologie pour chaque culture. Demandez-nous le catalogue détaillé.",
-    "mainTitle": "Nos gammes principales",
-    "mainIntro": "Deux grandes lignes d'engrais adaptées aux besoins réels des agriculteurs.",
-    "lines": {
-      "organicFertilisers": {
-        "title": "Engrais biologiques",
+  "products": {
+    "title": "Produits",
+    "intro": "Engrais, intrants, conseil et technologie pour chaque culture.",
+    "brands": {
+      "clavel": {
+        "name": "Clavel",
+        "line": "Engrais biologiques",
         "text": "Des solutions spécifiques à chaque culture, formulées à partir de substances naturelles et biodégradables et validées par notre laboratoire de contrôle qualité. Utilisables en agriculture biologique."
       },
-      "sustainableFertilisers": {
-        "title": "Engrais durables",
+      "agrentis": {
+        "name": "Agrentis",
+        "line": "Engrais durables",
         "text": "Nutrition et protection pour une agriculture plus efficace et plus respectueuse de l'environnement, adaptées à chaque culture et à chaque stade végétatif."
       }
     },
@@ -129,7 +129,6 @@
       "drone": "Compatible drone"
     },
     "rangesTitle": "Gammes de produits",
-    "rangesIntro": "Nos deux lignes principales se déclinent en cinq gammes, selon les besoins de la culture.",
     "ranges": {
       "terra": {
         "title": "Terra",
@@ -151,30 +150,6 @@
         "title": "Correcteurs",
         "text": "Ils corrigent et préviennent les carences nutritionnelles grâce à un équilibre précis de nutriments, à titre préventif ou curatif."
       }
-    },
-    "otherTitle": "Autres solutions",
-    "otherIntro": "Des lignes complémentaires qui élargissent notre offre pour répondre aux différents besoins du terrain et de l'agriculteur professionnel.",
-    "other": {
-      "agriculturalInputs": {
-        "title": "Intrants agricoles",
-        "text": "Des produits et matériels complémentaires pour le quotidien de l'exploitation, sélectionnés pour fonctionner avec nos solutions de nutrition."
-      },
-      "agriculturalAdvice": {
-        "title": "Conseil agricole",
-        "text": "Un accompagnement technique sur le terrain : analyse de sol, plans de fertilisation personnalisés et suivi des cultures."
-      },
-      "agriculturalTechnology": {
-        "title": "Technologie agricole",
-        "text": "Des solutions technologiques pour l'agriculture de précision, comme l'application d'engrais par drone."
-      },
-      "gardening": {
-        "title": "Jardinage et pépinières",
-        "text": "Des produits pour le jardinage, les pépinières et les plantes ornementales, avec la même qualité que nos solutions pour les champs."
-      }
-    },
-    "cta": {
-      "title": "Vous ne savez pas quel produit choisir ?",
-      "text": "Parlez-nous de votre culture et nous vous enverrons le catalogue avec les informations techniques des solutions les mieux adaptées."
     }
   },
   "laboratory": {
