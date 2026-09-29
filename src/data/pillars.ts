@@ -4,7 +4,8 @@ import { Feature } from 'interfaces/feature';
 
 /**
  * Pilares de Clavel (Inicio y «¿Por qué elegirnos?»). Textos en pillars.<key>.
- * La ilustración solo se muestra en las tarjetas de Inicio.
+ * Las tarjetas de Inicio muestran la ilustración (sin icono); «¿Por qué
+ * elegirnos?», el icono.
  */
 export const PILLARS: Feature[] = [
   {

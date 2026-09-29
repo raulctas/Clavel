@@ -6,7 +6,8 @@ import { IconCircle } from 'components/icon-circle';
 import styles from './info-card.module.css';
 
 interface Props {
-  icon: LucideIcon;
+  /** Icono en círculo sobre el título; opcional (los pilares de Inicio llevan ilustración). */
+  icon?: LucideIcon;
   title: string;
   text: string;
   /** Ilustración decorativa opcional, sobre fondo suave en la parte superior. */
@@ -28,7 +29,7 @@ export const InfoCard = ({ icon, title, text, image, children, as: Tag = 'li' }:
         <img src={image} alt="" className={styles.image} width={560} height={560} loading="lazy" />
       </div>
     )}
-    <IconCircle icon={icon} />
+    {icon && <IconCircle icon={icon} />}
     <h3 className={styles.title}>{title}</h3>
     <p className={styles.text}>{text}</p>
     {children && <div className={styles.footer}>{children}</div>}
