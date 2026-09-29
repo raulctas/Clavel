@@ -21,9 +21,14 @@ const LAB_PILLARS: Feature[] = [
   { key: 'quality', icon: Microscope },
 ];
 
-/** Fotos de la galería «El laboratorio por dentro». */
+/**
+ * Fotos de la galería «El laboratorio por dentro»: todas las del laboratorio,
+ * también las de la banda de título y la sección principal.
+ */
 const GALLERY = [
+  '/images/laboratory/gallery-beaker.jpg',
   '/images/laboratory/gallery-mixer.jpg',
+  '/images/laboratory/gallery-weighing.jpg',
   '/images/laboratory/gallery-scale.jpg',
   '/images/laboratory/gallery-cylinder.jpg',
 ];
