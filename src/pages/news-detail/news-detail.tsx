@@ -8,6 +8,7 @@ import { RichText } from 'components/rich-text';
 import { TextLink } from 'components/text-link';
 import { routes } from 'constants/routes';
 import { findNewsBySlug, getRelatedNews } from 'data/news';
+import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { usePageTitle } from 'hooks/use-page-title';
 import { NewsItem } from 'interfaces/news';
 import { NotFound } from 'pages/not-found';
@@ -38,7 +39,8 @@ const NewsArticle = ({ item }: { item: NewsItem }) => {
         eyebrow={t(`news.categories.${item.category}`)}
         title={title}
         intro={t(`news.items.${item.id}.excerpt`)}
-        image={item.image}
+        // La banda es la misma que la de Noticias; la foto de la noticia va en la portada.
+        image={PAGE_HEADER_IMAGES.news}
       />
 
       <Container as="article" className={styles.article}>
