@@ -6,11 +6,14 @@
  */
 export const PAGE_HEADER_IMAGES = {
   aboutUs: '/images/about-us/header.jpg',
-  productsServices: '/images/provisional/hero-1.png',
+  // La misma que Contactar.
+  productsServices: '/images/contact/header.jpg',
   laboratory: '/images/laboratory/header.jpg',
   production: '/images/production/header.jpg',
-  news: '/images/provisional/hero-3.png',
-  team: '/images/provisional/hero-1.png',
+  // La misma que la portada de Inicio.
+  news: '/images/home/hero.jpg',
+  // La misma que Quiénes somos.
+  team: '/images/about-us/header.jpg',
   contact: '/images/contact/header.jpg',
   privacy: '/images/provisional/hero-3.png',
 } as const;
