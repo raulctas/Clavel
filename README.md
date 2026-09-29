@@ -43,7 +43,7 @@ public/
     favicon/        # favicon con la flor (pestaña del navegador) y apple-touch-icon
     about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
     contact/        # Contactar: banda de título
-    home/           # Inicio: portada, Laboratorio y Fabricación
+    home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     provisional/    # imágenes provisionales, ya con la proporción definitiva

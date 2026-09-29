@@ -31,10 +31,11 @@ export const Home = () => {
         <Container className={styles.pillarsBlock}>
           <h2 className={styles.sectionTitle}>{t('home.pillarsTitle')}</h2>
           <ul className={styles.pillars}>
-            {PILLARS.map(({ key, icon }) => (
+            {PILLARS.map(({ key, icon, image }) => (
               <InfoCard
                 key={key}
                 icon={icon}
+                image={image}
                 title={t(`pillars.${key}.title`)}
                 text={t(`pillars.${key}.text`)}
               />

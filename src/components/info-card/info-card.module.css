@@ -7,6 +7,24 @@
   border-radius: var(--radius-card);
 }
 
+/* Ilustración con fondo transparente: se muestra entera, sin recortar. */
+.imageBox {
+  position: relative;
+  margin-bottom: 4px;
+  aspect-ratio: 4 / 3;
+  border-radius: calc(var(--radius-card) - 6px);
+  background-color: var(--color-sprout-soft);
+}
+
+/* Posicionada para que su tamaño natural no estire la caja 4:3. */
+.image {
+  position: absolute;
+  inset: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  object-fit: contain;
+}
+
 .title {
   font-size: 21px;
   line-height: 1.2;

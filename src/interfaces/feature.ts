@@ -7,4 +7,6 @@ import { LucideIcon } from 'lucide-react';
 export interface Feature {
   key: string;
   icon: LucideIcon;
+  /** Ilustración opcional (PNG/WebP con fondo transparente) para la tarjeta. */
+  image?: string;
 }
