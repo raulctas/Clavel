@@ -104,11 +104,11 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   flechas ni indicadores); con varias, se alternan cada 6 s.
 - **Fondos de las bandas de título** (Quiénes somos, Noticias, Equipo y Contactar):
   `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
-- **Imágenes provisionales**: `public/images/provisional/`. Quedan pendientes la
-  banda de título de Privacidad, las fotos del equipo y las cifras de Quiénes somos. Para
-  cambiarlas, sustituir los ficheros (mismo nombre y proporción) o actualizar las rutas en
-  `src/data/` y en cada página. Productos y servicios, Noticias y Equipo reutilizan en su banda
-  de título las fotos de Contactar, la portada de Inicio y Quiénes somos.
+- **Imágenes provisionales**: `public/images/provisional/`. Quedan pendientes las
+  fotos del equipo y las de «Clavel en cifras» (Quiénes somos). Para cambiarlas, sustituir los
+  ficheros (mismo nombre y proporción) o actualizar las rutas en `src/data/` y en cada página.
+  Productos y servicios, Noticias, Equipo y Privacidad reutilizan en su banda de título las
+  fotos de Contactar, la portada de Inicio y Quiénes somos.
 
 ## Pendiente
 

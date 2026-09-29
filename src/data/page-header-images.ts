@@ -1,8 +1,8 @@
 /**
- * Imágenes de fondo de las bandas de título de las páginas interiores. Las de
- * `provisional/` están pendientes: para cambiarlas basta con dejar la definitiva
- * en `public/images/` y actualizar aquí la ruta. Son decorativas (sin texto
- * alternativo) y se muestran atenuadas para que el texto se lea bien.
+ * Imágenes de fondo de las bandas de título de las páginas interiores. Para
+ * cambiarlas basta con dejar la nueva en `public/images/` y actualizar aquí la
+ * ruta. Son decorativas (sin texto alternativo) y se muestran atenuadas para
+ * que el texto se lea bien.
  */
 export const PAGE_HEADER_IMAGES = {
   aboutUs: '/images/about-us/header.jpg',
@@ -15,5 +15,6 @@ export const PAGE_HEADER_IMAGES = {
   // La misma que Quiénes somos.
   team: '/images/about-us/header.jpg',
   contact: '/images/contact/header.jpg',
-  privacy: '/images/provisional/hero-3.png',
+  // La misma que Quiénes somos.
+  privacy: '/images/about-us/header.jpg',
 } as const;
