@@ -15,7 +15,8 @@ import { HeroSlideshow } from './components/hero-slideshow';
 import styles from './home.module.css';
 
 const LATEST_NEWS = NEWS.slice(0, 3);
-const PROVISIONAL_IMAGE = '/images/provisional/news-3x2.png';
+const LABORATORY_IMAGE = '/images/home/laboratory.jpg';
+const MANUFACTURING_IMAGE = '/images/home/manufacturing.jpg';
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -45,7 +46,7 @@ export const Home = () => {
       {/* Laboratorio y Fabricación */}
       <Container as="section" className={styles.features}>
         <FeatureRow
-          image={PROVISIONAL_IMAGE}
+          image={LABORATORY_IMAGE}
           eyebrow={t('home.lab.eyebrow')}
           title={t('home.lab.title')}
         >
@@ -57,7 +58,7 @@ export const Home = () => {
         </FeatureRow>
 
         <FeatureRow
-          image={PROVISIONAL_IMAGE}
+          image={MANUFACTURING_IMAGE}
           eyebrow={t('home.manufacturing.eyebrow')}
           title={t('home.manufacturing.title')}
           reverse

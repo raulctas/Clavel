@@ -13,11 +13,13 @@ import styles from './hero-slideshow.module.css';
 /**
  * Portada de Inicio: galería a sangre con fundido y zoom lento, veladura blanca
  * de izquierda a derecha y el texto directamente sobre la imagen. Avanza sola
- * cada 6s; los indicadores y las flechas reinician el temporizador.
+ * cada 6s; los indicadores y las flechas reinician el temporizador. Con una sola
+ * imagen no hay pase y no se muestran los controles.
  */
 export const HeroSlideshow = () => {
   const { t } = useTranslation();
   const { index, goTo, next, previous } = useSlideshow(HERO_SLIDES.length, HERO_SLIDE_INTERVAL);
+  const hasControls = HERO_SLIDES.length > 1;
 
   return (
     <section className={styles.hero}>
@@ -48,46 +50,48 @@ export const HeroSlideshow = () => {
         </div>
       </Container>
 
-      <div className={styles.controls}>
-        <Container className={styles.controlsInner}>
-          <div className={styles.dots}>
-            {HERO_SLIDES.map((src, slideIndex) => (
+      {hasControls && (
+        <div className={styles.controls}>
+          <Container className={styles.controlsInner}>
+            <div className={styles.dots}>
+              {HERO_SLIDES.map((src, slideIndex) => (
+                <button
+                  key={src}
+                  type="button"
+                  className={styles.dot}
+                  aria-label={t('common.goToSlide', { index: slideIndex + 1 })}
+                  aria-current={slideIndex === index}
+                  onClick={() => goTo(slideIndex)}
+                >
+                  <span
+                    className={[styles.dotBar, slideIndex === index && styles.dotBarActive]
+                      .filter(Boolean)
+                      .join(' ')}
+                  />
+                </button>
+              ))}
+            </div>
+            <div className={styles.arrows}>
               <button
-                key={src}
                 type="button"
-                className={styles.dot}
-                aria-label={t('common.goToSlide', { index: slideIndex + 1 })}
-                aria-current={slideIndex === index}
-                onClick={() => goTo(slideIndex)}
+                className={`${styles.arrow} ${styles.arrowPrevious}`}
+                aria-label={t('common.previous')}
+                onClick={previous}
               >
-                <span
-                  className={[styles.dotBar, slideIndex === index && styles.dotBarActive]
-                    .filter(Boolean)
-                    .join(' ')}
-                />
+                <ArrowLeft size={20} aria-hidden />
               </button>
-            ))}
-          </div>
-          <div className={styles.arrows}>
-            <button
-              type="button"
-              className={`${styles.arrow} ${styles.arrowPrevious}`}
-              aria-label={t('common.previous')}
-              onClick={previous}
-            >
-              <ArrowLeft size={20} aria-hidden />
-            </button>
-            <button
-              type="button"
-              className={`${styles.arrow} ${styles.arrowNext}`}
-              aria-label={t('common.next')}
-              onClick={next}
-            >
-              <ArrowRight size={20} aria-hidden />
-            </button>
-          </div>
-        </Container>
-      </div>
+              <button
+                type="button"
+                className={`${styles.arrow} ${styles.arrowNext}`}
+                aria-label={t('common.next')}
+                onClick={next}
+              >
+                <ArrowRight size={20} aria-hidden />
+              </button>
+            </div>
+          </Container>
+        </div>
+      )}
     </section>
   );
 };

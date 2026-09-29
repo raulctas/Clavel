@@ -13,6 +13,9 @@ import { usePageTitle } from 'hooks/use-page-title';
 import { CompanyStats } from './components/company-stats';
 import styles from './about-us.module.css';
 
+/** Fotos de «¿Por qué elegirnos?»: campo y familia agricultora. Decorativas. */
+const WHY_IMAGES = ['/images/about-us/why-fields.jpg', '/images/about-us/why-family.jpg'];
+
 export const AboutUs = () => {
   const { t } = useTranslation();
   usePageTitle(t('nav.aboutUs'));
@@ -46,6 +49,19 @@ export const AboutUs = () => {
             <h2 className={styles.sectionTitle}>{t('aboutUs.whyTitle')}</h2>
             <p className={styles.whyIntro}>{t('aboutUs.whyIntro')}</p>
           </div>
+          <div className={styles.whyImages}>
+            {WHY_IMAGES.map((src) => (
+              <img
+                key={src}
+                src={src}
+                alt=""
+                className={styles.whyImage}
+                width={1200}
+                height={800}
+                loading="lazy"
+              />
+            ))}
+          </div>
           <ul className={styles.reasons}>
             {PILLARS.map(({ key, icon: Icon }) => (
               <li key={key} className={`${styles.reason} hover-lift`}>
@@ -63,7 +79,7 @@ export const AboutUs = () => {
       {/* Calidad ecológica certificada */}
       <Container as="section" className={styles.quality}>
         <img
-          src="/images/provisional/section-1x1.png"
+          src="/images/about-us/quality.jpg"
           alt=""
           className={styles.qualityImage}
           width={1000}
