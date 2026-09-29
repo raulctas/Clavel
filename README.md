@@ -48,7 +48,7 @@ public/
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
-    provisional/    # imágenes provisionales, ya con la proporción definitiva
+    provisional/    # foto de muestra del equipo (4:5), hasta tener las reales
     social/         # imagen para compartir en redes (1200×630)
   locales/<idioma>/ # textos estáticos, un fichero por idioma
 src/
@@ -99,16 +99,16 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   `src/data/products.ts`).
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
-- **Clavel en cifras** (final de Quiénes somos): cifras e imágenes en `src/data/company-stats.ts`.
+- **Clavel en cifras** (al final de «¿Por qué elegirnos?», en Quiénes somos): cifras en
+  `src/data/company-stats.ts`.
 - **Portada de Inicio**: `src/data/hero-slides.ts`. Con una sola imagen no hay pase (ni
   flechas ni indicadores); con varias, se alternan cada 6 s.
-- **Fondos de las bandas de título** (Quiénes somos, Noticias, Equipo y Contactar):
+- **Fondos de las bandas de título** (todas las páginas interiores):
   `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
-- **Imágenes provisionales**: `public/images/provisional/`. Quedan pendientes las
-  fotos del equipo y las de «Clavel en cifras» (Quiénes somos). Para cambiarlas, sustituir los
-  ficheros (mismo nombre y proporción) o actualizar las rutas en `src/data/` y en cada página.
-  Productos y servicios, Noticias, Equipo y Privacidad reutilizan en su banda de título las
-  fotos de Contactar, la portada de Inicio y Quiénes somos.
+  Productos y servicios, Noticias, Equipo y Privacidad reutilizan las fotos de Contactar, la
+  portada de Inicio y Quiénes somos.
+- **Imagen provisional**: `public/images/provisional/team-4x5.png`, la foto de muestra de las
+  fichas del equipo mientras no haya fotos reales (ver «Equipo»).
 
 ## Pendiente
 

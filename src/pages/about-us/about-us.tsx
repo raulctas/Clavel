@@ -73,6 +73,8 @@ export const AboutUs = () => {
               </li>
             ))}
           </ul>
+          {/* Clavel en cifras */}
+          <CompanyStats />
         </Container>
       </section>
 
@@ -99,9 +101,6 @@ export const AboutUs = () => {
           <p className={styles.paragraph}>{t('aboutUs.organic.text')}</p>
         </div>
       </Container>
-
-      {/* Clavel en cifras */}
-      <CompanyStats />
     </>
   );
 };

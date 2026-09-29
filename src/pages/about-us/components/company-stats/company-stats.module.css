@@ -1,32 +1,10 @@
-/*
- * Un solo fondo, crema, para alternar con la sección blanca anterior
- * («Calidad ecológica certificada»).
- */
-.section {
-  background-color: var(--color-cream);
-  padding-block: 80px 64px;
-}
-
-.images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  margin-bottom: 56px;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border-radius: var(--radius-image);
-  background-color: var(--color-kraft-light);
-  box-shadow: 0 18px 40px rgba(31, 42, 31, 0.16);
-}
-
+/* Separada de los motivos por una línea, como cierre de «¿Por qué elegirnos?». */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 16px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-border-input);
 }
 
 .stat {
