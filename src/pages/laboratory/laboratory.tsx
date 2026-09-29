@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { FlaskConical, Microscope, ScrollText } from 'lucide-react';
 
 import { Container } from 'components/container';
 import { CtaBand } from 'components/cta-band';
@@ -10,15 +9,17 @@ import { PhotoGallery } from 'components/photo-gallery';
 import { adviceRequestPath } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { usePageTitle } from 'hooks/use-page-title';
-import { Feature } from 'interfaces/feature';
 
 import styles from './laboratory.module.css';
 
-/** Lo que se hace en el laboratorio. Textos en laboratory.pillars.<key>. */
-const LAB_PILLARS: Feature[] = [
-  { key: 'research', icon: FlaskConical },
-  { key: 'compliance', icon: ScrollText },
-  { key: 'quality', icon: Microscope },
+/**
+ * Lo que se hace en el laboratorio, cada uno con su ilustración (trazo sobre
+ * fondo transparente). Textos en laboratory.pillars.<key>.
+ */
+const LAB_PILLARS = [
+  { key: 'research', image: '/images/laboratory/pillar-research.webp' },
+  { key: 'compliance', image: '/images/laboratory/pillar-compliance.webp' },
+  { key: 'quality', image: '/images/laboratory/pillar-quality.webp' },
 ];
 
 /**
@@ -26,6 +27,7 @@ const LAB_PILLARS: Feature[] = [
  * también las de la banda de título y la sección principal.
  */
 const GALLERY = [
+  '/images/laboratory/gallery-pouring.jpg',
   '/images/laboratory/gallery-beaker.jpg',
   '/images/laboratory/gallery-mixer.jpg',
   '/images/laboratory/gallery-weighing.jpg',
@@ -62,10 +64,10 @@ export const Laboratory = () => {
         <Container className={styles.pillarsBlock}>
           <h2 className={styles.sectionTitle}>{t('laboratory.pillarsTitle')}</h2>
           <ul className={styles.pillars}>
-            {LAB_PILLARS.map(({ key, icon }) => (
+            {LAB_PILLARS.map(({ key, image }) => (
               <InfoCard
                 key={key}
-                icon={icon}
+                image={image}
                 title={t(`laboratory.pillars.${key}.title`)}
                 text={t(`laboratory.pillars.${key}.text`)}
               />

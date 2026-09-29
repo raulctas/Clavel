@@ -44,7 +44,7 @@ public/
     about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
     contact/        # Contactar: banda de título
     home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
-    laboratory/     # Laboratorio: sección principal y galería en movimiento (fotos 4:5)
+    laboratory/     # Laboratorio: banda de título, sección principal, iconos de «Qué hacemos» y galería
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
