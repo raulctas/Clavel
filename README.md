@@ -44,8 +44,10 @@ public/
     about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
     contact/        # Contactar: banda de título
     home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
+    laboratory/     # Laboratorio: sección principal y galería en movimiento (fotos 4:5)
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
+    production/     # Producción y logística: banda de título, Fabricación y Logística
     provisional/    # imágenes provisionales, ya con la proporción definitiva
     social/         # imagen para compartir en redes (1200×630)
   locales/<idioma>/ # textos estáticos, un fichero por idioma
@@ -102,8 +104,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Fondos de las bandas de título** (Quiénes somos, Noticias, Equipo y Contactar):
   `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
 - **Imágenes provisionales**: `public/images/provisional/`. Quedan pendientes las de
-  Productos y servicios, Laboratorio, Producción, Noticias, Equipo, Privacidad y las cifras de
-  Quiénes somos. Para cambiarlas, sustituir los ficheros (mismo nombre y proporción) o
+  Productos y servicios, Noticias, Equipo, Privacidad y las cifras de Quiénes somos. Para cambiarlas, sustituir los ficheros (mismo nombre y proporción) o
   actualizar las rutas en `src/data/` y en cada página.
 
 ## Pendiente

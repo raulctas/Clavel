@@ -37,14 +37,14 @@ export const Production = () => {
 
       <Container as="section" className={styles.features}>
         <FeatureRow
-          image="/images/provisional/news-3x2.png"
+          image="/images/production/manufacturing.jpg"
           eyebrow={t('production.manufacturing.eyebrow')}
           title={t('production.manufacturing.title')}
         >
           <p>{t('production.manufacturing.text')}</p>
         </FeatureRow>
         <FeatureRow
-          image="/images/provisional/section-1x1.png"
+          image="/images/production/logistics.jpg"
           eyebrow={t('production.logistics.eyebrow')}
           title={t('production.logistics.title')}
           reverse

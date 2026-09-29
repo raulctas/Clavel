@@ -1,0 +1,76 @@
+.gallery {
+  --gallery-gap: 20px;
+  --gallery-item: 260px;
+
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    --gallery-gap: 12px;
+    --gallery-item: 180px;
+  }
+}
+
+.title {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+/* Los bordes se difuminan para que las fotos entren y salgan con suavidad. */
+.viewport {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+.track {
+  display: flex;
+  gap: var(--gallery-gap);
+  width: max-content;
+  animation: gallery-scroll 40s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+/* La tira tiene las fotos dos veces: al avanzar media tira (más medio hueco)
+   la copia ocupa el lugar exacto del original y el bucle no se nota. */
+@keyframes gallery-scroll {
+  to {
+    transform: translateX(calc(-50% - var(--gallery-gap) / 2));
+  }
+}
+
+.item {
+  flex: none;
+  width: var(--gallery-item);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-image);
+  background-color: var(--color-kraft-light);
+}
+
+/* Sin animación: una sola tira que el usuario desplaza a mano. */
+@media (prefers-reduced-motion: reduce) {
+  .viewport {
+    overflow-x: auto;
+    mask-image: none;
+  }
+
+  .track {
+    animation: none;
+  }
+
+  .copy {
+    display: none;
+  }
+}
