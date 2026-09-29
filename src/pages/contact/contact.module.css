@@ -63,40 +63,6 @@
   color: var(--color-green);
 }
 
-/* ---------- Horario ---------- */
-
-.hours {
-  display: flex;
-  flex-direction: column;
-}
-
-.hoursRow {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-  padding-block: 10px;
-  border-bottom: 1px solid var(--color-border-card);
-  font-size: 16px;
-  line-height: 1.45;
-}
-
-.hoursRow:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.hoursDay {
-  font-weight: 600;
-  color: var(--color-ink);
-}
-
-.hoursRange {
-  margin: 0;
-  color: var(--color-ink-soft);
-  font-variant-numeric: tabular-nums;
-}
-
 /* ---------- Formulario ---------- */
 
 .formCard {

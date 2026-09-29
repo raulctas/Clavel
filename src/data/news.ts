@@ -16,24 +16,6 @@ export const NEWS_CATEGORIES: NewsCategory[] = [
  * y cuerpo en cada `translation.json` (news.items.<id>).
  */
 export const NEWS: NewsItem[] = [
-  {
-    id: 'mohamedKamel',
-    slug: 'mohamed-kamel-plant-nutrition',
-    category: 'innovation',
-    image: PROVISIONAL_IMAGE,
-  },
-  {
-    id: 'erasmusLaboratory',
-    slug: 'erasmus-laboratory',
-    category: 'innovation',
-    image: PROVISIONAL_IMAGE,
-  },
-  {
-    id: 'erasmusMarketing',
-    slug: 'erasmus-marketing-team',
-    category: 'innovation',
-    image: PROVISIONAL_IMAGE,
-  },
   { id: 'agenda2030', slug: 'agenda-2030', category: 'agriculture', image: PROVISIONAL_IMAGE },
   { id: 'soilQuality', slug: 'soil-quality', category: 'agriculture', image: PROVISIONAL_IMAGE },
   {

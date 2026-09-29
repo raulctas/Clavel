@@ -1,24 +1,32 @@
 import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
-import { Clock } from 'lucide-react';
 
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
 import { isContactReason } from 'constants/contact-reasons';
 import { CONTACT_PRODUCT_PARAM, CONTACT_REASON_PARAM } from 'constants/routes';
-import { OPENING_HOURS } from 'data/opening-hours';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { isCatalogue } from 'data/products';
-import { useContactDetails } from 'hooks/use-contact-details';
+import { ContactDetail, useContactDetails } from 'hooks/use-contact-details';
 import { usePageTitle } from 'hooks/use-page-title';
 
 import { ContactForm } from './components/contact-form';
 import styles from './contact.module.css';
 
+/** Datos que, por el momento, Contactar muestra solo con su icono, sin texto. */
+const DETAILS_WITHOUT_TEXT = ['address', 'phone'];
+/** Datos que, por el momento, Contactar no muestra. */
+const HIDDEN_DETAILS = ['mobile'];
+
+const withoutText = (detail: ContactDetail): ContactDetail =>
+  DETAILS_WITHOUT_TEXT.includes(detail.key) ? { ...detail, text: '', href: undefined } : detail;
+
 export const Contact = () => {
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
-  const contactDetails = useContactDetails();
+  const contactDetails = useContactDetails()
+    .filter(({ key }) => !HIDDEN_DETAILS.includes(key))
+    .map(withoutText);
   usePageTitle(t('nav.contact'));
 
   // «Solicitar catálogo» llega con ?reason=catalogue para preseleccionar el motivo.
@@ -60,21 +68,6 @@ export const Contact = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className={styles.card}>
-            <h2 className={styles.cardTitle}>
-              <Clock size={20} className={styles.detailIcon} aria-hidden />
-              {t('contact.hours.title')}
-            </h2>
-            <dl className={styles.hours}>
-              {OPENING_HOURS.map(({ day, open, close }) => (
-                <div key={day} className={styles.hoursRow}>
-                  <dt className={styles.hoursDay}>{t(`contact.hours.days.${day}`)}</dt>
-                  <dd className={styles.hoursRange}>{t('contact.hours.range', { open, close })}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
         </div>
 
