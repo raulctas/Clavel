@@ -124,7 +124,7 @@ export const Header = () => {
           </Link>
 
           <div className={styles.barActions}>
-            <LanguageSelector variant="toggle" />
+            <LanguageSelector />
             <button
               type="button"
               className={styles.menuButton}

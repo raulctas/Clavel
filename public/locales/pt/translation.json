@@ -1,0 +1,738 @@
+{
+  "common": {
+    "companyName": "Clavel",
+    "homeLink": "Ir para o início",
+    "languageSelector": "Selecionar idioma",
+    "breadcrumb": "Caminho de navegação",
+    "readMore": "Ler mais",
+    "requestCatalogue": "Pedir catálogo",
+    "previous": "Anterior",
+    "next": "Seguinte",
+    "goToSlide": "Ir para a imagem {{index}}",
+    "discoverMore": "Descubra mais"
+  },
+  "nav": {
+    "main": "Navegação principal",
+    "home": "Início",
+    "aboutUs": "Quem somos",
+    "productsServices": "Produtos e serviços",
+    "news": "Notícias",
+    "team": "Equipa",
+    "contact": "Contactar",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "privacy": "Política de privacidade",
+    "laboratory": "Laboratório",
+    "production": "Produção e logística"
+  },
+  "pillars": {
+    "sustainableFarming": {
+      "title": "Agricultura sustentável",
+      "text": "Fertilizantes ecológicos e sustentáveis, com laboratório próprio e compromisso ambiental."
+    },
+    "innovation": {
+      "title": "Inovação tecnológica",
+      "text": "Soluções técnicas adaptadas a cada cultura, em colaboração com centros de investigação."
+    },
+    "presence": {
+      "title": "Presença e compromisso",
+      "text": "A partir de Valencia, trabalhamos por uma agricultura alinhada com a Agenda 2030."
+    },
+    "research": {
+      "title": "I&D agrícola",
+      "text": "Desenvolvemos produtos eficazes com base em estudos agronómicos reais."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Fertilizantes ecológicos · Valencia",
+      "title": "Nutrição natural para culturas saudáveis",
+      "intro": "Na Clavel desenvolvemos soluções agrícolas sustentáveis, com experiência, inovação e compromisso com o futuro do campo.",
+      "ctaAbout": "Conheça-nos"
+    },
+    "pillarsTitle": "Faça parte da nossa comunidade agrícola",
+    "lab": {
+      "eyebrow": "Laboratório",
+      "title": "Laboratório e tecnologia próprios",
+      "text": "No nosso centro, colocamos à sua disposição tecnologia avançada, uma equipa especializada e processos de elevada qualidade para garantir resultados precisos e fiáveis. Se pretende informação detalhada sobre os nossos serviços, aconselhamento técnico ou um atendimento personalizado, estamos aqui para ajudar.",
+      "cta": "Peça aconselhamento"
+    },
+    "manufacturing": {
+      "eyebrow": "Produção",
+      "title": "Processo de fabrico",
+      "text1": "Dispomos de processos de fabrico eficientes e tecnologicamente avançados que garantem produtos de elevada qualidade. O nosso sistema de produção responde com agilidade às necessidades do mercado, otimizando tempos e recursos.",
+      "text2": "Uma logística integrada assegura o fluxo contínuo de materiais e a entrega pontual em qualquer destino. Do planeamento à distribuição final, trabalhamos com padrões rigorosos para oferecer um serviço fiável, seguro e competitivo."
+    },
+    "latestNews": "Últimas notícias",
+    "seeAllNews": "Ver todas as notícias",
+    "cta": {
+      "title": "Quer conhecer os nossos produtos?",
+      "text": "Peça-nos o catálogo e enviamo-lo por e-mail, com toda a informação técnica de cada fertilizante."
+    }
+  },
+  "aboutUs": {
+    "title": "Cultivamos confiança, inovação e sustentabilidade",
+    "intro": "Na Clavel trabalhamos todos os dias ao lado do agricultor, oferecendo soluções eficazes e respeitadoras do ambiente.",
+    "blocks": {
+      "mission": {
+        "title": "Missão",
+        "text": "Promovemos uma agricultura sustentável, utilizando substâncias naturais e biodegradáveis que fortalecem a relação planta-microrganismo e respeitam o equilíbrio do meio envolvente."
+      },
+      "goals": {
+        "title": "Objetivos",
+        "text": "Melhorar a produtividade e a qualidade das culturas, aumentar a resistência das plantas, garantir resíduo zero e proteger o ambiente."
+      },
+      "purpose": {
+        "title": "Propósito",
+        "text": "Os nossos produtos melhoram o crescimento e a proteção da planta, fortalecem raízes e frutos, aumentam a resistência ao stress e ajudam a conservar a qualidade após a colheita."
+      }
+    },
+    "whyTitle": "Porquê escolher-nos?",
+    "whyIntro": "Os principais benefícios que os nossos produtos e a nossa experiência trazem ao agricultor e à sua cultura.",
+    "quality": {
+      "eyebrow": "Qualidade",
+      "title": "Qualidade ecológica certificada",
+      "text": "A tecnologia atualizada e as substâncias biológicas que utilizamos no fabrico, validadas pelo nosso laboratório de controlo de qualidade, garantem eficiência e excelentes resultados no campo.",
+      "certificate": "Certificado ecológico UNE 142500:2017 · Fatores de produção"
+    },
+    "organic": {
+      "title": "Ecológico é melhor",
+      "text": "Os nossos fertilizantes ecológicos, de fórmulas concentradas, garantem melhor rendimento e qualidade, com menos produto e menos resíduos. Além disso, criamos planos personalizados para otimizar cada cultura, contribuindo para uma agricultura sustentável e eficiente."
+    },
+    "stats": {
+      "title": "A Clavel em números",
+      "items": {
+        "farmers": "Agricultores satisfeitos",
+        "products": "Produtos certificados",
+        "hectares": "Hectares certificados (M)",
+        "years": "Anos de experiência"
+      }
+    }
+  },
+  "productsServices": {
+    "title": "Produtos e serviços",
+    "intro": "Fertilizantes, fatores de produção, aconselhamento e tecnologia para cada cultura. Peça-nos o catálogo com todos os detalhes.",
+    "mainTitle": "As nossas linhas principais",
+    "mainIntro": "Duas grandes linhas de fertilizantes adaptadas às necessidades reais do agricultor.",
+    "lines": {
+      "organicFertilisers": {
+        "title": "Fertilizantes ecológicos",
+        "text": "Soluções específicas para cada cultura, formuladas com substâncias naturais e biodegradáveis e validadas pelo nosso laboratório de controlo de qualidade. Aptas para agricultura biológica."
+      },
+      "sustainableFertilisers": {
+        "title": "Fertilizantes sustentáveis",
+        "text": "Nutrição e proteção para uma agricultura mais eficiente e respeitadora do ambiente, adaptadas a cada cultura e a cada fase vegetativa."
+      }
+    },
+    "tags": {
+      "certified": "Certificado ecológico UNE 142500:2017",
+      "drone": "Compatível com drone"
+    },
+    "rangesTitle": "Gamas de produtos",
+    "rangesIntro": "As nossas duas linhas principais organizam-se em cinco gamas, consoante aquilo de que a cultura necessita.",
+    "ranges": {
+      "terra": {
+        "title": "Terra",
+        "text": "Melhoram a saúde do solo, regenerando-o e fornecendo matéria orgânica, azoto e nutrientes essenciais para a cultura."
+      },
+      "protection": {
+        "title": "Proteção",
+        "text": "São absorvidos rapidamente, corrigem carências e reforçam as defesas da planta contra agentes patogénicos até ao final do ciclo."
+      },
+      "booster": {
+        "title": "Potenciador",
+        "text": "Estimulam o crescimento, equilibram a atividade hormonal e preparam a planta para enfrentar o stress."
+      },
+      "nutrition": {
+        "title": "Nutrição",
+        "text": "Otimizam o desenvolvimento da planta ao longo de todo o ciclo, para impulsionar a floração, o vingamento e a maturação."
+      },
+      "correctors": {
+        "title": "Corretores",
+        "text": "Corrigem e previnem carências nutricionais com um equilíbrio preciso de nutrientes, de forma preventiva ou curativa."
+      }
+    },
+    "otherTitle": "Outras soluções",
+    "otherIntro": "Linhas complementares que alargam a nossa oferta para diferentes necessidades do campo e do agricultor profissional.",
+    "other": {
+      "agriculturalInputs": {
+        "title": "Fatores de produção agrícola",
+        "text": "Produtos e materiais complementares para o dia a dia da exploração, selecionados para funcionar em conjunto com as nossas soluções de nutrição."
+      },
+      "cbdFertilisers": {
+        "title": "Fertilizantes CBD",
+        "text": "Nutrição específica para a cultura de cânhamo industrial, adaptada a cada fase do seu desenvolvimento."
+      },
+      "agriculturalAdvice": {
+        "title": "Aconselhamento agrícola",
+        "text": "Acompanhamento técnico no campo: análise de solo, planos de fertilização personalizados e acompanhamento da cultura."
+      },
+      "agriculturalTechnology": {
+        "title": "Tecnologia agrícola",
+        "text": "Soluções tecnológicas para uma agricultura de precisão, como a aplicação de fertilizantes com drone."
+      },
+      "gardening": {
+        "title": "Jardinagem e viveiros",
+        "text": "Produtos para jardinagem, viveiros e plantas ornamentais, com a mesma qualidade das nossas soluções para o campo."
+      }
+    },
+    "cta": {
+      "title": "Não sabe de que produto precisa?",
+      "text": "Fale-nos da sua cultura e enviamos-lhe o catálogo com a informação técnica das soluções que melhor se lhe adaptam."
+    }
+  },
+  "laboratory": {
+    "title": "Laboratório de inovação e controlo de qualidade",
+    "intro": "Análises, ensaios e certificações que garantem a confiança do agricultor.",
+    "overview": {
+      "eyebrow": "O nosso laboratório",
+      "title": "Ciência aplicada a cada fertilizante",
+      "text1": "No nosso laboratório, colocamos à sua disposição tecnologia avançada, uma equipa especializada e processos de elevada qualidade para garantir resultados precisos e fiáveis.",
+      "text2": "Cada produto que sai da nossa fábrica passou antes pelo laboratório: é aí que se desenvolvem as fórmulas, que se validam em ensaios e que se controla a qualidade de cada lote."
+    },
+    "pillarsTitle": "O que fazemos no laboratório",
+    "pillars": {
+      "research": {
+        "title": "Investigação e desenvolvimento",
+        "text": "Desenvolvemos novas metodologias analíticas e ajudamos os nossos clientes a otimizar as fórmulas para cada cultura."
+      },
+      "compliance": {
+        "title": "Regulamentação e certificações",
+        "text": "Garantimos o cumprimento da regulamentação nacional e internacional. Os nossos processos estão validados e o laboratório trabalha com certificações de qualidade reconhecidas."
+      },
+      "quality": {
+        "title": "Controlo de qualidade em cada lote",
+        "text": "Realizamos testes químicos, físicos e microbiológicos em cada lote para assegurar que os materiais e produtos cumprem os mais elevados padrões de segurança e desempenho."
+      }
+    },
+    "cta": {
+      "title": "Precisa de aconselhamento técnico?",
+      "text": "Fale-nos da sua cultura e a nossa equipa técnica recomendar-lhe-á a solução mais adequada.",
+      "button": "Peça aconselhamento"
+    }
+  },
+  "production": {
+    "title": "Processo de produção e logística",
+    "intro": "Coordenamos cada fase para oferecer segurança, rapidez e excelência.",
+    "manufacturing": {
+      "eyebrow": "Fabrico",
+      "title": "Fabrico de alta precisão",
+      "text": "Na nossa fábrica, cada etapa do processo é cuidadosamente controlada para garantir produtos da máxima qualidade. Da seleção das matérias-primas à produção em série, aplicamos padrões rigorosos de segurança e eficiência para que cada lote cumpra a regulamentação nacional e internacional."
+    },
+    "logistics": {
+      "eyebrow": "Logística",
+      "title": "Embalagem e logística seguras",
+      "text": "Terminada a produção, os produtos são embalados de forma a proteger a sua integridade e qualidade. O nosso sistema logístico assegura que cada envio chega a tempo e em perfeitas condições, combinando tecnologia e controlo humano para oferecer segurança e confiança."
+    },
+    "stepsTitle": "Da matéria-prima ao seu campo",
+    "steps": {
+      "rawMaterials": {
+        "title": "Matérias-primas",
+        "text": "Selecionamos e analisamos cada matéria-prima antes de a utilizar."
+      },
+      "manufacturing": {
+        "title": "Fabrico",
+        "text": "Produzimos com processos controlados e eficientes em cada etapa."
+      },
+      "qualityControl": {
+        "title": "Controlo de qualidade",
+        "text": "O laboratório valida cada lote antes de ser embalado."
+      },
+      "delivery": {
+        "title": "Embalagem e entrega",
+        "text": "Embalamos e enviamos a tempo para qualquer destino."
+      }
+    },
+    "cta": {
+      "title": "Quer conhecer os nossos produtos?",
+      "text": "Peça-nos o catálogo e enviamo-lo por e-mail, com toda a informação técnica de cada fertilizante."
+    }
+  },
+  "news": {
+    "title": "Atualidade do campo e da Clavel",
+    "intro": "Investigação, culturas e agricultura sustentável.",
+    "filterLabel": "Filtrar por categoria",
+    "empty": "Não há notícias nesta categoria.",
+    "categories": {
+      "all": "Todas",
+      "agriculture": "Agricultura",
+      "innovation": "Inovação e tecnologia",
+      "fruitVegetables": "Frutas e legumes",
+      "organic": "Biológico"
+    },
+    "items": {
+      "agenda2030": {
+        "title": "Agenda 2030 e agricultura sustentável",
+        "excerpt": "A Agenda 2030 da ONU traça o caminho para um futuro mais justo e respeitador do planeta. A agricultura tem um papel fundamental.",
+        "body": [
+          "Num mundo em constante mudança, a agricultura tem um papel fundamental na sustentabilidade global. A Agenda 2030 da ONU, com os seus 17 Objetivos de Desenvolvimento Sustentável (ODS), traça o caminho para um futuro mais justo e respeitador do planeta. Neste contexto, a indústria dos fertilizantes ecológicos está chamada a ser protagonista de uma agricultura mais limpa, eficiente e responsável.",
+          "## Objetivos de Desenvolvimento Sustentável e agricultura",
+          "A Agenda 2030 aborda grandes desafios globais, muitos deles diretamente ligados ao setor agrícola. Estes são alguns dos ODS mais relevantes para os fertilizantes ecológicos:",
+          "### ODS 2: Erradicar a fome",
+          "Garantir a segurança alimentar passa por melhorar a produtividade agrícola sem prejudicar os ecossistemas. Os fertilizantes ecológicos favorecem uma nutrição vegetal equilibrada, cuidam da saúde do solo e reduzem a utilização de fatores de produção sintéticos.",
+          "### ODS 6: Água potável e saneamento",
+          "Estes fertilizantes reduzem o risco de contaminação dos aquíferos ao minimizar a lixiviação de nutrientes, o que ajuda a preservar a qualidade da água.",
+          "### ODS 15: Proteger a vida terrestre",
+          "Ao promover a biodiversidade e a atividade microbiana do solo, os fertilizantes ecológicos regeneram os ecossistemas agrícolas e reforçam a sustentabilidade a longo prazo.",
+          "## Benefícios dos fertilizantes ecológicos",
+          "Os fertilizantes ecológicos são aliados essenciais de uma agricultura regenerativa. Entre as suas principais vantagens destacam-se:",
+          "- Nutrição equilibrada: fornecem os nutrientes essenciais de que as plantas precisam, de forma natural e progressiva.",
+          "- Impacto ambiental reduzido: minimizam a contaminação dos solos e das águas e protegem os ecossistemas agrícolas.",
+          "- Promoção da biodiversidade: favorecem a vida microbiana do solo e reduzem a dependência de agroquímicos.",
+          "## Liderar a mudança para uma agricultura sustentável",
+          "A indústria dos fertilizantes ecológicos tem uma grande oportunidade: liderar o caminho para uma agricultura mais sustentável, em linha com os princípios da Agenda 2030. Isto implica:",
+          "- Apostar na inovação em produtos naturais e sustentáveis.",
+          "- Formar os agricultores em práticas responsáveis.",
+          "- Promover soluções agrícolas adaptadas a cada cultura e a cada meio.",
+          "## Conclusão",
+          "A Agenda 2030 é um roteiro claro para transformar a agricultura do futuro. A indústria dos fertilizantes ecológicos pode e deve ser um motor fundamental dessa transformação, ajudando a cultivar um futuro verde, produtivo e respeitador do planeta."
+        ]
+      },
+      "soilQuality": {
+        "title": "Como melhorar a qualidade do solo e aumentar a produtividade",
+        "excerpt": "O sucesso de uma colheita começa debaixo da terra. Porque enriquecer o solo antes da sementeira e como fazê-lo passo a passo.",
+        "body": [
+          "Na agricultura, o sucesso de uma colheita começa debaixo da terra. Otimizar a qualidade do solo é essencial para obter culturas mais produtivas, saudáveis e sustentáveis. Neste artigo explicamos porque é que enriquecer o solo antes da sementeira é uma estratégia fundamental e como fazê-lo passo a passo.",
+          "## Porque é tão importante a qualidade do solo?",
+          "O solo não é apenas o suporte físico das plantas: é um ecossistema vivo que afeta diretamente a sua nutrição, crescimento e resistência. Um solo saudável:",
+          "- Melhora a retenção de água e de nutrientes.",
+          "- Favorece a atividade microbiana benéfica.",
+          "- Aumenta a resistência da cultura a doenças e ao stress.",
+          "## O que é o enriquecimento em nutrientes?",
+          "Consiste em preparar o solo antes da sementeira, incorporando nutrientes-chave como o azoto, o fósforo e o potássio, através de fertilizantes ecológicos ou de matéria orgânica. Este processo fortalece o solo e deixa-o pronto para uma produção mais eficiente. Os seus principais benefícios são:",
+          "- Maior absorção de nutrientes: melhora o desenvolvimento radicular e a saúde da planta.",
+          "- Mais produtividade: culturas mais vigorosas e com maiores rendimentos.",
+          "- Melhor qualidade do produto final: alimentos mais nutritivos e resistentes.",
+          "- Prática sustentável: reduz o uso excessivo de fertilizantes e a poluição.",
+          "## Estratégias-chave para enriquecer o solo",
+          "### 1. Faça uma análise de solo",
+          "Antes de aplicar fertilizantes, analise o seu solo. Assim poderá identificar carências concretas e escolher os nutrientes adequados para cada tipo de cultura.",
+          "### 2. Use fertilizantes orgânicos",
+          "O estrume compostado, os biofertilizantes e a adubação verde são excelentes aliados: fornecem nutrientes de forma gradual e melhoram a estrutura do solo a longo prazo.",
+          "### 3. Pratique a rotação de culturas",
+          "Alternar espécies vegetais evita o esgotamento de nutrientes específicos e melhora a biodiversidade do solo.",
+          "### 4. Proteja o solo com cobertura vegetal",
+          "A cobertura morta (mulching) ou as culturas de cobertura protegem o solo da erosão, melhoram a sua estrutura e retêm a humidade, o que favorece a atividade microbiana.",
+          "## Conclusão",
+          "Investir na saúde do solo é investir no futuro da agricultura. Um solo fértil e equilibrado é a base de culturas mais produtivas, sustentáveis e de maior qualidade. Com práticas de enriquecimento responsáveis, não só obterá melhores colheitas: contribuirá também para uma agricultura mais respeitadora do ambiente e das gerações futuras."
+        ]
+      },
+      "fruitVegetables": {
+        "title": "Melhoria de frutas e legumes",
+        "excerpt": "A melhoria do limoeiro da Carmen, passo a passo.",
+        "body": [
+          "Mostramos-lhe, passo a passo, como melhorámos o limoeiro da Carmen: o estado inicial da árvore, o tratamento com fertilizantes ecológicos que aplicámos e os resultados que se podem ver no campo."
+        ]
+      },
+      "citrusFertilisation": {
+        "title": "Adubação orgânica em citrinos",
+        "excerpt": "Gravámos com Juan Manuel Martínez na sua exploração de citrinos.",
+        "body": [
+          "Gravámos com Juan Manuel Martínez na sua exploração de citrinos, onde nos fala da sua experiência com a adubação orgânica e dos resultados que obteve nas suas árvores."
+        ]
+      },
+      "trialFields": {
+        "title": "O papel dos campos de ensaio",
+        "excerpt": "Os campos de ensaio são essenciais para validar a utilização de fertilizantes ecológicos face à agricultura convencional.",
+        "body": [
+          "A agricultura moderna exige soluções eficientes, sustentáveis e adaptadas a um meio em mudança. Neste cenário, os campos de ensaio são ferramentas essenciais para validar a utilização de fertilizantes ecológicos, uma alternativa fundamental face à agricultura convencional.",
+          "## O que são os campos de ensaio agrícolas?",
+          "São parcelas concebidas para a investigação e a experimentação agrícola. Nelas, agrónomos, agricultores e investigadores testam novas técnicas, produtos e soluções em condições reais, mas controladas. Isto permite:",
+          "- Comparar diferentes métodos de cultivo.",
+          "- Medir resultados a curto, médio e longo prazo.",
+          "- Adaptar as soluções a contextos climáticos e de solo concretos.",
+          "## Fertilizantes ecológicos: uma alternativa necessária",
+          "Os fertilizantes ecológicos são produzidos a partir de materiais naturais como o composto, o estrume, os resíduos vegetais ou minerais de origem orgânica. Ao contrário dos fertilizantes sintéticos, não contaminam o solo nem os aquíferos e, além disso:",
+          "- Regeneram a microbiologia do solo.",
+          "- Fornecem nutrientes de forma progressiva e equilibrada.",
+          "- Favorecem a retenção de água e a estrutura do terreno.",
+          "## Porque são fundamentais os campos de ensaio?",
+          "Permitem demonstrar, medir e aperfeiçoar a utilização destes fatores de produção sustentáveis.",
+          "### 1. Validação científica real",
+          "Ao aplicar fertilizantes ecológicos em condições controladas, obtém-se evidência mensurável da sua eficácia face aos métodos tradicionais.",
+          "### 2. Ajustes por tipo de cultura e zona",
+          "Cada solo e cada clima são únicos. Nos campos de ensaio é possível ajustar a dose e a frequência de aplicação para maximizar os resultados de acordo com a cultura e as necessidades de cada região.",
+          "### 3. Tecnologia e monitorização em tempo real",
+          "Com sensores, drones e programas de gestão agrícola, é possível medir o crescimento da cultura, os níveis de nutrientes do solo e as variações de humidade e temperatura.",
+          "### 4. Boas práticas",
+          "Os resultados dos ensaios permitem definir e divulgar protocolos de aplicação eficazes e sustentáveis, que ajudam outros produtores a implementar soluções já comprovadas.",
+          "## Desafios a ter em conta",
+          "- Condições climáticas imprevisíveis que podem afetar os resultados.",
+          "- Dificuldade em extrapolar os dados para explorações de grande escala.",
+          "- Necessidade de colaboração ativa entre agricultores, técnicos e comunidades rurais.",
+          "## Conclusão: inovação e sustentabilidade andam de mãos dadas",
+          "Os campos de ensaio são laboratórios vivos que permitem à agricultura avançar para modelos mais sustentáveis e rentáveis. Graças a eles, os fertilizantes ecológicos deixam de ser apenas uma alternativa para se tornarem uma ferramenta comprovada e escalável para a agricultura do futuro."
+        ]
+      },
+      "npkFertilisers": {
+        "title": "Os fertilizantes NPK são sustentáveis?",
+        "excerpt": "Riscos e consequências da utilização intensiva de fertilizantes químicos para a saúde do solo a longo prazo.",
+        "body": [
+          "A fertilidade do solo é a base de uma agricultura sustentável e resiliente. No entanto, a utilização intensiva de fertilizantes químicos como os NPK está a acelerar a degradação dos solos agrícolas em todo o mundo. Embora possam trazer benefícios a curto prazo, os seus efeitos a longo prazo põem em risco a produtividade futura e o equilíbrio ambiental.",
+          "## O que são os fertilizantes NPK?",
+          "Contêm três macronutrientes essenciais para as plantas:",
+          "- N (azoto), para o desenvolvimento de folhas e caules.",
+          "- P (fósforo), para a formação de raízes e frutos.",
+          "- K (potássio), para a resistência e o metabolismo.",
+          "Embora estimulem o crescimento vegetal, não cobrem os restantes micronutrientes e elementos necessários para um solo saudável.",
+          "## Problemas da utilização prolongada",
+          "### 1. Desequilíbrio nutricional do solo",
+          "Ao centrar-se no azoto, no fósforo e no potássio, deixam-se de lado micronutrientes essenciais como o cálcio, o magnésio, o enxofre, o ferro, o zinco ou o manganês, o que afeta a saúde das plantas e a vida microbiana do solo.",
+          "### 2. Contaminação ambiental",
+          "O excesso de azoto e de fósforo pode infiltrar-se nas águas subterrâneas ou escorrer para os rios, provocando a contaminação da água e a eutrofização.",
+          "### 3. Perda de biodiversidade do solo",
+          "Os fertilizantes sintéticos podem reduzir a diversidade microbiana e afetar processos-chave como a decomposição da matéria orgânica ou a fixação de azoto.",
+          "### 4. Erosão e perda de estrutura",
+          "Com o tempo, o solo tratado apenas com produtos químicos perde matéria orgânica e torna-se mais compacto, menos poroso e mais vulnerável à erosão provocada pelo vento e pela chuva.",
+          "### 5. Diminuição da fertilidade natural",
+          "Cria-se uma dependência artificial: quanto mais se aplicam, mais se degrada a fertilidade própria do solo, o que obriga a aumentar as doses para manter a produção.",
+          "## Consequências para o agricultor",
+          "- Custos mais elevados a longo prazo, devido à necessidade constante de fatores de produção.",
+          "- Rendimentos mais baixos após várias campanhas seguidas.",
+          "- Maior vulnerabilidade das culturas a doenças e pragas.",
+          "- Menor rentabilidade e menos resiliência face às alterações climáticas.",
+          "## Alternativas sustentáveis",
+          "A solução passa por mudar a abordagem: alimentar não só as plantas, mas também o solo. Algumas práticas sustentáveis são:",
+          "- Incorporar matéria orgânica, como composto, estrume bem curtido ou resíduos vegetais.",
+          "- Utilizar adubos verdes e culturas de cobertura para fixar azoto, proteger o solo e melhorar a sua estrutura.",
+          "- Aplicar fertilizantes ecológicos, formulados com ingredientes naturais que respeitam a biodiversidade do solo.",
+          "- Analisar o solo para fornecer apenas os nutrientes necessários e evitar excessos.",
+          "- Fazer a rotação de culturas para conservar nutrientes e quebrar os ciclos de pragas e doenças.",
+          "## Conclusão: a fertilidade do solo não se compra, cultiva-se",
+          "Os fertilizantes NPK podem ser úteis em momentos pontuais, mas não são sustentáveis como única estratégia de fertilização. Para alcançar uma produção rentável, resiliente e responsável, é preciso apostar em estratégias que regenerem o solo e trabalhem com a natureza, e não contra ela."
+        ]
+      },
+      "soilPreparation": {
+        "title": "Preparação do solo em agricultura biológica",
+        "excerpt": "Sete passos-chave para uma cultura saudável: um solo bem trabalhado retém melhor a água e fornece os nutrientes necessários.",
+        "body": [
+          "Uma boa preparação do solo é o primeiro passo para uma cultura saudável e sustentável, sobretudo em agricultura biológica, onde o equilíbrio natural do ecossistema é essencial. Um solo bem trabalhado tem melhor estrutura, retém melhor a água e fornece os nutrientes de que as plantas precisam para crescer. Estes são os sete passos fundamentais para o preparar de forma eficaz e respeitadora do ambiente.",
+          "## 1. Análise e avaliação do solo",
+          "Antes de mais, é preciso conhecer o estado do solo. Uma análise de solo permite avaliar:",
+          "- A textura (arenosa, argilosa, limosa…).",
+          "- O pH (ácido ou alcalino).",
+          "- O teor de nutrientes e de matéria orgânica.",
+          "Com esta informação, é possível tomar decisões ajustadas às necessidades do terreno e da cultura.",
+          "## 2. Eliminação de infestantes",
+          "As infestantes competem com as culturas pela água e pelos nutrientes. Os métodos mais habituais são:",
+          "- Manual ou mecânico: enxadas, roçadoras ou arranque à mão.",
+          "- Cobertura morta: cobrir o solo para impedir a germinação de novas infestantes.",
+          "- Solarização: cobrir o solo com plástico transparente para o desinfetar e eliminar sementes.",
+          "## 3. Mobilização ou mobilização mínima",
+          "- Mobilização convencional: revolve-se o solo para o arejar e enterrar os resíduos vegetais.",
+          "- Mobilização mínima: mexe-se apenas o necessário, respeitando a estrutura e a biodiversidade do solo.",
+          "A escolha depende do tipo de cultura, do estado do solo e da abordagem ecológica adotada.",
+          "## 4. Incorporação de matéria orgânica",
+          "É fundamental em qualquer sistema biológico: fornece nutrientes essenciais, melhora a estrutura e o arejamento do solo e aumenta a retenção de humidade. Pode utilizar composto bem maturado, estrume compostado ou resíduos vegetais decompostos, misturando-os de forma uniforme com o solo.",
+          "## 5. Correção do pH e fertilização orgânica",
+          "Com base na análise prévia, corrija o pH se necessário:",
+          "- pH baixo (ácido): aplicar calcário agrícola.",
+          "- pH alto (alcalino): aplicar enxofre agrícola.",
+          "Depois, incorpore fertilizantes orgânicos como farinhas de rocha, húmus de minhoca, extratos de algas ou biofertilizantes microbianos. O objetivo é nutrir sem contaminar.",
+          "## 6. Nivelamento e formação de camalhões",
+          "Nivelar a superfície evita encharcamentos, facilita uma rega uniforme e melhora a drenagem. Em solos pesados ou mal drenados, e em culturas intensivas, podem formar-se camalhões ou canteiros elevados.",
+          "## 7. Cobertura do solo",
+          "Cobrir o solo com matéria orgânica (palha, folhas trituradas, aparas de madeira ou composto) ajuda a conservar a humidade, reduzir a erosão, controlar as infestantes e estimular a atividade microbiana.",
+          "## Conclusão",
+          "Preparar o solo em agricultura biológica não é uma simples formalidade: é um investimento a longo prazo na saúde do agroecossistema. Um solo bem tratado é mais fértil, mais resistente ao stress climático e mais produtivo sem necessidade de agroquímicos. Cuide do solo e ele cuidará das suas culturas."
+        ]
+      },
+      "pollinators": {
+        "title": "Fertilizantes ecológicos e polinizadores",
+        "excerpt": "Uma aliança vital para a biodiversidade: como os fertilizantes ecológicos beneficiam abelhas, borboletas e outros polinizadores.",
+        "body": [
+          "A agricultura biológica não protege apenas o ambiente: favorece também uma das peças-chave do nosso ecossistema, os insetos polinizadores. Ao utilizar fertilizantes naturais e evitar substâncias tóxicas, cria-se um ambiente mais saudável para as abelhas, as borboletas e outros polinizadores essenciais para a produção de alimentos.",
+          "## O que são os fertilizantes ecológicos?",
+          "São produtos de origem natural e orgânica que nutrem o solo e fortalecem o desenvolvimento das culturas. Entre os mais comuns estão:",
+          "- O composto.",
+          "- O estrume animal.",
+          "- Os resíduos de culturas.",
+          "- As algas marinhas.",
+          "- Os biofertilizantes microbianos.",
+          "Ao contrário dos fertilizantes químicos, não contêm substâncias sintéticas que possam alterar a biodiversidade ou contaminar os recursos naturais.",
+          "## Insetos polinizadores: essenciais para a vida",
+          "Os polinizadores (abelhas, borboletas, vespas, colibris, escaravelhos e muitos outros) são essenciais para a reprodução das plantas com flor. Graças a eles, é possível produzir frutas, legumes e frutos secos, conservar espécies vegetais e manter o equilíbrio dos ecossistemas. Mais de 75 % das culturas alimentares do mundo dependem, em parte, da polinização animal.",
+          "## Como ajudam os fertilizantes ecológicos os polinizadores?",
+          "### 1. Plantas mais saudáveis, polinizadores mais saudáveis",
+          "Os fertilizantes ecológicos libertam os nutrientes de forma gradual e favorecem um crescimento forte e equilibrado. O resultado são flores mais abundantes, néctar e pólen de melhor qualidade e culturas mais atrativas para os polinizadores.",
+          "### 2. Zero contaminação química",
+          "Não contaminam o solo nem a água, não alteram a flora microbiana natural e não prejudicam diretamente os insetos benéficos, o que reduz o risco de intoxicação ou de desequilíbrio no ecossistema.",
+          "### 3. Mais biodiversidade vegetal",
+          "Os sistemas que aplicam fertilizantes orgânicos costumam incorporar práticas como a rotação de culturas, as sebes floridas ou as culturas de cobertura. Tudo isto aumenta a diversidade de flores e habitats, atrai mais espécies de polinizadores e promove um ambiente rico em vida selvagem.",
+          "## Um ecossistema interligado",
+          "Cada ação que tomamos na agricultura repercute-se em toda a cadeia da vida. Um solo saudável, plantas saudáveis e uma comunidade diversificada de polinizadores são a base de uma agricultura regenerativa e sustentável.",
+          "## Conclusão: cuidar dos polinizadores é cuidar do nosso futuro",
+          "Os fertilizantes ecológicos não se limitam a alimentar as plantas: preservam também a vida que as rodeia. Incorporá-los é uma aposta na segurança alimentar, na biodiversidade e na resiliência do planeta."
+        ]
+      },
+      "organicCrops": {
+        "title": "Culturas biológicas: tipos, planeamento e produtos-chave",
+        "excerpt": "Que tipos de culturas biológicas existem, como planeá-las e que produtos naturais são fundamentais em cada etapa.",
+        "body": [
+          "A agricultura biológica consolidou-se como uma alternativa responsável e eficiente aos métodos convencionais. Não só dá prioridade à saúde do solo e à qualidade dos alimentos, como também protege a biodiversidade e reduz o impacto ambiental. Explicamos-lhe que tipos de culturas biológicas existem, como planeá-las e que produtos naturais são fundamentais em cada etapa.",
+          "## Tipos de culturas biológicas",
+          "### 1. Culturas anuais",
+          "Completam o seu ciclo de vida em menos de um ano, como o milho, o trigo, as leguminosas ou as hortícolas de folha (alface, espinafre, acelga). Nelas, a rotação de culturas é fundamental para não esgotar o solo e quebrar os ciclos de pragas e doenças.",
+          "### 2. Culturas perenes",
+          "Mantêm-se ativas durante vários anos e dão colheitas contínuas: fruteiras (macieiras, pereiras, amendoeiras), vinhas, olivais ou arbustos de bagas. A poda, a fertilização natural e o acompanhamento fitossanitário são fundamentais para as manter saudáveis e produtivas.",
+          "### 3. Culturas mistas",
+          "Combinam diferentes culturas no mesmo espaço para criar um ecossistema mais equilibrado, com consociações benéficas (como milho, feijão e abóbora) e culturas de cobertura (aveia, trevo, centeio) que melhoram a fertilidade do solo e o protegem da erosão.",
+          "## Planeamento da cultura biológica",
+          "### 1. Preparação do solo",
+          "O solo é a base: deve ser rico em matéria orgânica, arejado e bem estruturado. Para isso, utilizam-se composto, estrume curtido e resíduos vegetais fermentados, com uma mobilização mínima que não destrua a microbiota benéfica.",
+          "### 2. Sementeira e plantação",
+          "- Utilize sementes e plântulas biológicas certificadas.",
+          "- Planeie a data de sementeira de acordo com o clima e o calendário agrícola.",
+          "- Mantenha uma densidade adequada para evitar a competição entre plantas.",
+          "### 3. Cuidados naturais das plantas",
+          "- Rega eficiente, de acordo com as necessidades reais da cultura e do clima.",
+          "- Controlo biológico de pragas com inseticidas naturais.",
+          "- Controlo de infestantes à mão ou com cobertura morta.",
+          "## Produtos biológicos para cada etapa",
+          "- Fertilizantes orgânicos: composto, húmus de minhoca, estrume compostado e fertilizantes ecológicos aprovados para agricultura biológica.",
+          "- Proteção natural: óleo de neem, sabão potássico, alho, extrato de cavalinha ou bicarbonato, que repelem pragas e previnem doenças sem deixar resíduos tóxicos.",
+          "- Cobertura do solo: cobertura morta orgânica (palha, restos de poda, folhas secas), que reduz a evaporação, controla as infestantes e melhora a vida do solo.",
+          "- Rega sustentável: gota a gota ou microaspersão, que poupam água e evitam doenças fúngicas.",
+          "## Uma agricultura mais verde e saudável",
+          "As culturas biológicas permitem obter alimentos de grande qualidade, protegem os recursos naturais e promovem o equilíbrio dos ecossistemas agrícolas. Planeie com consciência, utilize produtos naturais e cuide do solo e da biodiversidade: cada decisão que toma como agricultor tem impacto."
+        ]
+      },
+      "agricultureDrones": {
+        "title": "A revolucionar a agricultura: fertilizantes aplicados com drones",
+        "excerpt": "Benefícios, custos e perspetivas da aplicação de fertilizantes com drones agrícolas.",
+        "body": [
+          "A tecnologia torna a agricultura moderna mais eficiente e sustentável. A aplicação de fertilizantes com drones agrícolas tornou-se uma solução inovadora que está a transformar a forma como os agricultores cuidam das suas culturas: melhora a produtividade, reduz custos e minimiza o impacto ambiental ao otimizar a utilização de fertilizantes.",
+          "## Benefícios da aplicação de fertilizantes com drones",
+          "### 1. Precisão",
+          "Os drones equipados com sensores e sistemas de mapeamento permitem uma aplicação precisa e localizada. Evita-se o excesso de fertilização, reduz-se o desperdício de nutrientes e aproveitam-se melhor os recursos, com uma poupança importante para o agricultor.",
+          "### 2. Poupança de tempo e de mão de obra",
+          "A aplicação tradicional exige normalmente maquinaria pesada e pessoal especializado. Com drones, cobrem-se grandes superfícies de forma rápida e automática, libertando a mão de obra para outras tarefas.",
+          "### 3. Acesso a zonas difíceis",
+          "São ideais para terrenos irregulares ou de difícil acesso, onde a maquinaria convencional tem dificuldades, e garantem uma distribuição uniforme mesmo nas zonas mais inacessíveis.",
+          "### 4. Menor impacto ambiental",
+          "A aplicação precisa evita a escorrência de fertilizantes para as massas de água, o que reduz a contaminação e protege os ecossistemas aquáticos.",
+          "## Custos e aspetos a ter em conta",
+          "- Investimento inicial: os drones especializados e o respetivo software representam um custo significativo, embora cada vez menor graças aos avanços tecnológicos.",
+          "- Formação e manutenção: a sua operação exige formação, e a manutenção e as reparações são custos que é preciso prever.",
+          "- Regulamentação: a utilização de drones na agricultura está regulamentada e pode variar consoante a região; cumprir as autorizações é imprescindível.",
+          "## O futuro da agricultura com drones",
+          "Com a rápida evolução da tecnologia, aplicar fertilizantes com drones será cada vez mais acessível e eficiente. Apesar dos custos iniciais e dos requisitos legais, é um investimento inteligente para os agricultores que procuram eficiência, poupança e sustentabilidade a longo prazo."
+        ]
+      },
+      "organicConsumption": {
+        "title": "O crescimento do consumo de frutas e legumes biológicos",
+        "excerpt": "Tendências e perspetivas de um mercado que não para de crescer: saúde, sustentabilidade e transparência.",
+        "body": [
+          "Cada vez mais pessoas escolhem frutas e legumes biológicos em busca de um estilo de vida mais saudável e sustentável. Não é uma moda passageira, mas uma tendência sólida que está a transformar o mercado mundial de alimentos biológicos.",
+          "## A evolução do mercado biológico",
+          "O consumo de frutas e legumes biológicos tem crescido de forma constante nas últimas décadas, impulsionado pela consciência sobre a alimentação saudável e pela preocupação com o impacto ambiental da agricultura convencional.",
+          "## Fatores-chave do crescimento",
+          "### 1. Saúde e bem-estar",
+          "Os consumidores querem evitar pesticidas, herbicidas e produtos químicos sintéticos. As frutas e os legumes biológicos, cultivados sem eles, são uma opção mais segura, nutritiva e natural.",
+          "### 2. Sustentabilidade ambiental",
+          "A agricultura biológica promove práticas como a rotação de culturas e a compostagem, que preservam a fertilidade do solo e a biodiversidade.",
+          "### 3. Transparência",
+          "O consumidor atual exige saber como são produzidos os alimentos e de onde vêm. Os produtos biológicos costumam cumprir estes padrões de rastreabilidade, o que gera mais confiança.",
+          "## Perspetivas de futuro",
+          "Os relatórios do setor preveem que o consumo continue a crescer nos próximos anos, graças à maior consciência sobre a saúde, à adoção de técnicas agrícolas sustentáveis e à maior disponibilidade de produtos biológicos.",
+          "## Rumo a uma alimentação saudável e sustentável",
+          "Este crescimento reflete uma mudança profunda para estilos de vida mais saudáveis e responsáveis para com o ambiente. A expansão do mercado biológico beneficia os consumidores, os agricultores e o planeta."
+        ]
+      }
+    },
+    "backToNews": "Voltar a Notícias",
+    "relatedTitle": "Outras notícias",
+    "videoTitle": "Vídeo: {{title}}"
+  },
+  "team": {
+    "title": "As pessoas por detrás da Clavel",
+    "intro": "Uma equipa pequena e próxima, com experiência em agronomia, laboratório e apoio ao agricultor.",
+    "namePending": "Nome Apelido",
+    "photoPending": "Foto em breve",
+    "emailLabel": "Escrever a {{name}}",
+    "linkedinLabel": "LinkedIn de {{name}}",
+    "roles": {
+      "generalManagement": "Direção geral",
+      "technicalDirection": "Direção técnica e laboratório",
+      "salesSupport": "Apoio comercial"
+    }
+  },
+  "contact": {
+    "title": "Falemos da sua cultura",
+    "intro": "Deixe-nos os seus dados e respondemos por e-mail. Se precisar, enviamos-lhe o catálogo de produtos.",
+    "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia, Espanha)",
+    "form": {
+      "reason": "De que precisa?",
+      "reasons": {
+        "catalogue": "Pedir catálogo",
+        "advice": "Pedir aconselhamento",
+        "productInfo": "Informação sobre produtos",
+        "other": "Outro pedido"
+      },
+      "catalogues": "Que catálogo pretende?",
+      "cataloguesHint": "(pode escolher vários)",
+      "cataloguesLine": "Catálogos",
+      "name": "Nome completo",
+      "company": "Empresa ou exploração",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "optional": "opcional",
+      "message": "Mensagem",
+      "messageHelp": "Fale-nos da sua cultura, da área ou do produto que lhe interessa.",
+      "privacy": "Li e aceito a <policyLink>política de privacidade</policyLink>.",
+      "submit": "Enviar",
+      "errorReason": "Escolha de que precisa.",
+      "errorCatalogue": "Escolha pelo menos um catálogo.",
+      "errorName": "Escreva o seu nome.",
+      "errorEmail": "Escreva um e-mail válido.",
+      "errorPrivacy": "Tem de aceitar a política de privacidade.",
+      "sentTitle": "Mensagem enviada",
+      "sentText": "Obrigado. Responderemos por e-mail no prazo de 48 horas úteis.",
+      "sendAnother": "Enviar outra mensagem",
+      "mailSubject": "{{reason}} · {{name}}"
+    }
+  },
+  "privacy": {
+    "title": "Política de privacidade",
+    "intro": "Que dados recolhemos através deste site, para que os utilizamos, que direitos tem e em que condições pode utilizar o site.",
+    "updated": "Última atualização: setembro de 2026",
+    "indexTitle": "Índice",
+    "sections": {
+      "introduction": {
+        "title": "Introdução",
+        "body": [
+          "Na {{company}} levamos a sério a proteção dos seus dados pessoais. Esta política explica como tratamos a informação que nos fornece através deste site, bem como as condições de utilização do site.",
+          "Tratamos os seus dados em conformidade com o Regulamento (UE) 2016/679, Regulamento Geral sobre a Proteção de Dados (RGPD), a Lei Orgânica espanhola 3/2018, de Proteção de Dados Pessoais e Garantia dos Direitos Digitais (LOPDGDD), e a Lei espanhola 34/2002, de Serviços da Sociedade da Informação e de Comércio Eletrónico (LSSI).",
+          "Ao utilizar este site e, em especial, ao enviar-nos o formulário de contacto, declara ter lido esta política."
+        ]
+      },
+      "controller": {
+        "title": "Responsável pelo tratamento",
+        "body": [
+          "O responsável pelo tratamento dos seus dados é a {{company}}.",
+          "- E-mail: {{email}}",
+          "Para qualquer questão relacionada com os seus dados pessoais, pode escrever-nos para esse endereço de e-mail."
+        ]
+      },
+      "data": {
+        "title": "Que dados recolhemos",
+        "body": [
+          "Tratamos apenas os dados que nos fornece voluntariamente no formulário de contacto:",
+          "- Nome completo e e-mail, obrigatórios para lhe podermos responder.",
+          "- Empresa ou exploração e telefone, se decidir indicá-los.",
+          "- O motivo do seu pedido e a mensagem que nos escrever.",
+          "Não pedimos categorias especiais de dados. Pedimos-lhe que não as inclua na mensagem. Se nos fornecer dados de terceiros, garante que os informou e que dispõe do seu consentimento."
+        ]
+      },
+      "purpose": {
+        "title": "Para que utilizamos os seus dados",
+        "body": [
+          "- Responder ao seu pedido.",
+          "- Enviar-lhe o catálogo de produtos ou a informação técnica que nos solicitar.",
+          "- Manter consigo a relação comercial que, se for caso disso, resulte do seu pedido.",
+          "Não utilizamos os seus dados para lhe enviar comunicações comerciais que não tenha solicitado, não elaboramos perfis e não tomamos decisões automatizadas a seu respeito."
+        ]
+      },
+      "legalBasis": {
+        "title": "Fundamento jurídico do tratamento",
+        "body": [
+          "O fundamento jurídico é o seu consentimento, que nos dá ao assinalar a caixa do formulário, e, quando o seu pedido tiver por objeto a aquisição dos nossos produtos, a execução de diligências pré-contratuais a seu pedido.",
+          "Pode retirar o seu consentimento a qualquer momento, sem que isso afete a licitude do tratamento efetuado antes da sua retirada."
+        ]
+      },
+      "retention": {
+        "title": "Durante quanto tempo conservamos os seus dados",
+        "body": [
+          "Conservamos os seus dados enquanto forem necessários para responder ao seu pedido e, se for caso disso, enquanto durar a relação comercial. Depois, mantemo-los bloqueados durante os prazos legais em que possam resultar responsabilidades e eliminamo-los no fim desses prazos."
+        ]
+      },
+      "recipients": {
+        "title": "Destinatários",
+        "body": [
+          "Não cedemos os seus dados a terceiros, salvo obrigação legal.",
+          "Os fornecedores que nos prestam serviços técnicos, como o e-mail ou o alojamento do site, podem aceder-lhes apenas para nos prestarem esse serviço, mediante contrato e com as garantias exigidas pelo RGPD. Caso algum deles se encontre fora do Espaço Económico Europeu, a transferência seria efetuada com as garantias adequadas, como as cláusulas contratuais-tipo da Comissão Europeia."
+        ]
+      },
+      "rights": {
+        "title": "Os seus direitos",
+        "body": [
+          "Pode exercer a qualquer momento os seguintes direitos:",
+          "- Acesso: saber se tratamos os seus dados e quais.",
+          "- Retificação: corrigir dados inexatos ou incompletos.",
+          "- Apagamento: pedir-nos que apaguemos os seus dados quando já não forem necessários.",
+          "- Oposição e limitação: opor-se ao tratamento ou pedir-nos que o limitemos em determinados casos.",
+          "- Portabilidade: receber os seus dados num formato estruturado e de uso corrente.",
+          "- Retirar o seu consentimento a qualquer momento.",
+          "Para os exercer, escreva-nos para {{email}} indicando o direito que pretende exercer. Se considerar que não demos a devida resposta ao seu pedido, pode apresentar uma reclamação junto da Agência Espanhola de Proteção de Dados (AEPD, www.aepd.es)."
+        ]
+      },
+      "security": {
+        "title": "Medidas de segurança",
+        "body": [
+          "Aplicamos as medidas técnicas e organizativas adequadas para proteger os seus dados contra perda, utilização indevida, alteração ou acesso não autorizado, tendo em conta o estado da técnica e a natureza dos dados. O site é disponibilizado através de uma ligação cifrada (HTTPS).",
+          "Ainda assim, nenhum sistema é completamente seguro. Se detetarmos uma violação de segurança que afete os seus dados, atuaremos de acordo com o previsto na legislação."
+        ]
+      },
+      "thirdParties": {
+        "title": "Ligações e conteúdos de terceiros",
+        "body": [
+          "Este site pode incluir ligações para sites de terceiros, como as nossas redes sociais, e vídeos alojados no YouTube. Não somos responsáveis pelo conteúdo nem pelas políticas de privacidade desses sites, que lhe recomendamos que consulte.",
+          "Os vídeos são incorporados no modo de privacidade melhorada (youtube-nocookie.com): o YouTube não guarda informação no seu navegador até reproduzir o vídeo. Ao reproduzi-lo, aplicam-se os termos e a política de privacidade da Google."
+        ]
+      },
+      "cookies": {
+        "title": "Navegação e cookies",
+        "body": [
+          "Este site não utiliza cookies de análise nem de publicidade.",
+          "Guardamos no seu navegador (armazenamento local) apenas o idioma que escolher, para lhe mostrar o site nesse idioma nas próximas visitas. Trata-se de um dado técnico necessário para a funcionalidade que escolhe e não permite identificá-lo. Pode apagá-lo a qualquer momento nas definições do seu navegador.",
+          "Se no futuro passarmos a utilizar outros cookies, indicá-lo-emos aqui e pediremos o seu consentimento quando for necessário."
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Propriedade intelectual e industrial",
+        "body": [
+          "Os conteúdos deste site (textos, imagens, design, logótipos e marcas) são propriedade da {{company}} ou de terceiros que autorizaram a sua utilização, e estão protegidos pela legislação de propriedade intelectual e industrial.",
+          "Não é permitida a sua reprodução, distribuição, comunicação pública ou transformação, total ou parcial, sem autorização expressa, exceto para uso pessoal e privado."
+        ]
+      },
+      "userObligations": {
+        "title": "Obrigações do utilizador",
+        "body": [
+          "Ao utilizar este site, compromete-se a:",
+          "- Fornecer dados verdadeiros no formulário de contacto.",
+          "- Não utilizar o site para fins ilícitos ou que prejudiquem a {{company}} ou terceiros.",
+          "- Não introduzir vírus nem realizar ações que possam danificar ou sobrecarregar o site."
+        ]
+      },
+      "law": {
+        "title": "Legislação aplicável e foro competente",
+        "body": [
+          "Esta política e a utilização do site regem-se pela legislação espanhola. Para qualquer litígio, as partes submetem-se aos tribunais competentes nos termos da lei; se for consumidor, aos do seu domicílio."
+        ]
+      },
+      "updates": {
+        "title": "Atualizações desta política",
+        "body": [
+          "Podemos alterar esta política para a adaptar a alterações legais ou dos nossos serviços. Publicaremos sempre a versão em vigor nesta página, com a respetiva data de atualização, pelo que lhe recomendamos que a consulte periodicamente."
+        ]
+      }
+    }
+  },
+  "footer": {
+    "claim": "Soluções agrícolas sustentáveis, com experiência, inovação e compromisso com o futuro do campo.",
+    "pages": "Páginas",
+    "contact": "Contacto",
+    "social": "Redes sociais",
+    "copyright": "© {{year}} Clavel. Todos os direitos reservados."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "text": "A página que procura não existe ou mudou de endereço.",
+    "cta": "Voltar ao início"
+  },
+  "error": {
+    "title": "Algo correu mal",
+    "text": "Ocorreu um erro inesperado. Tente novamente dentro de instantes.",
+    "cta": "Voltar ao início"
+  }
+}

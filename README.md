@@ -61,7 +61,7 @@ Alias de importación (`tsconfig.json` y `vite.config.ts`): `src/*`, `components
 
 ## Multi-idioma
 
-Español (por defecto) e inglés. Para añadir un idioma:
+Español (por defecto), inglés, francés, portugués e italiano. Para añadir un idioma:
 
 1. Copiar `public/locales/es/translation.json` a `public/locales/<código>/translation.json`
    y traducirlo.

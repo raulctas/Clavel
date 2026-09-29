@@ -1,0 +1,738 @@
+{
+  "common": {
+    "companyName": "Clavel",
+    "homeLink": "Aller à l'accueil",
+    "languageSelector": "Choisir la langue",
+    "breadcrumb": "Fil d'Ariane",
+    "readMore": "Lire la suite",
+    "requestCatalogue": "Demander le catalogue",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "goToSlide": "Aller à l'image {{index}}",
+    "discoverMore": "En savoir plus"
+  },
+  "nav": {
+    "main": "Navigation principale",
+    "home": "Accueil",
+    "aboutUs": "Qui sommes-nous",
+    "productsServices": "Produits et services",
+    "news": "Actualités",
+    "team": "Équipe",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "privacy": "Politique de confidentialité",
+    "laboratory": "Laboratoire",
+    "production": "Production et logistique"
+  },
+  "pillars": {
+    "sustainableFarming": {
+      "title": "Agriculture durable",
+      "text": "Des engrais biologiques et durables, un laboratoire intégré et un engagement environnemental."
+    },
+    "innovation": {
+      "title": "Innovation technologique",
+      "text": "Des solutions techniques adaptées à chaque culture, développées avec des centres de recherche."
+    },
+    "presence": {
+      "title": "Présence et engagement",
+      "text": "Depuis Valence, nous œuvrons pour une agriculture alignée sur l'Agenda 2030."
+    },
+    "research": {
+      "title": "R&D agricole",
+      "text": "Nous développons des produits efficaces, fondés sur de véritables études agronomiques."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Engrais biologiques · Valence",
+      "title": "Une nutrition naturelle pour des cultures saines",
+      "intro": "Chez Clavel, nous développons des solutions agricoles durables, avec expérience, innovation et engagement pour l'avenir de l'agriculture.",
+      "ctaAbout": "Découvrez-nous"
+    },
+    "pillarsTitle": "Rejoignez notre communauté agricole",
+    "lab": {
+      "eyebrow": "Laboratoire",
+      "title": "Un laboratoire et une technologie propres",
+      "text": "Dans notre centre, nous mettons à votre disposition une technologie de pointe, une équipe spécialisée et des processus de haute qualité pour garantir des résultats précis et fiables. Pour obtenir des informations détaillées sur nos services, demander des conseils ou bénéficier d'un accompagnement personnalisé, nous sommes à votre écoute.",
+      "cta": "Demandez conseil"
+    },
+    "manufacturing": {
+      "eyebrow": "Production",
+      "title": "Processus de fabrication",
+      "text1": "Nos processus de fabrication, efficaces et technologiquement avancés, garantissent des produits de haute qualité. Notre système de production s'adapte rapidement aux besoins du marché, en optimisant les délais et les ressources.",
+      "text2": "Une logistique intégrée assure un flux continu de matières et une livraison ponctuelle vers toutes les destinations. De la planification à la distribution finale, nous appliquons des normes strictes pour offrir un service fiable, sûr et compétitif."
+    },
+    "latestNews": "Dernières actualités",
+    "seeAllNews": "Voir toutes les actualités",
+    "cta": {
+      "title": "Vous souhaitez découvrir nos produits ?",
+      "text": "Demandez-nous le catalogue : nous vous l'envoyons par e-mail, avec toutes les informations techniques de chaque engrais."
+    }
+  },
+  "aboutUs": {
+    "title": "Nous cultivons la confiance, l'innovation et la durabilité",
+    "intro": "Chez Clavel, nous travaillons chaque jour aux côtés des agriculteurs, en proposant des solutions efficaces et respectueuses de l'environnement.",
+    "blocks": {
+      "mission": {
+        "title": "Mission",
+        "text": "Nous promouvons une agriculture durable en utilisant des substances naturelles et biodégradables qui renforcent la relation plante-micro-organismes et respectent l'équilibre de l'environnement."
+      },
+      "goals": {
+        "title": "Objectifs",
+        "text": "Améliorer la productivité et la qualité des cultures, accroître la résistance des plantes, garantir zéro résidu et protéger l'environnement."
+      },
+      "purpose": {
+        "title": "Raison d'être",
+        "text": "Nos produits améliorent la croissance et la protection de la plante, renforcent les racines et les fruits, accroissent la résistance au stress et contribuent à préserver la qualité après la récolte."
+      }
+    },
+    "whyTitle": "Pourquoi nous choisir ?",
+    "whyIntro": "Les principaux bénéfices que nos produits et notre expérience apportent à l'agriculteur et à ses cultures.",
+    "quality": {
+      "eyebrow": "Qualité",
+      "title": "Qualité biologique certifiée",
+      "text": "La technologie de pointe et les substances biologiques que nous utilisons en fabrication, validées par notre laboratoire de contrôle qualité, garantissent l'efficacité et d'excellents résultats au champ.",
+      "certificate": "Certificat biologique UNE 142500:2017 · Intrants"
+    },
+    "organic": {
+      "title": "Le bio, c'est mieux",
+      "text": "Nos engrais biologiques, aux formules concentrées, offrent un meilleur rendement et une meilleure qualité, avec moins de produit et moins de résidus. Nous concevons en outre des plans personnalisés pour optimiser chaque culture et contribuer à une agriculture durable et efficace."
+    },
+    "stats": {
+      "title": "Clavel en chiffres",
+      "items": {
+        "farmers": "Agriculteurs satisfaits",
+        "products": "Produits certifiés",
+        "hectares": "Hectares certifiés (M)",
+        "years": "Années d'expérience"
+      }
+    }
+  },
+  "productsServices": {
+    "title": "Produits et services",
+    "intro": "Engrais, intrants, conseil et technologie pour chaque culture. Demandez-nous le catalogue détaillé.",
+    "mainTitle": "Nos gammes principales",
+    "mainIntro": "Deux grandes lignes d'engrais adaptées aux besoins réels des agriculteurs.",
+    "lines": {
+      "organicFertilisers": {
+        "title": "Engrais biologiques",
+        "text": "Des solutions spécifiques à chaque culture, formulées à partir de substances naturelles et biodégradables et validées par notre laboratoire de contrôle qualité. Utilisables en agriculture biologique."
+      },
+      "sustainableFertilisers": {
+        "title": "Engrais durables",
+        "text": "Nutrition et protection pour une agriculture plus efficace et plus respectueuse de l'environnement, adaptées à chaque culture et à chaque stade végétatif."
+      }
+    },
+    "tags": {
+      "certified": "Certificat biologique UNE 142500:2017",
+      "drone": "Compatible drone"
+    },
+    "rangesTitle": "Gammes de produits",
+    "rangesIntro": "Nos deux lignes principales se déclinent en cinq gammes, selon les besoins de la culture.",
+    "ranges": {
+      "terra": {
+        "title": "Terra",
+        "text": "Ils améliorent la santé du sol en le régénérant et en apportant de la matière organique, de l'azote et des nutriments essentiels à la culture."
+      },
+      "protection": {
+        "title": "Protection",
+        "text": "Rapidement absorbés, ils corrigent les carences et renforcent les défenses de la plante contre les pathogènes jusqu'à la fin du cycle."
+      },
+      "booster": {
+        "title": "Stimulant",
+        "text": "Ils stimulent la croissance, équilibrent l'activité hormonale et préparent la plante à faire face au stress."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "text": "Ils optimisent le développement de la plante tout au long de son cycle pour favoriser la floraison, la nouaison et la maturation."
+      },
+      "correctors": {
+        "title": "Correcteurs",
+        "text": "Ils corrigent et préviennent les carences nutritionnelles grâce à un équilibre précis de nutriments, à titre préventif ou curatif."
+      }
+    },
+    "otherTitle": "Autres solutions",
+    "otherIntro": "Des lignes complémentaires qui élargissent notre offre pour répondre aux différents besoins du terrain et de l'agriculteur professionnel.",
+    "other": {
+      "agriculturalInputs": {
+        "title": "Intrants agricoles",
+        "text": "Des produits et matériels complémentaires pour le quotidien de l'exploitation, sélectionnés pour fonctionner avec nos solutions de nutrition."
+      },
+      "cbdFertilisers": {
+        "title": "Engrais CBD",
+        "text": "Une nutrition spécifique pour la culture du chanvre industriel, adaptée à chaque stade de son développement."
+      },
+      "agriculturalAdvice": {
+        "title": "Conseil agricole",
+        "text": "Un accompagnement technique sur le terrain : analyse de sol, plans de fertilisation personnalisés et suivi des cultures."
+      },
+      "agriculturalTechnology": {
+        "title": "Technologie agricole",
+        "text": "Des solutions technologiques pour l'agriculture de précision, comme l'application d'engrais par drone."
+      },
+      "gardening": {
+        "title": "Jardinage et pépinières",
+        "text": "Des produits pour le jardinage, les pépinières et les plantes ornementales, avec la même qualité que nos solutions pour les champs."
+      }
+    },
+    "cta": {
+      "title": "Vous ne savez pas quel produit choisir ?",
+      "text": "Parlez-nous de votre culture et nous vous enverrons le catalogue avec les informations techniques des solutions les mieux adaptées."
+    }
+  },
+  "laboratory": {
+    "title": "Laboratoire d'innovation et de contrôle qualité",
+    "intro": "Analyses, essais et certifications qui garantissent la confiance de l'agriculteur.",
+    "overview": {
+      "eyebrow": "Notre laboratoire",
+      "title": "La science au service de chaque engrais",
+      "text1": "Dans notre laboratoire, nous mettons à votre disposition une technologie de pointe, une équipe spécialisée et des processus de haute qualité pour garantir des résultats précis et fiables.",
+      "text2": "Chaque produit qui sort de notre usine est d'abord passé par le laboratoire : c'est là que les formules sont mises au point, validées lors d'essais, et que la qualité de chaque lot est contrôlée."
+    },
+    "pillarsTitle": "Ce que nous faisons au laboratoire",
+    "pillars": {
+      "research": {
+        "title": "Recherche et développement",
+        "text": "Nous développons de nouvelles méthodes d'analyse et aidons nos clients à optimiser leurs formules pour chaque culture."
+      },
+      "compliance": {
+        "title": "Réglementation et certifications",
+        "text": "Nous garantissons le respect de la réglementation nationale et internationale. Nos processus sont validés et le laboratoire dispose de certifications qualité reconnues."
+      },
+      "quality": {
+        "title": "Contrôle qualité de chaque lot",
+        "text": "Nous réalisons des analyses chimiques, physiques et microbiologiques sur chaque lot afin de garantir que les matières et les produits répondent aux normes de sécurité et de performance les plus exigeantes."
+      }
+    },
+    "cta": {
+      "title": "Besoin d'un conseil technique ?",
+      "text": "Parlez-nous de votre culture et notre équipe technique vous recommandera la solution la plus adaptée.",
+      "button": "Demandez conseil"
+    }
+  },
+  "production": {
+    "title": "Processus de production et logistique",
+    "intro": "Nous coordonnons chaque étape pour offrir sécurité, rapidité et excellence.",
+    "manufacturing": {
+      "eyebrow": "Fabrication",
+      "title": "Une fabrication de haute précision",
+      "text": "Dans notre usine, chaque étape du processus est soigneusement contrôlée pour garantir des produits de la plus haute qualité. De la sélection des matières premières à la production en série, nous appliquons des normes rigoureuses de sécurité et d'efficacité afin que chaque lot soit conforme à la réglementation nationale et internationale."
+    },
+    "logistics": {
+      "eyebrow": "Logistique",
+      "title": "Conditionnement et logistique sécurisés",
+      "text": "Une fois la production terminée, les produits sont conditionnés de manière à préserver leur intégrité et leur qualité. Notre système logistique garantit que chaque envoi arrive à temps et en parfait état, en associant technologie et contrôle humain pour offrir sécurité et confiance."
+    },
+    "stepsTitle": "De la matière première à votre champ",
+    "steps": {
+      "rawMaterials": {
+        "title": "Matières premières",
+        "text": "Nous sélectionnons et analysons chaque matière première avant de l'utiliser."
+      },
+      "manufacturing": {
+        "title": "Fabrication",
+        "text": "Nous produisons grâce à des processus maîtrisés et efficaces à chaque étape."
+      },
+      "qualityControl": {
+        "title": "Contrôle qualité",
+        "text": "Le laboratoire valide chaque lot avant son conditionnement."
+      },
+      "delivery": {
+        "title": "Conditionnement et livraison",
+        "text": "Nous conditionnons et expédions à temps vers toutes les destinations."
+      }
+    },
+    "cta": {
+      "title": "Vous souhaitez découvrir nos produits ?",
+      "text": "Demandez-nous le catalogue : nous vous l'envoyons par e-mail, avec toutes les informations techniques de chaque engrais."
+    }
+  },
+  "news": {
+    "title": "L'actualité du terrain et de Clavel",
+    "intro": "Recherche, cultures et agriculture durable.",
+    "filterLabel": "Filtrer par catégorie",
+    "empty": "Aucune actualité dans cette catégorie.",
+    "categories": {
+      "all": "Toutes",
+      "agriculture": "Agriculture",
+      "innovation": "Innovation et technologie",
+      "fruitVegetables": "Fruits et légumes",
+      "organic": "Bio"
+    },
+    "items": {
+      "agenda2030": {
+        "title": "Agenda 2030 et agriculture durable",
+        "excerpt": "L'Agenda 2030 de l'ONU trace la voie vers un avenir plus juste et plus respectueux de la planète. L'agriculture y joue un rôle clé.",
+        "body": [
+          "Dans un monde en constante évolution, l'agriculture joue un rôle clé dans la durabilité mondiale. L'Agenda 2030 de l'ONU, avec ses 17 Objectifs de développement durable (ODD), trace la voie vers un avenir plus juste et plus respectueux de la planète. Dans ce contexte, l'industrie des engrais biologiques est appelée à être l'un des moteurs d'une agriculture plus propre, plus efficace et plus responsable.",
+          "## Objectifs de développement durable et agriculture",
+          "L'Agenda 2030 aborde de grands défis mondiaux, dont beaucoup sont directement liés au secteur agricole. Voici quelques-uns des ODD les plus pertinents pour les engrais biologiques :",
+          "### ODD 2 : Faim « zéro »",
+          "Garantir la sécurité alimentaire suppose d'améliorer la productivité agricole sans nuire aux écosystèmes. Les engrais biologiques favorisent une nutrition végétale équilibrée, préservent la santé des sols et réduisent l'utilisation d'intrants de synthèse.",
+          "### ODD 6 : Eau propre et assainissement",
+          "Ces engrais réduisent le risque de contamination des nappes phréatiques en limitant le lessivage des nutriments, ce qui contribue à préserver la qualité de l'eau.",
+          "### ODD 15 : Vie terrestre",
+          "En favorisant la biodiversité et l'activité microbienne du sol, les engrais biologiques régénèrent les écosystèmes agricoles et renforcent la durabilité à long terme.",
+          "## Les avantages des engrais biologiques",
+          "Les engrais biologiques sont des alliés essentiels d'une agriculture régénératrice. Parmi leurs principaux avantages :",
+          "- Nutrition équilibrée : ils apportent aux plantes les nutriments essentiels dont elles ont besoin, de manière naturelle et progressive.",
+          "- Impact environnemental réduit : ils limitent la pollution des sols et des eaux et préservent les écosystèmes agricoles.",
+          "- Biodiversité favorisée : ils stimulent la vie microbienne du sol et réduisent la dépendance aux produits agrochimiques.",
+          "## Mener la transition vers une agriculture durable",
+          "L'industrie des engrais biologiques a une belle opportunité : ouvrir la voie vers une agriculture plus durable, conformément aux principes de l'Agenda 2030. Cela implique de :",
+          "- Miser sur l'innovation dans les produits naturels et durables.",
+          "- Former les agriculteurs aux pratiques responsables.",
+          "- Promouvoir des solutions agricoles adaptées à chaque culture et à chaque environnement.",
+          "## Conclusion",
+          "L'Agenda 2030 est une feuille de route claire pour transformer l'agriculture de demain. L'industrie des engrais biologiques peut et doit être un moteur essentiel de cette transformation, en contribuant à cultiver un avenir vert, productif et respectueux de la planète."
+        ]
+      },
+      "soilQuality": {
+        "title": "Comment améliorer la qualité du sol et augmenter la productivité",
+        "excerpt": "Une bonne récolte commence sous terre. Pourquoi enrichir le sol avant le semis et comment le faire, étape par étape.",
+        "body": [
+          "En agriculture, la réussite d'une récolte commence sous terre. Optimiser la qualité du sol est essentiel pour obtenir des cultures plus productives, plus saines et plus durables. Dans cet article, nous vous expliquons pourquoi enrichir le sol avant le semis est une stratégie fondamentale et comment le faire, étape par étape.",
+          "## Pourquoi la qualité du sol est-elle si importante ?",
+          "Le sol n'est pas seulement le support physique des plantes : c'est un écosystème vivant qui influence directement leur nutrition, leur croissance et leur résistance. Un sol sain :",
+          "- Retient mieux l'eau et les nutriments.",
+          "- Favorise une activité microbienne bénéfique.",
+          "- Rend les cultures plus résistantes aux maladies et au stress.",
+          "## Qu'est-ce que l'enrichissement en nutriments ?",
+          "Il consiste à préparer le sol avant le semis en y incorporant des nutriments clés comme l'azote, le phosphore et le potassium, au moyen d'engrais biologiques ou de matière organique. Ce processus renforce le sol et le prépare à une production plus efficace. Ses principaux avantages :",
+          "- Meilleure absorption des nutriments : un meilleur développement racinaire et une plante en meilleure santé.",
+          "- Productivité accrue : des cultures plus vigoureuses et des rendements plus élevés.",
+          "- Meilleure qualité du produit final : des aliments plus nutritifs et plus résistants.",
+          "- Pratique durable : moins d'engrais utilisés en excès et moins de pollution.",
+          "## Stratégies clés pour enrichir le sol",
+          "### 1. Faites analyser votre sol",
+          "Avant d'appliquer des engrais, analysez votre sol. Vous pourrez ainsi identifier les carences précises et choisir les nutriments adaptés à chaque type de culture.",
+          "### 2. Utilisez des engrais organiques",
+          "Le fumier composté, les biofertilisants et les engrais verts sont d'excellents alliés : ils libèrent les nutriments progressivement et améliorent la structure du sol à long terme.",
+          "### 3. Pratiquez la rotation des cultures",
+          "Alterner les espèces végétales évite l'épuisement de certains nutriments et améliore la biodiversité du sol.",
+          "### 4. Protégez le sol avec un couvert végétal",
+          "Le paillage (mulching) ou les cultures de couverture protègent le sol de l'érosion, améliorent sa structure et retiennent l'humidité, ce qui favorise l'activité microbienne.",
+          "## Conclusion",
+          "Investir dans la santé du sol, c'est investir dans l'avenir de l'agriculture. Un sol fertile et équilibré est la base de cultures plus productives, plus durables et de meilleure qualité. Grâce à des pratiques d'enrichissement responsables, vous obtiendrez non seulement de meilleures récoltes, mais vous contribuerez aussi à une agriculture plus respectueuse de l'environnement et des générations futures."
+        ]
+      },
+      "fruitVegetables": {
+        "title": "Amélioration des fruits et légumes",
+        "excerpt": "L'amélioration du citronnier de Carmen, étape par étape.",
+        "body": [
+          "Nous vous montrons, étape par étape, comment nous avons amélioré le citronnier de Carmen : l'état initial de l'arbre, le traitement aux engrais biologiques que nous avons appliqué et les résultats visibles au champ."
+        ]
+      },
+      "citrusFertilisation": {
+        "title": "Fertilisation organique des agrumes",
+        "excerpt": "Tournage avec Juan Manuel Martínez dans son exploitation d'agrumes.",
+        "body": [
+          "Nous avons tourné avec Juan Manuel Martínez dans son exploitation d'agrumes, où il nous parle de son expérience de la fertilisation organique et des résultats obtenus sur ses arbres."
+        ]
+      },
+      "trialFields": {
+        "title": "Le rôle des champs d'essai",
+        "excerpt": "Les champs d'essai sont essentiels pour valider l'utilisation des engrais biologiques face à l'agriculture conventionnelle.",
+        "body": [
+          "L'agriculture moderne exige des solutions efficaces, durables et adaptées à un environnement en mutation. Dans ce contexte, les champs d'essai sont des outils essentiels pour valider l'utilisation des engrais biologiques, une alternative clé à l'agriculture conventionnelle.",
+          "## Que sont les champs d'essai agricoles ?",
+          "Ce sont des parcelles conçues pour la recherche et l'expérimentation agricoles. Agronomes, agriculteurs et chercheurs y testent de nouvelles techniques, de nouveaux produits et de nouvelles solutions dans des conditions réelles, mais contrôlées. Cela permet de :",
+          "- Comparer différentes méthodes de culture.",
+          "- Mesurer les résultats à court, moyen et long terme.",
+          "- Adapter les solutions à des contextes climatiques et pédologiques précis.",
+          "## Les engrais biologiques : une alternative nécessaire",
+          "Les engrais biologiques sont élaborés à partir de matières naturelles comme le compost, le fumier, les résidus végétaux ou des minéraux d'origine organique. Contrairement aux engrais de synthèse, ils ne polluent ni le sol ni les nappes phréatiques et, de plus, ils :",
+          "- Régénèrent la microbiologie du sol.",
+          "- Apportent les nutriments de manière progressive et équilibrée.",
+          "- Améliorent la rétention d'eau et la structure du sol.",
+          "## Pourquoi les champs d'essai sont-ils essentiels ?",
+          "Ils permettent de démontrer, de mesurer et de perfectionner l'utilisation de ces intrants durables.",
+          "### 1. Une véritable validation scientifique",
+          "L'application d'engrais biologiques dans des conditions contrôlées fournit des preuves mesurables de leur efficacité par rapport aux méthodes traditionnelles.",
+          "### 2. Des ajustements selon la culture et la zone",
+          "Chaque sol et chaque climat sont uniques. Les champs d'essai permettent d'ajuster la dose et la fréquence d'application pour maximiser les résultats selon la culture et les besoins de chaque région.",
+          "### 3. Technologie et suivi en temps réel",
+          "Grâce aux capteurs, aux drones et aux logiciels de gestion agricole, il est possible de mesurer la croissance des cultures, les teneurs en nutriments du sol et les variations d'humidité et de température.",
+          "### 4. Bonnes pratiques",
+          "Les résultats des essais permettent de définir et de diffuser des protocoles d'application efficaces et durables, qui aident d'autres producteurs à adopter des solutions déjà éprouvées.",
+          "## Les défis à prendre en compte",
+          "- Des conditions climatiques imprévisibles qui peuvent influer sur les résultats.",
+          "- La difficulté d'extrapoler les données à des exploitations de grande taille.",
+          "- La nécessité d'une collaboration active entre agriculteurs, techniciens et communautés rurales.",
+          "## Conclusion : innovation et durabilité vont de pair",
+          "Les champs d'essai sont de véritables laboratoires vivants qui permettent à l'agriculture d'évoluer vers des modèles plus durables et plus rentables. Grâce à eux, les engrais biologiques ne sont plus une simple alternative : ils deviennent un outil éprouvé et reproductible à grande échelle pour l'agriculture de demain."
+        ]
+      },
+      "npkFertilisers": {
+        "title": "Les engrais NPK sont-ils durables ?",
+        "excerpt": "Risques et conséquences à long terme de l'usage intensif d'engrais chimiques sur la santé des sols.",
+        "body": [
+          "La fertilité du sol est le fondement d'une agriculture durable et résiliente. Pourtant, l'utilisation intensive d'engrais chimiques comme les NPK accélère la dégradation des sols agricoles partout dans le monde. S'ils peuvent apporter des bénéfices à court terme, leurs effets à long terme menacent la productivité future et l'équilibre environnemental.",
+          "## Que sont les engrais NPK ?",
+          "Ils contiennent trois macronutriments essentiels pour les plantes :",
+          "- N (azote), pour le développement des feuilles et des tiges.",
+          "- P (phosphore), pour la formation des racines et des fruits.",
+          "- K (potassium), pour la résistance et le métabolisme.",
+          "S'ils stimulent la croissance végétale, ils ne couvrent pas les autres micronutriments et éléments nécessaires à un sol sain.",
+          "## Les problèmes liés à un usage prolongé",
+          "### 1. Déséquilibre nutritionnel du sol",
+          "En se concentrant sur l'azote, le phosphore et le potassium, on néglige des micronutriments essentiels comme le calcium, le magnésium, le soufre, le fer, le zinc ou le manganèse, ce qui nuit à la santé des plantes et à la vie microbienne du sol.",
+          "### 2. Pollution environnementale",
+          "L'excès d'azote et de phosphore peut s'infiltrer dans les eaux souterraines ou ruisseler vers les rivières, ce qui entraîne une pollution de l'eau et une eutrophisation.",
+          "### 3. Perte de biodiversité du sol",
+          "Les engrais de synthèse peuvent réduire la diversité microbienne et perturber des processus clés comme la décomposition de la matière organique ou la fixation de l'azote.",
+          "### 4. Érosion et perte de structure",
+          "Avec le temps, un sol traité uniquement avec des produits chimiques perd sa matière organique et devient plus compact, moins poreux et plus vulnérable à l'érosion par le vent et la pluie.",
+          "### 5. Baisse de la fertilité naturelle",
+          "Une dépendance artificielle s'installe : plus on en applique, plus la fertilité propre du sol se dégrade, ce qui oblige à augmenter les doses pour maintenir la production.",
+          "## Conséquences pour l'agriculteur",
+          "- Des coûts plus élevés à long terme en raison du besoin constant d'intrants.",
+          "- Des rendements en baisse après plusieurs campagnes successives.",
+          "- Des cultures plus vulnérables aux maladies et aux ravageurs.",
+          "- Une rentabilité moindre et une moindre résilience face au changement climatique.",
+          "## Des alternatives durables",
+          "La solution passe par un changement d'approche : nourrir non seulement les plantes, mais aussi le sol. Voici quelques pratiques durables :",
+          "- Incorporer de la matière organique, comme du compost, du fumier bien décomposé ou des résidus végétaux.",
+          "- Utiliser des engrais verts et des cultures de couverture pour fixer l'azote, protéger le sol et améliorer sa structure.",
+          "- Appliquer des engrais biologiques, formulés à partir d'ingrédients naturels qui respectent la biodiversité du sol.",
+          "- Analyser le sol pour n'apporter que les nutriments nécessaires et éviter les excès.",
+          "- Pratiquer la rotation des cultures pour préserver les nutriments et rompre les cycles des ravageurs et des maladies.",
+          "## Conclusion : la fertilité du sol ne s'achète pas, elle se cultive",
+          "Les engrais NPK peuvent être utiles ponctuellement, mais ils ne sont pas durables en tant que seule stratégie de fertilisation. Pour une production rentable, résiliente et responsable, il faut miser sur des stratégies qui régénèrent le sol et travaillent avec la nature, et non contre elle."
+        ]
+      },
+      "soilPreparation": {
+        "title": "La préparation du sol en agriculture biologique",
+        "excerpt": "Sept étapes clés pour une culture saine : un sol bien travaillé retient mieux l'eau et apporte les nutriments nécessaires.",
+        "body": [
+          "Une bonne préparation du sol est la première étape vers une culture saine et durable, en particulier en agriculture biologique, où l'équilibre naturel de l'écosystème est essentiel. Un sol bien travaillé présente une meilleure structure, retient mieux l'eau et fournit les nutriments dont les plantes ont besoin pour croître. Voici les sept étapes fondamentales pour le préparer de manière efficace et respectueuse de l'environnement.",
+          "## 1. Analyse et évaluation du sol",
+          "Avant toute chose, il faut connaître l'état du sol. Une analyse de sol permet d'évaluer :",
+          "- La texture (sableuse, argileuse, limoneuse…).",
+          "- Le pH (acide ou alcalin).",
+          "- La teneur en nutriments et en matière organique.",
+          "Ces informations permettent de prendre des décisions adaptées aux besoins du terrain et de la culture.",
+          "## 2. Élimination des mauvaises herbes",
+          "Les mauvaises herbes concurrencent les cultures pour l'eau et les nutriments. Les méthodes les plus courantes sont :",
+          "- Manuelle ou mécanique : binettes, débroussailleuses ou arrachage à la main.",
+          "- Paillage : couvrir le sol pour empêcher la germination de nouvelles herbes.",
+          "- Solarisation : couvrir le sol d'un plastique transparent pour le désinfecter et détruire les graines.",
+          "## 3. Labour ou travail minimal du sol",
+          "- Labour conventionnel : on retourne le sol pour l'aérer et enfouir les résidus végétaux.",
+          "- Travail minimal : on ne remue que le nécessaire, en respectant la structure et la biodiversité du sol.",
+          "Le choix dépend du type de culture, de l'état du sol et de l'approche biologique adoptée.",
+          "## 4. Apport de matière organique",
+          "Il est fondamental dans tout système biologique : il fournit des nutriments essentiels, améliore la structure et l'aération du sol et augmente la rétention d'humidité. Vous pouvez utiliser du compost bien mûr, du fumier composté ou des résidus végétaux décomposés, en les mélangeant uniformément au sol.",
+          "## 5. Correction du pH et fertilisation organique",
+          "En fonction de l'analyse préalable, corrigez le pH si nécessaire :",
+          "- pH bas (acide) : apporter de la chaux agricole.",
+          "- pH élevé (alcalin) : apporter du soufre agricole.",
+          "Incorporez ensuite des engrais organiques comme les farines de roche, le lombricompost, les extraits d'algues ou les biofertilisants microbiens. L'objectif : nourrir sans polluer.",
+          "## 6. Nivellement et formation des planches de culture",
+          "Niveler la surface évite les flaques, favorise une irrigation homogène et améliore le drainage. Sur les sols lourds ou mal drainés, ainsi que pour les cultures intensives, on peut former des planches surélevées ou des buttes.",
+          "## 7. Couverture du sol",
+          "Couvrir le sol de matière organique (paille, feuilles broyées, copeaux de bois ou compost) aide à conserver l'humidité, à limiter l'érosion, à maîtriser les mauvaises herbes et à stimuler l'activité microbienne.",
+          "## Conclusion",
+          "Préparer le sol en agriculture biologique n'est pas une simple formalité : c'est un investissement à long terme dans la santé de l'agroécosystème. Un sol bien traité est plus fertile, plus résistant au stress climatique et plus productif, sans recourir aux produits agrochimiques. Prenez soin du sol, et il prendra soin de vos cultures."
+        ]
+      },
+      "pollinators": {
+        "title": "Engrais biologiques et pollinisateurs",
+        "excerpt": "Une alliance vitale pour la biodiversité : comment les engrais biologiques profitent aux abeilles, aux papillons et aux autres pollinisateurs.",
+        "body": [
+          "L'agriculture biologique ne se contente pas de protéger l'environnement : elle profite aussi à l'un des maillons essentiels de notre écosystème, les insectes pollinisateurs. En utilisant des engrais naturels et en évitant les substances toxiques, on crée un environnement plus sain pour les abeilles, les papillons et les autres pollinisateurs indispensables à la production alimentaire.",
+          "## Que sont les engrais biologiques ?",
+          "Ce sont des produits d'origine naturelle et organique qui nourrissent le sol et renforcent le développement des cultures. Parmi les plus courants :",
+          "- Le compost.",
+          "- Le fumier animal.",
+          "- Les résidus de culture.",
+          "- Les algues marines.",
+          "- Les biofertilisants microbiens.",
+          "Contrairement aux engrais chimiques, ils ne contiennent pas de substances de synthèse susceptibles de perturber la biodiversité ou de polluer les ressources naturelles.",
+          "## Les insectes pollinisateurs : essentiels à la vie",
+          "Les pollinisateurs (abeilles, papillons, guêpes, colibris, coléoptères et bien d'autres) sont indispensables à la reproduction des plantes à fleurs. Grâce à eux, il est possible de produire des fruits, des légumes et des fruits à coque, de préserver les espèces végétales et de maintenir l'équilibre des écosystèmes. Plus de 75 % des cultures alimentaires mondiales dépendent, au moins en partie, de la pollinisation animale.",
+          "## Comment les engrais biologiques aident-ils les pollinisateurs ?",
+          "### 1. Des plantes plus saines, des pollinisateurs en meilleure santé",
+          "Les engrais biologiques libèrent les nutriments progressivement et favorisent une croissance vigoureuse et équilibrée. Résultat : des fleurs plus abondantes, un nectar et un pollen de meilleure qualité et des cultures plus attractives pour les pollinisateurs.",
+          "### 2. Zéro pollution chimique",
+          "Ils ne polluent ni le sol ni l'eau, ne perturbent pas la flore microbienne naturelle et ne nuisent pas directement aux insectes auxiliaires, ce qui réduit le risque d'intoxication ou de déséquilibre de l'écosystème.",
+          "### 3. Une plus grande biodiversité végétale",
+          "Les systèmes qui utilisent des engrais organiques intègrent souvent des pratiques comme la rotation des cultures, les haies fleuries ou les cultures de couverture. Tout cela accroît la diversité des fleurs et des habitats, attire davantage d'espèces pollinisatrices et favorise un environnement riche en faune sauvage.",
+          "## Un écosystème interconnecté",
+          "Chaque action que nous menons en agriculture se répercute sur toute la chaîne du vivant. Un sol sain, des plantes saines et une communauté diversifiée de pollinisateurs sont le socle d'une agriculture régénératrice et durable.",
+          "## Conclusion : protéger les pollinisateurs, c'est protéger notre avenir",
+          "Les engrais biologiques ne se contentent pas de nourrir les plantes : ils préservent aussi la vie qui les entoure. Les adopter, c'est miser sur la sécurité alimentaire, la biodiversité et la résilience de la planète."
+        ]
+      },
+      "organicCrops": {
+        "title": "Cultures biologiques : types, planification et produits clés",
+        "excerpt": "Les différents types de cultures biologiques, comment les planifier et quels produits naturels sont essentiels à chaque étape.",
+        "body": [
+          "L'agriculture biologique s'est imposée comme une alternative responsable et efficace aux méthodes conventionnelles. Elle privilégie la santé du sol et la qualité des aliments, mais protège aussi la biodiversité et réduit l'impact environnemental. Nous vous présentons les différents types de cultures biologiques, la manière de les planifier et les produits naturels essentiels à chaque étape.",
+          "## Types de cultures biologiques",
+          "### 1. Cultures annuelles",
+          "Elles accomplissent leur cycle de vie en moins d'un an, comme le maïs, le blé, les légumineuses ou les légumes-feuilles (laitue, épinard, blette). La rotation des cultures y est essentielle pour ne pas épuiser le sol et pour rompre les cycles des ravageurs et des maladies.",
+          "### 2. Cultures pérennes",
+          "Elles restent en production pendant plusieurs années et donnent des récoltes continues : arbres fruitiers (pommiers, poiriers, amandiers), vignes, oliviers ou arbustes à baies. La taille, la fertilisation naturelle et le suivi phytosanitaire sont essentiels pour les maintenir sains et productifs.",
+          "### 3. Cultures associées",
+          "Elles combinent différentes cultures sur un même espace pour créer un écosystème plus équilibré, avec des associations bénéfiques (comme maïs, haricot et courge) et des cultures de couverture (avoine, trèfle, seigle) qui améliorent la fertilité du sol et le protègent de l'érosion.",
+          "## Planifier une culture biologique",
+          "### 1. Préparation du sol",
+          "Le sol est la base : il doit être riche en matière organique, aéré et bien structuré. On utilise pour cela du compost, du fumier mûr et des résidus végétaux fermentés, avec un travail minimal du sol pour ne pas détruire le microbiote bénéfique.",
+          "### 2. Semis et plantation",
+          "- Utilisez des semences et des plants biologiques certifiés.",
+          "- Planifiez la date de semis en fonction du climat et du calendrier agricole.",
+          "- Respectez une densité adaptée pour éviter la concurrence entre les plantes.",
+          "### 3. Soins naturels des plantes",
+          "- Une irrigation efficace, selon les besoins réels de la culture et le climat.",
+          "- Une lutte biologique contre les ravageurs avec des insecticides naturels.",
+          "- Un désherbage manuel ou par paillage.",
+          "## Des produits biologiques pour chaque étape",
+          "- Engrais organiques : compost, lombricompost, fumier composté et engrais homologués pour l'agriculture biologique.",
+          "- Protection naturelle : huile de neem, savon noir, ail, extrait de prêle ou bicarbonate, qui repoussent les ravageurs et préviennent les maladies sans laisser de résidus toxiques.",
+          "- Couverture du sol : paillage organique (paille, résidus de taille, feuilles sèches) qui réduit l'évaporation, limite les mauvaises herbes et améliore la vie du sol.",
+          "- Irrigation durable : goutte-à-goutte ou micro-aspersion, qui économisent l'eau et évitent les maladies fongiques.",
+          "## Une agriculture plus verte et plus saine",
+          "Les cultures biologiques permettent d'obtenir des aliments de grande qualité, protègent les ressources naturelles et favorisent l'équilibre des écosystèmes agricoles. Planifiez en conscience, utilisez des produits naturels et prenez soin du sol et de la biodiversité : chacune de vos décisions d'agriculteur a un impact."
+        ]
+      },
+      "agricultureDrones": {
+        "title": "Révolutionner l'agriculture : l'épandage d'engrais par drone",
+        "excerpt": "Avantages, coûts et perspectives de l'application d'engrais par drone agricole.",
+        "body": [
+          "La technologie rend l'agriculture moderne plus efficace et plus durable. L'application d'engrais par drone agricole est devenue une solution innovante qui transforme la façon dont les agriculteurs prennent soin de leurs cultures : elle améliore la productivité, réduit les coûts et limite l'impact environnemental en optimisant l'utilisation des engrais.",
+          "## Les avantages de l'application d'engrais par drone",
+          "### 1. Précision",
+          "Les drones équipés de capteurs et de systèmes de cartographie permettent une application précise et localisée. On évite la surfertilisation, on réduit le gaspillage de nutriments et on exploite mieux les ressources, avec des économies importantes pour l'agriculteur.",
+          "### 2. Gain de temps et de main-d'œuvre",
+          "L'application traditionnelle nécessite souvent des machines lourdes et du personnel spécialisé. Avec les drones, de grandes surfaces sont couvertes rapidement et automatiquement, et la main-d'œuvre est libérée pour d'autres tâches.",
+          "### 3. Accès aux zones difficiles",
+          "Ils sont idéaux pour les terrains accidentés ou difficiles d'accès, où les machines conventionnelles peinent, et garantissent une répartition homogène même dans les zones les plus inaccessibles.",
+          "### 4. Un impact environnemental réduit",
+          "L'application précise évite le ruissellement des engrais vers les points d'eau, ce qui réduit la pollution et protège les écosystèmes aquatiques.",
+          "## Coûts et points à prendre en compte",
+          "- Investissement initial : les drones spécialisés et leurs logiciels représentent un coût important, bien qu'il diminue grâce aux progrès technologiques.",
+          "- Formation et maintenance : leur pilotage exige une formation, et l'entretien comme les réparations sont des coûts à prévoir.",
+          "- Réglementation : l'utilisation des drones en agriculture est réglementée et peut varier selon les régions ; le respect des autorisations est indispensable.",
+          "## L'avenir de l'agriculture avec les drones",
+          "Avec l'évolution rapide de la technologie, l'application d'engrais par drone deviendra de plus en plus accessible et efficace. Malgré les coûts initiaux et les exigences réglementaires, c'est un investissement judicieux pour les agriculteurs qui recherchent efficacité, économies et durabilité à long terme."
+        ]
+      },
+      "organicConsumption": {
+        "title": "L'essor de la consommation de fruits et légumes bio",
+        "excerpt": "Tendances et perspectives d'un marché en croissance continue : santé, durabilité et transparence.",
+        "body": [
+          "De plus en plus de personnes choisissent des fruits et légumes bio, en quête d'un mode de vie plus sain et plus durable. Il ne s'agit pas d'une mode passagère, mais d'une tendance de fond qui transforme le marché mondial de l'alimentation biologique.",
+          "## L'évolution du marché bio",
+          "La consommation de fruits et légumes bio a progressé de façon constante au cours des dernières décennies, portée par la prise de conscience de l'importance d'une alimentation saine et par les préoccupations liées à l'impact environnemental de l'agriculture conventionnelle.",
+          "## Les principaux moteurs de la croissance",
+          "### 1. Santé et bien-être",
+          "Les consommateurs veulent éviter les pesticides, les herbicides et les produits chimiques de synthèse. Cultivés sans eux, les fruits et légumes bio constituent un choix plus sûr, plus nutritif et plus naturel.",
+          "### 2. Durabilité environnementale",
+          "L'agriculture biologique encourage des pratiques comme la rotation des cultures et le compostage, qui préservent la fertilité du sol et la biodiversité.",
+          "### 3. Transparence",
+          "Le consommateur d'aujourd'hui veut savoir comment ses aliments sont produits et d'où ils viennent. Les produits bio répondent généralement à ces exigences de traçabilité, ce qui renforce la confiance.",
+          "## Perspectives d'avenir",
+          "Les rapports du secteur prévoient que la consommation continuera de croître dans les années à venir, grâce à une plus grande sensibilisation à la santé, à l'adoption de techniques agricoles durables et à une meilleure disponibilité des produits bio.",
+          "## Vers une alimentation saine et durable",
+          "Cet essor traduit une évolution profonde vers des modes de vie plus sains et plus respectueux de l'environnement. Le développement du marché bio profite aux consommateurs, aux agriculteurs et à la planète."
+        ]
+      }
+    },
+    "backToNews": "Retour aux actualités",
+    "relatedTitle": "Autres actualités",
+    "videoTitle": "Vidéo : {{title}}"
+  },
+  "team": {
+    "title": "Les personnes derrière Clavel",
+    "intro": "Une équipe à taille humaine et proche de vous, forte d'une expérience en agronomie, en laboratoire et en accompagnement des agriculteurs.",
+    "namePending": "Prénom Nom",
+    "photoPending": "Photo à venir",
+    "emailLabel": "Écrire à {{name}}",
+    "linkedinLabel": "LinkedIn de {{name}}",
+    "roles": {
+      "generalManagement": "Direction générale",
+      "technicalDirection": "Direction technique et laboratoire",
+      "salesSupport": "Service commercial"
+    }
+  },
+  "contact": {
+    "title": "Parlons de votre culture",
+    "intro": "Laissez-nous vos coordonnées et nous vous répondrons par e-mail. Si vous le souhaitez, nous vous enverrons notre catalogue de produits.",
+    "address": "Paseo El Molí, 2C · 46980 Paterna (Valence, Espagne)",
+    "form": {
+      "reason": "De quoi avez-vous besoin ?",
+      "reasons": {
+        "catalogue": "Demander le catalogue",
+        "advice": "Demander conseil",
+        "productInfo": "Informations produits",
+        "other": "Autre demande"
+      },
+      "catalogues": "Quel catalogue souhaitez-vous ?",
+      "cataloguesHint": "(choix multiple possible)",
+      "cataloguesLine": "Catalogues",
+      "name": "Nom et prénom",
+      "company": "Entreprise ou exploitation",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "optional": "facultatif",
+      "message": "Message",
+      "messageHelp": "Parlez-nous de votre culture, de la surface ou du produit qui vous intéresse.",
+      "privacy": "J'ai lu et j'accepte la <policyLink>politique de confidentialité</policyLink>.",
+      "submit": "Envoyer",
+      "errorReason": "Indiquez votre besoin.",
+      "errorCatalogue": "Choisissez au moins un catalogue.",
+      "errorName": "Indiquez votre nom.",
+      "errorEmail": "Indiquez une adresse e-mail valide.",
+      "errorPrivacy": "Vous devez accepter la politique de confidentialité.",
+      "sentTitle": "Message envoyé",
+      "sentText": "Merci. Nous vous répondrons par e-mail sous 48 heures ouvrées.",
+      "sendAnother": "Envoyer un autre message",
+      "mailSubject": "{{reason}} · {{name}}"
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "intro": "Les données que nous collectons via ce site, leur utilisation, vos droits et les conditions d'utilisation du site.",
+    "updated": "Dernière mise à jour : septembre 2026",
+    "indexTitle": "Sommaire",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "body": [
+          "Chez {{company}}, nous prenons au sérieux la protection de vos données personnelles. La présente politique explique comment nous traitons les informations que vous nous communiquez via ce site, ainsi que les conditions d'utilisation du site.",
+          "Nous traitons vos données conformément au Règlement (UE) 2016/679, le Règlement général sur la protection des données (RGPD), à la loi organique espagnole 3/2018 relative à la protection des données personnelles et à la garantie des droits numériques (LOPDGDD), et à la loi espagnole 34/2002 sur les services de la société de l'information et le commerce électronique (LSSI).",
+          "En utilisant ce site, et notamment en nous envoyant le formulaire de contact, vous déclarez avoir lu la présente politique."
+        ]
+      },
+      "controller": {
+        "title": "Responsable du traitement",
+        "body": [
+          "Le responsable du traitement de vos données est {{company}}.",
+          "- E-mail : {{email}}",
+          "Pour toute question relative à vos données personnelles, vous pouvez nous écrire à cette adresse e-mail."
+        ]
+      },
+      "data": {
+        "title": "Données collectées",
+        "body": [
+          "Nous traitons uniquement les données que vous nous communiquez volontairement dans le formulaire de contact :",
+          "- Nom, prénom et adresse e-mail, obligatoires pour que nous puissions vous répondre.",
+          "- Entreprise ou exploitation et téléphone, si vous choisissez de les indiquer.",
+          "- L'objet de votre demande et le message que vous nous adressez.",
+          "Nous ne demandons aucune catégorie particulière de données. Nous vous prions de ne pas en inclure dans votre message. Si vous nous communiquez des données concernant des tiers, vous garantissez les avoir informés et avoir obtenu leur consentement."
+        ]
+      },
+      "purpose": {
+        "title": "Finalités du traitement",
+        "body": [
+          "- Répondre à votre demande.",
+          "- Vous envoyer le catalogue de produits ou les informations techniques que vous demandez.",
+          "- Entretenir avec vous la relation commerciale qui pourrait découler de votre demande.",
+          "Nous n'utilisons pas vos données pour vous adresser des communications commerciales non sollicitées, nous n'établissons pas de profils et nous ne prenons aucune décision automatisée à votre égard."
+        ]
+      },
+      "legalBasis": {
+        "title": "Base juridique du traitement",
+        "body": [
+          "La base juridique est votre consentement, que vous nous donnez en cochant la case du formulaire, et, lorsque votre demande porte sur l'achat de nos produits, l'exécution de mesures précontractuelles prises à votre demande.",
+          "Vous pouvez retirer votre consentement à tout moment, sans que cela porte atteinte à la licéité du traitement effectué avant ce retrait."
+        ]
+      },
+      "retention": {
+        "title": "Durée de conservation",
+        "body": [
+          "Nous conservons vos données le temps nécessaire au traitement de votre demande et, le cas échéant, pendant toute la durée de la relation commerciale. Elles sont ensuite conservées de manière bloquée pendant les délais légaux au cours desquels des responsabilités peuvent être engagées, puis supprimées à l'expiration de ces délais."
+        ]
+      },
+      "recipients": {
+        "title": "Destinataires",
+        "body": [
+          "Nous ne communiquons pas vos données à des tiers, sauf obligation légale.",
+          "Les prestataires qui nous fournissent des services techniques, comme la messagerie électronique ou l'hébergement du site, peuvent y accéder uniquement pour nous fournir ce service, dans le cadre d'un contrat et avec les garanties exigées par le RGPD. Si l'un d'eux était situé en dehors de l'Espace économique européen, le transfert serait encadré par des garanties appropriées, telles que les clauses contractuelles types de la Commission européenne."
+        ]
+      },
+      "rights": {
+        "title": "Vos droits",
+        "body": [
+          "Vous pouvez exercer à tout moment les droits suivants :",
+          "- Accès : savoir si nous traitons vos données et lesquelles.",
+          "- Rectification : corriger les données inexactes ou incomplètes.",
+          "- Effacement : demander la suppression de vos données lorsqu'elles ne sont plus nécessaires.",
+          "- Opposition et limitation : vous opposer au traitement ou demander sa limitation dans certains cas.",
+          "- Portabilité : recevoir vos données dans un format structuré et couramment utilisé.",
+          "- Retrait de votre consentement à tout moment.",
+          "Pour exercer ces droits, écrivez-nous à {{email}} en précisant le droit que vous souhaitez exercer. Si vous estimez que nous n'avons pas traité correctement votre demande, vous pouvez introduire une réclamation auprès de l'Agence espagnole de protection des données (AEPD, www.aepd.es)."
+        ]
+      },
+      "security": {
+        "title": "Mesures de sécurité",
+        "body": [
+          "Nous appliquons les mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'altération ou l'accès non autorisé, compte tenu de l'état de la technique et de la nature des données. Le site est servi via une connexion chiffrée (HTTPS).",
+          "Toutefois, aucun système n'est totalement sûr. Si nous détectons une violation de données vous concernant, nous agirons conformément à la réglementation."
+        ]
+      },
+      "thirdParties": {
+        "title": "Liens et contenus tiers",
+        "body": [
+          "Ce site peut contenir des liens vers des sites tiers, comme nos réseaux sociaux, ainsi que des vidéos hébergées sur YouTube. Nous ne sommes pas responsables du contenu ni des politiques de confidentialité de ces sites, que nous vous recommandons de consulter.",
+          "Les vidéos sont intégrées en mode confidentialité renforcée (youtube-nocookie.com) : YouTube n'enregistre aucune information dans votre navigateur tant que vous ne lancez pas la vidéo. Lorsque vous la lancez, les conditions d'utilisation et la politique de confidentialité de Google s'appliquent."
+        ]
+      },
+      "cookies": {
+        "title": "Navigation et cookies",
+        "body": [
+          "Ce site n'utilise pas de cookies de mesure d'audience ni de cookies publicitaires.",
+          "Nous enregistrons uniquement dans votre navigateur (stockage local) la langue que vous choisissez, afin de vous afficher le site dans cette langue lors de vos prochaines visites. Il s'agit d'une donnée technique nécessaire à la fonctionnalité que vous avez choisie, qui ne permet pas de vous identifier. Vous pouvez la supprimer à tout moment depuis les paramètres de votre navigateur.",
+          "Si nous ajoutons d'autres cookies à l'avenir, nous l'indiquerons ici et vous demanderons votre consentement lorsque cela sera nécessaire."
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle et industrielle",
+        "body": [
+          "Les contenus de ce site (textes, images, design, logos et marques) sont la propriété de {{company}} ou de tiers ayant autorisé leur utilisation, et sont protégés par la réglementation relative à la propriété intellectuelle et industrielle.",
+          "Toute reproduction, distribution, communication au public ou transformation, totale ou partielle, est interdite sans autorisation expresse, sauf pour un usage personnel et privé."
+        ]
+      },
+      "userObligations": {
+        "title": "Obligations de l'utilisateur",
+        "body": [
+          "En utilisant ce site, vous vous engagez à :",
+          "- Fournir des informations exactes dans le formulaire de contact.",
+          "- Ne pas utiliser le site à des fins illicites ou susceptibles de nuire à {{company}} ou à des tiers.",
+          "- Ne pas introduire de virus ni effectuer d'actions susceptibles d'endommager ou de surcharger le site."
+        ]
+      },
+      "law": {
+        "title": "Droit applicable et juridiction",
+        "body": [
+          "La présente politique et l'utilisation du site sont régies par le droit espagnol. Pour tout litige, les parties se soumettent aux juridictions compétentes conformément à la loi ; si vous êtes consommateur, à celles de votre domicile."
+        ]
+      },
+      "updates": {
+        "title": "Mises à jour de la présente politique",
+        "body": [
+          "Nous pouvons modifier la présente politique pour l'adapter à des évolutions légales ou à des changements de nos services. La version en vigueur sera toujours publiée sur cette page, avec sa date de mise à jour ; nous vous recommandons donc de la consulter régulièrement."
+        ]
+      }
+    }
+  },
+  "footer": {
+    "claim": "Des solutions agricoles durables, avec expérience, innovation et engagement pour l'avenir de l'agriculture.",
+    "pages": "Pages",
+    "contact": "Contact",
+    "social": "Réseaux sociaux",
+    "copyright": "© {{year}} Clavel. Tous droits réservés."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n'existe pas ou a changé d'adresse.",
+    "cta": "Retour à l'accueil"
+  },
+  "error": {
+    "title": "Une erreur est survenue",
+    "text": "Une erreur inattendue s'est produite. Veuillez réessayer dans quelques instants.",
+    "cta": "Retour à l'accueil"
+  }
+}

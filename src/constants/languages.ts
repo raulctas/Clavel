@@ -11,6 +11,9 @@ export interface Language {
 export const SUPPORTED_LANGUAGES: Language[] = [
   { code: 'es', label: 'Español' },
   { code: 'en', label: 'English' },
+  { code: 'fr', label: 'Français' },
+  { code: 'pt', label: 'Português' },
+  { code: 'it', label: 'Italiano' },
 ];
 
 export const DEFAULT_LANGUAGE = 'es';

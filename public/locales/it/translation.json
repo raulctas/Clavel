@@ -1,0 +1,738 @@
+{
+  "common": {
+    "companyName": "Clavel",
+    "homeLink": "Vai alla home",
+    "languageSelector": "Seleziona lingua",
+    "breadcrumb": "Percorso di navigazione",
+    "readMore": "Leggi di più",
+    "requestCatalogue": "Richiedi catalogo",
+    "previous": "Precedente",
+    "next": "Successivo",
+    "goToSlide": "Vai all'immagine {{index}}",
+    "discoverMore": "Scopri di più"
+  },
+  "nav": {
+    "main": "Navigazione principale",
+    "home": "Home",
+    "aboutUs": "Chi siamo",
+    "productsServices": "Prodotti e servizi",
+    "news": "Notizie",
+    "team": "Team",
+    "contact": "Contatti",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "privacy": "Informativa sulla privacy",
+    "laboratory": "Laboratorio",
+    "production": "Produzione e logistica"
+  },
+  "pillars": {
+    "sustainableFarming": {
+      "title": "Agricoltura sostenibile",
+      "text": "Fertilizzanti biologici e sostenibili, con un laboratorio proprio e un forte impegno ambientale."
+    },
+    "innovation": {
+      "title": "Innovazione tecnologica",
+      "text": "Soluzioni tecniche su misura per ogni coltura, sviluppate insieme a centri di ricerca."
+    },
+    "presence": {
+      "title": "Presenza e impegno",
+      "text": "Da Valencia lavoriamo per un'agricoltura in linea con l'Agenda 2030."
+    },
+    "research": {
+      "title": "R&S agricola",
+      "text": "Sviluppiamo prodotti efficaci basati su studi agronomici reali."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Fertilizzanti biologici · Valencia",
+      "title": "Nutrizione naturale per colture sane",
+      "intro": "In Clavel sviluppiamo soluzioni agricole sostenibili, con esperienza, innovazione e impegno per il futuro dell'agricoltura.",
+      "ctaAbout": "Chi siamo"
+    },
+    "pillarsTitle": "Entra a far parte della nostra comunità agricola",
+    "lab": {
+      "eyebrow": "Laboratorio",
+      "title": "Laboratorio e tecnologia propri",
+      "text": "Nel nostro centro mettiamo a tua disposizione tecnologia avanzata, un team specializzato e processi di alta qualità per garantire risultati precisi e affidabili. Se desideri informazioni dettagliate sui nostri servizi, una consulenza o un'assistenza personalizzata, siamo qui per aiutarti.",
+      "cta": "Richiedi una consulenza"
+    },
+    "manufacturing": {
+      "eyebrow": "Produzione",
+      "title": "Processo di fabbricazione",
+      "text1": "Disponiamo di processi di fabbricazione efficienti e tecnologicamente avanzati che garantiscono prodotti di alta qualità. Il nostro sistema produttivo risponde con rapidità alle esigenze del mercato, ottimizzando tempi e risorse.",
+      "text2": "Una logistica integrata assicura un flusso continuo di materiali e la consegna puntuale in qualsiasi destinazione. Dalla pianificazione alla distribuzione finale, lavoriamo secondo standard rigorosi per offrire un servizio affidabile, sicuro e competitivo."
+    },
+    "latestNews": "Ultime notizie",
+    "seeAllNews": "Vedi tutte le notizie",
+    "cta": {
+      "title": "Vuoi conoscere i nostri prodotti?",
+      "text": "Richiedici il catalogo e te lo invieremo via e-mail, con tutte le informazioni tecniche su ogni fertilizzante."
+    }
+  },
+  "aboutUs": {
+    "title": "Coltiviamo fiducia, innovazione e sostenibilità",
+    "intro": "In Clavel lavoriamo ogni giorno al fianco degli agricoltori, offrendo soluzioni efficaci e rispettose dell'ambiente.",
+    "blocks": {
+      "mission": {
+        "title": "Missione",
+        "text": "Promuoviamo un'agricoltura sostenibile utilizzando sostanze naturali e biodegradabili che rafforzano il rapporto pianta-microrganismi e rispettano l'equilibrio dell'ambiente."
+      },
+      "goals": {
+        "title": "Obiettivi",
+        "text": "Migliorare la produttività e la qualità delle colture, aumentare la resistenza delle piante, garantire residuo zero e proteggere l'ambiente."
+      },
+      "purpose": {
+        "title": "Scopo",
+        "text": "I nostri prodotti migliorano la crescita e la protezione della pianta, rafforzano radici e frutti, aumentano la resistenza allo stress e aiutano a preservare la qualità dopo la raccolta."
+      }
+    },
+    "whyTitle": "Perché sceglierci?",
+    "whyIntro": "I principali vantaggi che i nostri prodotti e la nostra esperienza offrono all'agricoltore e alle sue colture.",
+    "quality": {
+      "eyebrow": "Qualità",
+      "title": "Qualità biologica certificata",
+      "text": "La tecnologia aggiornata e le sostanze biologiche che impieghiamo nella produzione, convalidate dal nostro laboratorio di controllo qualità, garantiscono efficienza e ottimi risultati in campo.",
+      "certificate": "Certificato biologico UNE 142500:2017 · Mezzi tecnici"
+    },
+    "organic": {
+      "title": "Il biologico è meglio",
+      "text": "I nostri fertilizzanti biologici, con formule concentrate, garantiscono resa e qualità migliori, utilizzando meno prodotto e riducendo i residui. Inoltre, elaboriamo piani personalizzati per ottimizzare ogni coltura, contribuendo a un'agricoltura sostenibile ed efficiente."
+    },
+    "stats": {
+      "title": "Clavel in cifre",
+      "items": {
+        "farmers": "Agricoltori soddisfatti",
+        "products": "Prodotti certificati",
+        "hectares": "Ettari certificati (M)",
+        "years": "Anni di esperienza"
+      }
+    }
+  },
+  "productsServices": {
+    "title": "Prodotti e servizi",
+    "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura. Richiedici il catalogo con tutti i dettagli.",
+    "mainTitle": "Le nostre linee principali",
+    "mainIntro": "Due grandi linee di fertilizzanti pensate per le reali esigenze dell'agricoltore.",
+    "lines": {
+      "organicFertilisers": {
+        "title": "Fertilizzanti biologici",
+        "text": "Soluzioni specifiche per ogni coltura, formulate con sostanze naturali e biodegradabili e convalidate dal nostro laboratorio di controllo qualità. Consentiti in agricoltura biologica."
+      },
+      "sustainableFertilisers": {
+        "title": "Fertilizzanti sostenibili",
+        "text": "Nutrizione e protezione per un'agricoltura più efficiente e rispettosa dell'ambiente, su misura per ogni coltura e ogni fase vegetativa."
+      }
+    },
+    "tags": {
+      "certified": "Certificato biologico UNE 142500:2017",
+      "drone": "Compatibile con drone"
+    },
+    "rangesTitle": "Gamme di prodotto",
+    "rangesIntro": "Le nostre due linee principali si articolano in cinque gamme, in base alle esigenze della coltura.",
+    "ranges": {
+      "terra": {
+        "title": "Terra",
+        "text": "Migliorano la salute del suolo rigenerandolo e apportando sostanza organica, azoto e nutrienti essenziali per la coltura."
+      },
+      "protection": {
+        "title": "Protezione",
+        "text": "Vengono assorbiti rapidamente, correggono le carenze e rafforzano le difese della pianta contro i patogeni fino alla fine del ciclo."
+      },
+      "booster": {
+        "title": "Potenziatori",
+        "text": "Stimolano la crescita, equilibrano l'attività ormonale e preparano la pianta ad affrontare lo stress."
+      },
+      "nutrition": {
+        "title": "Nutrizione",
+        "text": "Ottimizzano lo sviluppo della pianta durante tutto il ciclo per favorire fioritura, allegagione e maturazione."
+      },
+      "correctors": {
+        "title": "Correttivi",
+        "text": "Correggono e prevengono le carenze nutrizionali con un equilibrio preciso di nutrienti, in via preventiva o curativa."
+      }
+    },
+    "otherTitle": "Altre soluzioni",
+    "otherIntro": "Linee complementari che ampliano la nostra offerta per le diverse esigenze del campo e dell'agricoltore professionale.",
+    "other": {
+      "agriculturalInputs": {
+        "title": "Mezzi tecnici agricoli",
+        "text": "Prodotti e materiali complementari per la gestione quotidiana dell'azienda agricola, selezionati per lavorare insieme alle nostre soluzioni nutrizionali."
+      },
+      "cbdFertilisers": {
+        "title": "Fertilizzanti CBD",
+        "text": "Nutrizione specifica per la coltivazione della canapa industriale, adattata a ogni fase del suo sviluppo."
+      },
+      "agriculturalAdvice": {
+        "title": "Consulenza agronomica",
+        "text": "Assistenza tecnica in campo: analisi del suolo, piani di concimazione personalizzati e monitoraggio della coltura."
+      },
+      "agriculturalTechnology": {
+        "title": "Tecnologia agricola",
+        "text": "Soluzioni tecnologiche per l'agricoltura di precisione, come la distribuzione di fertilizzanti con drone."
+      },
+      "gardening": {
+        "title": "Giardinaggio e vivai",
+        "text": "Prodotti per giardinaggio, vivai e piante ornamentali, con la stessa qualità delle nostre soluzioni per il campo."
+      }
+    },
+    "cta": {
+      "title": "Non sai quale prodotto ti serve?",
+      "text": "Parlaci della tua coltura e ti invieremo il catalogo con le informazioni tecniche sulle soluzioni più adatte."
+    }
+  },
+  "laboratory": {
+    "title": "Laboratorio di innovazione e controllo qualità",
+    "intro": "Analisi, prove e certificazioni che garantiscono la fiducia dell'agricoltore.",
+    "overview": {
+      "eyebrow": "Il nostro laboratorio",
+      "title": "Scienza applicata a ogni fertilizzante",
+      "text1": "Nel nostro laboratorio mettiamo a tua disposizione tecnologia avanzata, un team specializzato e processi di alta qualità per garantire risultati precisi e affidabili.",
+      "text2": "Ogni prodotto che esce dal nostro stabilimento è passato prima dal laboratorio: è lì che si sviluppano le formule, si convalidano con prove sperimentali e si controlla la qualità di ogni lotto."
+    },
+    "pillarsTitle": "Cosa facciamo in laboratorio",
+    "pillars": {
+      "research": {
+        "title": "Ricerca e sviluppo",
+        "text": "Sviluppiamo nuove metodologie analitiche e aiutiamo i nostri clienti a ottimizzare le formule per ogni coltura."
+      },
+      "compliance": {
+        "title": "Normativa e certificazioni",
+        "text": "Garantiamo il rispetto della normativa nazionale e internazionale. I nostri processi sono convalidati e il laboratorio opera con certificazioni di qualità riconosciute."
+      },
+      "quality": {
+        "title": "Controllo qualità su ogni lotto",
+        "text": "Eseguiamo prove chimiche, fisiche e microbiologiche su ogni lotto per assicurare che materiali e prodotti soddisfino i più elevati standard di sicurezza e prestazioni."
+      }
+    },
+    "cta": {
+      "title": "Ti serve una consulenza tecnica?",
+      "text": "Parlaci della tua coltura e il nostro team tecnico ti consiglierà la soluzione più adatta.",
+      "button": "Richiedi una consulenza"
+    }
+  },
+  "production": {
+    "title": "Processo produttivo e logistica",
+    "intro": "Coordiniamo ogni fase per offrire sicurezza, rapidità ed eccellenza.",
+    "manufacturing": {
+      "eyebrow": "Fabbricazione",
+      "title": "Fabbricazione ad alta precisione",
+      "text": "Nel nostro stabilimento ogni fase del processo è attentamente controllata per garantire prodotti della massima qualità. Dalla selezione delle materie prime alla produzione in serie, applichiamo rigorosi standard di sicurezza ed efficienza affinché ogni lotto sia conforme alla normativa nazionale e internazionale."
+    },
+    "logistics": {
+      "eyebrow": "Logistica",
+      "title": "Confezionamento e logistica sicura",
+      "text": "Terminata la produzione, i prodotti vengono confezionati in modo da preservarne integrità e qualità. Il nostro sistema logistico assicura che ogni spedizione arrivi in tempo e in perfette condizioni, combinando tecnologia e controllo umano per offrire sicurezza e fiducia."
+    },
+    "stepsTitle": "Dalla materia prima al tuo campo",
+    "steps": {
+      "rawMaterials": {
+        "title": "Materie prime",
+        "text": "Selezioniamo e analizziamo ogni materia prima prima di utilizzarla."
+      },
+      "manufacturing": {
+        "title": "Fabbricazione",
+        "text": "Produciamo con processi controllati ed efficienti in ogni fase."
+      },
+      "qualityControl": {
+        "title": "Controllo qualità",
+        "text": "Il laboratorio convalida ogni lotto prima del confezionamento."
+      },
+      "delivery": {
+        "title": "Confezionamento e consegna",
+        "text": "Confezioniamo e spediamo puntualmente in qualsiasi destinazione."
+      }
+    },
+    "cta": {
+      "title": "Vuoi conoscere i nostri prodotti?",
+      "text": "Richiedici il catalogo e te lo invieremo via e-mail, con tutte le informazioni tecniche su ogni fertilizzante."
+    }
+  },
+  "news": {
+    "title": "Novità dal campo e da Clavel",
+    "intro": "Ricerca, colture e agricoltura sostenibile.",
+    "filterLabel": "Filtra per categoria",
+    "empty": "Non ci sono notizie in questa categoria.",
+    "categories": {
+      "all": "Tutte",
+      "agriculture": "Agricoltura",
+      "innovation": "Innovazione e tecnologia",
+      "fruitVegetables": "Frutta e verdura",
+      "organic": "Biologico"
+    },
+    "items": {
+      "agenda2030": {
+        "title": "Agenda 2030 e agricoltura sostenibile",
+        "excerpt": "L'Agenda 2030 dell'ONU traccia la strada verso un futuro più giusto e rispettoso del pianeta. L'agricoltura ha un ruolo chiave.",
+        "body": [
+          "In un mondo in continuo cambiamento, l'agricoltura ha un ruolo chiave nella sostenibilità globale. L'Agenda 2030 dell'ONU, con i suoi 17 Obiettivi di Sviluppo Sostenibile (OSS), traccia la strada verso un futuro più giusto e rispettoso del pianeta. In questo contesto, l'industria dei fertilizzanti biologici è chiamata a essere protagonista di un'agricoltura più pulita, efficiente e responsabile.",
+          "## Obiettivi di Sviluppo Sostenibile e agricoltura",
+          "L'Agenda 2030 affronta grandi sfide globali, molte delle quali legate direttamente al settore agricolo. Questi sono alcuni degli OSS più rilevanti per i fertilizzanti biologici:",
+          "### OSS 2: Fame zero",
+          "Garantire la sicurezza alimentare significa migliorare la produttività agricola senza danneggiare gli ecosistemi. I fertilizzanti biologici favoriscono una nutrizione vegetale equilibrata, tutelano la salute del suolo e riducono l'uso di mezzi tecnici di sintesi.",
+          "### OSS 6: Acqua pulita e servizi igienico-sanitari",
+          "Questi fertilizzanti riducono il rischio di contaminazione delle falde acquifere, limitando la lisciviazione dei nutrienti, e contribuiscono così a preservare la qualità dell'acqua.",
+          "### OSS 15: Vita sulla terra",
+          "Promuovendo la biodiversità e l'attività microbica del suolo, i fertilizzanti biologici rigenerano gli agroecosistemi e rafforzano la sostenibilità nel lungo periodo.",
+          "## Vantaggi dei fertilizzanti biologici",
+          "I fertilizzanti biologici sono alleati essenziali per un'agricoltura rigenerativa. Tra i loro principali vantaggi spiccano:",
+          "- Nutrizione equilibrata: apportano i nutrienti essenziali di cui le piante hanno bisogno, in modo naturale e graduale.",
+          "- Impatto ambientale ridotto: limitano l'inquinamento di suoli e acque e tutelano gli agroecosistemi.",
+          "- Più biodiversità: favoriscono la vita microbica del suolo e riducono la dipendenza dai prodotti agrochimici.",
+          "## Guidare la transizione verso un'agricoltura sostenibile",
+          "L'industria dei fertilizzanti biologici ha una grande opportunità: guidare il cammino verso un'agricoltura più sostenibile, in linea con i principi dell'Agenda 2030. Questo significa:",
+          "- Puntare sull'innovazione in prodotti naturali e sostenibili.",
+          "- Formare gli agricoltori a pratiche responsabili.",
+          "- Promuovere soluzioni agricole adatte a ogni coltura e ambiente.",
+          "## Conclusione",
+          "L'Agenda 2030 è una tabella di marcia chiara per trasformare l'agricoltura del futuro. L'industria dei fertilizzanti biologici può e deve essere un motore fondamentale di questa trasformazione, contribuendo a coltivare un futuro verde, produttivo e rispettoso del pianeta."
+        ]
+      },
+      "soilQuality": {
+        "title": "Come migliorare la qualità del suolo e aumentare la produttività",
+        "excerpt": "Il successo di un raccolto comincia sottoterra. Perché arricchire il suolo prima della semina e come farlo passo dopo passo.",
+        "body": [
+          "In agricoltura, il successo di un raccolto comincia sottoterra. Ottimizzare la qualità del suolo è fondamentale per ottenere colture più produttive, sane e sostenibili. In questo articolo ti spieghiamo perché arricchire il suolo prima della semina è una strategia fondamentale e come farlo passo dopo passo.",
+          "## Perché la qualità del suolo è così importante?",
+          "Il suolo non è solo il supporto fisico delle piante: è un ecosistema vivo che influisce direttamente sulla loro nutrizione, crescita e resistenza. Un suolo sano:",
+          "- Trattiene meglio acqua e nutrienti.",
+          "- Favorisce l'attività microbica benefica.",
+          "- Aumenta la resistenza della coltura a malattie e stress.",
+          "## Che cos'è l'arricchimento nutritivo?",
+          "Consiste nel preparare il suolo prima della semina incorporando nutrienti chiave come azoto, fosforo e potassio, tramite fertilizzanti biologici o sostanza organica. Questo processo rafforza il suolo e lo rende pronto per una produzione più efficiente. I suoi principali vantaggi sono:",
+          "- Maggiore assorbimento dei nutrienti: migliora lo sviluppo radicale e la salute della pianta.",
+          "- Più produttività: colture più vigorose e con rese maggiori.",
+          "- Migliore qualità del prodotto finale: alimenti più nutrienti e resistenti.",
+          "- Pratica sostenibile: riduce l'uso eccessivo di fertilizzanti e l'inquinamento.",
+          "## Strategie chiave per arricchire il suolo",
+          "### 1. Fai un'analisi del suolo",
+          "Prima di applicare fertilizzanti, analizza il tuo suolo. Potrai così individuare carenze specifiche e scegliere i nutrienti adatti a ogni tipo di coltura.",
+          "### 2. Usa fertilizzanti organici",
+          "Il letame compostato, i biofertilizzanti e il sovescio sono ottimi alleati: rilasciano i nutrienti in modo graduale e migliorano la struttura del suolo nel lungo periodo.",
+          "### 3. Pratica la rotazione colturale",
+          "Alternare le specie vegetali evita l'esaurimento di nutrienti specifici e migliora la biodiversità del suolo.",
+          "### 4. Proteggi il suolo con una copertura vegetale",
+          "La pacciamatura o le colture di copertura proteggono il suolo dall'erosione, ne migliorano la struttura e trattengono l'umidità, favorendo l'attività microbica.",
+          "## Conclusione",
+          "Investire nella salute del suolo significa investire nel futuro dell'agricoltura. Un suolo fertile ed equilibrato è la base di colture più produttive, sostenibili e di qualità superiore. Con pratiche di arricchimento responsabili non solo otterrai raccolti migliori, ma contribuirai anche a un'agricoltura più rispettosa dell'ambiente e delle generazioni future."
+        ]
+      },
+      "fruitVegetables": {
+        "title": "Miglioramento di frutta e verdura",
+        "excerpt": "Il miglioramento del limone di Carmen, passo dopo passo.",
+        "body": [
+          "Ti mostriamo, passo dopo passo, come abbiamo migliorato l'albero di limone di Carmen: lo stato iniziale della pianta, il trattamento con fertilizzanti biologici che abbiamo applicato e i risultati visibili in campo."
+        ]
+      },
+      "citrusFertilisation": {
+        "title": "Concimazione organica negli agrumi",
+        "excerpt": "Abbiamo girato un video con Juan Manuel Martínez nella sua azienda agrumicola.",
+        "body": [
+          "Abbiamo girato un video con Juan Manuel Martínez nella sua azienda agrumicola, dove ci racconta la sua esperienza con la concimazione organica e i risultati ottenuti sui suoi alberi."
+        ]
+      },
+      "trialFields": {
+        "title": "Il ruolo dei campi sperimentali",
+        "excerpt": "I campi sperimentali sono essenziali per convalidare l'uso dei fertilizzanti biologici rispetto all'agricoltura convenzionale.",
+        "body": [
+          "L'agricoltura moderna richiede soluzioni efficienti, sostenibili e adatte a un contesto in continuo cambiamento. In questo scenario, i campi sperimentali sono strumenti essenziali per convalidare l'uso dei fertilizzanti biologici, un'alternativa chiave all'agricoltura convenzionale.",
+          "## Che cosa sono i campi sperimentali agricoli?",
+          "Sono appezzamenti destinati alla ricerca e alla sperimentazione agricola. Qui agronomi, agricoltori e ricercatori testano nuove tecniche, prodotti e soluzioni in condizioni reali ma controllate. Questo consente di:",
+          "- Confrontare diversi metodi di coltivazione.",
+          "- Misurare i risultati nel breve, medio e lungo periodo.",
+          "- Adattare le soluzioni a specifici contesti climatici e pedologici.",
+          "## Fertilizzanti biologici: un'alternativa necessaria",
+          "I fertilizzanti biologici si ottengono da materiali naturali come compost, letame, residui vegetali o minerali di origine organica. A differenza dei fertilizzanti di sintesi, non inquinano il suolo né le falde acquifere e, inoltre:",
+          "- Rigenerano la microbiologia del suolo.",
+          "- Apportano nutrienti in modo graduale ed equilibrato.",
+          "- Favoriscono la ritenzione idrica e la struttura del terreno.",
+          "## Perché i campi sperimentali sono fondamentali?",
+          "Permettono di dimostrare, misurare e perfezionare l'uso di questi mezzi tecnici sostenibili.",
+          "### 1. Una reale validazione scientifica",
+          "Applicando i fertilizzanti biologici in condizioni controllate si ottengono prove misurabili della loro efficacia rispetto ai metodi tradizionali.",
+          "### 2. Adattamenti per coltura e zona",
+          "Ogni suolo e ogni clima sono unici. Nei campi sperimentali è possibile regolare la dose e la frequenza di applicazione per massimizzare i risultati in base alla coltura e alle esigenze di ogni territorio.",
+          "### 3. Tecnologia e monitoraggio in tempo reale",
+          "Con sensori, droni e software di gestione aziendale è possibile misurare la crescita della coltura, i livelli di nutrienti nel suolo e le variazioni di umidità e temperatura.",
+          "### 4. Buone pratiche",
+          "I risultati delle prove consentono di definire e diffondere protocolli di applicazione efficaci e sostenibili, che aiutano altri produttori ad adottare soluzioni già collaudate.",
+          "## Sfide da tenere presenti",
+          "- Condizioni climatiche imprevedibili che possono influire sui risultati.",
+          "- Difficoltà nell'estendere i dati ad aziende agricole di grandi dimensioni.",
+          "- Necessità di una collaborazione attiva tra agricoltori, tecnici e comunità rurali.",
+          "## Conclusione: innovazione e sostenibilità vanno di pari passo",
+          "I campi sperimentali sono laboratori viventi che permettono all'agricoltura di evolvere verso modelli più sostenibili e redditizi. Grazie a essi, i fertilizzanti biologici non sono più solo un'alternativa, ma diventano uno strumento collaudato e scalabile per l'agricoltura del futuro."
+        ]
+      },
+      "npkFertilisers": {
+        "title": "I fertilizzanti NPK sono sostenibili?",
+        "excerpt": "Rischi e conseguenze a lungo termine dell'uso intensivo di fertilizzanti chimici per la salute del suolo.",
+        "body": [
+          "La fertilità del suolo è la base di un'agricoltura sostenibile e resiliente. Tuttavia, l'uso intensivo di fertilizzanti chimici come gli NPK sta accelerando il degrado dei suoli agricoli in tutto il mondo. Sebbene possano offrire benefici a breve termine, i loro effetti a lungo termine mettono a rischio la produttività futura e l'equilibrio ambientale.",
+          "## Che cosa sono i fertilizzanti NPK?",
+          "Contengono tre macronutrienti essenziali per le piante:",
+          "- N (azoto), per lo sviluppo di foglie e fusti.",
+          "- P (fosforo), per la formazione di radici e frutti.",
+          "- K (potassio), per la resistenza e il metabolismo.",
+          "Pur stimolando la crescita vegetale, non forniscono gli altri micronutrienti ed elementi necessari a un suolo sano.",
+          "## I problemi dell'uso prolungato",
+          "### 1. Squilibrio nutrizionale del suolo",
+          "Concentrandosi su azoto, fosforo e potassio, si trascurano micronutrienti essenziali come calcio, magnesio, zolfo, ferro, zinco o manganese, con effetti sulla salute delle piante e sulla vita microbica del suolo.",
+          "### 2. Inquinamento ambientale",
+          "L'eccesso di azoto e fosforo può infiltrarsi nelle acque sotterranee o scorrere verso i fiumi, provocando inquinamento delle acque ed eutrofizzazione.",
+          "### 3. Perdita di biodiversità del suolo",
+          "I fertilizzanti di sintesi possono ridurre la diversità microbica e compromettere processi chiave come la decomposizione della sostanza organica o la fissazione dell'azoto.",
+          "### 4. Erosione e perdita di struttura",
+          "Con il tempo, il suolo trattato solo con prodotti chimici perde sostanza organica e diventa più compatto, meno poroso e più vulnerabile all'erosione causata da vento e pioggia.",
+          "### 5. Riduzione della fertilità naturale",
+          "Si crea una dipendenza artificiale: più se ne applicano, più si degrada la fertilità propria del suolo, e si è costretti ad aumentare le dosi per mantenere la produzione.",
+          "## Conseguenze per l'agricoltore",
+          "- Costi più elevati nel lungo periodo per il continuo bisogno di mezzi tecnici.",
+          "- Rese inferiori dopo diverse campagne consecutive.",
+          "- Colture più vulnerabili a malattie e parassiti.",
+          "- Minore redditività e minore resilienza ai cambiamenti climatici.",
+          "## Alternative sostenibili",
+          "La soluzione è cambiare approccio: nutrire non solo le piante, ma anche il suolo. Alcune pratiche sostenibili sono:",
+          "- Apportare sostanza organica, come compost, letame ben maturo o residui vegetali.",
+          "- Ricorrere al sovescio e alle colture di copertura per fissare l'azoto, proteggere il suolo e migliorarne la struttura.",
+          "- Applicare fertilizzanti biologici, formulati con ingredienti naturali che rispettano la biodiversità del suolo.",
+          "- Analizzare il suolo per apportare solo i nutrienti necessari ed evitare eccessi.",
+          "- Praticare la rotazione colturale per conservare i nutrienti e interrompere i cicli di parassiti e malattie.",
+          "## Conclusione: la fertilità del suolo non si compra, si coltiva",
+          "I fertilizzanti NPK possono essere utili in momenti specifici, ma non sono sostenibili come unica strategia di concimazione. Per ottenere una produzione redditizia, resiliente e responsabile bisogna puntare su strategie che rigenerino il suolo e lavorino con la natura, non contro di essa."
+        ]
+      },
+      "soilPreparation": {
+        "title": "Preparazione del suolo in agricoltura biologica",
+        "excerpt": "Sette passaggi chiave per una coltura sana: un suolo ben lavorato trattiene meglio l'acqua e apporta i nutrienti necessari.",
+        "body": [
+          "Una buona preparazione del suolo è il primo passo verso una coltura sana e sostenibile, soprattutto in agricoltura biologica, dove l'equilibrio naturale dell'ecosistema è essenziale. Un suolo ben lavorato ha una struttura migliore, trattiene meglio l'acqua e apporta i nutrienti di cui le piante hanno bisogno per crescere. Ecco i sette passaggi fondamentali per prepararlo in modo efficace e rispettoso dell'ambiente.",
+          "## 1. Analisi e valutazione del suolo",
+          "Prima di tutto bisogna conoscere lo stato del suolo. Un'analisi del terreno permette di valutare:",
+          "- La tessitura (sabbiosa, argillosa, limosa…).",
+          "- Il pH (acido o alcalino).",
+          "- Il contenuto di nutrienti e di sostanza organica.",
+          "Con queste informazioni si possono prendere decisioni calibrate sulle esigenze del terreno e della coltura.",
+          "## 2. Eliminazione delle erbe infestanti",
+          "Le erbe infestanti competono con le colture per l'acqua e i nutrienti. I metodi più comuni sono:",
+          "- Manuale o meccanico: zappe, decespugliatori o estirpazione a mano.",
+          "- Pacciamatura: coprire il suolo per impedire la germinazione di nuove infestanti.",
+          "- Solarizzazione: coprire il suolo con plastica trasparente per disinfettarlo ed eliminare i semi.",
+          "## 3. Lavorazione convenzionale o minima",
+          "- Lavorazione convenzionale: il suolo viene rivoltato per arieggiarlo e interrare i residui vegetali.",
+          "- Lavorazione minima: si smuove solo il necessario, rispettando la struttura e la biodiversità del suolo.",
+          "La scelta dipende dal tipo di coltura, dallo stato del suolo e dall'approccio biologico adottato.",
+          "## 4. Apporto di sostanza organica",
+          "È fondamentale in qualsiasi sistema biologico: apporta nutrienti essenziali, migliora la struttura e l'aerazione del suolo e ne aumenta la capacità di trattenere l'umidità. Puoi utilizzare compost ben maturo, letame compostato o residui vegetali decomposti, mescolandoli in modo uniforme con il terreno.",
+          "## 5. Correzione del pH e concimazione organica",
+          "Sulla base dell'analisi precedente, correggi il pH se necessario:",
+          "- pH basso (acido): applicare calce agricola.",
+          "- pH alto (alcalino): applicare zolfo agricolo.",
+          "Successivamente, incorpora fertilizzanti organici come farine di roccia, humus di lombrico, estratti di alghe o biofertilizzanti microbici. L'obiettivo è nutrire senza inquinare.",
+          "## 6. Livellamento e formazione delle aiuole",
+          "Livellare la superficie evita i ristagni, facilita un'irrigazione uniforme e migliora il drenaggio. Nei terreni pesanti o poco drenanti, e nelle colture intensive, si possono realizzare aiuole rialzate o prose.",
+          "## 7. Copertura del suolo",
+          "Coprire il suolo con materiale organico (paglia, foglie triturate, trucioli di legno o compost) aiuta a conservare l'umidità, ridurre l'erosione, controllare le infestanti e stimolare l'attività microbica.",
+          "## Conclusione",
+          "Preparare il suolo in agricoltura biologica non è una semplice formalità: è un investimento a lungo termine nella salute dell'agroecosistema. Un suolo ben gestito è più fertile, più resistente allo stress climatico e più produttivo senza bisogno di prodotti agrochimici. Prenditi cura del suolo e lui si prenderà cura delle tue colture."
+        ]
+      },
+      "pollinators": {
+        "title": "Fertilizzanti biologici e impollinatori",
+        "excerpt": "Un'alleanza vitale per la biodiversità: come i fertilizzanti biologici favoriscono api, farfalle e altri impollinatori.",
+        "body": [
+          "L'agricoltura biologica non protegge soltanto l'ambiente: favorisce anche uno degli elementi chiave del nostro ecosistema, gli insetti impollinatori. Utilizzando fertilizzanti naturali ed evitando sostanze tossiche, si crea un ambiente più sano per api, farfalle e altri impollinatori essenziali per la produzione di cibo.",
+          "## Che cosa sono i fertilizzanti biologici?",
+          "Sono prodotti di origine naturale e organica che nutrono il suolo e rafforzano lo sviluppo delle colture. Tra i più comuni ci sono:",
+          "- Il compost.",
+          "- Il letame animale.",
+          "- I residui colturali.",
+          "- Le alghe marine.",
+          "- I biofertilizzanti microbici.",
+          "A differenza dei fertilizzanti chimici, non contengono sostanze di sintesi che possano alterare la biodiversità o inquinare le risorse naturali.",
+          "## Insetti impollinatori: fondamentali per la vita",
+          "Gli impollinatori (api, farfalle, vespe, colibrì, coleotteri e molti altri) sono essenziali per la riproduzione delle piante da fiore. Grazie a loro è possibile produrre frutta, verdura e frutta secca, conservare le specie vegetali e mantenere l'equilibrio degli ecosistemi. Oltre il 75% delle colture alimentari mondiali dipende, almeno in parte, dall'impollinazione animale.",
+          "## Come aiutano gli impollinatori i fertilizzanti biologici?",
+          "### 1. Piante più sane, impollinatori più sani",
+          "I fertilizzanti biologici rilasciano i nutrienti gradualmente e favoriscono una crescita forte ed equilibrata. Il risultato sono fioriture più abbondanti, nettare e polline di qualità migliore e colture più attraenti per gli impollinatori.",
+          "### 2. Zero inquinamento chimico",
+          "Non inquinano il suolo né l'acqua, non alterano la flora microbica naturale e non danneggiano direttamente gli insetti utili, riducendo il rischio di intossicazioni o di squilibri nell'ecosistema.",
+          "### 3. Più biodiversità vegetale",
+          "I sistemi che impiegano fertilizzanti organici adottano spesso pratiche come la rotazione colturale, le siepi fiorite o le colture di copertura. Tutto ciò aumenta la varietà di fiori e habitat, attira più specie di impollinatori e favorisce un ambiente ricco di fauna selvatica.",
+          "## Un ecosistema interconnesso",
+          "Ogni azione che compiamo in agricoltura si ripercuote sull'intera catena della vita. Un suolo sano, piante sane e una comunità diversificata di impollinatori sono la base di un'agricoltura rigenerativa e sostenibile.",
+          "## Conclusione: prendersi cura degli impollinatori significa prendersi cura del nostro futuro",
+          "I fertilizzanti biologici non nutrono soltanto le piante: preservano anche la vita che le circonda. Adottarli significa puntare sulla sicurezza alimentare, sulla biodiversità e sulla resilienza del pianeta."
+        ]
+      },
+      "organicCrops": {
+        "title": "Colture biologiche: tipologie, pianificazione e prodotti chiave",
+        "excerpt": "Quali tipi di colture biologiche esistono, come pianificarle e quali prodotti naturali sono fondamentali in ogni fase.",
+        "body": [
+          "L'agricoltura biologica si è affermata come un'alternativa responsabile ed efficiente ai metodi convenzionali. Non solo dà priorità alla salute del suolo e alla qualità degli alimenti, ma protegge anche la biodiversità e riduce l'impatto ambientale. Ti spieghiamo quali tipi di colture biologiche esistono, come pianificarle e quali prodotti naturali sono fondamentali in ogni fase.",
+          "## Tipi di colture biologiche",
+          "### 1. Colture annuali",
+          "Completano il loro ciclo di vita in meno di un anno, come mais, frumento, legumi o ortaggi da foglia (lattuga, spinacio, bietola). In queste colture la rotazione è fondamentale per non impoverire il suolo e interrompere i cicli di parassiti e malattie.",
+          "### 2. Colture perenni",
+          "Restano produttive per diversi anni e offrono raccolti continui: alberi da frutto (meli, peri, mandorli), vigneti, oliveti o arbusti di piccoli frutti. Potatura, concimazione naturale e monitoraggio fitosanitario sono fondamentali per mantenerle sane e produttive.",
+          "### 3. Colture consociate",
+          "Combinano colture diverse nello stesso spazio per creare un ecosistema più equilibrato, con consociazioni benefiche (come mais, fagiolo e zucca) e colture di copertura (avena, trifoglio, segale) che migliorano la fertilità del suolo e lo proteggono dall'erosione.",
+          "## Pianificazione della coltura biologica",
+          "### 1. Preparazione del suolo",
+          "Il suolo è la base: deve essere ricco di sostanza organica, arieggiato e ben strutturato. A questo scopo si utilizzano compost, letame maturo e residui vegetali fermentati, con una lavorazione minima che non danneggi il microbiota benefico.",
+          "### 2. Semina e trapianto",
+          "- Utilizza sementi e piantine biologiche certificate.",
+          "- Pianifica la data di semina in base al clima e al calendario agricolo.",
+          "- Mantieni una densità adeguata per evitare la competizione tra le piante.",
+          "### 3. Cura naturale delle piante",
+          "- Irrigazione efficiente in base alle reali esigenze della coltura e del clima.",
+          "- Difesa biologica dai parassiti con insetticidi naturali.",
+          "- Controllo delle infestanti a mano o con pacciamatura.",
+          "## Prodotti biologici per ogni fase",
+          "- Fertilizzanti organici: compost, humus di lombrico, letame compostato e fertilizzanti consentiti in agricoltura biologica.",
+          "- Protezione naturale: olio di neem, sapone potassico, aglio, estratto di equiseto o bicarbonato, che respingono i parassiti e prevengono le malattie senza lasciare residui tossici.",
+          "- Copertura del suolo: pacciamatura organica (paglia, residui di potatura, foglie secche) che riduce l'evaporazione, controlla le infestanti e migliora la vita del suolo.",
+          "- Irrigazione sostenibile: a goccia o con microirrigatori, che fanno risparmiare acqua ed evitano le malattie fungine.",
+          "## Un'agricoltura più verde e più sana",
+          "Le colture biologiche permettono di ottenere alimenti di grande qualità, proteggono le risorse naturali e favoriscono l'equilibrio degli agroecosistemi. Pianifica con consapevolezza, usa prodotti naturali e prenditi cura del suolo e della biodiversità: ogni decisione che prendi come agricoltore ha un impatto."
+        ]
+      },
+      "agricultureDrones": {
+        "title": "Rivoluzionare l'agricoltura: fertilizzanti distribuiti con i droni",
+        "excerpt": "Vantaggi, costi e prospettive della distribuzione di fertilizzanti con droni agricoli.",
+        "body": [
+          "La tecnologia rende l'agricoltura moderna più efficiente e sostenibile. La distribuzione di fertilizzanti con droni agricoli è diventata una soluzione innovativa che sta trasformando il modo in cui gli agricoltori si prendono cura delle loro colture: migliora la produttività, riduce i costi e limita l'impatto ambientale ottimizzando l'uso dei fertilizzanti.",
+          "## Vantaggi della distribuzione di fertilizzanti con i droni",
+          "### 1. Precisione",
+          "I droni dotati di sensori e sistemi di mappatura consentono un'applicazione precisa e localizzata. Si evita l'eccesso di concimazione, si riducono gli sprechi di nutrienti e si sfruttano meglio le risorse, con un notevole risparmio per l'agricoltore.",
+          "### 2. Risparmio di tempo e manodopera",
+          "La distribuzione tradizionale richiede di solito macchinari pesanti e personale specializzato. Con i droni si coprono grandi superfici in modo rapido e automatico, e la manodopera resta libera per altre attività.",
+          "### 3. Accesso alle zone difficili",
+          "Sono ideali per terreni irregolari o difficili da raggiungere, dove i macchinari convenzionali incontrano problemi, e garantiscono una distribuzione uniforme anche nelle zone più inaccessibili.",
+          "### 4. Minore impatto ambientale",
+          "L'applicazione precisa evita il ruscellamento dei fertilizzanti verso i corpi idrici, riducendo l'inquinamento e proteggendo gli ecosistemi acquatici.",
+          "## Costi e aspetti da considerare",
+          "- Investimento iniziale: i droni specializzati e il relativo software rappresentano un costo importante, anche se sempre più contenuto grazie ai progressi tecnologici.",
+          "- Formazione e manutenzione: utilizzarli richiede una formazione specifica, e manutenzione e riparazioni sono costi da mettere in conto.",
+          "- Normativa: l'uso dei droni in agricoltura è regolamentato e può variare da regione a regione; rispettare le autorizzazioni è indispensabile.",
+          "## Il futuro dell'agricoltura con i droni",
+          "Con la rapida evoluzione della tecnologia, distribuire fertilizzanti con i droni sarà sempre più accessibile ed efficiente. Nonostante i costi iniziali e i requisiti normativi, è un investimento intelligente per gli agricoltori che cercano efficienza, risparmio e sostenibilità nel lungo periodo."
+        ]
+      },
+      "organicConsumption": {
+        "title": "Il boom dei consumi di frutta e verdura biologica",
+        "excerpt": "Tendenze e prospettive di un mercato in continua crescita: salute, sostenibilità e trasparenza.",
+        "body": [
+          "Sempre più persone scelgono frutta e verdura biologica alla ricerca di uno stile di vita più sano e sostenibile. Non è una moda passeggera, ma una tendenza solida che sta trasformando il mercato mondiale degli alimenti biologici.",
+          "## L'evoluzione del mercato biologico",
+          "Il consumo di frutta e verdura biologica è cresciuto costantemente negli ultimi decenni, spinto dalla consapevolezza dell'importanza di un'alimentazione sana e dalla preoccupazione per l'impatto ambientale dell'agricoltura convenzionale.",
+          "## I fattori chiave della crescita",
+          "### 1. Salute e benessere",
+          "I consumatori vogliono evitare pesticidi, erbicidi e prodotti chimici di sintesi. La frutta e la verdura biologiche, coltivate senza di essi, sono una scelta più sicura, nutriente e naturale.",
+          "### 2. Sostenibilità ambientale",
+          "L'agricoltura biologica promuove pratiche come la rotazione colturale e il compostaggio, che preservano la fertilità del suolo e la biodiversità.",
+          "### 3. Trasparenza",
+          "Il consumatore di oggi vuole sapere come vengono prodotti gli alimenti e da dove provengono. I prodotti biologici rispettano in genere questi standard di tracciabilità, e ciò genera maggiore fiducia.",
+          "## Prospettive future",
+          "I rapporti di settore prevedono che i consumi continueranno a crescere nei prossimi anni grazie a una maggiore attenzione alla salute, all'adozione di tecniche agricole sostenibili e a una più ampia disponibilità di prodotti biologici.",
+          "## Verso un'alimentazione sana e sostenibile",
+          "Questo boom riflette un cambiamento profondo verso stili di vita più sani e rispettosi dell'ambiente. L'espansione del mercato biologico porta benefici ai consumatori, agli agricoltori e al pianeta."
+        ]
+      }
+    },
+    "backToNews": "Torna alle notizie",
+    "relatedTitle": "Altre notizie",
+    "videoTitle": "Video: {{title}}"
+  },
+  "team": {
+    "title": "Le persone dietro Clavel",
+    "intro": "Un team piccolo e disponibile, con esperienza in agronomia, laboratorio e assistenza agli agricoltori.",
+    "namePending": "Nome Cognome",
+    "photoPending": "Foto in arrivo",
+    "emailLabel": "Scrivi a {{name}}",
+    "linkedinLabel": "LinkedIn di {{name}}",
+    "roles": {
+      "generalManagement": "Direzione generale",
+      "technicalDirection": "Direzione tecnica e laboratorio",
+      "salesSupport": "Assistenza commerciale"
+    }
+  },
+  "contact": {
+    "title": "Parliamo della tua coltura",
+    "intro": "Lasciaci i tuoi dati e ti risponderemo via e-mail. Se ne hai bisogno, ti invieremo il catalogo dei prodotti.",
+    "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia, Spagna)",
+    "form": {
+      "reason": "Di cosa hai bisogno?",
+      "reasons": {
+        "catalogue": "Richiedi catalogo",
+        "advice": "Richiedi consulenza",
+        "productInfo": "Informazioni sui prodotti",
+        "other": "Altra richiesta"
+      },
+      "catalogues": "Quale catalogo desideri?",
+      "cataloguesHint": "(puoi sceglierne più di uno)",
+      "cataloguesLine": "Cataloghi",
+      "name": "Nome e cognome",
+      "company": "Azienda o azienda agricola",
+      "email": "E-mail",
+      "phone": "Telefono",
+      "optional": "facoltativo",
+      "message": "Messaggio",
+      "messageHelp": "Parlaci della tua coltura, della superficie o del prodotto che ti interessa.",
+      "privacy": "Ho letto e accetto l'<policyLink>informativa sulla privacy</policyLink>.",
+      "submit": "Invia",
+      "errorReason": "Scegli di cosa hai bisogno.",
+      "errorCatalogue": "Scegli almeno un catalogo.",
+      "errorName": "Inserisci il tuo nome.",
+      "errorEmail": "Inserisci un'e-mail valida.",
+      "errorPrivacy": "Devi accettare l'informativa sulla privacy.",
+      "sentTitle": "Messaggio inviato",
+      "sentText": "Grazie. Ti risponderemo via e-mail entro 48 ore lavorative.",
+      "sendAnother": "Invia un altro messaggio",
+      "mailSubject": "{{reason}} · {{name}}"
+    }
+  },
+  "privacy": {
+    "title": "Informativa sulla privacy",
+    "intro": "Quali dati raccogliamo tramite questo sito, per quali finalità li utilizziamo, quali diritti hai e a quali condizioni puoi utilizzare il sito.",
+    "updated": "Ultimo aggiornamento: settembre 2026",
+    "indexTitle": "Indice",
+    "sections": {
+      "introduction": {
+        "title": "Introduzione",
+        "body": [
+          "{{company}} prende sul serio la protezione dei tuoi dati personali. La presente informativa spiega come trattiamo le informazioni che ci fornisci tramite questo sito e quali sono le condizioni di utilizzo del sito.",
+          "Trattiamo i tuoi dati in conformità al Regolamento (UE) 2016/679, Regolamento generale sulla protezione dei dati (GDPR), alla Legge organica spagnola 3/2018 sulla protezione dei dati personali e la garanzia dei diritti digitali (LOPDGDD) e alla Legge spagnola 34/2002 sui servizi della società dell'informazione e sul commercio elettronico (LSSI).",
+          "Utilizzando questo sito e, in particolare, inviandoci il modulo di contatto, dichiari di aver letto la presente informativa."
+        ]
+      },
+      "controller": {
+        "title": "Titolare del trattamento",
+        "body": [
+          "Il titolare del trattamento dei tuoi dati è {{company}}.",
+          "- E-mail: {{email}}",
+          "Per qualsiasi questione relativa ai tuoi dati personali puoi scriverci a questo indirizzo e-mail."
+        ]
+      },
+      "data": {
+        "title": "Quali dati raccogliamo",
+        "body": [
+          "Trattiamo solo i dati che ci fornisci volontariamente nel modulo di contatto:",
+          "- Nome e cognome e indirizzo e-mail, obbligatori per poterti rispondere.",
+          "- Azienda o azienda agricola e numero di telefono, se decidi di indicarli.",
+          "- Il motivo della tua richiesta e il messaggio che ci scrivi.",
+          "Non richiediamo categorie particolari di dati e ti chiediamo di non includerle nel messaggio. Se ci fornisci dati di terzi, garantisci di averli informati e di aver ottenuto il loro consenso."
+        ]
+      },
+      "purpose": {
+        "title": "Per quali finalità usiamo i tuoi dati",
+        "body": [
+          "- Rispondere alla tua richiesta.",
+          "- Inviarti il catalogo dei prodotti o le informazioni tecniche che ci richiedi.",
+          "- Gestire l'eventuale rapporto commerciale che derivi dalla tua richiesta.",
+          "Non utilizziamo i tuoi dati per inviarti comunicazioni commerciali che non hai richiesto, non effettuiamo profilazione e non prendiamo decisioni automatizzate che ti riguardano."
+        ]
+      },
+      "legalBasis": {
+        "title": "Base giuridica del trattamento",
+        "body": [
+          "La base giuridica è il tuo consenso, che ci fornisci selezionando la casella del modulo e, quando la tua richiesta riguarda l'acquisto dei nostri prodotti, l'esecuzione di misure precontrattuali adottate su tua richiesta.",
+          "Puoi revocare il consenso in qualsiasi momento, senza pregiudicare la liceità del trattamento effettuato prima della revoca."
+        ]
+      },
+      "retention": {
+        "title": "Per quanto tempo conserviamo i tuoi dati",
+        "body": [
+          "Conserviamo i tuoi dati per il tempo necessario a gestire la tua richiesta e, se del caso, per tutta la durata del rapporto commerciale. Successivamente li manteniamo bloccati per i periodi previsti dalla legge durante i quali possono sorgere responsabilità e li cancelliamo alla scadenza di tali periodi."
+        ]
+      },
+      "recipients": {
+        "title": "Destinatari",
+        "body": [
+          "Non comunichiamo i tuoi dati a terzi, salvo obbligo di legge.",
+          "I fornitori che ci prestano servizi tecnici, come la posta elettronica o l'hosting del sito, possono accedervi solo per erogarci tale servizio, in base a un contratto e con le garanzie richieste dal GDPR. Qualora uno di essi si trovasse al di fuori dello Spazio economico europeo, il trasferimento avverrebbe con garanzie adeguate, come le clausole contrattuali tipo della Commissione europea."
+        ]
+      },
+      "rights": {
+        "title": "I tuoi diritti",
+        "body": [
+          "Puoi esercitare in qualsiasi momento i seguenti diritti:",
+          "- Accesso: sapere se trattiamo i tuoi dati e quali.",
+          "- Rettifica: correggere i dati inesatti o incompleti.",
+          "- Cancellazione: chiederci di cancellare i tuoi dati quando non sono più necessari.",
+          "- Opposizione e limitazione: opporti al trattamento o chiederci di limitarlo in determinati casi.",
+          "- Portabilità: ricevere i tuoi dati in un formato strutturato e di uso comune.",
+          "- Revocare il consenso in qualsiasi momento.",
+          "Per esercitarli, scrivici a {{email}} indicando quale diritto desideri esercitare. Se ritieni che non abbiamo gestito correttamente la tua richiesta, puoi presentare un reclamo all'Agenzia spagnola per la protezione dei dati (AEPD, www.aepd.es)."
+        ]
+      },
+      "security": {
+        "title": "Misure di sicurezza",
+        "body": [
+          "Adottiamo misure tecniche e organizzative adeguate per proteggere i tuoi dati da perdita, uso improprio, alterazione o accesso non autorizzato, tenendo conto dello stato dell'arte e della natura dei dati. Il sito è servito tramite una connessione cifrata (HTTPS).",
+          "Ciononostante, nessun sistema è completamente sicuro. Se rileviamo una violazione dei dati personali che riguarda i tuoi dati, agiremo come previsto dalla normativa."
+        ]
+      },
+      "thirdParties": {
+        "title": "Link e contenuti di terzi",
+        "body": [
+          "Questo sito può includere link a siti di terzi, come i nostri social network, e video ospitati su YouTube. Non siamo responsabili dei contenuti né delle politiche sulla privacy di tali siti, che ti consigliamo di consultare.",
+          "I video sono incorporati in modalità di privacy avanzata (youtube-nocookie.com): YouTube non memorizza informazioni nel tuo browser finché non avvii il video. Quando lo riproduci, si applicano i termini e l'informativa sulla privacy di Google."
+        ]
+      },
+      "cookies": {
+        "title": "Navigazione e cookie",
+        "body": [
+          "Questo sito non utilizza cookie analitici né pubblicitari.",
+          "Memorizziamo nel tuo browser (archiviazione locale) solo la lingua che scegli, per mostrarti il sito in quella lingua nelle visite successive. Si tratta di un dato tecnico necessario per la funzione che scegli e non consente di identificarti. Puoi cancellarlo in qualsiasi momento dalle impostazioni del tuo browser.",
+          "Se in futuro introdurremo altri cookie, lo indicheremo qui e ti chiederemo il consenso quando necessario."
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Proprietà intellettuale e industriale",
+        "body": [
+          "I contenuti di questo sito (testi, immagini, design, loghi e marchi) sono di proprietà di {{company}} o di terzi che ne hanno autorizzato l'uso, e sono tutelati dalla normativa sulla proprietà intellettuale e industriale.",
+          "Non ne è consentita la riproduzione, distribuzione, comunicazione al pubblico o trasformazione, totale o parziale, senza espressa autorizzazione, salvo per uso personale e privato."
+        ]
+      },
+      "userObligations": {
+        "title": "Obblighi dell'utente",
+        "body": [
+          "Utilizzando questo sito ti impegni a:",
+          "- Fornire dati veritieri nel modulo di contatto.",
+          "- Non utilizzare il sito per scopi illeciti o che arrechino danno a {{company}} o a terzi.",
+          "- Non introdurre virus né compiere azioni che possano danneggiare o sovraccaricare il sito."
+        ]
+      },
+      "law": {
+        "title": "Legge applicabile e foro competente",
+        "body": [
+          "La presente informativa e l'utilizzo del sito sono regolati dalla legge spagnola. Per qualsiasi controversia, le parti si rimettono ai giudici e ai tribunali competenti ai sensi di legge; se sei un consumatore, a quelli del tuo luogo di residenza."
+        ]
+      },
+      "updates": {
+        "title": "Aggiornamenti della presente informativa",
+        "body": [
+          "Possiamo modificare la presente informativa per adeguarla a cambiamenti normativi o dei nostri servizi. Pubblicheremo sempre la versione in vigore su questa pagina, con la relativa data di aggiornamento: ti consigliamo quindi di consultarla periodicamente."
+        ]
+      }
+    }
+  },
+  "footer": {
+    "claim": "Soluzioni agricole sostenibili, con esperienza, innovazione e impegno per il futuro dell'agricoltura.",
+    "pages": "Pagine",
+    "contact": "Contatti",
+    "social": "Social network",
+    "copyright": "© {{year}} Clavel. Tutti i diritti riservati."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "text": "La pagina che cerchi non esiste o è stata spostata.",
+    "cta": "Torna alla home"
+  },
+  "error": {
+    "title": "Qualcosa è andato storto",
+    "text": "Si è verificato un errore imprevisto. Riprova tra qualche istante.",
+    "cta": "Torna alla home"
+  }
+}
