@@ -20,7 +20,7 @@ const HIDDEN_DETAILS = ['mobile'];
 const withoutText = (detail: ContactDetail): ContactDetail =>
   DETAILS_WITHOUT_TEXT.includes(detail.key) ? { ...detail, text: '', href: undefined } : detail;
 
-/** Dirección, teléfonos y correo de Clavel (pie y página de Contactar). */
+/** Dirección, teléfonos y correo de Clavel (pie). */
 export const useContactDetails = (): ContactDetail[] => {
   const { t } = useTranslation();
 

@@ -7,7 +7,6 @@ import { isContactReason } from 'constants/contact-reasons';
 import { CONTACT_PRODUCT_PARAM, CONTACT_REASON_PARAM } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { isCatalogue } from 'data/products';
-import { useContactDetails } from 'hooks/use-contact-details';
 import { usePageTitle } from 'hooks/use-page-title';
 
 import { ContactForm } from './components/contact-form';
@@ -16,7 +15,6 @@ import styles from './contact.module.css';
 export const Contact = () => {
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
-  const contactDetails = useContactDetails();
   usePageTitle(t('nav.contact'));
 
   // «Solicitar catálogo» llega con ?reason=catalogue para preseleccionar el motivo.
@@ -37,30 +35,6 @@ export const Contact = () => {
       />
 
       <Container as="section" className={styles.layout}>
-        <div className={styles.info}>
-          <div className={styles.card}>
-            <h2 className={styles.cardTitle}>{t('contact.detailsTitle')}</h2>
-            <ul className={styles.details}>
-              {contactDetails.map(({ key, icon: Icon, text, href, external }) => (
-                <li key={key} className={styles.detail}>
-                  <Icon size={20} className={styles.detailIcon} aria-hidden />
-                  {href ? (
-                    <a
-                      href={href}
-                      className={styles.detailLink}
-                      {...(external && { target: '_blank', rel: 'noopener' })}
-                    >
-                      {text}
-                    </a>
-                  ) : (
-                    <span>{text}</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
         <div className={styles.formCard}>
           {/* La `key` reinicia el formulario si cambia lo pedido por URL. */}
           <ContactForm
