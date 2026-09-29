@@ -2,12 +2,12 @@
  * Datos de contacto de Clavel que no se traducen. La dirección sí cambia con el
  * idioma, por eso vive en `translation.json` (contact.address).
  *
- * Pendiente de confirmar: el correo es provisional y las redes sociales aún no
- * tienen URL (mientras valgan `undefined`, el icono se muestra sin enlace).
+ * Pendiente de confirmar: las redes sociales aún no tienen URL (mientras valgan
+ * `undefined`, el icono se muestra sin enlace).
  */
 export const COMPANY = {
   name: 'Clavel',
-  email: 'info@clavel.es',
+  email: 'info@agro-clavel.com',
   phone: '+34 617 288 900',
   mobile: '+34 617 288 909',
 } as const;

@@ -9,7 +9,13 @@ import { InfoCard } from 'components/info-card';
 import { PageHeader } from 'components/page-header';
 import { catalogueRequestPath, productCatalogueRequestPath } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
-import { MAIN_LINES, OTHER_SOLUTIONS, PRODUCT_RANGES, ProductTag } from 'data/products';
+import {
+  isCatalogue,
+  MAIN_LINES,
+  OTHER_SOLUTIONS,
+  PRODUCT_RANGES,
+  ProductTag,
+} from 'data/products';
 import { usePageTitle } from 'hooks/use-page-title';
 
 import styles from './products-services.module.css';
@@ -103,9 +109,11 @@ export const ProductsServices = () => {
               title={t(`productsServices.other.${key}.title`)}
               text={t(`productsServices.other.${key}.text`)}
             >
-              <Button to={productCatalogueRequestPath(key)} variant="secondary" size="sm">
-                {t('common.requestCatalogue')}
-              </Button>
+              {isCatalogue(key) && (
+                <Button to={productCatalogueRequestPath(key)} variant="secondary" size="sm">
+                  {t('common.requestCatalogue')}
+                </Button>
+              )}
             </InfoCard>
           ))}
         </ul>

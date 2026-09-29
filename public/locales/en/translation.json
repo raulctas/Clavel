@@ -261,59 +261,6 @@
       "organic": "Organic"
     },
     "items": {
-      "mohamedKamel": {
-        "title": "Dr. Mohamed Kamel: innovation in fertilisation and plant nutrition",
-        "excerpt": "How Dr. Mohamed Kamel drives sustainable agriculture through advanced fertilisation, plant nutrition and the potential of phosphites.",
-        "body": [
-          "## An international reference in sustainable agriculture",
-          "Dr. Mohamed Kamel is a renowned international expert in fertilisation and plant nutrition, with extensive experience in agronomic research and technical advice for growers and agri-food companies across Europe.",
-          "His work combines applied science and practical innovation with a clear purpose:",
-          "- Promoting productive and sustainable agriculture.",
-          "- Optimising nutrient use efficiency.",
-          "- Reducing the environmental impact of farming practices.",
-          "Thanks to his scientific vision and commitment to farming, Dr. Kamel drives solutions that transform productivity without compromising the environmental balance.",
-          "## Phosphites: the innovation driving modern plant nutrition",
-          "### What are phosphites and why do they matter?",
-          "Phosphites are compounds that stimulate plant growth and strengthen plants' natural defences against disease and environmental stress. Their main benefits are:",
-          "- They improve resistance to fungi and adverse conditions.",
-          "- They increase nutrient uptake and mobility.",
-          "- They stimulate rooting and flowering.",
-          "- They raise crop productivity and quality.",
-          "Recent studies show that phosphites can significantly increase yields, making them a key tool for modern, sustainable and organic agriculture.",
-          "### The regulatory challenge in Europe",
-          "Phosphites are not currently officially recognised by European regulations as fertilisers or plant protection products, which limits their commercial use. Even so, many experts and researchers support their potential and see them as a strategic solution for the future of sustainable plant nutrition.",
-          "Dr. Kamel works actively to promote a balanced, science-based regulatory framework that allows the full potential of these compounds to benefit the European farming sector.",
-          "## Scientific leadership at Clavel",
-          "At Clavel, Dr. Mohamed Kamel works as an international scientific adviser on the development of sustainable fertilisers and advanced plant nutrition technologies. His contribution strengthens three of the company's pillars:",
-          "- Innovation: products based on science and applied biotechnology.",
-          "- Sustainability: a balance between productivity and respect for the environment.",
-          "- Efficiency: safe, cost-effective formulations that comply with current European regulations.",
-          "### Added value for farmers",
-          "Thanks to this work, Clavel offers farmers organic and sustainable fertilisers, advanced plant nutrition solutions, specialised technical advice and technologies that improve productivity without harming the environment.",
-          "## Science and innovation for sustainable agriculture",
-          "This collaboration is a firm commitment to scientific research, sustainability and responsible agronomic development: a new generation of farming solutions in which innovation in fertilisation and plant nutrition translates into productivity, resilience and respect for the environment."
-        ]
-      },
-      "erasmusLaboratory": {
-        "title": "Young Erasmus talent joins the laboratory",
-        "excerpt": "Four Erasmus students join our R&D and laboratory team in Valencia to take part in applied research projects.",
-        "body": [
-          "At Clavel we are proud to welcome four Erasmus students who are joining our R&D and laboratory team in Valencia. Over the coming months they will take part in applied research projects, working side by side with our technicians and bringing an international perspective to the innovation process.",
-          "## An Erasmus focused on science and sustainability",
-          "This experience is a genuine exchange of value. For the students, it is a unique opportunity to learn in a laboratory specialised in organic and sustainable fertilisers. For Clavel, it is a source of new methods, enthusiasm and young talent that strengthens our commitment to agricultural innovation.",
-          "During their stay, the students will collaborate on:",
-          "- Laboratory analysis to improve fertiliser efficiency.",
-          "- Quality testing and process control.",
-          "- Developing sustainable solutions that add value for farmers.",
-          "## Commitment to training and the future of farming",
-          "With this initiative, Clavel reaffirms its commitment to:",
-          "- Hands-on training for future scientific professionals.",
-          "- Internationalisation as a driver of innovation.",
-          "- Developing new technical skills applied to the farming sector.",
-          "## Research with an international outlook",
-          "The arrival of these four students strengthens our laboratory and confirms our vision: a farming future built on science, sustainability and young talent. Welcome to this new stage of learning and discovery!"
-        ]
-      },
       "agenda2030": {
         "title": "The 2030 Agenda and sustainable agriculture",
         "excerpt": "The UN 2030 Agenda sets the path towards a fairer future that respects the planet. Agriculture plays a key role.",
@@ -490,25 +437,6 @@
           "Preparing the soil in organic farming is not a mere formality: it is a long-term investment in the health of the agroecosystem. Well-treated soil is more fertile, more resilient to climate stress and more productive without agrochemicals. Look after the soil and it will look after your crops."
         ]
       },
-      "erasmusMarketing": {
-        "title": "Five new Erasmus talents join the marketing team",
-        "excerpt": "Clavel's Communication and Marketing department welcomes five Erasmus students in Valencia.",
-        "body": [
-          "Clavel's Communication and Marketing department welcomes five Erasmus students who are joining the company in Valencia. Over the coming months they will take part in real projects, bringing their experience and new international perspectives.",
-          "## Erasmus and marketing: a two-way learning experience",
-          "This programme is a double opportunity: for the students, who will enjoy a unique professional and cultural experience, and for the company, which enriches its marketing team with fresh, innovative ideas. Thanks to this collaboration, these young talents will be able to:",
-          "- Put their knowledge of digital marketing, graphic design and communication into practice.",
-          "- Take part in real projects promoting organic and sustainable fertilisers.",
-          "- Contribute to Clavel's internationalisation by sharing new ways of working.",
-          "## Commitment to sustainability and training",
-          "As well as its commitment to innovation in organic and sustainable fertilisers, Clavel reaffirms with this initiative its commitment to:",
-          "- Ongoing training for new professionals.",
-          "- Cultural exchange and internationalisation.",
-          "- Developing new skills in marketing and communication.",
-          "## Welcome to the future of agricultural marketing",
-          "With the arrival of these five students, Clavel strengthens its commitment to a dynamic, international marketing team focused on sustainability. Welcome aboard and every success in this new stage!"
-        ]
-      },
       "pollinators": {
         "title": "Organic fertilisers and pollinators",
         "excerpt": "A vital alliance for biodiversity: how organic fertilisers benefit bees, butterflies and other pollinators.",
@@ -632,19 +560,7 @@
   "contact": {
     "title": "Let’s talk about your crop",
     "intro": "Leave your details and we will reply by email. If you need it, we will send you our product catalogue.",
-    "detailsTitle": "Contact details",
     "address": "Paseo El Molí, 2C · 46980 Paterna (Valencia, Spain)",
-    "hours": {
-      "title": "Customer service hours",
-      "range": "{{open}} to {{close}}",
-      "days": {
-        "monday": "Monday",
-        "tuesday": "Tuesday",
-        "wednesday": "Wednesday",
-        "thursday": "Thursday",
-        "friday": "Friday"
-      }
-    },
     "form": {
       "reason": "What do you need?",
       "reasons": {
@@ -693,9 +609,8 @@
       "controller": {
         "title": "Data controller",
         "body": [
-          "The controller of your data is {{company}}, with registered address at {{address}}.",
+          "The controller of your data is {{company}}.",
           "- Email: {{email}}",
-          "- Phone: {{phone}}",
           "For any question about your personal data you can write to us at that email address."
         ]
       },
