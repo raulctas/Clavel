@@ -44,11 +44,11 @@ public/
     about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
     contact/        # Contactar: banda de título
     home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
-    laboratory/     # Laboratorio: sección principal y galería en movimiento (fotos 4:5)
+    laboratory/     # Laboratorio: banda de título, sección principal, iconos de «Qué hacemos» y galería
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
-    provisional/    # imágenes provisionales, ya con la proporción definitiva
+    provisional/    # foto de muestra del equipo (4:5), hasta tener las reales
     social/         # imagen para compartir en redes (1200×630)
   locales/<idioma>/ # textos estáticos, un fichero por idioma
 src/
@@ -81,7 +81,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Noticias**: `src/data/news.ts` (slug, categoría, imagen y vídeos de YouTube opcionales) +
   `news.items.<id>` en cada `translation.json` (título, extracto y cuerpo). Cada noticia tiene su
   página en `/news/<slug>`. Su imagen es `public/images/news/<slug>.jpg`: JPG de unos 1200 px
-  de ancho; se muestra recortada a 3:2, así que lo importante debe quedar en el centro.
+  de ancho. Se muestra en su tarjeta (recortada a 3:2) y como fondo de la banda de título de
+  la noticia, así que lo importante debe quedar en el centro.
 - **Textos largos** (cuerpo de las noticias y política de privacidad): son listas de bloques en
   `translation.json`. Un bloque que empieza por `## ` es un subtítulo, por `### ` un subtítulo
   menor y por `- ` un elemento de lista; el resto son párrafos. Así se traducen sin tocar código.
@@ -98,14 +99,16 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   `src/data/products.ts`).
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
-- **Clavel en cifras** (final de Quiénes somos): cifras e imágenes en `src/data/company-stats.ts`.
+- **Clavel en cifras** (al final de «¿Por qué elegirnos?», en Quiénes somos): cifras en
+  `src/data/company-stats.ts`.
 - **Portada de Inicio**: `src/data/hero-slides.ts`. Con una sola imagen no hay pase (ni
   flechas ni indicadores); con varias, se alternan cada 6 s.
-- **Fondos de las bandas de título** (Quiénes somos, Noticias, Equipo y Contactar):
+- **Fondos de las bandas de título** (todas las páginas interiores):
   `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
-- **Imágenes provisionales**: `public/images/provisional/`. Quedan pendientes las de
-  Productos y servicios, Noticias, Equipo, Privacidad y las cifras de Quiénes somos. Para cambiarlas, sustituir los ficheros (mismo nombre y proporción) o
-  actualizar las rutas en `src/data/` y en cada página.
+  Productos y servicios, Noticias, Equipo y Privacidad reutilizan las fotos de Contactar, la
+  portada de Inicio y Quiénes somos.
+- **Imagen provisional**: `public/images/provisional/team-4x5.png`, la foto de muestra de las
+  fichas del equipo mientras no haya fotos reales (ver «Equipo»).
 
 ## Pendiente
 

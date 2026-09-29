@@ -1,8 +1,7 @@
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Container } from 'components/container';
-import { COMPANY_STATS, COMPANY_STATS_IMAGES } from 'data/company-stats';
+import { COMPANY_STATS } from 'data/company-stats';
 import { useCountUp } from 'hooks/use-count-up';
 
 import styles from './company-stats.module.css';
@@ -43,37 +42,17 @@ const Stat = ({ value, label }: StatProps) => {
 };
 
 /**
- * Cierre de Quiénes somos, sobre crema: dos imágenes y las cifras de la
- * empresa, que cuentan hacia arriba al aparecer.
+ * Cifras de la empresa, que cuentan hacia arriba al aparecer. Van al final de
+ * «¿Por qué elegirnos?» (Quiénes somos), como datos que respaldan los motivos.
  */
 export const CompanyStats = () => {
   const { t } = useTranslation();
 
   return (
-    <section className={styles.section} aria-labelledby="company-stats-title">
-      <h2 id="company-stats-title" className="visually-hidden">
-        {t('aboutUs.stats.title')}
-      </h2>
-      <Container className={styles.images}>
-        {COMPANY_STATS_IMAGES.map((src) => (
-          <img
-            key={src}
-            src={src}
-            alt=""
-            className={styles.image}
-            width={1200}
-            height={800}
-            loading="lazy"
-          />
-        ))}
-      </Container>
-      <Container>
-        <ul className={styles.stats}>
-          {COMPANY_STATS.map(({ key, value }) => (
-            <Stat key={key} value={value} label={t(`aboutUs.stats.items.${key}`)} />
-          ))}
-        </ul>
-      </Container>
-    </section>
+    <ul className={styles.stats} aria-label={t('aboutUs.stats.title')}>
+      {COMPANY_STATS.map(({ key, value }) => (
+        <Stat key={key} value={value} label={t(`aboutUs.stats.items.${key}`)} />
+      ))}
+    </ul>
   );
 };

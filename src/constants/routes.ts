@@ -27,9 +27,6 @@ export const CONTACT_PRODUCT_PARAM = 'product';
 /** Ruta de Contactar con el motivo «catálogo» ya elegido. */
 export const catalogueRequestPath = `${routes.contact}?${CONTACT_REASON_PARAM}=catalogue`;
 
-/** Ruta de Contactar con el motivo «asesoramiento» ya elegido. */
-export const adviceRequestPath = `${routes.contact}?${CONTACT_REASON_PARAM}=advice`;
-
 /** Ruta de Contactar para pedir el catálogo de un producto concreto. */
 export const productCatalogueRequestPath = (productKey: string) =>
   `${catalogueRequestPath}&${CONTACT_PRODUCT_PARAM}=${productKey}`;

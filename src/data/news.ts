@@ -22,6 +22,8 @@ export const NEWS: NewsItem[] = [
     slug: 'agenda-2030',
     category: 'agriculture',
     image: newsImage('agenda-2030'),
+    // El logo va a la derecha para que no quede detrás del título.
+    headerImage: newsImage('agenda-2030-header'),
   },
   {
     id: 'soilQuality',

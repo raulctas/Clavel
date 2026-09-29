@@ -6,6 +6,7 @@
     "breadcrumb": "Breadcrumb",
     "readMore": "Read more",
     "requestCatalogue": "Request catalogue",
+    "viewProducts": "View products",
     "previous": "Previous",
     "next": "Next",
     "goToSlide": "Go to image {{index}}",
@@ -54,8 +55,7 @@
     "lab": {
       "eyebrow": "Laboratory",
       "title": "Our own laboratory and technology",
-      "text": "Our centre offers advanced technology, a specialised team and high-quality processes to deliver precise, reliable results. If you would like detailed information about our services, technical advice or personal support, we are here to help.",
-      "cta": "Ask for advice"
+      "text": "Our centre offers advanced technology, a specialised team and high-quality processes to deliver precise, reliable results. If you would like detailed information about our services, technical advice or personal support, we are here to help."
     },
     "manufacturing": {
       "eyebrow": "Production",
@@ -67,7 +67,7 @@
     "seeAllNews": "See all news",
     "cta": {
       "title": "Want to know our products?",
-      "text": "Ask us for the catalogue and we will email it to you, with full technical information on every fertiliser."
+      "text": "Discover our fertiliser lines and our other solutions, and request the catalogue for the one you are interested in."
     }
   },
   "aboutUs": {
@@ -159,10 +159,6 @@
         "title": "Agricultural inputs",
         "text": "Complementary products and materials for day-to-day farm work, selected to work alongside our nutrition solutions."
       },
-      "cbdFertilisers": {
-        "title": "CBD fertilisers",
-        "text": "Specific nutrition for industrial hemp, tailored to each stage of its development."
-      },
       "agriculturalAdvice": {
         "title": "Agricultural advice",
         "text": "Technical support in the field: soil analysis, personalised fertilisation plans and crop monitoring."
@@ -205,12 +201,7 @@
         "text": "We run chemical, physical and microbiological tests on every batch to make sure materials and products meet the highest safety and performance standards."
       }
     },
-    "galleryTitle": "Inside the laboratory",
-    "cta": {
-      "title": "Need technical advice?",
-      "text": "Tell us about your crop and our technical team will recommend the most suitable solution.",
-      "button": "Ask for advice"
-    }
+    "galleryTitle": "Inside the laboratory"
   },
   "production": {
     "title": "Production process and logistics",
@@ -243,10 +234,6 @@
         "title": "Packaging and delivery",
         "text": "We package and ship on time to any destination."
       }
-    },
-    "cta": {
-      "title": "Want to know our products?",
-      "text": "Ask us for the catalogue and we will email it to you, with full technical information on every fertiliser."
     }
   },
   "news": {

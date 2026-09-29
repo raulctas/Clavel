@@ -25,7 +25,7 @@
   height: 100%;
   max-width: none;
   object-fit: cover;
-  opacity: 0.45;
+  opacity: 0.75;
 }
 
 /* Refuerzo a la izquierda, donde va el texto, que se desvanece hacia la derecha. */

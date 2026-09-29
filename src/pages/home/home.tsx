@@ -6,7 +6,7 @@ import { FeatureRow } from 'components/feature-row';
 import { InfoCard } from 'components/info-card';
 import { NewsCard } from 'components/news-card';
 import { TextLink } from 'components/text-link';
-import { adviceRequestPath, catalogueRequestPath, routes } from 'constants/routes';
+import { routes } from 'constants/routes';
 import { NEWS } from 'data/news';
 import { PILLARS } from 'data/pillars';
 import { usePageTitle } from 'hooks/use-page-title';
@@ -52,10 +52,7 @@ export const Home = () => {
           title={t('home.lab.title')}
         >
           <p>{t('home.lab.text')}</p>
-          <div className={styles.links}>
-            <TextLink to={routes.laboratory}>{t('common.discoverMore')}</TextLink>
-            <TextLink to={adviceRequestPath}>{t('home.lab.cta')}</TextLink>
-          </div>
+          <TextLink to={routes.laboratory}>{t('common.discoverMore')}</TextLink>
         </FeatureRow>
 
         <FeatureRow
@@ -89,8 +86,8 @@ export const Home = () => {
       <CtaBand
         title={t('home.cta.title')}
         text={t('home.cta.text')}
-        buttonLabel={t('common.requestCatalogue')}
-        to={catalogueRequestPath}
+        buttonLabel={t('common.viewProducts')}
+        to={routes.productsServices}
       />
     </>
   );

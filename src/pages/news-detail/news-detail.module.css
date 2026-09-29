@@ -3,21 +3,12 @@
   padding-bottom: 80px;
 }
 
-/* Ancho de lectura cómodo; la imagen y los vídeos ocupan el mismo ancho. */
+/* Ancho de lectura cómodo; los vídeos ocupan el mismo ancho. */
 .content {
   max-width: 760px;
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-
-.cover {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border-radius: var(--radius-image);
-  background-color: var(--color-kraft-light);
 }
 
 .back {

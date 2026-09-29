@@ -6,6 +6,7 @@
     "breadcrumb": "Ruta de navegación",
     "readMore": "Leer más",
     "requestCatalogue": "Solicitar catálogo",
+    "viewProducts": "Ver productos",
     "previous": "Anterior",
     "next": "Siguiente",
     "goToSlide": "Ir a la imagen {{index}}",
@@ -54,8 +55,7 @@
     "lab": {
       "eyebrow": "Laboratorio",
       "title": "Laboratorio y tecnología propia",
-      "text": "En nuestro centro ponemos a tu disposición tecnología avanzada, un equipo especializado y procesos de alta calidad para garantizar resultados precisos y confiables. Si deseas información detallada sobre nuestros servicios, solicitar asesoramiento o recibir una atención personalizada, estamos aquí para ayudarte.",
-      "cta": "Pide asesoramiento"
+      "text": "En nuestro centro ponemos a tu disposición tecnología avanzada, un equipo especializado y procesos de alta calidad para garantizar resultados precisos y confiables. Si deseas información detallada sobre nuestros servicios, solicitar asesoramiento o recibir una atención personalizada, estamos aquí para ayudarte."
     },
     "manufacturing": {
       "eyebrow": "Producción",
@@ -67,7 +67,7 @@
     "seeAllNews": "Ver todas las noticias",
     "cta": {
       "title": "¿Quieres conocer nuestros productos?",
-      "text": "Pídenos el catálogo y te lo enviamos por correo, con toda la información técnica de cada fertilizante."
+      "text": "Descubre nuestras líneas de fertilizantes y el resto de soluciones, y pide el catálogo de la que te interese."
     }
   },
   "aboutUs": {
@@ -159,10 +159,6 @@
         "title": "Insumos agrícolas",
         "text": "Productos y materiales complementarios para el día a día de la explotación, seleccionados para trabajar junto a nuestras soluciones de nutrición."
       },
-      "cbdFertilisers": {
-        "title": "Fertilizantes CBD",
-        "text": "Nutrición específica para el cultivo de cáñamo industrial, adaptada a cada fase de su desarrollo."
-      },
       "agriculturalAdvice": {
         "title": "Asesoramiento agrícola",
         "text": "Acompañamiento técnico en campo: análisis de suelo, planes de fertilización personalizados y seguimiento del cultivo."
@@ -205,12 +201,7 @@
         "text": "Realizamos pruebas químicas, físicas y microbiológicas en cada lote para asegurar que materiales y productos cumplen los más altos estándares de seguridad y rendimiento."
       }
     },
-    "galleryTitle": "El laboratorio por dentro",
-    "cta": {
-      "title": "¿Necesitas asesoramiento técnico?",
-      "text": "Cuéntanos tu cultivo y nuestro equipo técnico te recomendará la solución más adecuada.",
-      "button": "Pide asesoramiento"
-    }
+    "galleryTitle": "El laboratorio por dentro"
   },
   "production": {
     "title": "Proceso de producción y logística",
@@ -243,10 +234,6 @@
         "title": "Envasado y entrega",
         "text": "Envasamos y enviamos a tiempo a cualquier destino."
       }
-    },
-    "cta": {
-      "title": "¿Quieres conocer nuestros productos?",
-      "text": "Pídenos el catálogo y te lo enviamos por correo, con toda la información técnica de cada fertilizante."
     }
   },
   "news": {

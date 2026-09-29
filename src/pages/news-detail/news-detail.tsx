@@ -38,12 +38,12 @@ const NewsArticle = ({ item }: { item: NewsItem }) => {
         eyebrow={t(`news.categories.${item.category}`)}
         title={title}
         intro={t(`news.items.${item.id}.excerpt`)}
-        image={item.image}
+        // La foto de la noticia solo se muestra aquí, en la banda de título.
+        image={item.headerImage ?? item.image}
       />
 
       <Container as="article" className={styles.article}>
         <div className={styles.content}>
-          <img src={item.image} alt="" className={styles.cover} width={1200} height={800} />
           <RichText blocks={body} />
           {item.videos?.map((videoId) => (
             <VideoEmbed key={videoId} videoId={videoId} title={t('news.videoTitle', { title })} />

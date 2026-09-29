@@ -6,6 +6,7 @@
     "breadcrumb": "Percorso di navigazione",
     "readMore": "Leggi di più",
     "requestCatalogue": "Richiedi catalogo",
+    "viewProducts": "Vedi i prodotti",
     "previous": "Precedente",
     "next": "Successivo",
     "goToSlide": "Vai all'immagine {{index}}",
@@ -54,8 +55,7 @@
     "lab": {
       "eyebrow": "Laboratorio",
       "title": "Laboratorio e tecnologia propri",
-      "text": "Nel nostro centro mettiamo a tua disposizione tecnologia avanzata, un team specializzato e processi di alta qualità per garantire risultati precisi e affidabili. Se desideri informazioni dettagliate sui nostri servizi, una consulenza o un'assistenza personalizzata, siamo qui per aiutarti.",
-      "cta": "Richiedi una consulenza"
+      "text": "Nel nostro centro mettiamo a tua disposizione tecnologia avanzata, un team specializzato e processi di alta qualità per garantire risultati precisi e affidabili. Se desideri informazioni dettagliate sui nostri servizi, una consulenza o un'assistenza personalizzata, siamo qui per aiutarti."
     },
     "manufacturing": {
       "eyebrow": "Produzione",
@@ -67,7 +67,7 @@
     "seeAllNews": "Vedi tutte le notizie",
     "cta": {
       "title": "Vuoi conoscere i nostri prodotti?",
-      "text": "Richiedici il catalogo e te lo invieremo via e-mail, con tutte le informazioni tecniche su ogni fertilizzante."
+      "text": "Scopri le nostre linee di fertilizzanti e le altre soluzioni, e richiedi il catalogo di quella che ti interessa."
     }
   },
   "aboutUs": {
@@ -159,10 +159,6 @@
         "title": "Mezzi tecnici agricoli",
         "text": "Prodotti e materiali complementari per la gestione quotidiana dell'azienda agricola, selezionati per lavorare insieme alle nostre soluzioni nutrizionali."
       },
-      "cbdFertilisers": {
-        "title": "Fertilizzanti CBD",
-        "text": "Nutrizione specifica per la coltivazione della canapa industriale, adattata a ogni fase del suo sviluppo."
-      },
       "agriculturalAdvice": {
         "title": "Consulenza agronomica",
         "text": "Assistenza tecnica in campo: analisi del suolo, piani di concimazione personalizzati e monitoraggio della coltura."
@@ -205,12 +201,7 @@
         "text": "Eseguiamo prove chimiche, fisiche e microbiologiche su ogni lotto per assicurare che materiali e prodotti soddisfino i più elevati standard di sicurezza e prestazioni."
       }
     },
-    "galleryTitle": "Il laboratorio dall'interno",
-    "cta": {
-      "title": "Ti serve una consulenza tecnica?",
-      "text": "Parlaci della tua coltura e il nostro team tecnico ti consiglierà la soluzione più adatta.",
-      "button": "Richiedi una consulenza"
-    }
+    "galleryTitle": "Il laboratorio dall'interno"
   },
   "production": {
     "title": "Processo produttivo e logistica",
@@ -243,10 +234,6 @@
         "title": "Confezionamento e consegna",
         "text": "Confezioniamo e spediamo puntualmente in qualsiasi destinazione."
       }
-    },
-    "cta": {
-      "title": "Vuoi conoscere i nostri prodotti?",
-      "text": "Richiedici il catalogo e te lo invieremo via e-mail, con tutte le informazioni tecniche su ogni fertilizzante."
     }
   },
   "news": {
