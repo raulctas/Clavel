@@ -9,6 +9,8 @@ interface Props {
   icon: LucideIcon;
   title: string;
   text: string;
+  /** Ilustración decorativa opcional, sobre fondo suave en la parte superior. */
+  image?: string;
   /** Contenido extra al pie de la tarjeta (etiquetas, botón…). */
   children?: ReactNode;
   /** Etiqueta del contenedor: `li` cuando la tarjeta va dentro de una lista. */
@@ -19,8 +21,13 @@ interface Props {
  * Tarjeta blanca de icono, título y texto, con el efecto de elevarse al pasar
  * el ratón (pilares de Inicio, Laboratorio, Producción, Productos y servicios).
  */
-export const InfoCard = ({ icon, title, text, children, as: Tag = 'li' }: Props) => (
+export const InfoCard = ({ icon, title, text, image, children, as: Tag = 'li' }: Props) => (
   <Tag className={`${styles.card} hover-lift`}>
+    {image && (
+      <div className={styles.imageBox}>
+        <img src={image} alt="" className={styles.image} width={560} height={560} loading="lazy" />
+      </div>
+    )}
     <IconCircle icon={icon} />
     <h3 className={styles.title}>{title}</h3>
     <p className={styles.text}>{text}</p>

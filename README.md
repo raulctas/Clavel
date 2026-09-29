@@ -41,6 +41,9 @@ yarn type-check   # comprobación de tipos (tsc --noEmit)
 public/
   images/
     favicon/        # favicon con la flor (pestaña del navegador) y apple-touch-icon
+    about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
+    contact/        # Contactar: banda de título
+    home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     provisional/    # imágenes provisionales, ya con la proporción definitiva
@@ -94,12 +97,14 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
 - **Clavel en cifras** (final de Quiénes somos): cifras e imágenes en `src/data/company-stats.ts`.
-- **Horario de atención al cliente**: `src/data/opening-hours.ts` (días y tramos); los nombres
-  de los días y el formato del tramo están en `contact.hours` de cada `translation.json`.
+- **Portada de Inicio**: `src/data/hero-slides.ts`. Con una sola imagen no hay pase (ni
+  flechas ni indicadores); con varias, se alternan cada 6 s.
 - **Fondos de las bandas de título** (Quiénes somos, Noticias, Equipo y Contactar):
   `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
-- **Imágenes provisionales**: `public/images/provisional/`. Para cambiarlas, sustituir los
-  ficheros (mismo nombre y proporción) o actualizar las rutas en `src/data/`.
+- **Imágenes provisionales**: `public/images/provisional/`. Quedan pendientes las de
+  Productos y servicios, Laboratorio, Producción, Noticias, Equipo, Privacidad y las cifras de
+  Quiénes somos. Para cambiarlas, sustituir los ficheros (mismo nombre y proporción) o
+  actualizar las rutas en `src/data/` y en cada página.
 
 ## Pendiente
 

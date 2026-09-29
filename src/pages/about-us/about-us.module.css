@@ -68,6 +68,21 @@
   color: var(--color-ink-soft);
 }
 
+.whyImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.whyImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-image);
+  background-color: var(--color-kraft-light);
+}
+
 .reasons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
