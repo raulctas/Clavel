@@ -225,6 +225,9 @@ export const ContactForm = ({ initialReason, initialProduct, initialCatalogue }:
         email: values.email.trim(),
         phone: values.phone.trim(),
         privacy: values.privacy,
+        reason,
+        catalogues: reason === 'catalogue' ? selectedCatalogues : [],
+        product: reason === 'productInfo' ? product : '',
         website,
       });
       setSent(true);

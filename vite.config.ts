@@ -20,10 +20,22 @@ const fakeContactEndpoint = (): Plugin => ({
       request.on('end', () => {
         const data = JSON.parse(raw || '{}');
         const fail = data.name === 'fallo';
+        // Las mismas reglas de motivo que el script real: catálogo o producto según el caso.
+        const invalid =
+          (data.reason === 'catalogue' && !data.catalogues?.length) ||
+          (data.reason === 'productInfo' && !data.product);
         console.log('[contact.php simulado]', JSON.stringify(data, null, 2));
-        response.statusCode = fail ? 500 : 200;
+        response.statusCode = invalid ? 422 : fail ? 500 : 200;
         response.setHeader('Content-Type', 'application/json');
-        response.end(JSON.stringify(fail ? { ok: false, error: 'mail' } : { ok: true }));
+        response.end(
+          JSON.stringify(
+            invalid
+              ? { ok: false, error: 'validation' }
+              : fail
+                ? { ok: false, error: 'mail' }
+                : { ok: true },
+          ),
+        );
       });
     });
   },

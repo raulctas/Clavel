@@ -10,6 +10,10 @@ export interface ContactRequest {
   email: string;
   phone: string;
   privacy: boolean;
+  /** Motivo; con «catalogue» hace falta al menos un catálogo y con «productInfo», el producto. */
+  reason: string;
+  catalogues: string[];
+  product: string;
   /** Campo trampa contra robots: las personas lo dejan vacío. */
   website: string;
 }

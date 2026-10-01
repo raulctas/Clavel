@@ -3,12 +3,14 @@
  * Envío del formulario de contacto de la web (issue #32).
  *
  * Recibe por POST un JSON con { subject, lines, name, email, phone, privacy,
- * website } y manda el correo a info@agro-clavel.com con mail() de PHP.
+ * reason, catalogues, product, website } y manda el correo a
+ * info@agro-clavel.com con mail() de PHP.
  *
  * - El destinatario está fijado aquí, nunca viene del navegador: el script no
  *   puede usarse para enviar correo a otras direcciones.
- * - Vuelve a validar lo mismo que el formulario: nombre, correo o teléfono y
- *   aceptación de la política de privacidad.
+ * - Vuelve a validar lo mismo que el formulario: motivo, al menos un catálogo
+ *   si es «Solicitar catálogo», el producto si es «Información sobre
+ *   productos», nombre, correo o teléfono y aceptación de la privacidad.
  * - `website` es un campo trampa oculto: las personas lo dejan vacío y muchos
  *   robots lo rellenan. Si llega con texto se responde «ok» sin enviar nada.
  *
@@ -23,6 +25,9 @@ const MAIL_FROM = 'info@agro-clavel.com';
 const MAIL_FROM_NAME = 'Web Clavel';
 const MAX_LINES = 40;
 const MAX_LINE_LENGTH = 5000;
+// Motivos y catálogos (uno por gama) que admite el formulario.
+const REASONS = ['catalogue', 'advice', 'productInfo', 'other'];
+const CATALOGUES = ['terra', 'protection', 'booster', 'nutrition', 'correctors'];
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -63,12 +68,24 @@ $phone = single_line($data['phone'] ?? '', 40);
 $privacy = ($data['privacy'] ?? false) === true;
 $subject = single_line($data['subject'] ?? '', 200);
 $lines = $data['lines'] ?? [];
+$reason = single_line($data['reason'] ?? '', 20);
+$catalogues = $data['catalogues'] ?? [];
+$product = single_line($data['product'] ?? '', 40);
+
+$validReason = in_array($reason, REASONS, true);
+$validCatalogues = is_array($catalogues) && count($catalogues) > 0
+    && count(array_filter($catalogues, 'is_string')) === count($catalogues)
+    && count(array_diff($catalogues, CATALOGUES)) === 0;
+$validProduct = preg_match('/^[a-z0-9-]{1,40}$/', $product) === 1;
 
 $validEmail = $email !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 $validPhone = $phone !== '' && preg_match('/^\+?[0-9\s().-]{9,20}$/', $phone)
     && strlen(preg_replace('/\D/', '', $phone)) >= 9;
 
-if ($name === '' || !$privacy || (!$validEmail && !$validPhone)
+if (!$validReason
+    || ($reason === 'catalogue' && !$validCatalogues)
+    || ($reason === 'productInfo' && !$validProduct)
+    || $name === '' || !$privacy || (!$validEmail && !$validPhone)
     || ($email !== '' && !$validEmail) || ($phone !== '' && !$validPhone)
     || !is_array($lines) || count($lines) === 0 || count($lines) > MAX_LINES) {
     respond(422, ['ok' => false, 'error' => 'validation']);
