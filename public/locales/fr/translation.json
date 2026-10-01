@@ -686,7 +686,7 @@
   },
   "contact": {
     "title": "Parlons de votre culture",
-    "intro": "Laissez-nous vos coordonnées et nous vous répondrons par e-mail. Si vous le souhaitez, nous vous enverrons notre catalogue de produits.",
+    "intro": "Laissez-nous vos coordonnées et nous vous répondrons par e-mail ou par téléphone. Si vous le souhaitez, nous vous enverrons notre catalogue de produits.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valence, Espagne)",
     "form": {
       "reason": "De quoi avez-vous besoin ?",
@@ -726,13 +726,17 @@
       },
       "privacy": "J'ai lu et j'accepte la <policyLink>politique de confidentialité</policyLink>.",
       "submit": "Envoyer",
+      "sending": "Envoi en cours…",
       "errorReason": "Indiquez votre besoin.",
       "errorCatalogue": "Choisissez au moins un catalogue.",
       "errorName": "Indiquez votre nom.",
       "errorEmail": "Indiquez une adresse e-mail valide.",
+      "errorContact": "Indiquez une adresse e-mail ou un numéro de téléphone pour que nous puissions vous répondre.",
+      "errorPhone": "Indiquez un numéro de téléphone valide.",
       "errorPrivacy": "Vous devez accepter la politique de confidentialité.",
+      "errorSend": "Nous n'avons pas pu envoyer votre message. Réessayez ou écrivez-nous à {{email}}.",
       "sentTitle": "Message envoyé",
-      "sentText": "Merci. Nous vous répondrons par e-mail sous 48 heures ouvrées.",
+      "sentText": "Merci. Nous vous répondrons sous 48 heures ouvrées.",
       "sendAnother": "Envoyer un autre message",
       "mailSubject": "{{reason}} · {{name}}"
     }

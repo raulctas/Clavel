@@ -204,6 +204,23 @@
   padding-inline: 28px;
 }
 
+.submit:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+/* Aviso si el servidor no ha podido enviar el correo; vacío no ocupa sitio. */
+.sendError {
+  margin-top: -8px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-pink-text);
+}
+
+.sendError:empty {
+  display: none;
+}
+
 /* ---------- Confirmación ---------- */
 
 .sent {

@@ -686,7 +686,7 @@
   },
   "contact": {
     "title": "Hablemos de tu cultivo",
-    "intro": "Déjanos tus datos y te respondemos por correo. Si lo necesitas, te enviamos el catálogo de productos.",
+    "intro": "Déjanos tus datos y te respondemos por correo o por teléfono. Si lo necesitas, te enviamos el catálogo de productos.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valencia)",
     "form": {
       "reason": "¿Qué necesitas?",
@@ -726,13 +726,17 @@
       },
       "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
+      "sending": "Enviando…",
       "errorReason": "Elige qué necesitas.",
       "errorCatalogue": "Elige al menos un catálogo.",
       "errorName": "Escribe tu nombre.",
       "errorEmail": "Escribe un correo válido.",
+      "errorContact": "Escribe un correo o un teléfono para que podamos responderte.",
+      "errorPhone": "Escribe un teléfono válido.",
       "errorPrivacy": "Debes aceptar la política de privacidad.",
+      "errorSend": "No hemos podido enviar el mensaje. Inténtalo de nuevo o escríbenos a {{email}}.",
       "sentTitle": "Mensaje enviado",
-      "sentText": "Gracias. Te responderemos por correo en un plazo de 48 horas laborables.",
+      "sentText": "Gracias. Te responderemos en un plazo de 48 horas laborables.",
       "sendAnother": "Enviar otro mensaje",
       "mailSubject": "{{reason}} · {{name}}"
     }

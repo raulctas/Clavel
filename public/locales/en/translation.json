@@ -686,7 +686,7 @@
   },
   "contact": {
     "title": "Let’s talk about your crop",
-    "intro": "Leave your details and we will reply by email. If you need it, we will send you our product catalogue.",
+    "intro": "Leave your details and we will reply by email or phone. If you need it, we will send you our product catalogue.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valencia, Spain)",
     "form": {
       "reason": "What do you need?",
@@ -726,13 +726,17 @@
       },
       "privacy": "I have read and accept the <policyLink>privacy policy</policyLink>.",
       "submit": "Send",
+      "sending": "Sending…",
       "errorReason": "Please choose what you need.",
       "errorCatalogue": "Please choose at least one catalogue.",
       "errorName": "Please enter your name.",
       "errorEmail": "Please enter a valid email.",
+      "errorContact": "Please enter an email or a phone number so we can reply.",
+      "errorPhone": "Please enter a valid phone number.",
       "errorPrivacy": "You must accept the privacy policy.",
+      "errorSend": "We couldn't send your message. Please try again or write to us at {{email}}.",
       "sentTitle": "Message sent",
-      "sentText": "Thank you. We will reply by email within 48 working hours.",
+      "sentText": "Thank you. We will get back to you within 48 working hours.",
       "sendAnother": "Send another message",
       "mailSubject": "{{reason}} · {{name}}"
     }

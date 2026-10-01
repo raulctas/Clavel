@@ -39,6 +39,8 @@ yarn type-check   # comprobación de tipos (tsc --noEmit)
 
 ```
 public/
+  api/
+    contact.php     # envía el formulario de contacto a info@agro-clavel.com (PHP del hosting)
   images/
     favicon/        # favicon con la flor (pestaña del navegador) y apple-touch-icon
     about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
@@ -116,6 +118,14 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   El mensaje viene escrito con un texto breve según el motivo y el producto, en el idioma de
   la web (`contact.form.defaultMessage`), con saludo según la hora; deja de cambiar en cuanto
   el usuario lo edita.
+  Son obligatorios el nombre, el correo **o** el teléfono (al menos uno, y bien escrito el que
+  se rellene) y la casilla de privacidad.
+- **Envío del formulario**: `src/libs/contact-request.ts` manda la consulta por POST a
+  `public/api/contact.php`, que vuelve a validarla y la envía con `mail()` de PHP a
+  `info@agro-clavel.com`. El destinatario está fijado en el script (no viene del navegador), y
+  un campo trampa oculto (`website`) descarta envíos de robots. En desarrollo, Vite no ejecuta
+  PHP: `vite.config.ts` simula esa dirección, muestra la consulta en la consola de Vite y no
+  envía nada (con «fallo» como nombre responde con error, para probar el aviso).
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
 - **Clavel en cifras** (al final de «¿Por qué elegirnos?», en Quiénes somos): cifras en
@@ -131,9 +141,9 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 
 ## Pendiente
 
-- **Envío del formulario**: no hay backend. Mientras tanto, `src/libs/contact-request.ts`
-  abre el cliente de correo del usuario con la consulta ya redactada para el correo de Clavel.
-  Cuando exista el servicio, solo hay que cambiar esa función.
+- **Envío del formulario en el hosting**: necesita PHP con `mail()` y correo saliente. El
+  remitente es `info@agro-clavel.com` (`MAIL_FROM` en `public/api/contact.php`); si el hosting
+  exige otro buzón del dominio, se cambia ahí. Probar un envío real tras el despliegue.
 - **Cifras de «Clavel en cifras»**: son las que publicaba Grupo Alfa; confirmarlas (y qué
   significa la «(M)» de las hectáreas).
 - **Correo y teléfono** (`info@agro-clavel.com`, `+34 629 49 17 60`) en

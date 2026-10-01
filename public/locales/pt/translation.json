@@ -686,7 +686,7 @@
   },
   "contact": {
     "title": "Falemos da sua cultura",
-    "intro": "Deixe-nos os seus dados e respondemos por e-mail. Se precisar, enviamos-lhe o catálogo de produtos.",
+    "intro": "Deixe-nos os seus dados e respondemos por e-mail ou por telefone. Se precisar, enviamos-lhe o catálogo de produtos.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valencia, Espanha)",
     "form": {
       "reason": "De que precisa?",
@@ -726,13 +726,17 @@
       },
       "privacy": "Li e aceito a <policyLink>política de privacidade</policyLink>.",
       "submit": "Enviar",
+      "sending": "A enviar…",
       "errorReason": "Escolha de que precisa.",
       "errorCatalogue": "Escolha pelo menos um catálogo.",
       "errorName": "Escreva o seu nome.",
       "errorEmail": "Escreva um e-mail válido.",
+      "errorContact": "Escreva um e-mail ou um telefone para que lhe possamos responder.",
+      "errorPhone": "Escreva um telefone válido.",
       "errorPrivacy": "Tem de aceitar a política de privacidade.",
+      "errorSend": "Não foi possível enviar a mensagem. Tente novamente ou escreva-nos para {{email}}.",
       "sentTitle": "Mensagem enviada",
-      "sentText": "Obrigado. Responderemos por e-mail no prazo de 48 horas úteis.",
+      "sentText": "Obrigado. Responderemos no prazo de 48 horas úteis.",
       "sendAnother": "Enviar outra mensagem",
       "mailSubject": "{{reason}} · {{name}}"
     }
