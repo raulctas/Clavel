@@ -108,7 +108,7 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
     const reasonLabel = t(`contact.form.reasons.${reason}`);
     const line = (labelKey: string, value: string) =>
       value.trim() ? [`${t(labelKey)}: ${value.trim()}`] : [];
-    // «Producto: Clavel Green (Terra)», con la gama para que no haya dudas.
+    // «Producto: Green (Terra)», con la gama para que no haya dudas.
     const productLine = (slug: string) => {
       const found = PRODUCTS.find((item) => item.slug === slug);
       return found

@@ -52,7 +52,7 @@ const LITRES = ['1 L', '5 L', '20 L'];
 export const PRODUCTS: Product[] = [
   {
     slug: 'clavel-green',
-    name: 'Clavel Green',
+    name: 'Green',
     range: 'terra',
     state: 'liquid',
     formats: LITRES,
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-soil',
-    name: 'Clavel Soil',
+    name: 'Soil',
     range: 'terra',
     state: 'liquid',
     formats: LITRES,
@@ -68,7 +68,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-libero',
-    name: 'Clavel Libero',
+    name: 'Libero',
     range: 'terra',
     state: 'liquid',
     formats: LITRES,
@@ -76,7 +76,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-shield',
-    name: 'Clavel Shield',
+    name: 'Shield',
     range: 'protection',
     state: 'liquid',
     formats: LITRES,
@@ -84,7 +84,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-protect',
-    name: 'Clavel Protect',
+    name: 'Protect',
     range: 'protection',
     state: 'liquid',
     formats: LITRES,
@@ -92,7 +92,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-curar',
-    name: 'Clavel Curar',
+    name: 'Curar',
     range: 'protection',
     state: 'liquid',
     formats: LITRES,
@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-defender',
-    name: 'Clavel Defender',
+    name: 'Defender',
     range: 'booster',
     state: 'liquid',
     formats: LITRES,
@@ -108,7 +108,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-save',
-    name: 'Clavel Save',
+    name: 'Save',
     range: 'booster',
     state: 'liquid',
     formats: LITRES,
@@ -116,7 +116,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-flor',
-    name: 'Clavel Flor',
+    name: 'Flor',
     range: 'nutrition',
     state: 'liquid',
     formats: LITRES,
@@ -124,7 +124,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-amarre',
-    name: 'Clavel Amarre',
+    name: 'Amarre',
     range: 'nutrition',
     state: 'liquid',
     formats: LITRES,
@@ -132,7 +132,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-engord',
-    name: 'Clavel Engord',
+    name: 'Engord',
     range: 'nutrition',
     state: 'liquid',
     formats: LITRES,
@@ -140,7 +140,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-ultimate',
-    name: 'Clavel Ultimate',
+    name: 'Ultimate',
     range: 'nutrition',
     state: 'liquid',
     formats: LITRES,
@@ -148,7 +148,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-forte',
-    name: 'Clavel Forte',
+    name: 'Forte',
     range: 'correctors',
     state: 'liquid',
     formats: LITRES,
@@ -156,7 +156,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'clavel-iron',
-    name: 'Clavel Iron',
+    name: 'Iron',
     range: 'correctors',
     state: 'solid',
     formats: ['1 kg', '5 kg'],
