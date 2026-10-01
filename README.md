@@ -96,7 +96,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
     una rejilla centrada (tres y dos) de tarjetas, cada una con su ilustración, su título y su descripción
     breve; toda la gama enlaza con su página.
   - `/products/<gama>`: la gama con las tarjetas de sus productos y enlaces a las demás gamas.
-  - `/products/<gama>/<producto>`: la ficha, con disposición de tienda en línea: galería con
+  - `/products/<gama>/<producto>`: la ficha: banda de título con el nombre y la función y, debajo,
+    una disposición de tienda en línea: galería con
     miniaturas, «Detalles del producto» desplegables (descripción y ficha técnica) y una caja
     fija con el formato y el botón «Solicitar información», que abre Contactar con el
     producto ya elegido. En móvil la caja va justo después del nombre.

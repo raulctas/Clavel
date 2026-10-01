@@ -2,23 +2,12 @@
   background-color: var(--color-cream);
 }
 
-/* Ruta de navegación arriba, sin banda de título; deja el hueco de la cabecera. */
-.top {
-  padding-top: 40px;
-}
-
-@media (min-width: 900px) {
-  .top {
-    padding-top: 150px;
-  }
-}
-
 /*
  * Tres columnas: galería, información (cabecera + detalles) y caja de contacto.
  * Con áreas para que en tablet y móvil la caja suba justo tras la cabecera.
  */
 .layout {
-  padding-block: 28px 80px;
+  padding-block: 64px 80px;
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 4.4fr) minmax(250px, 2.8fr);
   grid-template-rows: auto 1fr;
@@ -145,18 +134,6 @@
 
 .rangeLink:hover {
   text-decoration: underline;
-}
-
-.name {
-  font-size: clamp(32px, 3.6vw, 44px);
-  line-height: 1.05;
-  color: var(--color-ink);
-}
-
-.function {
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--color-ink-soft);
 }
 
 .elements {
@@ -440,7 +417,7 @@
       'box'
       'details';
     row-gap: 24px;
-    padding-block: 20px 56px;
+    padding-block: 40px 56px;
   }
 
   /* Zonas de toque cómodas para el dedo. */

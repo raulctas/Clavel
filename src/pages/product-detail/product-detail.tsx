@@ -3,11 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 
-import { Breadcrumb } from 'components/breadcrumb';
 import { Button } from 'components/button';
 import { Container } from 'components/container';
+import { PageHeader } from 'components/page-header';
 import { ProductCard } from 'components/product-card';
 import { productInfoRequestPath, productRangePath, routes } from 'constants/routes';
+import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { findProduct, findRange, Product, productsOfRange } from 'data/products';
 import { usePageTitle } from 'hooks/use-page-title';
 import { NotFound } from 'pages/not-found';
@@ -27,7 +28,8 @@ export const ProductDetail = () => {
 };
 
 /**
- * Ficha con la disposición de una tienda en línea: ruta arriba y tres columnas
+ * Ficha: la banda de título de todas las páginas (ruta, nombre y función) y,
+ * debajo, la disposición de una tienda en línea en tres columnas
  * (galería con miniaturas en vertical, información con «Detalles del producto»
  * desplegables y caja de contacto fija al hacer scroll). El formato elegido en
  * la caja y la miniatura de la galería van sincronizados.
@@ -48,15 +50,16 @@ const ProductSheet = ({ product }: { product: Product }) => {
 
   return (
     <>
-      <Container className={styles.top}>
-        <Breadcrumb
-          current={product.name}
-          parent={[
-            { label: t('products.title'), to: routes.products },
-            { label: rangeTitle, to: productRangePath(range.key) },
-          ]}
-        />
-      </Container>
+      <PageHeader
+        page={product.name}
+        parent={[
+          { label: t('products.title'), to: routes.products },
+          { label: rangeTitle, to: productRangePath(range.key) },
+        ]}
+        title={product.name}
+        intro={productFunction}
+        image={PAGE_HEADER_IMAGES.products}
+      />
 
       <Container as="section" className={styles.layout}>
         {/* ---------- Galería ---------- */}
@@ -103,8 +106,6 @@ const ProductSheet = ({ product }: { product: Product }) => {
           <Link to={productRangePath(range.key)} className={styles.rangeLink}>
             {t('products.visitRange', { range: rangeTitle })}
           </Link>
-          <h1 className={styles.name}>{product.name}</h1>
-          <p className={styles.function}>{productFunction}</p>
           <ul className={styles.elements} aria-label={t('products.sheet.composition')}>
             {composition.map((item) => (
               <li key={item} className={styles.element}>
