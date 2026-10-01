@@ -112,6 +112,7 @@
   "products": {
     "title": "Products",
     "intro": "Fertilisers, inputs, advice and technology for every crop.",
+    "circleHint": "A range for every stage of the crop",
     "productCount_one": "{{count}} product",
     "productCount_other": "{{count}} products",
     "rangeProductsTitle": "Products in this range",

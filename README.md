@@ -92,9 +92,9 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
 - **Productos**, en tres niveles (gamas y productos en `src/data/products.ts`, textos en
   `products`):
-  - `/products`: las cinco gamas (Terra, Protección, Potenciador, Nutrición y Correctores) en
-    una rejilla centrada (tres y dos) de tarjetas, cada una con su ilustración, su título y su descripción
-    breve; toda la gama enlaza con su página.
+  - `/products`: las cinco gamas (Terra, Protección, Potenciador, Nutrición y Correctores)
+    colocadas en círculo alrededor de la flor de Clavel; al pasar el ratón por una, el centro
+    muestra su descripción y su número de productos. En móvil pasan a ser una lista.
   - `/products/<gama>`: la gama con las tarjetas de sus productos y enlaces a las demás gamas.
   - `/products/<gama>/<producto>`: la ficha técnica (función, estado, composición y formatos),
     las fotos de los envases y el botón «Solicitar información», que abre Contactar con el

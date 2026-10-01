@@ -112,6 +112,7 @@
   "products": {
     "title": "Produits",
     "intro": "Engrais, intrants, conseil et technologie pour chaque culture.",
+    "circleHint": "Une gamme pour chaque étape de la culture",
     "productCount_one": "{{count}} produit",
     "productCount_other": "{{count}} produits",
     "rangeProductsTitle": "Produits de la gamme",
