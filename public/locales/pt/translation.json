@@ -112,7 +112,13 @@
   "products": {
     "title": "Produtos",
     "intro": "Fertilizantes, fatores de produção, aconselhamento e tecnologia para cada cultura.",
+    "viewAll": "Ver todos os produtos",
+    "all": {
+      "title": "Todos os produtos",
+      "intro": "Todos os fertilizantes Clavel juntos, das cinco gamas. Abra cada um para ver a sua ficha técnica."
+    },
     "rangeProductsTitle": "Produtos da gama",
+    "requestCatalogue": "Pedir o catálogo {{range}}",
     "viewSheet": "Ver ficha técnica",
     "visitRange": "Ver a gama {{range}}",
     "detailsTitle": "Detalhes do produto",
@@ -686,7 +692,7 @@
   },
   "contact": {
     "title": "Falemos da sua cultura",
-    "intro": "Deixe-nos os seus dados e respondemos por e-mail. Se precisar, enviamos-lhe o catálogo de produtos.",
+    "intro": "Deixe-nos os seus dados e respondemos por e-mail ou por telefone. Se precisar, enviamos-lhe o catálogo de produtos.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valencia, Espanha)",
     "form": {
       "reason": "De que precisa?",
@@ -719,6 +725,8 @@
         },
         "general": "Gostaria de receber mais informações sobre os vossos produtos.",
         "catalogue": "Agradeço que me enviem o vosso catálogo de produtos.",
+        "catalogueList_one": "Agradeço que me enviem o seguinte catálogo:",
+        "catalogueList_other": "Agradeço que me enviem os seguintes catálogos:",
         "advice": "Gostaria de receber aconselhamento técnico para a minha cultura.",
         "product": "Gostaria de receber mais informações sobre o produto {{product}}.",
         "other": "Venho por este meio colocar-vos uma questão.",
@@ -726,13 +734,17 @@
       },
       "privacy": "Li e aceito a <policyLink>política de privacidade</policyLink>.",
       "submit": "Enviar",
+      "sending": "A enviar…",
       "errorReason": "Escolha de que precisa.",
       "errorCatalogue": "Escolha pelo menos um catálogo.",
       "errorName": "Escreva o seu nome.",
       "errorEmail": "Escreva um e-mail válido.",
+      "errorContact": "Escreva um e-mail ou um telefone para que lhe possamos responder.",
+      "errorPhone": "Escreva um telefone válido.",
       "errorPrivacy": "Tem de aceitar a política de privacidade.",
+      "errorSend": "Não foi possível enviar a mensagem. Tente novamente ou escreva-nos para {{email}}.",
       "sentTitle": "Mensagem enviada",
-      "sentText": "Obrigado. Responderemos por e-mail no prazo de 48 horas úteis.",
+      "sentText": "Obrigado. Responderemos no prazo de 48 horas úteis.",
       "sendAnother": "Enviar outra mensagem",
       "mailSubject": "{{reason}} · {{name}}"
     }

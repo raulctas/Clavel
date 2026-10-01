@@ -4,9 +4,13 @@ import { useSearchParams } from 'react-router-dom';
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
 import { isContactReason } from 'constants/contact-reasons';
-import { CONTACT_PRODUCT_PARAM, CONTACT_REASON_PARAM } from 'constants/routes';
+import {
+  CONTACT_CATALOGUE_PARAM,
+  CONTACT_PRODUCT_PARAM,
+  CONTACT_REASON_PARAM,
+} from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
-import { isProduct } from 'data/products';
+import { isCatalogue, isProduct } from 'data/products';
 import { usePageTitle } from 'hooks/use-page-title';
 
 import { ContactForm } from './components/contact-form';
@@ -24,6 +28,10 @@ export const Contact = () => {
   // ya elegido. Un producto desconocido se ignora.
   const productParam = searchParams.get(CONTACT_PRODUCT_PARAM);
   const initialProduct = isProduct(productParam) ? productParam : undefined;
+  // Desde la página de una gama llega ?catalogue=<gama>: ese catálogo sale ya
+  // marcado. Una gama desconocida se ignora.
+  const catalogueParam = searchParams.get(CONTACT_CATALOGUE_PARAM);
+  const initialCatalogue = isCatalogue(catalogueParam) ? catalogueParam : undefined;
 
   return (
     <>
@@ -38,9 +46,10 @@ export const Contact = () => {
         <div className={styles.formCard}>
           {/* La `key` reinicia el formulario si cambia lo pedido por URL. */}
           <ContactForm
-            key={`${initialReason}-${initialProduct}`}
+            key={`${initialReason}-${initialProduct}-${initialCatalogue}`}
             initialReason={initialReason}
             initialProduct={initialProduct}
+            initialCatalogue={initialCatalogue}
           />
         </div>
       </Container>

@@ -181,5 +181,8 @@ export const isProduct = (slug: string | null): slug is string =>
 /** Catálogos que se pueden pedir desde Contactar: uno por gama. */
 export const CATALOGUES: string[] = PRODUCT_RANGES.map((range) => range.key);
 
+export const isCatalogue = (key: string | null): key is string =>
+  key !== null && CATALOGUES.includes(key);
+
 /** Clave de traducción del nombre de un catálogo (el de su gama). */
 export const catalogueTitleKey = (key: string) => `products.ranges.${key}.title`;

@@ -6,6 +6,7 @@ import { Check, CircleCheck, Send } from 'lucide-react';
 import { Button } from 'components/button';
 import { IconCircle } from 'components/icon-circle';
 import { TextLink } from 'components/text-link';
+import { COMPANY } from 'constants/company';
 import { CONTACT_REASONS, ContactReason } from 'constants/contact-reasons';
 import { routes } from 'constants/routes';
 import { CATALOGUES, catalogueTitleKey, PRODUCT_RANGES, PRODUCTS } from 'data/products';
@@ -27,7 +28,7 @@ interface FormValues {
  * el usuario cambia de idioma con errores en pantalla, también se traducen.
  */
 type FormErrors = Partial<
-  Record<'reason' | 'catalogues' | 'product' | 'name' | 'email' | 'privacy', string>
+  Record<'reason' | 'catalogues' | 'product' | 'name' | 'email' | 'phone' | 'privacy', string>
 >;
 
 type TextField = Exclude<keyof FormValues, 'privacy' | 'message'>;
@@ -42,6 +43,9 @@ const EMPTY_FORM: FormValues = {
 };
 
 const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
+/** Teléfono: dígitos, espacios, +, guiones, puntos y paréntesis; al menos 9 dígitos. */
+const PHONE_REGEX = /^\+?[0-9\s().-]{9,20}$/;
+const isPhone = (value: string) => PHONE_REGEX.test(value) && value.replace(/\D/g, '').length >= 9;
 
 /** Hora a la que empieza la mañana; antes, el saludo es el de la noche. */
 const MORNING_FROM = 6;
@@ -62,19 +66,27 @@ interface Props {
   initialReason?: ContactReason;
   /** Producto ya elegido (el de la ficha desde la que se ha llegado). */
   initialProduct?: string;
+  /** Catálogo ya marcado (el de la gama desde la que se ha llegado). */
+  initialCatalogue?: string;
 }
 
 /**
  * Formulario de contacto: motivo en chips, datos, mensaje y casilla de
  * privacidad. El mensaje viene escrito con un texto breve en el idioma de la
- * web, según el motivo (y el producto); se puede cambiar. Si el motivo es «Solicitar catálogo», hay que elegir además qué
- * catálogo (uno o varios, uno por gama); si es «Información sobre productos»,
- * de qué producto. Al enviarse se sustituye por la confirmación.
+ * web, según el motivo (y el producto); se puede cambiar. Si el motivo es
+ * «Solicitar catálogo», hay que elegir además qué catálogo (uno o varios, uno
+ * por gama); si es «Información sobre productos», de qué producto.
+ *
+ * Son obligatorios el nombre, el correo o el teléfono (al menos uno, y bien
+ * escrito el que se rellene) y la casilla de privacidad. El envío lo hace el
+ * servidor (`libs/contact-request`); al terminar, el formulario se sustituye
+ * por la confirmación y, si falla, se avisa bajo el botón.
  */
-export const ContactForm = ({ initialReason, initialProduct }: Props) => {
+export const ContactForm = ({ initialReason, initialProduct, initialCatalogue }: Props) => {
+  const initialCatalogues = initialCatalogue ? [initialCatalogue] : [];
   const { t } = useTranslation();
   const [reason, setReason] = useState<ContactReason | undefined>(initialReason);
-  const [catalogues, setCatalogues] = useState<string[]>([]);
+  const [catalogues, setCatalogues] = useState<string[]>(initialCatalogues);
   const [product, setProduct] = useState(initialProduct ?? '');
   const [values, setValues] = useState<FormValues>(EMPTY_FORM);
   // Hasta que el usuario lo edita, el mensaje es el de por defecto: sigue al
@@ -93,16 +105,29 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
   }, [messageEdited]);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendFailed, setSendFailed] = useState(false);
+  // Campo trampa oculto: si llega con texto, el servidor no envía nada.
+  const [website, setWebsite] = useState('');
 
   const productName = PRODUCTS.find((item) => item.slug === product)?.name;
+  // Catálogos marcados, en el orden de las gamas, como lista con guiones.
+  const selectedCatalogues = CATALOGUES.filter((key) => catalogues.includes(key));
   const body =
     reason === 'productInfo' && productName
       ? t('contact.form.defaultMessage.product', { product: productName })
-      : t(
-          `contact.form.defaultMessage.${
-            reason === 'catalogue' || reason === 'advice' || reason === 'other' ? reason : 'general'
-          }`,
-        );
+      : reason === 'catalogue' && selectedCatalogues.length > 0
+        ? [
+            t('contact.form.defaultMessage.catalogueList', { count: selectedCatalogues.length }),
+            ...selectedCatalogues.map((key) => `- ${t(catalogueTitleKey(key))}`),
+          ].join('\n')
+        : t(
+            `contact.form.defaultMessage.${
+              reason === 'catalogue' || reason === 'advice' || reason === 'other'
+                ? reason
+                : 'general'
+            }`,
+          );
   // Saludo según la hora local; cada idioma fija a qué hora empiezan la tarde y la noche.
   const hour = now.getHours();
   const greetingKey = (key: string) => `contact.form.defaultMessage.greeting.${key}`;
@@ -120,15 +145,25 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
   ].join('\n\n');
   const message = messageEdited ? values.message : defaultMessage;
 
-  const validate = (form: FormValues): FormErrors => ({
-    ...(!reason && { reason: 'contact.form.errorReason' }),
-    ...(reason === 'catalogue' &&
-      catalogues.length === 0 && { catalogues: 'contact.form.errorCatalogue' }),
-    ...(reason === 'productInfo' && !product && { product: 'contact.form.errorProduct' }),
-    ...(!form.name.trim() && { name: 'contact.form.errorName' }),
-    ...(!EMAIL_REGEX.test(form.email.trim()) && { email: 'contact.form.errorEmail' }),
-    ...(!form.privacy && { privacy: 'contact.form.errorPrivacy' }),
-  });
+  const validate = (form: FormValues): FormErrors => {
+    const email = form.email.trim();
+    const phone = form.phone.trim();
+    return {
+      ...(!reason && { reason: 'contact.form.errorReason' }),
+      ...(reason === 'catalogue' &&
+        catalogues.length === 0 && { catalogues: 'contact.form.errorCatalogue' }),
+      ...(reason === 'productInfo' && !product && { product: 'contact.form.errorProduct' }),
+      ...(!form.name.trim() && { name: 'contact.form.errorName' }),
+      // Basta con uno de los dos; el que se rellene tiene que ser válido.
+      ...(!email && !phone
+        ? { email: 'contact.form.errorContact', phone: 'contact.form.errorContact' }
+        : {
+            ...(email && !EMAIL_REGEX.test(email) && { email: 'contact.form.errorEmail' }),
+            ...(phone && !isPhone(phone) && { phone: 'contact.form.errorPhone' }),
+          }),
+      ...(!form.privacy && { privacy: 'contact.form.errorPrivacy' }),
+    };
+  };
 
   const toggleCatalogue = (key: string) => {
     setCatalogues((previous) =>
@@ -144,7 +179,7 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
     event.preventDefault();
     const nextErrors = validate(values);
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0 || !reason) {
+    if (Object.keys(nextErrors).length > 0 || !reason || sending) {
       return;
     }
 
@@ -163,28 +198,44 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
         : [];
     };
 
-    await sendContactRequest({
-      subject: t('contact.form.mailSubject', { reason: reasonLabel, name: values.name.trim() }),
-      lines: [
-        `${t('contact.form.reason')} ${reasonLabel}`,
-        ...(reason === 'catalogue'
-          ? [
-              `${t('contact.form.cataloguesLine')}: ${CATALOGUES.filter((key) =>
-                catalogues.includes(key),
-              )
-                .map((key) => t(catalogueTitleKey(key)))
-                .join(', ')}`,
-            ]
-          : []),
-        ...(reason === 'productInfo' ? productLine(product) : []),
-        ...line('contact.form.name', values.name),
-        ...line('contact.form.company', values.company),
-        ...line('contact.form.email', values.email),
-        ...line('contact.form.phone', values.phone),
-        ...(message.trim() ? ['', message.trim()] : []),
-      ],
-    });
-    setSent(true);
+    setSending(true);
+    setSendFailed(false);
+    try {
+      await sendContactRequest({
+        subject: t('contact.form.mailSubject', { reason: reasonLabel, name: values.name.trim() }),
+        lines: [
+          `${t('contact.form.reason')} ${reasonLabel}`,
+          ...(reason === 'catalogue'
+            ? [
+                `${t('contact.form.cataloguesLine')}: ${CATALOGUES.filter((key) =>
+                  catalogues.includes(key),
+                )
+                  .map((key) => t(catalogueTitleKey(key)))
+                  .join(', ')}`,
+              ]
+            : []),
+          ...(reason === 'productInfo' ? productLine(product) : []),
+          ...line('contact.form.name', values.name),
+          ...line('contact.form.company', values.company),
+          ...line('contact.form.email', values.email),
+          ...line('contact.form.phone', values.phone),
+          ...(message.trim() ? ['', message.trim()] : []),
+        ],
+        name: values.name.trim(),
+        email: values.email.trim(),
+        phone: values.phone.trim(),
+        privacy: values.privacy,
+        reason,
+        catalogues: reason === 'catalogue' ? selectedCatalogues : [],
+        product: reason === 'productInfo' ? product : '',
+        website,
+      });
+      setSent(true);
+    } catch {
+      setSendFailed(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   const reset = () => {
@@ -192,8 +243,9 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
     setMessageEdited(false);
     setErrors({});
     setReason(initialReason);
-    setCatalogues([]);
+    setCatalogues(initialCatalogues);
     setProduct(initialProduct ?? '');
+    setSendFailed(false);
     setSent(false);
   };
 
@@ -319,8 +371,11 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
 
       <div className={styles.fields}>
         {TEXT_FIELDS.map(({ field, type, autoComplete }) => {
-          const error = field === 'name' || field === 'email' ? errors[field] : undefined;
+          const error = field === 'company' ? undefined : errors[field];
           const errorId = `contact-${field}-error`;
+          // «Correo o teléfono»: el aviso se escribe una sola vez, bajo el correo.
+          const sharedError = field === 'phone' && error === 'contact.form.errorContact';
+          const describedBy = sharedError ? 'contact-email-error' : errorId;
           return (
             <label key={field} className={styles.field}>
               <span className={styles.label}>{t(`contact.form.${field}`)}</span>
@@ -332,10 +387,10 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
                 onChange={(event) => setValue(field, event.target.value)}
                 className={[styles.input, error && styles.invalid].filter(Boolean).join(' ')}
                 aria-invalid={Boolean(error)}
-                aria-describedby={error ? errorId : undefined}
+                aria-describedby={error ? describedBy : undefined}
               />
               <span id={errorId} className={styles.error}>
-                {error && t(error)}
+                {error && !sharedError && t(error)}
               </span>
             </label>
           );
@@ -346,7 +401,8 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
         <span className={styles.label}>{t('contact.form.message')}</span>
         <textarea
           name="message"
-          rows={7}
+          // Crece con el texto (p. ej. la lista de catálogos), entre 7 y 14 líneas.
+          rows={Math.min(14, Math.max(7, message.split('\n').length + 1))}
           placeholder={t('contact.form.messageHelp')}
           value={message}
           onChange={(event) => {
@@ -402,10 +458,25 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
         </span>
       </label>
 
-      <Button type="submit" className={styles.submit}>
-        {t('contact.form.submit')}
+      {/* Campo trampa: oculto a las personas y a los lectores de pantalla. */}
+      <input
+        type="text"
+        name="website"
+        value={website}
+        onChange={(event) => setWebsite(event.target.value)}
+        className="visually-hidden"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden
+      />
+
+      <Button type="submit" className={styles.submit} disabled={sending} aria-busy={sending}>
+        {t(sending ? 'contact.form.sending' : 'contact.form.submit')}
         <Send size={18} aria-hidden />
       </Button>
+      <p className={styles.sendError} role="alert">
+        {sendFailed && t('contact.form.errorSend', { email: COMPANY.email })}
+      </p>
     </form>
   );
 };

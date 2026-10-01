@@ -10,14 +10,17 @@ import styles from './product-card.module.css';
 
 interface Props {
   product: Product;
+  /** Añade la gama junto a la marca («Clavel · Terra»), para listas de varias gamas. */
+  showRange?: boolean;
 }
 
 /**
- * Tarjeta de un producto (página de la gama y «Otros productos» de la ficha):
+ * Tarjeta de un producto (página de la gama, «Todos los productos» y «Otros
+ * productos» de la ficha):
  * foto del envase principal, marca, nombre, función y composición. Toda la tarjeta
  * enlaza con la ficha técnica.
  */
-export const ProductCard = ({ product }: Props) => {
+export const ProductCard = ({ product, showRange }: Props) => {
   const { t } = useTranslation();
   const composition = t(`products.items.${product.slug}.composition`, {
     returnObjects: true,
@@ -37,7 +40,10 @@ export const ProductCard = ({ product }: Props) => {
           />
         </div>
         <div className={styles.body}>
-          <p className={styles.brand}>{COMPANY.name}</p>
+          <p className={styles.brand}>
+            {COMPANY.name}
+            {showRange && ` · ${t(`products.ranges.${product.range}.title`)}`}
+          </p>
           <h3 className={styles.name}>{product.name}</h3>
           <p className={styles.function}>{t(`products.items.${product.slug}.function`)}</p>
           <ul className={styles.composition} aria-label={t('products.sheet.composition')}>

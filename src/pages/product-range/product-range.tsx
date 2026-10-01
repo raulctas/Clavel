@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
+import { FileText } from 'lucide-react';
 
+import { Button } from 'components/button';
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
 import { ProductCard } from 'components/product-card';
-import { productRangePath, routes } from 'constants/routes';
+import { catalogueRequestPath, productRangePath, routes } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { findRange, PRODUCT_RANGES, ProductRange as Range, productsOfRange } from 'data/products';
 import { usePageTitle } from 'hooks/use-page-title';
@@ -35,7 +37,6 @@ const RangePage = ({ range }: { range: Range }) => {
         title={title}
         intro={t(`products.ranges.${range.key}.intro`)}
         image={PAGE_HEADER_IMAGES.products}
-        compact
       />
 
       <section aria-labelledby="range-products-title">
@@ -48,6 +49,13 @@ const RangePage = ({ range }: { range: Range }) => {
               <ProductCard key={product.slug} product={product} />
             ))}
           </ul>
+          {/* Abre Contactar con «Solicitar catálogo» y el de esta gama ya marcados. */}
+          <div>
+            <Button to={catalogueRequestPath(range.key)} size="lg">
+              <FileText size={20} aria-hidden />
+              {t('products.requestCatalogue', { range: title })}
+            </Button>
+          </div>
         </Container>
       </section>
 

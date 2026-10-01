@@ -1,9 +1,9 @@
 /*
  * Todas las bandas de título miden lo mismo (salvo la portada de Inicio, que
- * es otro componente): altura mínima común y contenido centrado en vertical.
- * La altura cubre el contenido más largo en escritorio (una noticia con
- * antetítulo, título y entrada de dos líneas). En móvil cubre las páginas
- * principales; solo las noticias de título largo quedan más altas.
+ * es otro componente): altura común y contenido centrado en vertical. La altura
+ * cubre el contenido más largo de la web en los cinco idiomas (una noticia con
+ * antetítulo, título largo y entrada de dos o tres líneas), así que ninguna
+ * página la estira.
  */
 .band {
   position: relative;
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 460px;
+  min-height: 450px;
   background-color: var(--color-cream);
   padding-top: 64px;
   padding-bottom: 56px;
@@ -28,15 +28,18 @@
   opacity: 0.75;
 }
 
-/* Refuerzo a la izquierda, donde va el texto, que se desvanece hacia la derecha. */
+/*
+ * Refuerzo a la izquierda, donde van el título y la entrada, que se desvanece
+ * hacia la derecha: el texto se lee bien sobre cualquier foto.
+ */
 .veil {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(250, 246, 238, 0.85) 0%,
-    rgba(250, 246, 238, 0.55) 55%,
-    rgba(250, 246, 238, 0) 100%
+    rgba(250, 246, 238, 0.94) 0%,
+    rgba(250, 246, 238, 0.8) 50%,
+    rgba(250, 246, 238, 0.2) 100%
   );
 }
 
@@ -47,7 +50,7 @@
 /* Hueco de la cabecera flotante «Mínimo», que no ocupa altura en el flujo. */
 @media (min-width: 900px) {
   .band {
-    min-height: 580px;
+    min-height: 540px;
     padding-top: 166px;
   }
 }
@@ -65,41 +68,23 @@
   text-wrap: balance;
 }
 
+/* Entrada en tono oscuro y algo más gruesa para que destaque sobre la foto. */
 .intro {
   font-size: 19px;
   line-height: 1.6;
-  color: var(--color-ink-soft);
-  max-width: 640px;
-}
-
-/* Variante baja (gamas y fichas de producto): da prioridad al contenido. */
-.compact {
-  min-height: 360px;
-  padding-bottom: 40px;
-}
-
-@media (min-width: 900px) {
-  .compact {
-    min-height: 480px;
-  }
-}
-
-/*
- * En la variante baja la entrada describe la gama o el producto: texto más
- * oscuro y algo más grueso, y velo más denso a la izquierda para que se lea
- * bien sobre la foto.
- */
-.compact .intro {
-  color: var(--color-ink);
   font-weight: 500;
+  color: var(--color-ink);
   max-width: 720px;
 }
 
-.compact .veil {
-  background: linear-gradient(
-    90deg,
-    rgba(250, 246, 238, 0.94) 0%,
-    rgba(250, 246, 238, 0.8) 50%,
-    rgba(250, 246, 238, 0.2) 100%
-  );
+/* En móvil, título y entrada algo más pequeños para que quepan en el alto común. */
+@media (max-width: 599px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .intro {
+    font-size: 17px;
+    line-height: 1.55;
+  }
 }

@@ -112,7 +112,13 @@
   "products": {
     "title": "Productos",
     "intro": "Fertilizantes, insumos, asesoramiento y tecnología para cada cultivo.",
+    "viewAll": "Ver todos los productos",
+    "all": {
+      "title": "Todos los productos",
+      "intro": "Todos los fertilizantes de Clavel juntos, de las cinco gamas. Entra en cada uno para ver su ficha técnica."
+    },
     "rangeProductsTitle": "Productos de la gama",
+    "requestCatalogue": "Solicitar el catálogo de {{range}}",
     "viewSheet": "Ver ficha técnica",
     "visitRange": "Ver la gama {{range}}",
     "detailsTitle": "Detalles del producto",
@@ -686,7 +692,7 @@
   },
   "contact": {
     "title": "Hablemos de tu cultivo",
-    "intro": "Déjanos tus datos y te respondemos por correo. Si lo necesitas, te enviamos el catálogo de productos.",
+    "intro": "Déjanos tus datos y te respondemos por correo o por teléfono. Si lo necesitas, te enviamos el catálogo de productos.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valencia)",
     "form": {
       "reason": "¿Qué necesitas?",
@@ -719,6 +725,8 @@
         },
         "general": "Me gustaría recibir más información sobre sus productos.",
         "catalogue": "Les agradecería que me enviaran su catálogo de productos.",
+        "catalogueList_one": "Les agradecería que me enviaran el siguiente catálogo:",
+        "catalogueList_other": "Les agradecería que me enviaran los siguientes catálogos:",
         "advice": "Me gustaría recibir asesoramiento técnico para mi cultivo.",
         "product": "Me gustaría recibir más información sobre el producto {{product}}.",
         "other": "Me pongo en contacto con ustedes para realizarles una consulta.",
@@ -726,13 +734,17 @@
       },
       "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
+      "sending": "Enviando…",
       "errorReason": "Elige qué necesitas.",
       "errorCatalogue": "Elige al menos un catálogo.",
       "errorName": "Escribe tu nombre.",
       "errorEmail": "Escribe un correo válido.",
+      "errorContact": "Escribe un correo o un teléfono para que podamos responderte.",
+      "errorPhone": "Escribe un teléfono válido.",
       "errorPrivacy": "Debes aceptar la política de privacidad.",
+      "errorSend": "No hemos podido enviar el mensaje. Inténtalo de nuevo o escríbenos a {{email}}.",
       "sentTitle": "Mensaje enviado",
-      "sentText": "Gracias. Te responderemos por correo en un plazo de 48 horas laborables.",
+      "sentText": "Gracias. Te responderemos en un plazo de 48 horas laborables.",
       "sendAnother": "Enviar otro mensaje",
       "mailSubject": "{{reason}} · {{name}}"
     }

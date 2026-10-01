@@ -112,7 +112,13 @@
   "products": {
     "title": "Products",
     "intro": "Fertilisers, inputs, advice and technology for every crop.",
+    "viewAll": "See all products",
+    "all": {
+      "title": "All products",
+      "intro": "All Clavel fertilisers together, from the five ranges. Open any of them to see its technical sheet."
+    },
     "rangeProductsTitle": "Products in this range",
+    "requestCatalogue": "Request the {{range}} catalogue",
     "viewSheet": "View technical sheet",
     "visitRange": "See the {{range}} range",
     "detailsTitle": "Product details",
@@ -686,7 +692,7 @@
   },
   "contact": {
     "title": "Let’s talk about your crop",
-    "intro": "Leave your details and we will reply by email. If you need it, we will send you our product catalogue.",
+    "intro": "Leave your details and we will reply by email or phone. If you need it, we will send you our product catalogue.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valencia, Spain)",
     "form": {
       "reason": "What do you need?",
@@ -719,6 +725,8 @@
         },
         "general": "I would be grateful to receive further information about your products.",
         "catalogue": "I would be grateful if you could send me your product catalogue.",
+        "catalogueList_one": "I would be grateful if you could send me the following catalogue:",
+        "catalogueList_other": "I would be grateful if you could send me the following catalogues:",
         "advice": "I would like to request technical advice for my crop.",
         "product": "I would be grateful to receive further information about {{product}}.",
         "other": "I am writing to you with an enquiry.",
@@ -726,13 +734,17 @@
       },
       "privacy": "I have read and accept the <policyLink>privacy policy</policyLink>.",
       "submit": "Send",
+      "sending": "Sending…",
       "errorReason": "Please choose what you need.",
       "errorCatalogue": "Please choose at least one catalogue.",
       "errorName": "Please enter your name.",
       "errorEmail": "Please enter a valid email.",
+      "errorContact": "Please enter an email or a phone number so we can reply.",
+      "errorPhone": "Please enter a valid phone number.",
       "errorPrivacy": "You must accept the privacy policy.",
+      "errorSend": "We couldn't send your message. Please try again or write to us at {{email}}.",
       "sentTitle": "Message sent",
-      "sentText": "Thank you. We will reply by email within 48 working hours.",
+      "sentText": "Thank you. We will get back to you within 48 working hours.",
       "sendAnother": "Send another message",
       "mailSubject": "{{reason}} · {{name}}"
     }

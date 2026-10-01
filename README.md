@@ -39,6 +39,8 @@ yarn type-check   # comprobación de tipos (tsc --noEmit)
 
 ```
 public/
+  api/
+    contact.php     # envía el formulario de contacto a info@agro-clavel.com (PHP del hosting)
   images/
     favicon/        # favicon con la flor (pestaña del navegador) y apple-touch-icon
     about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
@@ -94,8 +96,11 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   `products`):
   - `/products`: las cinco gamas (Terra, Protección, Potenciador, Nutrición y Correctores) en
     una rejilla centrada (tres y dos) de tarjetas, cada una con su ilustración, su título y su descripción
-    breve; toda la gama enlaza con su página.
-  - `/products/<gama>`: la gama con las tarjetas de sus productos y enlaces a las demás gamas.
+    breve; toda la gama enlaza con su página. Debajo, «Ver todos los productos».
+  - `/products/all`: los 14 productos juntos en una rejilla, en el orden de las gamas; cada
+    tarjeta indica su gama («Clavel · Terra») y enlaza con la ficha.
+  - `/products/<gama>`: la gama con las tarjetas de sus productos, el botón «Solicitar el
+    catálogo de <gama>» y enlaces a las demás gamas.
   - `/products/<gama>/<producto>`: la ficha: banda de título con el nombre y la función y, debajo,
     una disposición de tienda en línea: galería con
     miniaturas, «Detalles del producto» desplegables (descripción y ficha técnica) y una caja
@@ -112,10 +117,20 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
   varios catálogos, uno por gama (`CATALOGUES` en `src/data/products.ts`). Con «Información
   sobre productos» hay que elegir el producto; `/contact?reason=productInfo&product=<slug>`
-  lo deja ya elegido (es lo que hace el botón de cada ficha).
+  lo deja ya elegido (es lo que hace el botón de cada ficha). Del mismo modo,
+  `/contact?reason=catalogue&catalogue=<gama>` deja marcados el motivo y ese catálogo (botón de
+  cada gama).
   El mensaje viene escrito con un texto breve según el motivo y el producto, en el idioma de
   la web (`contact.form.defaultMessage`), con saludo según la hora; deja de cambiar en cuanto
   el usuario lo edita.
+  Son obligatorios el nombre, el correo **o** el teléfono (al menos uno, y bien escrito el que
+  se rellene) y la casilla de privacidad.
+- **Envío del formulario**: `src/libs/contact-request.ts` manda la consulta por POST a
+  `public/api/contact.php`, que vuelve a validarla y la envía con `mail()` de PHP a
+  `info@agro-clavel.com`. El destinatario está fijado en el script (no viene del navegador), y
+  un campo trampa oculto (`website`) descarta envíos de robots. En desarrollo, Vite no ejecuta
+  PHP: `vite.config.ts` simula esa dirección, muestra la consulta en la consola de Vite y no
+  envía nada (con «fallo» como nombre responde con error, para probar el aviso).
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
 - **Clavel en cifras** (al final de «¿Por qué elegirnos?», en Quiénes somos): cifras en
@@ -131,9 +146,9 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 
 ## Pendiente
 
-- **Envío del formulario**: no hay backend. Mientras tanto, `src/libs/contact-request.ts`
-  abre el cliente de correo del usuario con la consulta ya redactada para el correo de Clavel.
-  Cuando exista el servicio, solo hay que cambiar esa función.
+- **Envío del formulario en el hosting**: necesita PHP con `mail()` y correo saliente. El
+  remitente es `info@agro-clavel.com` (`MAIL_FROM` en `public/api/contact.php`); si el hosting
+  exige otro buzón del dominio, se cambia ahí. Probar un envío real tras el despliegue.
 - **Cifras de «Clavel en cifras»**: son las que publicaba Grupo Alfa; confirmarlas (y qué
   significa la «(M)» de las hectáreas).
 - **Correo y teléfono** (`info@agro-clavel.com`, `+34 629 49 17 60`) en

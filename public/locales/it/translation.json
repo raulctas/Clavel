@@ -112,7 +112,13 @@
   "products": {
     "title": "Prodotti",
     "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura.",
+    "viewAll": "Vedi tutti i prodotti",
+    "all": {
+      "title": "Tutti i prodotti",
+      "intro": "Tutti i fertilizzanti Clavel insieme, delle cinque linee. Apri ciascuno per vederne la scheda tecnica."
+    },
     "rangeProductsTitle": "Prodotti della linea",
+    "requestCatalogue": "Richiedi il catalogo {{range}}",
     "viewSheet": "Vedi scheda tecnica",
     "visitRange": "Vedi la linea {{range}}",
     "detailsTitle": "Dettagli del prodotto",
@@ -686,7 +692,7 @@
   },
   "contact": {
     "title": "Parliamo della tua coltura",
-    "intro": "Lasciaci i tuoi dati e ti risponderemo via e-mail. Se ne hai bisogno, ti invieremo il catalogo dei prodotti.",
+    "intro": "Lasciaci i tuoi dati e ti risponderemo via e-mail o per telefono. Se ne hai bisogno, ti invieremo il catalogo dei prodotti.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valencia, Spagna)",
     "form": {
       "reason": "Di cosa hai bisogno?",
@@ -719,6 +725,8 @@
         },
         "general": "Vorrei ricevere maggiori informazioni sui Vostri prodotti.",
         "catalogue": "Vi sarei grato se poteste inviarmi il Vostro catalogo dei prodotti.",
+        "catalogueList_one": "Vi sarei grato se poteste inviarmi il seguente catalogo:",
+        "catalogueList_other": "Vi sarei grato se poteste inviarmi i seguenti cataloghi:",
         "advice": "Vorrei ricevere una consulenza tecnica per la mia coltura.",
         "product": "Vorrei ricevere maggiori informazioni sul prodotto {{product}}.",
         "other": "Vi contatto per sottoporVi una domanda.",
@@ -726,13 +734,17 @@
       },
       "privacy": "Ho letto e accetto l'<policyLink>informativa sulla privacy</policyLink>.",
       "submit": "Invia",
+      "sending": "Invio in corso…",
       "errorReason": "Scegli di cosa hai bisogno.",
       "errorCatalogue": "Scegli almeno un catalogo.",
       "errorName": "Inserisci il tuo nome.",
       "errorEmail": "Inserisci un'e-mail valida.",
+      "errorContact": "Inserisci un'e-mail o un numero di telefono per permetterci di risponderti.",
+      "errorPhone": "Inserisci un numero di telefono valido.",
       "errorPrivacy": "Devi accettare l'informativa sulla privacy.",
+      "errorSend": "Non è stato possibile inviare il messaggio. Riprova o scrivici a {{email}}.",
       "sentTitle": "Messaggio inviato",
-      "sentText": "Grazie. Ti risponderemo via e-mail entro 48 ore lavorative.",
+      "sentText": "Grazie. Ti risponderemo entro 48 ore lavorative.",
       "sendAnother": "Invia un altro messaggio",
       "mailSubject": "{{reason}} · {{name}}"
     }

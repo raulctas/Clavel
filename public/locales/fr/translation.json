@@ -112,7 +112,13 @@
   "products": {
     "title": "Produits",
     "intro": "Engrais, intrants, conseil et technologie pour chaque culture.",
+    "viewAll": "Voir tous les produits",
+    "all": {
+      "title": "Tous les produits",
+      "intro": "Tous les engrais Clavel réunis, des cinq gammes. Ouvrez chacun d'eux pour consulter sa fiche technique."
+    },
     "rangeProductsTitle": "Produits de la gamme",
+    "requestCatalogue": "Demander le catalogue {{range}}",
     "viewSheet": "Voir la fiche technique",
     "visitRange": "Voir la gamme {{range}}",
     "detailsTitle": "Détails du produit",
@@ -686,7 +692,7 @@
   },
   "contact": {
     "title": "Parlons de votre culture",
-    "intro": "Laissez-nous vos coordonnées et nous vous répondrons par e-mail. Si vous le souhaitez, nous vous enverrons notre catalogue de produits.",
+    "intro": "Laissez-nous vos coordonnées et nous vous répondrons par e-mail ou par téléphone. Si vous le souhaitez, nous vous enverrons notre catalogue de produits.",
     "address": "Avenida Mila Real 43, 46117 Bétera (Valence, Espagne)",
     "form": {
       "reason": "De quoi avez-vous besoin ?",
@@ -719,6 +725,8 @@
         },
         "general": "Je souhaiterais recevoir de plus amples informations sur vos produits.",
         "catalogue": "Je vous serais reconnaissant de bien vouloir m'envoyer votre catalogue de produits.",
+        "catalogueList_one": "Je vous serais reconnaissant de bien vouloir m'envoyer le catalogue suivant :",
+        "catalogueList_other": "Je vous serais reconnaissant de bien vouloir m'envoyer les catalogues suivants :",
         "advice": "Je souhaiterais bénéficier de conseils techniques pour ma culture.",
         "product": "Je souhaiterais recevoir de plus amples informations sur le produit {{product}}.",
         "other": "Je me permets de vous contacter afin de vous soumettre une question.",
@@ -726,13 +734,17 @@
       },
       "privacy": "J'ai lu et j'accepte la <policyLink>politique de confidentialité</policyLink>.",
       "submit": "Envoyer",
+      "sending": "Envoi en cours…",
       "errorReason": "Indiquez votre besoin.",
       "errorCatalogue": "Choisissez au moins un catalogue.",
       "errorName": "Indiquez votre nom.",
       "errorEmail": "Indiquez une adresse e-mail valide.",
+      "errorContact": "Indiquez une adresse e-mail ou un numéro de téléphone pour que nous puissions vous répondre.",
+      "errorPhone": "Indiquez un numéro de téléphone valide.",
       "errorPrivacy": "Vous devez accepter la politique de confidentialité.",
+      "errorSend": "Nous n'avons pas pu envoyer votre message. Réessayez ou écrivez-nous à {{email}}.",
       "sentTitle": "Message envoyé",
-      "sentText": "Merci. Nous vous répondrons par e-mail sous 48 heures ouvrées.",
+      "sentText": "Merci. Nous vous répondrons sous 48 heures ouvrées.",
       "sendAnother": "Envoyer un autre message",
       "mailSubject": "{{reason}} · {{name}}"
     }

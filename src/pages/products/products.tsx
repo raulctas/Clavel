@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
+import { Button } from 'components/button';
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
-import { productRangePath } from 'constants/routes';
+import { productRangePath, routes } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { PRODUCT_RANGES } from 'data/products';
 import { usePageTitle } from 'hooks/use-page-title';
@@ -15,7 +17,7 @@ import styles from './products.module.css';
  * en escritorio), cada una en una tarjeta con su ilustración, su título y su
  * descripción breve. Toda la tarjeta enlaza con la página de la gama, donde
  * están sus productos; el borde y la elevación al pasar el ratón indican que se
- * puede pulsar.
+ * puede pulsar. Debajo, «Ver todos los productos» lleva a la lista completa.
  */
 export const Products = () => {
   const { t } = useTranslation();
@@ -49,6 +51,12 @@ export const Products = () => {
               </li>
             ))}
           </ul>
+          <div className={styles.viewAll}>
+            <Button to={routes.allProducts} size="lg">
+              {t('products.viewAll')}
+              <ArrowRight size={20} aria-hidden />
+            </Button>
+          </div>
         </Container>
       </section>
     </>
