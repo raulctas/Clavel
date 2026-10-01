@@ -42,13 +42,14 @@
   }
 }
 
+/* Refuerzo claro bajo el texto para que se lea igual sobre las tres fotos. */
 .veil {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.85) 0%,
-    rgba(255, 255, 255, 0.65) 40%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.75) 40%,
     rgba(255, 255, 255, 0) 72%
   );
 }
@@ -79,11 +80,20 @@
   text-wrap: balance;
 }
 
+/* Mismo formato que la entrada de las bandas de título del resto de páginas. */
 .intro {
   font-size: 19px;
   line-height: 1.6;
-  color: var(--color-ink-hero);
+  font-weight: 500;
+  color: var(--color-ink);
   text-wrap: pretty;
+}
+
+@media (max-width: 599px) {
+  .intro {
+    font-size: 17px;
+    line-height: 1.55;
+  }
 }
 
 .actions {
