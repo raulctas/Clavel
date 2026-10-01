@@ -72,7 +72,8 @@ export const PRODUCTS: Product[] = [
     range: 'terra',
     state: 'liquid',
     formats: LITRES,
-    images: images('libero', ['1 L', '5 L']),
+    // Sin foto propia del bidón de 20 L: `20l.webp` es, de momento, la de Soil.
+    images: images('libero', LITRES),
   },
   {
     slug: 'shield',
