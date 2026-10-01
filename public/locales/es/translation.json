@@ -167,7 +167,7 @@
       }
     },
     "items": {
-      "clavel-green": {
+      "green": {
         "function": "Crecimiento vegetativo de la planta",
         "description": [
           "Producto fundamental al inicio del cultivo para aportar una carga importante de nitrógeno orgánico. Favorece la formación de aminoácidos en las raíces y mejora la fijación de la bacteria beneficiosa Azotobacter.",
@@ -177,7 +177,7 @@
           "Aminoácidos vegetales 20 %"
         ]
       },
-      "clavel-soil": {
+      "soil": {
         "function": "Acondicionador y mejorador del suelo",
         "description": [
           "Juega un papel vital en la fertilidad del suelo y en la nutrición de las plantas: los cultivos en suelos con ácidos húmicos y fúlvicos adecuados dan mayores rendimientos.",
@@ -189,7 +189,7 @@
           "K₂O 10 %"
         ]
       },
-      "clavel-libero": {
+      "libero": {
         "function": "Desbloqueador del suelo y fortalecedor de la raíz",
         "description": [
           "Mezcla especial de calcio y magnesio que corrige sus carencias más rápido gracias a promotores específicos que reconstruyen la estructura de las partes deficientes.",
@@ -200,7 +200,7 @@
           "MgO 1 %"
         ]
       },
-      "clavel-shield": {
+      "shield": {
         "function": "Corrector de cobre (efecto biofungicida)",
         "description": [
           "Producto específico para corregir la carencia de cobre en las plantas. Está complejado para llegar a la planta de la mejor forma y actuar como nutriente de cobre."
@@ -209,7 +209,7 @@
           "Cu 5 %"
         ]
       },
-      "clavel-protect": {
+      "protect": {
         "function": "Potenciador de la autodefensa de la planta (efecto biodesecante y secante)",
         "description": [
           "Refuerza los mecanismos de autodefensa de la planta gracias a su aporte de potasio y silicio, que fortalecen los tejidos y las paredes celulares.",
@@ -220,7 +220,7 @@
           "Si 23 %"
         ]
       },
-      "clavel-curar": {
+      "curar": {
         "function": "Corrector de carencias (efecto bioplaguicida)",
         "description": [
           "Tiene efecto preventivo y curativo para corregir la carencia de zinc y ayuda a generar hojas nuevas.",
@@ -230,7 +230,7 @@
           "Zn 7 %"
         ]
       },
-      "clavel-defender": {
+      "defender": {
         "function": "Bioestimulante antiestrés y de desarrollo",
         "description": [
           "Fuente importante de magnesio y hierro que ayuda a la planta en su crecimiento vegetativo en todas sus fases.",
@@ -241,7 +241,7 @@
           "Fe 0,5 %"
         ]
       },
-      "clavel-save": {
+      "save": {
         "function": "Potenciador antiestrés y del movimiento vascular",
         "description": [
           "Fuente importante de aminoácidos y extracto de algas que ayuda a la planta en su crecimiento vegetativo en todas sus fases."
@@ -251,7 +251,7 @@
           "Algas (Ascophyllum nodosum) 10 %"
         ]
       },
-      "clavel-flor": {
+      "flor": {
         "function": "Potenciador de la prefloración",
         "description": [
           "Hace que las flores sean más fértiles y estén mejor formadas: mejora la fertilidad del polen y el crecimiento del tubo polínico, y alarga la floración.",
@@ -262,7 +262,7 @@
           "Mo 0,5 %"
         ]
       },
-      "clavel-amarre": {
+      "amarre": {
         "function": "Potenciador del cuajado",
         "description": [
           "Inductor y promotor específico del cuajado, formulado con boro y molibdeno, los micronutrientes esenciales en este proceso.",
@@ -273,7 +273,7 @@
           "Mo 2 %"
         ]
       },
-      "clavel-engord": {
+      "engord": {
         "function": "Potenciador del engorde del fruto",
         "description": [
           "Aumenta la absorción de potasio a través de las membranas celulares, restablece el equilibrio hormonal y favorece un desarrollo excepcional.",
@@ -283,7 +283,7 @@
           "K₂O 20 %"
         ]
       },
-      "clavel-ultimate": {
+      "ultimate": {
         "function": "Potenciador de la maduración (Brix, color y firmeza)",
         "description": [
           "Específico para la maduración del fruto: aumenta los grados Brix y mejora el color y la firmeza.",
@@ -293,7 +293,7 @@
           "K₂O 15 %"
         ]
       },
-      "clavel-forte": {
+      "forte": {
         "function": "Corrector de calcio y boro y mejorador de la estructura de la planta",
         "description": [
           "Mezcla especial de calcio y boro que corrige sus carencias más rápido gracias a promotores específicos que reconstruyen la estructura de las partes deficientes.",
@@ -304,7 +304,7 @@
           "B 0,5 %"
         ]
       },
-      "clavel-iron": {
+      "iron": {
         "function": "Corrector de carencias de hierro",
         "description": [
           "Hierro sólido quelado con EDDHA al 6 %, con un 5,4 % de isómero orto-orto, lo que le da una gran eficacia, rapidez de acción y persistencia.",

@@ -167,7 +167,7 @@
       }
     },
     "items": {
-      "clavel-green": {
+      "green": {
         "function": "Croissance végétative de la plante",
         "description": [
           "Produit essentiel en début de culture pour apporter une quantité importante d'azote organique. Il favorise la formation d'acides aminés dans les racines et améliore la fixation de la bactérie bénéfique Azotobacter.",
@@ -177,7 +177,7 @@
           "Acides aminés végétaux 20 %"
         ]
       },
-      "clavel-soil": {
+      "soil": {
         "function": "Conditionneur et améliorant du sol",
         "description": [
           "Il joue un rôle vital dans la fertilité du sol et la nutrition des plantes : les cultures sur des sols suffisamment riches en acides humiques et fulviques donnent de meilleurs rendements.",
@@ -189,7 +189,7 @@
           "K₂O 10 %"
         ]
       },
-      "clavel-libero": {
+      "libero": {
         "function": "Débloquant du sol et fortifiant racinaire",
         "description": [
           "Mélange spécial de calcium et de magnésium qui corrige plus rapidement leurs carences grâce à des promoteurs spécifiques qui reconstruisent la structure des parties carencées.",
@@ -200,7 +200,7 @@
           "MgO 1 %"
         ]
       },
-      "clavel-shield": {
+      "shield": {
         "function": "Correcteur de cuivre (effet biofongicide)",
         "description": [
           "Produit spécifique pour corriger la carence en cuivre des plantes. Sa forme complexée lui permet d'atteindre la plante de manière optimale et d'agir comme nutriment cuprique."
@@ -209,7 +209,7 @@
           "Cu 5 %"
         ]
       },
-      "clavel-protect": {
+      "protect": {
         "function": "Stimulateur de l'autodéfense de la plante (effet biodessiccant et asséchant)",
         "description": [
           "Il renforce les mécanismes d'autodéfense de la plante grâce à son apport en potassium et en silicium, qui consolident les tissus et les parois cellulaires.",
@@ -220,7 +220,7 @@
           "Si 23 %"
         ]
       },
-      "clavel-curar": {
+      "curar": {
         "function": "Correcteur de carences (effet biopesticide)",
         "description": [
           "Il a un effet préventif et curatif pour corriger la carence en zinc et favorise l'émission de nouvelles feuilles.",
@@ -230,7 +230,7 @@
           "Zn 7 %"
         ]
       },
-      "clavel-defender": {
+      "defender": {
         "function": "Biostimulant anti-stress et de développement",
         "description": [
           "Source importante de magnésium et de fer qui accompagne la plante dans sa croissance végétative, à tous ses stades.",
@@ -241,7 +241,7 @@
           "Fe 0,5 %"
         ]
       },
-      "clavel-save": {
+      "save": {
         "function": "Stimulateur anti-stress et de la circulation vasculaire",
         "description": [
           "Source importante d'acides aminés et d'extrait d'algues qui accompagne la plante dans sa croissance végétative, à tous ses stades."
@@ -251,7 +251,7 @@
           "Algues (Ascophyllum nodosum) 10 %"
         ]
       },
-      "clavel-flor": {
+      "flor": {
         "function": "Stimulateur de la préfloraison",
         "description": [
           "Il rend les fleurs plus fertiles et mieux formées : il améliore la fertilité du pollen et la croissance du tube pollinique, et prolonge la floraison.",
@@ -262,7 +262,7 @@
           "Mo 0,5 %"
         ]
       },
-      "clavel-amarre": {
+      "amarre": {
         "function": "Stimulateur de la nouaison",
         "description": [
           "Inducteur et promoteur spécifique de la nouaison, formulé avec du bore et du molybdène, les oligo-éléments essentiels à ce processus.",
@@ -273,7 +273,7 @@
           "Mo 2 %"
         ]
       },
-      "clavel-engord": {
+      "engord": {
         "function": "Stimulateur du grossissement du fruit",
         "description": [
           "Il augmente l'absorption du potassium à travers les membranes cellulaires, rétablit l'équilibre hormonal et favorise un développement exceptionnel.",
@@ -283,7 +283,7 @@
           "K₂O 20 %"
         ]
       },
-      "clavel-ultimate": {
+      "ultimate": {
         "function": "Stimulateur de la maturation (Brix, couleur et fermeté)",
         "description": [
           "Spécifique à la maturation du fruit : il augmente le degré Brix et améliore la couleur et la fermeté.",
@@ -293,7 +293,7 @@
           "K₂O 15 %"
         ]
       },
-      "clavel-forte": {
+      "forte": {
         "function": "Correcteur de calcium et de bore et améliorant de la structure de la plante",
         "description": [
           "Mélange spécial de calcium et de bore qui corrige plus rapidement leurs carences grâce à des promoteurs spécifiques qui reconstruisent la structure des parties carencées.",
@@ -304,7 +304,7 @@
           "B 0,5 %"
         ]
       },
-      "clavel-iron": {
+      "iron": {
         "function": "Correcteur de carences en fer",
         "description": [
           "Fer solide chélaté par l'EDDHA à 6 %, dont 5,4 % d'isomère ortho-ortho, ce qui lui confère une grande efficacité, une action rapide et une bonne persistance.",

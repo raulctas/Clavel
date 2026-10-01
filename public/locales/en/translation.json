@@ -167,7 +167,7 @@
       }
     },
     "items": {
-      "clavel-green": {
+      "green": {
         "function": "Vegetative plant growth",
         "description": [
           "An essential product at the start of the crop to provide a substantial load of organic nitrogen. It promotes amino acid formation in the roots and improves fixation by the beneficial bacterium Azotobacter.",
@@ -177,7 +177,7 @@
           "Plant amino acids 20%"
         ]
       },
-      "clavel-soil": {
+      "soil": {
         "function": "Soil conditioner and improver",
         "description": [
           "It plays a vital role in soil fertility and plant nutrition: crops grown in soils with adequate humic and fulvic acids give higher yields.",
@@ -189,7 +189,7 @@
           "K₂O 10%"
         ]
       },
-      "clavel-libero": {
+      "libero": {
         "function": "Soil unblocker and root strengthener",
         "description": [
           "A special blend of calcium and magnesium that corrects their deficiencies faster thanks to specific promoters that rebuild the structure of the deficient parts.",
@@ -200,7 +200,7 @@
           "MgO 1%"
         ]
       },
-      "clavel-shield": {
+      "shield": {
         "function": "Copper corrector (bio-fungicidal effect)",
         "description": [
           "A specific product to correct copper deficiency in plants. It is complexed to reach the plant in the best way and act as a copper nutrient."
@@ -209,7 +209,7 @@
           "Cu 5%"
         ]
       },
-      "clavel-protect": {
+      "protect": {
         "function": "Plant self-defence enhancer (bio-desiccant and drying effect)",
         "description": [
           "It reinforces the plant's self-defence mechanisms thanks to its potassium and silicon content, which strengthen tissues and cell walls.",
@@ -220,7 +220,7 @@
           "Si 23%"
         ]
       },
-      "clavel-curar": {
+      "curar": {
         "function": "Deficiency corrector (bio-pesticide effect)",
         "description": [
           "It has a preventive and curative effect to correct zinc deficiency and helps generate new leaves.",
@@ -230,7 +230,7 @@
           "Zn 7%"
         ]
       },
-      "clavel-defender": {
+      "defender": {
         "function": "Anti-stress and development biostimulant",
         "description": [
           "An important source of magnesium and iron that supports the plant's vegetative growth at every stage.",
@@ -241,7 +241,7 @@
           "Fe 0.5%"
         ]
       },
-      "clavel-save": {
+      "save": {
         "function": "Anti-stress and vascular flow enhancer",
         "description": [
           "An important source of amino acids and seaweed extract that supports the plant's vegetative growth at every stage."
@@ -251,7 +251,7 @@
           "Seaweed (Ascophyllum nodosum) 10%"
         ]
       },
-      "clavel-flor": {
+      "flor": {
         "function": "Pre-flowering enhancer",
         "description": [
           "It makes flowers more fertile and better formed: it improves pollen fertility and pollen tube growth, and extends flowering.",
@@ -262,7 +262,7 @@
           "Mo 0.5%"
         ]
       },
-      "clavel-amarre": {
+      "amarre": {
         "function": "Fruit set enhancer",
         "description": [
           "A specific fruit set inducer and promoter, formulated with boron and molybdenum, the essential micronutrients in this process.",
@@ -273,7 +273,7 @@
           "Mo 2%"
         ]
       },
-      "clavel-engord": {
+      "engord": {
         "function": "Fruit sizing enhancer",
         "description": [
           "It increases potassium uptake through cell membranes, restores hormonal balance and promotes exceptional development.",
@@ -283,7 +283,7 @@
           "K₂O 20%"
         ]
       },
-      "clavel-ultimate": {
+      "ultimate": {
         "function": "Ripening enhancer (Brix, colour and firmness)",
         "description": [
           "Specific for fruit ripening: it raises Brix levels and improves colour and firmness.",
@@ -293,7 +293,7 @@
           "K₂O 15%"
         ]
       },
-      "clavel-forte": {
+      "forte": {
         "function": "Calcium and boron corrector and plant structure improver",
         "description": [
           "A special blend of calcium and boron that corrects their deficiencies faster thanks to specific promoters that rebuild the structure of the deficient parts.",
@@ -304,7 +304,7 @@
           "B 0.5%"
         ]
       },
-      "clavel-iron": {
+      "iron": {
         "function": "Iron deficiency corrector",
         "description": [
           "Solid iron chelated with 6% EDDHA, with 5.4% ortho-ortho isomer, giving it high efficacy, fast action and persistence.",
