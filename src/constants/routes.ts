@@ -44,6 +44,13 @@ export const CONTACT_REASON_PARAM = 'reason';
 /** Parámetro de la URL de Contactar con el producto sobre el que se pide información. */
 export const CONTACT_PRODUCT_PARAM = 'product';
 
+/** Parámetro de la URL de Contactar con el catálogo (gama) que se quiere recibir. */
+export const CONTACT_CATALOGUE_PARAM = 'catalogue';
+
+/** Contactar con el motivo «Solicitar catálogo» y el catálogo de esa gama ya marcado. */
+export const catalogueRequestPath = (range: string) =>
+  `${routes.contact}?${CONTACT_REASON_PARAM}=catalogue&${CONTACT_CATALOGUE_PARAM}=${range}`;
+
 /** Contactar con el motivo «Información sobre productos» y el producto ya elegido. */
 export const productInfoRequestPath = (slug: string) =>
   `${routes.contact}?${CONTACT_REASON_PARAM}=productInfo&${CONTACT_PRODUCT_PARAM}=${slug}`;

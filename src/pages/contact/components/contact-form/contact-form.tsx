@@ -66,6 +66,8 @@ interface Props {
   initialReason?: ContactReason;
   /** Producto ya elegido (el de la ficha desde la que se ha llegado). */
   initialProduct?: string;
+  /** Catálogo ya marcado (el de la gama desde la que se ha llegado). */
+  initialCatalogue?: string;
 }
 
 /**
@@ -80,10 +82,11 @@ interface Props {
  * servidor (`libs/contact-request`); al terminar, el formulario se sustituye
  * por la confirmación y, si falla, se avisa bajo el botón.
  */
-export const ContactForm = ({ initialReason, initialProduct }: Props) => {
+export const ContactForm = ({ initialReason, initialProduct, initialCatalogue }: Props) => {
+  const initialCatalogues = initialCatalogue ? [initialCatalogue] : [];
   const { t } = useTranslation();
   const [reason, setReason] = useState<ContactReason | undefined>(initialReason);
-  const [catalogues, setCatalogues] = useState<string[]>([]);
+  const [catalogues, setCatalogues] = useState<string[]>(initialCatalogues);
   const [product, setProduct] = useState(initialProduct ?? '');
   const [values, setValues] = useState<FormValues>(EMPTY_FORM);
   // Hasta que el usuario lo edita, el mensaje es el de por defecto: sigue al
@@ -228,7 +231,7 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
     setMessageEdited(false);
     setErrors({});
     setReason(initialReason);
-    setCatalogues([]);
+    setCatalogues(initialCatalogues);
     setProduct(initialProduct ?? '');
     setSendFailed(false);
     setSent(false);

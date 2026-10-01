@@ -99,7 +99,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
     breve; toda la gama enlaza con su página. Debajo, «Ver todos los productos».
   - `/products/all`: los 14 productos juntos en una rejilla, en el orden de las gamas; cada
     tarjeta indica su gama («Clavel · Terra») y enlaza con la ficha.
-  - `/products/<gama>`: la gama con las tarjetas de sus productos y enlaces a las demás gamas.
+  - `/products/<gama>`: la gama con las tarjetas de sus productos, el botón «Solicitar el
+    catálogo de <gama>» y enlaces a las demás gamas.
   - `/products/<gama>/<producto>`: la ficha: banda de título con el nombre y la función y, debajo,
     una disposición de tienda en línea: galería con
     miniaturas, «Detalles del producto» desplegables (descripción y ficha técnica) y una caja
@@ -116,7 +117,9 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
   varios catálogos, uno por gama (`CATALOGUES` en `src/data/products.ts`). Con «Información
   sobre productos» hay que elegir el producto; `/contact?reason=productInfo&product=<slug>`
-  lo deja ya elegido (es lo que hace el botón de cada ficha).
+  lo deja ya elegido (es lo que hace el botón de cada ficha). Del mismo modo,
+  `/contact?reason=catalogue&catalogue=<gama>` deja marcados el motivo y ese catálogo (botón de
+  cada gama).
   El mensaje viene escrito con un texto breve según el motivo y el producto, en el idioma de
   la web (`contact.form.defaultMessage`), con saludo según la hora; deja de cambiar en cuanto
   el usuario lo edita.

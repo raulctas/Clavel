@@ -118,6 +118,7 @@
       "intro": "Tous les engrais Clavel réunis, des cinq gammes. Ouvrez chacun d'eux pour consulter sa fiche technique."
     },
     "rangeProductsTitle": "Produits de la gamme",
+    "requestCatalogue": "Demander le catalogue {{range}}",
     "viewSheet": "Voir la fiche technique",
     "visitRange": "Voir la gamme {{range}}",
     "detailsTitle": "Détails du produit",

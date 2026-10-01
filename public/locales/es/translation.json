@@ -118,6 +118,7 @@
       "intro": "Todos los fertilizantes de Clavel juntos, de las cinco gamas. Entra en cada uno para ver su ficha técnica."
     },
     "rangeProductsTitle": "Productos de la gama",
+    "requestCatalogue": "Solicitar el catálogo de {{range}}",
     "viewSheet": "Ver ficha técnica",
     "visitRange": "Ver la gama {{range}}",
     "detailsTitle": "Detalles del producto",
