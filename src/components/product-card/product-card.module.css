@@ -47,6 +47,16 @@
   padding: 22px 24px 24px;
 }
 
+/* La marca, pequeña sobre el nombre: todos los productos son Clavel. */
+.brand {
+  margin-bottom: -6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-pink-text);
+}
+
 .name {
   font-size: 24px;
   line-height: 1.15;

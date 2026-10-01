@@ -123,6 +123,7 @@
     "imageAlt": "{{name}}, confezione da {{format}}",
     "sheet": {
       "title": "Scheda tecnica",
+      "brand": "Marchio",
       "range": "Linea",
       "function": "Funzione",
       "state": "Stato",

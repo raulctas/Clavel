@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
+import { COMPANY } from 'constants/company';
 import { productPath } from 'constants/routes';
 import { Product } from 'data/products';
 
@@ -13,7 +14,7 @@ interface Props {
 
 /**
  * Tarjeta de un producto (página de la gama y «Otros productos» de la ficha):
- * foto del envase principal, nombre, función y composición. Toda la tarjeta
+ * foto del envase principal, marca, nombre, función y composición. Toda la tarjeta
  * enlaza con la ficha técnica.
  */
 export const ProductCard = ({ product }: Props) => {
@@ -36,6 +37,7 @@ export const ProductCard = ({ product }: Props) => {
           />
         </div>
         <div className={styles.body}>
+          <p className={styles.brand}>{COMPANY.name}</p>
           <h3 className={styles.name}>{product.name}</h3>
           <p className={styles.function}>{t(`products.items.${product.slug}.function`)}</p>
           <ul className={styles.composition} aria-label={t('products.sheet.composition')}>

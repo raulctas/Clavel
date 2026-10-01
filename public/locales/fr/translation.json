@@ -123,6 +123,7 @@
     "imageAlt": "{{name}}, emballage de {{format}}",
     "sheet": {
       "title": "Fiche technique",
+      "brand": "Marque",
       "range": "Gamme",
       "function": "Fonction",
       "state": "État",

@@ -123,6 +123,7 @@
     "imageAlt": "{{name}}, {{format}} container",
     "sheet": {
       "title": "Technical sheet",
+      "brand": "Brand",
       "range": "Range",
       "function": "Function",
       "state": "Form",

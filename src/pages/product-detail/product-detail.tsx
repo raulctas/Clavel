@@ -7,6 +7,7 @@ import { Button } from 'components/button';
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
 import { ProductCard } from 'components/product-card';
+import { COMPANY } from 'constants/company';
 import { productInfoRequestPath, productRangePath, routes } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
 import { findProduct, findRange, Product, productsOfRange } from 'data/products';
@@ -56,6 +57,7 @@ const ProductSheet = ({ product }: { product: Product }) => {
           { label: t('products.title'), to: routes.products },
           { label: rangeTitle, to: productRangePath(range.key) },
         ]}
+        eyebrow={COMPANY.name}
         title={product.name}
         intro={productFunction}
         image={PAGE_HEADER_IMAGES.products}
@@ -141,6 +143,10 @@ const ProductSheet = ({ product }: { product: Product }) => {
               </summary>
               <dl className={styles.rows}>
                 <div className={styles.row}>
+                  <dt>{t('products.sheet.brand')}</dt>
+                  <dd>{COMPANY.name}</dd>
+                </div>
+                <div className={styles.row}>
                   <dt>{t('products.sheet.range')}</dt>
                   <dd>{rangeTitle}</dd>
                 </div>
@@ -197,6 +203,10 @@ const ProductSheet = ({ product }: { product: Product }) => {
           </fieldset>
 
           <dl className={styles.boxRows}>
+            <div>
+              <dt>{t('products.sheet.brand')}</dt>
+              <dd>{COMPANY.name}</dd>
+            </div>
             <div>
               <dt>{t('products.sheet.range')}</dt>
               <dd>
