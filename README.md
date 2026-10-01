@@ -11,6 +11,8 @@ fidelidad), que no forma parte del repositorio. Los textos vienen de la web de G
 - **Vite + React 18 + TypeScript** (modo estricto)
 - **React Router v6**: rutas centralizadas en `src/constants/routes.ts`
 - **i18next / react-i18next**: textos en `public/locales/<idioma>/translation.json`
+  (se piden con `?v=<versión del build>` para que la caché no sirva textos antiguos; en
+  desarrollo, al cambiar uno, la página se recarga sola)
 - **CSS Modules** + design tokens (`src/styles/design-tokens.css`)
 - Fuentes self-hosted vía `@fontsource` (Barlow Semi Condensed + Barlow)
 - Iconos **Lucide** (`lucide-react`); TikTok, que no está en Lucide, es un SVG propio

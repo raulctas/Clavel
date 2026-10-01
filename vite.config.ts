@@ -41,9 +41,31 @@ const fakeContactEndpoint = (): Plugin => ({
   },
 });
 
+/**
+ * Solo en desarrollo: i18next lee los `translation.json` una vez, al cargar la
+ * página, y la recarga en caliente de Vite no los vuelve a pedir. Si cambia
+ * alguno, se recarga la página entera para no ver claves sin traducir.
+ */
+const reloadOnLocaleChange = (): Plugin => ({
+  name: 'reload-on-locale-change',
+  apply: 'serve',
+  configureServer(server) {
+    server.watcher.on('change', (file) => {
+      if (/[\\/]public[\\/]locales[\\/]/.test(file)) {
+        server.ws.send({ type: 'full-reload' });
+      }
+    });
+  },
+});
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), fakeContactEndpoint()],
+  plugins: [react(), fakeContactEndpoint(), reloadOnLocaleChange()],
+  define: {
+    // Versión de los textos: cambia en cada build y va en la dirección de los
+    // `translation.json`, para que tras publicar nadie use textos antiguos.
+    __LOCALES_VERSION__: JSON.stringify(Date.now().toString(36)),
+  },
   resolve: {
     // Garantiza una única copia de React (evita "Invalid hook call").
     dedupe: ['react', 'react-dom'],
