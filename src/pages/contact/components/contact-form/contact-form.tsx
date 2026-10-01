@@ -8,7 +8,7 @@ import { IconCircle } from 'components/icon-circle';
 import { TextLink } from 'components/text-link';
 import { CONTACT_REASONS, ContactReason } from 'constants/contact-reasons';
 import { routes } from 'constants/routes';
-import { CATALOGUES, catalogueTitleKey } from 'data/products';
+import { CATALOGUES, catalogueTitleKey, PRODUCT_RANGES, PRODUCTS } from 'data/products';
 import { sendContactRequest } from 'libs/contact-request';
 
 import styles from './contact-form.module.css';
@@ -26,7 +26,9 @@ interface FormValues {
  * Los errores se guardan como claves de traducción y no como textos: así, si
  * el usuario cambia de idioma con errores en pantalla, también se traducen.
  */
-type FormErrors = Partial<Record<'reason' | 'catalogues' | 'name' | 'email' | 'privacy', string>>;
+type FormErrors = Partial<
+  Record<'reason' | 'catalogues' | 'product' | 'name' | 'email' | 'privacy', string>
+>;
 
 type TextField = Exclude<keyof FormValues, 'privacy' | 'message'>;
 
@@ -56,20 +58,21 @@ interface Props {
    * él (entrando desde «Contactar») no hay ninguno marcado y hay que elegirlo.
    */
   initialReason?: ContactReason;
-  /** Catálogo ya marcado (el del producto desde el que se ha llegado). */
-  initialCatalogue?: string;
+  /** Producto ya elegido (el de la ficha desde la que se ha llegado). */
+  initialProduct?: string;
 }
 
 /**
  * Formulario de contacto: motivo en chips, datos, mensaje y casilla de
  * privacidad. Si el motivo es «Solicitar catálogo», hay que elegir además qué
- * catálogo (uno o varios). Al enviarse se sustituye por la confirmación.
+ * catálogo (uno o varios, uno por gama); si es «Información sobre productos»,
+ * de qué producto. Al enviarse se sustituye por la confirmación.
  */
-export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
+export const ContactForm = ({ initialReason, initialProduct }: Props) => {
   const { t } = useTranslation();
   const [reason, setReason] = useState<ContactReason | undefined>(initialReason);
-  const initialCatalogues = initialCatalogue ? [initialCatalogue] : [];
-  const [catalogues, setCatalogues] = useState<string[]>(initialCatalogues);
+  const [catalogues, setCatalogues] = useState<string[]>([]);
+  const [product, setProduct] = useState(initialProduct ?? '');
   const [values, setValues] = useState<FormValues>(EMPTY_FORM);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
@@ -78,6 +81,7 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
     ...(!reason && { reason: 'contact.form.errorReason' }),
     ...(reason === 'catalogue' &&
       catalogues.length === 0 && { catalogues: 'contact.form.errorCatalogue' }),
+    ...(reason === 'productInfo' && !product && { product: 'contact.form.errorProduct' }),
     ...(!form.name.trim() && { name: 'contact.form.errorName' }),
     ...(!EMAIL_REGEX.test(form.email.trim()) && { email: 'contact.form.errorEmail' }),
     ...(!form.privacy && { privacy: 'contact.form.errorPrivacy' }),
@@ -104,6 +108,17 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
     const reasonLabel = t(`contact.form.reasons.${reason}`);
     const line = (labelKey: string, value: string) =>
       value.trim() ? [`${t(labelKey)}: ${value.trim()}`] : [];
+    // «Producto: Clavel Green (Terra)», con la gama para que no haya dudas.
+    const productLine = (slug: string) => {
+      const found = PRODUCTS.find((item) => item.slug === slug);
+      return found
+        ? [
+            `${t('contact.form.productLine')}: ${found.name} (${t(
+              `products.ranges.${found.range}.title`,
+            )})`,
+          ]
+        : [];
+    };
 
     await sendContactRequest({
       subject: t('contact.form.mailSubject', { reason: reasonLabel, name: values.name.trim() }),
@@ -118,6 +133,7 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
                 .join(', ')}`,
             ]
           : []),
+        ...(reason === 'productInfo' ? productLine(product) : []),
         ...line('contact.form.name', values.name),
         ...line('contact.form.company', values.company),
         ...line('contact.form.email', values.email),
@@ -132,7 +148,8 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
     setValues(EMPTY_FORM);
     setErrors({});
     setReason(initialReason);
-    setCatalogues(initialCatalogues);
+    setCatalogues([]);
+    setProduct(initialProduct ?? '');
     setSent(false);
   };
 
@@ -220,6 +237,40 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
             {errors.catalogues && t(errors.catalogues)}
           </span>
         </fieldset>
+      )}
+
+      {reason === 'productInfo' && (
+        <label className={styles.field}>
+          <span className={styles.label}>{t('contact.form.product')}</span>
+          <select
+            name="product"
+            value={product}
+            onChange={(event) => {
+              setProduct(event.target.value);
+              setErrors((previous) => ({ ...previous, product: undefined }));
+            }}
+            className={[styles.input, styles.select, errors.product && styles.invalid]
+              .filter(Boolean)
+              .join(' ')}
+            aria-invalid={Boolean(errors.product)}
+            aria-describedby={errors.product ? 'contact-product-error' : undefined}
+          >
+            <option value="">{t('contact.form.productPlaceholder')}</option>
+            {/* Agrupados por gama, en el orden de la página Productos. */}
+            {PRODUCT_RANGES.map((range) => (
+              <optgroup key={range.key} label={t(`products.ranges.${range.key}.title`)}>
+                {PRODUCTS.filter((item) => item.range === range.key).map((item) => (
+                  <option key={item.slug} value={item.slug}>
+                    {item.name}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+          <span id="contact-product-error" className={styles.error}>
+            {errors.product && t(errors.product)}
+          </span>
+        </label>
       )}
 
       <div className={styles.fields}>

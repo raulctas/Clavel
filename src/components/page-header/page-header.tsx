@@ -7,8 +7,8 @@ import styles from './page-header.module.css';
 interface Props {
   /** Nombre de la página, para la ruta de navegación. */
   page: string;
-  /** Nivel intermedio de la ruta de navegación (p. ej. Noticias). */
-  parent?: BreadcrumbParent;
+  /** Nivel o niveles intermedios de la ruta de navegación (p. ej. Noticias). */
+  parent?: BreadcrumbParent | BreadcrumbParent[];
   /** Antetítulo sobre el H1 (p. ej. la categoría de una noticia). */
   eyebrow?: string;
   title: string;

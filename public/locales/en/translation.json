@@ -67,7 +67,7 @@
     "seeAllNews": "See all news",
     "cta": {
       "title": "Want to know our products?",
-      "text": "Discover our Clavel and Agrentis brands and their five fertiliser ranges."
+      "text": "Discover our five organic fertiliser ranges and the technical sheet for each product."
     }
   },
   "aboutUs": {
@@ -112,44 +112,210 @@
   "products": {
     "title": "Products",
     "intro": "Fertilisers, inputs, advice and technology for every crop.",
-    "brands": {
-      "clavel": {
-        "name": "Clavel",
-        "line": "Organic fertilisers",
-        "text": "Crop-specific solutions formulated with natural, biodegradable substances and backed by our quality-control laboratory. Suitable for organic farming."
-      },
-      "agrentis": {
-        "name": "Agrentis",
-        "line": "Sustainable fertilisers",
-        "text": "Nutrition and protection for more efficient farming that respects the environment, tailored to each crop and growth stage."
-      }
-    },
     "tags": {
       "certified": "Organic certificate UNE 142500:2017",
       "drone": "Drone compatible"
     },
-    "viewRanges": "See its ranges",
-    "rangesTitle": "Product ranges",
+    "rangeNumber": "Range {{number}}",
+    "productCount_one": "{{count}} product",
+    "productCount_other": "{{count}} products",
+    "viewRange": "View range",
+    "rangeProductsTitle": "Products in this range",
+    "viewSheet": "View technical sheet",
+    "otherRanges": "Other ranges",
+    "relatedTitle": "Other products in the {{range}} range",
+    "imageAlt": "{{name}}, {{format}} container",
+    "sheet": {
+      "title": "Technical sheet",
+      "range": "Range",
+      "function": "Function",
+      "state": "Form",
+      "composition": "Composition (w/w)",
+      "formats": "Formats"
+    },
+    "states": {
+      "liquid": "Liquid",
+      "solid": "Solid"
+    },
+    "request": {
+      "title": "Interested in {{name}}?",
+      "text": "Write to us and we will send you all the information about this product: doses, recommended crops and prices.",
+      "button": "Request information"
+    },
     "ranges": {
       "terra": {
         "title": "Terra",
-        "text": "They improve soil health by regenerating it and providing organic matter, nitrogen and essential nutrients for the crop."
+        "text": "They improve soil health by regenerating it and providing organic matter, nitrogen and essential nutrients for the crop.",
+        "intro": "The Terra range improves soil health: it regenerates the soil and conditions it for cropping. Its formulation increases organic content, provides the right doses of nitrogen for plants and optimises nutrient uptake."
       },
       "protection": {
         "title": "Protection",
-        "text": "They are absorbed quickly, correct deficiencies and strengthen the plant's defences against pathogens until the end of the cycle."
+        "text": "They are absorbed quickly, correct deficiencies and strengthen the plant's defences against pathogens until the end of the cycle.",
+        "intro": "These products are absorbed quickly, correct deficiencies and strengthen the plant's defences, protecting it against pathogens and ensuring a healthy life cycle."
       },
       "booster": {
         "title": "Booster",
-        "text": "They stimulate growth, balance hormonal activity and prepare the plant to cope with stress."
+        "text": "They stimulate growth, balance hormonal activity and prepare the plant to cope with stress.",
+        "intro": "They stimulate growth, balance hormonal activity and improve nutrition, stress tolerance and crop quality. They are recommended before adverse conditions arrive."
       },
       "nutrition": {
         "title": "Nutrition",
-        "text": "They optimise plant development throughout the cycle to boost flowering, fruit set and ripening."
+        "text": "They optimise plant development throughout the cycle to boost flowering, fruit set and ripening.",
+        "intro": "They ensure optimal plant development and support key stages such as flowering, fruit set and ripening, adapting to each crop according to the area and growing conditions."
       },
       "correctors": {
         "title": "Correctors",
-        "text": "They correct and prevent nutrient deficiencies with a precise balance of nutrients, as a preventive or curative treatment."
+        "text": "They correct and prevent nutrient deficiencies with a precise balance of nutrients, as a preventive or curative treatment.",
+        "intro": "They correct and prevent nutrient deficiencies with a precise balance of macro- and microelements. They are applied preventively or curatively, before visible symptoms appear."
+      }
+    },
+    "items": {
+      "clavel-green": {
+        "function": "Vegetative plant growth",
+        "description": [
+          "An essential product at the start of the crop to provide a substantial load of organic nitrogen. It promotes amino acid formation in the roots and improves fixation by the beneficial bacterium Azotobacter.",
+          "It also boosts plant growth at the start of the crop cycle."
+        ],
+        "composition": [
+          "Plant amino acids 20%"
+        ]
+      },
+      "clavel-soil": {
+        "function": "Soil conditioner and improver",
+        "description": [
+          "It plays a vital role in soil fertility and plant nutrition: crops grown in soils with adequate humic and fulvic acids give higher yields.",
+          "It provides the soil with plant-based organic substances and essential mineral elements, and increases its humic content and the water available in sandy soils."
+        ],
+        "composition": [
+          "Humic acid 10%",
+          "Fulvic acid 10%",
+          "K₂O 10%"
+        ]
+      },
+      "clavel-libero": {
+        "function": "Soil unblocker and root strengthener",
+        "description": [
+          "A special blend of calcium and magnesium that corrects their deficiencies faster thanks to specific promoters that rebuild the structure of the deficient parts.",
+          "It maintains stem strength and regulates nutrient uptake through cell membranes."
+        ],
+        "composition": [
+          "CaO 12%",
+          "MgO 1%"
+        ]
+      },
+      "clavel-shield": {
+        "function": "Copper corrector (bio-fungicidal effect)",
+        "description": [
+          "A specific product to correct copper deficiency in plants. It is complexed to reach the plant in the best way and act as a copper nutrient."
+        ],
+        "composition": [
+          "Cu 5%"
+        ]
+      },
+      "clavel-protect": {
+        "function": "Plant self-defence enhancer (bio-desiccant and drying effect)",
+        "description": [
+          "It reinforces the plant's self-defence mechanisms thanks to its potassium and silicon content, which strengthen tissues and cell walls.",
+          "Its bio-desiccant and drying effect helps keep the plant surface healthy in humid conditions that favour pathogens."
+        ],
+        "composition": [
+          "K₂O 10%",
+          "Si 23%"
+        ]
+      },
+      "clavel-curar": {
+        "function": "Deficiency corrector (bio-pesticide effect)",
+        "description": [
+          "It has a preventive and curative effect to correct zinc deficiency and helps generate new leaves.",
+          "It provides reducing sugars that make foliar assimilation and absorption through the green organs easier, and gives extra energy to physiological processes, especially to restore the green pigments of the leaf."
+        ],
+        "composition": [
+          "Zn 7%"
+        ]
+      },
+      "clavel-defender": {
+        "function": "Anti-stress and development biostimulant",
+        "description": [
+          "An important source of magnesium and iron that supports the plant's vegetative growth at every stage.",
+          "The chlorophyll molecule contains a magnesium ion, and plants need magnesium and iron to produce the chlorophyll they use for photosynthesis."
+        ],
+        "composition": [
+          "MgO 5%",
+          "Fe 0.5%"
+        ]
+      },
+      "clavel-save": {
+        "function": "Anti-stress and vascular flow enhancer",
+        "description": [
+          "An important source of amino acids and seaweed extract that supports the plant's vegetative growth at every stage."
+        ],
+        "composition": [
+          "Plant amino acids 10%",
+          "Seaweed (Ascophyllum nodosum) 10%"
+        ]
+      },
+      "clavel-flor": {
+        "function": "Pre-flowering enhancer",
+        "description": [
+          "It makes flowers more fertile and better formed: it improves pollen fertility and pollen tube growth, and extends flowering.",
+          "It increases fruit quantity and quality and acts as a carrier of nitrogen and phosphorus during pre-flowering and in the activation of growing tissues."
+        ],
+        "composition": [
+          "P₂O₅ 20%",
+          "Mo 0.5%"
+        ]
+      },
+      "clavel-amarre": {
+        "function": "Fruit set enhancer",
+        "description": [
+          "A specific fruit set inducer and promoter, formulated with boron and molybdenum, the essential micronutrients in this process.",
+          "It acts on the plant's reproductive organs: it promotes fertilisation, reduces flower drop and accelerates cell division."
+        ],
+        "composition": [
+          "B 3%",
+          "Mo 2%"
+        ]
+      },
+      "clavel-engord": {
+        "function": "Fruit sizing enhancer",
+        "description": [
+          "It increases potassium uptake through cell membranes, restores hormonal balance and promotes exceptional development.",
+          "The plant synthesises new proteins and enzymes that accelerate growth and cell division and carry nutrients to the fruit, which gains in size, colour, texture and flavour."
+        ],
+        "composition": [
+          "K₂O 20%"
+        ]
+      },
+      "clavel-ultimate": {
+        "function": "Ripening enhancer (Brix, colour and firmness)",
+        "description": [
+          "Specific for fruit ripening: it raises Brix levels and improves colour and firmness.",
+          "It provides fast-absorbing potassium and plant extracts that support the final growth stage and the onset of ripening, as well as colour promoters that help convert starch into sugar."
+        ],
+        "composition": [
+          "K₂O 15%"
+        ]
+      },
+      "clavel-forte": {
+        "function": "Calcium and boron corrector and plant structure improver",
+        "description": [
+          "A special blend of calcium and boron that corrects their deficiencies faster thanks to specific promoters that rebuild the structure of the deficient parts.",
+          "It maintains stem strength and regulates nutrient uptake through cell membranes."
+        ],
+        "composition": [
+          "CaO 12%",
+          "B 0.5%"
+        ]
+      },
+      "clavel-iron": {
+        "function": "Iron deficiency corrector",
+        "description": [
+          "Solid iron chelated with 6% EDDHA, with 5.4% ortho-ortho isomer, giving it high efficacy, fast action and persistence.",
+          "It is highly effective against iron chlorosis caused by poor iron uptake (alkaline pH of calcareous soils, interaction with other elements or excess water) and helps the plant recover its photosynthetic and productive potential."
+        ],
+        "composition": [
+          "Fe 6% EDDHA (5.4% ortho-ortho)"
+        ]
       }
     }
   },
@@ -536,6 +702,10 @@
       "catalogues": "Which catalogue do you want?",
       "cataloguesHint": "(you can choose more than one)",
       "cataloguesLine": "Catalogues",
+      "product": "Which product are you interested in?",
+      "productPlaceholder": "Choose a product",
+      "errorProduct": "Please choose the product you would like information about.",
+      "productLine": "Product",
       "name": "Full name",
       "company": "Company or farm",
       "email": "Email",

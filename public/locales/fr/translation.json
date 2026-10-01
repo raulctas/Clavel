@@ -67,7 +67,7 @@
     "seeAllNews": "Voir toutes les actualités",
     "cta": {
       "title": "Vous souhaitez découvrir nos produits ?",
-      "text": "Découvrez nos marques Clavel et Agrentis et leurs cinq gammes d'engrais."
+      "text": "Découvrez nos cinq gammes d'engrais biologiques et la fiche technique de chaque produit."
     }
   },
   "aboutUs": {
@@ -112,44 +112,210 @@
   "products": {
     "title": "Produits",
     "intro": "Engrais, intrants, conseil et technologie pour chaque culture.",
-    "brands": {
-      "clavel": {
-        "name": "Clavel",
-        "line": "Engrais biologiques",
-        "text": "Des solutions spécifiques à chaque culture, formulées à partir de substances naturelles et biodégradables et validées par notre laboratoire de contrôle qualité. Utilisables en agriculture biologique."
-      },
-      "agrentis": {
-        "name": "Agrentis",
-        "line": "Engrais durables",
-        "text": "Nutrition et protection pour une agriculture plus efficace et plus respectueuse de l'environnement, adaptées à chaque culture et à chaque stade végétatif."
-      }
-    },
     "tags": {
       "certified": "Certificat biologique UNE 142500:2017",
       "drone": "Compatible drone"
     },
-    "viewRanges": "Voir ses gammes",
-    "rangesTitle": "Gammes de produits",
+    "rangeNumber": "Gamme {{number}}",
+    "productCount_one": "{{count}} produit",
+    "productCount_other": "{{count}} produits",
+    "viewRange": "Voir la gamme",
+    "rangeProductsTitle": "Produits de la gamme",
+    "viewSheet": "Voir la fiche technique",
+    "otherRanges": "Autres gammes",
+    "relatedTitle": "Autres produits de la gamme {{range}}",
+    "imageAlt": "{{name}}, emballage de {{format}}",
+    "sheet": {
+      "title": "Fiche technique",
+      "range": "Gamme",
+      "function": "Fonction",
+      "state": "État",
+      "composition": "Composition (p/p)",
+      "formats": "Formats"
+    },
+    "states": {
+      "liquid": "Liquide",
+      "solid": "Solide"
+    },
+    "request": {
+      "title": "{{name}} vous intéresse ?",
+      "text": "Écrivez-nous et nous vous enverrons toutes les informations sur ce produit : doses, cultures recommandées et prix.",
+      "button": "Demander des informations"
+    },
     "ranges": {
       "terra": {
         "title": "Terra",
-        "text": "Ils améliorent la santé du sol en le régénérant et en apportant de la matière organique, de l'azote et des nutriments essentiels à la culture."
+        "text": "Ils améliorent la santé du sol en le régénérant et en apportant de la matière organique, de l'azote et des nutriments essentiels à la culture.",
+        "intro": "La gamme Terra améliore la santé du sol : elle le régénère et le prépare à la culture. Sa formulation enrichit le sol en matière organique, apporte les doses d'azote adaptées aux plantes et optimise l'absorption des nutriments."
       },
       "protection": {
         "title": "Protection",
-        "text": "Rapidement absorbés, ils corrigent les carences et renforcent les défenses de la plante contre les pathogènes jusqu'à la fin du cycle."
+        "text": "Rapidement absorbés, ils corrigent les carences et renforcent les défenses de la plante contre les pathogènes jusqu'à la fin du cycle.",
+        "intro": "Rapidement absorbés, ces produits corrigent les carences et renforcent les défenses de la plante, en la protégeant contre les pathogènes et en assurant un cycle de vie sain."
       },
       "booster": {
         "title": "Stimulant",
-        "text": "Ils stimulent la croissance, équilibrent l'activité hormonale et préparent la plante à faire face au stress."
+        "text": "Ils stimulent la croissance, équilibrent l'activité hormonale et préparent la plante à faire face au stress.",
+        "intro": "Ils stimulent la croissance, équilibrent l'activité hormonale et améliorent la nutrition, la tolérance au stress et la qualité de la culture. Ils sont recommandés avant l'arrivée de conditions défavorables."
       },
       "nutrition": {
         "title": "Nutrition",
-        "text": "Ils optimisent le développement de la plante tout au long de son cycle pour favoriser la floraison, la nouaison et la maturation."
+        "text": "Ils optimisent le développement de la plante tout au long de son cycle pour favoriser la floraison, la nouaison et la maturation.",
+        "intro": "Ils assurent le développement optimal de la plante et favorisent des étapes clés comme la floraison, la nouaison et la maturation, en s'adaptant à chaque culture selon la zone et les conditions de semis."
       },
       "correctors": {
         "title": "Correcteurs",
-        "text": "Ils corrigent et préviennent les carences nutritionnelles grâce à un équilibre précis de nutriments, à titre préventif ou curatif."
+        "text": "Ils corrigent et préviennent les carences nutritionnelles grâce à un équilibre précis de nutriments, à titre préventif ou curatif.",
+        "intro": "Ils corrigent et préviennent les carences nutritionnelles grâce à un équilibre précis de macro- et oligo-éléments. Ils s'appliquent à titre préventif ou curatif, avant l'apparition de symptômes visibles."
+      }
+    },
+    "items": {
+      "clavel-green": {
+        "function": "Croissance végétative de la plante",
+        "description": [
+          "Produit essentiel en début de culture pour apporter une quantité importante d'azote organique. Il favorise la formation d'acides aminés dans les racines et améliore la fixation de la bactérie bénéfique Azotobacter.",
+          "Il stimule en outre la croissance végétale en début de cycle de culture."
+        ],
+        "composition": [
+          "Acides aminés végétaux 20 %"
+        ]
+      },
+      "clavel-soil": {
+        "function": "Conditionneur et améliorant du sol",
+        "description": [
+          "Il joue un rôle vital dans la fertilité du sol et la nutrition des plantes : les cultures sur des sols suffisamment riches en acides humiques et fulviques donnent de meilleurs rendements.",
+          "Il apporte au sol des substances organiques végétales et des éléments minéraux essentiels, et augmente sa richesse en humus ainsi que l'eau disponible dans les sols sableux."
+        ],
+        "composition": [
+          "Acide humique 10 %",
+          "Acide fulvique 10 %",
+          "K₂O 10 %"
+        ]
+      },
+      "clavel-libero": {
+        "function": "Débloquant du sol et fortifiant racinaire",
+        "description": [
+          "Mélange spécial de calcium et de magnésium qui corrige plus rapidement leurs carences grâce à des promoteurs spécifiques qui reconstruisent la structure des parties carencées.",
+          "Il maintient la solidité des tiges et régule l'absorption des nutriments à travers les membranes cellulaires."
+        ],
+        "composition": [
+          "CaO 12 %",
+          "MgO 1 %"
+        ]
+      },
+      "clavel-shield": {
+        "function": "Correcteur de cuivre (effet biofongicide)",
+        "description": [
+          "Produit spécifique pour corriger la carence en cuivre des plantes. Sa forme complexée lui permet d'atteindre la plante de manière optimale et d'agir comme nutriment cuprique."
+        ],
+        "composition": [
+          "Cu 5 %"
+        ]
+      },
+      "clavel-protect": {
+        "function": "Stimulateur de l'autodéfense de la plante (effet biodessiccant et asséchant)",
+        "description": [
+          "Il renforce les mécanismes d'autodéfense de la plante grâce à son apport en potassium et en silicium, qui consolident les tissus et les parois cellulaires.",
+          "Son effet biodessiccant et asséchant aide à maintenir saine la surface de la plante dans des conditions d'humidité favorables aux pathogènes."
+        ],
+        "composition": [
+          "K₂O 10 %",
+          "Si 23 %"
+        ]
+      },
+      "clavel-curar": {
+        "function": "Correcteur de carences (effet biopesticide)",
+        "description": [
+          "Il a un effet préventif et curatif pour corriger la carence en zinc et favorise l'émission de nouvelles feuilles.",
+          "Il apporte des sucres réducteurs qui facilitent l'assimilation foliaire et l'absorption par les organes verts, et fournit un surcroît d'énergie aux processus physiologiques, notamment pour restaurer les pigments verts de la feuille."
+        ],
+        "composition": [
+          "Zn 7 %"
+        ]
+      },
+      "clavel-defender": {
+        "function": "Biostimulant anti-stress et de développement",
+        "description": [
+          "Source importante de magnésium et de fer qui accompagne la plante dans sa croissance végétative, à tous ses stades.",
+          "La molécule de chlorophylle contient un ion magnésium, et les plantes ont besoin de magnésium et de fer pour produire la chlorophylle qui leur permet de réaliser la photosynthèse."
+        ],
+        "composition": [
+          "MgO 5 %",
+          "Fe 0,5 %"
+        ]
+      },
+      "clavel-save": {
+        "function": "Stimulateur anti-stress et de la circulation vasculaire",
+        "description": [
+          "Source importante d'acides aminés et d'extrait d'algues qui accompagne la plante dans sa croissance végétative, à tous ses stades."
+        ],
+        "composition": [
+          "Acides aminés végétaux 10 %",
+          "Algues (Ascophyllum nodosum) 10 %"
+        ]
+      },
+      "clavel-flor": {
+        "function": "Stimulateur de la préfloraison",
+        "description": [
+          "Il rend les fleurs plus fertiles et mieux formées : il améliore la fertilité du pollen et la croissance du tube pollinique, et prolonge la floraison.",
+          "Il augmente la quantité et la qualité des fruits et agit comme vecteur d'azote et de phosphore lors de la préfloraison et de l'activation des tissus en croissance."
+        ],
+        "composition": [
+          "P₂O₅ 20 %",
+          "Mo 0,5 %"
+        ]
+      },
+      "clavel-amarre": {
+        "function": "Stimulateur de la nouaison",
+        "description": [
+          "Inducteur et promoteur spécifique de la nouaison, formulé avec du bore et du molybdène, les oligo-éléments essentiels à ce processus.",
+          "Il agit sur les organes reproducteurs de la plante : il favorise la fécondation, réduit l'avortement des fleurs et accélère la division cellulaire."
+        ],
+        "composition": [
+          "B 3 %",
+          "Mo 2 %"
+        ]
+      },
+      "clavel-engord": {
+        "function": "Stimulateur du grossissement du fruit",
+        "description": [
+          "Il augmente l'absorption du potassium à travers les membranes cellulaires, rétablit l'équilibre hormonal et favorise un développement exceptionnel.",
+          "La plante synthétise de nouvelles protéines et enzymes qui accélèrent la croissance et la division cellulaire et acheminent les nutriments vers le fruit, qui gagne en calibre, en couleur, en texture et en saveur."
+        ],
+        "composition": [
+          "K₂O 20 %"
+        ]
+      },
+      "clavel-ultimate": {
+        "function": "Stimulateur de la maturation (Brix, couleur et fermeté)",
+        "description": [
+          "Spécifique à la maturation du fruit : il augmente le degré Brix et améliore la couleur et la fermeté.",
+          "Il apporte du potassium à absorption rapide et des extraits végétaux qui favorisent la phase finale de croissance et le début de la maturation, ainsi que des promoteurs de coloration qui aident à transformer l'amidon en sucre."
+        ],
+        "composition": [
+          "K₂O 15 %"
+        ]
+      },
+      "clavel-forte": {
+        "function": "Correcteur de calcium et de bore et améliorant de la structure de la plante",
+        "description": [
+          "Mélange spécial de calcium et de bore qui corrige plus rapidement leurs carences grâce à des promoteurs spécifiques qui reconstruisent la structure des parties carencées.",
+          "Il maintient la solidité des tiges et régule l'absorption des nutriments à travers les membranes cellulaires."
+        ],
+        "composition": [
+          "CaO 12 %",
+          "B 0,5 %"
+        ]
+      },
+      "clavel-iron": {
+        "function": "Correcteur de carences en fer",
+        "description": [
+          "Fer solide chélaté par l'EDDHA à 6 %, dont 5,4 % d'isomère ortho-ortho, ce qui lui confère une grande efficacité, une action rapide et une bonne persistance.",
+          "Il est très efficace contre la chlorose ferrique due à un défaut d'absorption du fer (pH basique des sols calcaires, interaction avec d'autres éléments ou excès d'eau) et aide la plante à retrouver son potentiel photosynthétique et productif."
+        ],
+        "composition": [
+          "Fe 6 % EDDHA (5,4 % ortho-ortho)"
+        ]
       }
     }
   },
@@ -536,6 +702,10 @@
       "catalogues": "Quel catalogue souhaitez-vous ?",
       "cataloguesHint": "(choix multiple possible)",
       "cataloguesLine": "Catalogues",
+      "product": "Quel produit vous intéresse ?",
+      "productPlaceholder": "Choisissez un produit",
+      "errorProduct": "Choisissez le produit sur lequel vous souhaitez des informations.",
+      "productLine": "Produit",
       "name": "Nom et prénom",
       "company": "Entreprise ou exploitation",
       "email": "E-mail",

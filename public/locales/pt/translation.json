@@ -67,7 +67,7 @@
     "seeAllNews": "Ver todas as notícias",
     "cta": {
       "title": "Quer conhecer os nossos produtos?",
-      "text": "Conheça as nossas marcas Clavel e Agrentis e as suas cinco gamas de fertilizantes."
+      "text": "Conheça as nossas cinco gamas de fertilizantes ecológicos e a ficha técnica de cada produto."
     }
   },
   "aboutUs": {
@@ -112,44 +112,210 @@
   "products": {
     "title": "Produtos",
     "intro": "Fertilizantes, fatores de produção, aconselhamento e tecnologia para cada cultura.",
-    "brands": {
-      "clavel": {
-        "name": "Clavel",
-        "line": "Fertilizantes ecológicos",
-        "text": "Soluções específicas para cada cultura, formuladas com substâncias naturais e biodegradáveis e validadas pelo nosso laboratório de controlo de qualidade. Aptas para agricultura biológica."
-      },
-      "agrentis": {
-        "name": "Agrentis",
-        "line": "Fertilizantes sustentáveis",
-        "text": "Nutrição e proteção para uma agricultura mais eficiente e respeitadora do ambiente, adaptadas a cada cultura e a cada fase vegetativa."
-      }
-    },
     "tags": {
       "certified": "Certificado ecológico UNE 142500:2017",
       "drone": "Compatível com drone"
     },
-    "viewRanges": "Ver as suas gamas",
-    "rangesTitle": "Gamas de produtos",
+    "rangeNumber": "Gama {{number}}",
+    "productCount_one": "{{count}} produto",
+    "productCount_other": "{{count}} produtos",
+    "viewRange": "Ver a gama",
+    "rangeProductsTitle": "Produtos da gama",
+    "viewSheet": "Ver ficha técnica",
+    "otherRanges": "Outras gamas",
+    "relatedTitle": "Outros produtos da gama {{range}}",
+    "imageAlt": "{{name}}, embalagem de {{format}}",
+    "sheet": {
+      "title": "Ficha técnica",
+      "range": "Gama",
+      "function": "Função",
+      "state": "Estado",
+      "composition": "Composição (p/p)",
+      "formats": "Formatos"
+    },
+    "states": {
+      "liquid": "Líquido",
+      "solid": "Sólido"
+    },
+    "request": {
+      "title": "Tem interesse em {{name}}?",
+      "text": "Escreva-nos e enviamos-lhe toda a informação sobre este produto: doses, culturas recomendadas e preços.",
+      "button": "Pedir informação"
+    },
     "ranges": {
       "terra": {
         "title": "Terra",
-        "text": "Melhoram a saúde do solo, regenerando-o e fornecendo matéria orgânica, azoto e nutrientes essenciais para a cultura."
+        "text": "Melhoram a saúde do solo, regenerando-o e fornecendo matéria orgânica, azoto e nutrientes essenciais para a cultura.",
+        "intro": "A gama Terra melhora a saúde do solo: regenera-o e condiciona-o para a cultura. A sua formulação aumenta a riqueza orgânica, fornece as doses de azoto adequadas às plantas e otimiza a absorção de nutrientes."
       },
       "protection": {
         "title": "Proteção",
-        "text": "São absorvidos rapidamente, corrigem carências e reforçam as defesas da planta contra agentes patogénicos até ao final do ciclo."
+        "text": "São absorvidos rapidamente, corrigem carências e reforçam as defesas da planta contra agentes patogénicos até ao final do ciclo.",
+        "intro": "Estes produtos são absorvidos rapidamente, corrigem carências e reforçam as defesas da planta, protegendo-a contra agentes patogénicos e assegurando um ciclo de vida saudável."
       },
       "booster": {
         "title": "Potenciador",
-        "text": "Estimulam o crescimento, equilibram a atividade hormonal e preparam a planta para enfrentar o stress."
+        "text": "Estimulam o crescimento, equilibram a atividade hormonal e preparam a planta para enfrentar o stress.",
+        "intro": "Estimulam o crescimento, equilibram a atividade hormonal e melhoram a nutrição, a tolerância ao stress e a qualidade da cultura. Recomenda-se a sua aplicação antes da chegada de condições adversas."
       },
       "nutrition": {
         "title": "Nutrição",
-        "text": "Otimizam o desenvolvimento da planta ao longo de todo o ciclo, para impulsionar a floração, o vingamento e a maturação."
+        "text": "Otimizam o desenvolvimento da planta ao longo de todo o ciclo, para impulsionar a floração, o vingamento e a maturação.",
+        "intro": "Asseguram o desenvolvimento ótimo da planta e favorecem fases-chave como a floração, o vingamento e a maturação, adaptando-se a cada cultura consoante a zona e as condições de sementeira."
       },
       "correctors": {
         "title": "Corretores",
-        "text": "Corrigem e previnem carências nutricionais com um equilíbrio preciso de nutrientes, de forma preventiva ou curativa."
+        "text": "Corrigem e previnem carências nutricionais com um equilíbrio preciso de nutrientes, de forma preventiva ou curativa.",
+        "intro": "Corrigem e previnem carências nutricionais com um equilíbrio preciso de macro e microelementos. Aplicam-se de forma preventiva ou curativa, antes do aparecimento de sintomas visíveis."
+      }
+    },
+    "items": {
+      "clavel-green": {
+        "function": "Crescimento vegetativo da planta",
+        "description": [
+          "Produto fundamental no início da cultura para fornecer uma carga importante de azoto orgânico. Favorece a formação de aminoácidos nas raízes e melhora a fixação da bactéria benéfica Azotobacter.",
+          "Além disso, potencia o crescimento vegetal no início do ciclo da cultura."
+        ],
+        "composition": [
+          "Aminoácidos vegetais 20 %"
+        ]
+      },
+      "clavel-soil": {
+        "function": "Condicionador e melhorador do solo",
+        "description": [
+          "Desempenha um papel vital na fertilidade do solo e na nutrição das plantas: as culturas em solos com ácidos húmicos e fúlvicos adequados dão maiores rendimentos.",
+          "Fornece ao solo substâncias orgânicas vegetais e elementos minerais essenciais, e aumenta a sua riqueza húmica e a água disponível em solos arenosos."
+        ],
+        "composition": [
+          "Ácido húmico 10 %",
+          "Ácido fúlvico 10 %",
+          "K₂O 10 %"
+        ]
+      },
+      "clavel-libero": {
+        "function": "Desbloqueador do solo e fortalecedor da raiz",
+        "description": [
+          "Mistura especial de cálcio e magnésio que corrige as suas carências mais rapidamente graças a promotores específicos que reconstroem a estrutura das partes deficientes.",
+          "Mantém a força dos caules e regula a absorção de nutrientes através das membranas celulares."
+        ],
+        "composition": [
+          "CaO 12 %",
+          "MgO 1 %"
+        ]
+      },
+      "clavel-shield": {
+        "function": "Corretor de cobre (efeito biofungicida)",
+        "description": [
+          "Produto específico para corrigir a carência de cobre nas plantas. Está complexado para chegar à planta da melhor forma e atuar como nutriente de cobre."
+        ],
+        "composition": [
+          "Cu 5 %"
+        ]
+      },
+      "clavel-protect": {
+        "function": "Potenciador da autodefesa da planta (efeito biodessecante e secante)",
+        "description": [
+          "Reforça os mecanismos de autodefesa da planta graças ao seu aporte de potássio e silício, que fortalecem os tecidos e as paredes celulares.",
+          "O seu efeito biodessecante e secante ajuda a manter saudável a superfície da planta em condições de humidade que favorecem os agentes patogénicos."
+        ],
+        "composition": [
+          "K₂O 10 %",
+          "Si 23 %"
+        ]
+      },
+      "clavel-curar": {
+        "function": "Corretor de carências (efeito biopesticida)",
+        "description": [
+          "Tem efeito preventivo e curativo para corrigir a carência de zinco e ajuda a gerar folhas novas.",
+          "Fornece açúcares reduzidos que facilitam a assimilação foliar e a absorção através dos órgãos verdes, e dá energia extra aos processos fisiológicos, sobretudo para recuperar os pigmentos verdes da folha."
+        ],
+        "composition": [
+          "Zn 7 %"
+        ]
+      },
+      "clavel-defender": {
+        "function": "Bioestimulante antistress e de desenvolvimento",
+        "description": [
+          "Fonte importante de magnésio e ferro que ajuda a planta no seu crescimento vegetativo em todas as fases.",
+          "A molécula de clorofila contém um ião de magnésio, e as plantas precisam de magnésio e ferro para produzir a clorofila com que fazem a fotossíntese."
+        ],
+        "composition": [
+          "MgO 5 %",
+          "Fe 0,5 %"
+        ]
+      },
+      "clavel-save": {
+        "function": "Potenciador antistress e do movimento vascular",
+        "description": [
+          "Fonte importante de aminoácidos e extrato de algas que ajuda a planta no seu crescimento vegetativo em todas as fases."
+        ],
+        "composition": [
+          "Aminoácidos vegetais 10 %",
+          "Algas (Ascophyllum nodosum) 10 %"
+        ]
+      },
+      "clavel-flor": {
+        "function": "Potenciador da pré-floração",
+        "description": [
+          "Torna as flores mais férteis e mais bem formadas: melhora a fertilidade do pólen e o crescimento do tubo polínico, e prolonga a floração.",
+          "Aumenta a quantidade e a qualidade dos frutos e atua como transportador de azoto e fósforo na pré-floração e na ativação dos tecidos em crescimento."
+        ],
+        "composition": [
+          "P₂O₅ 20 %",
+          "Mo 0,5 %"
+        ]
+      },
+      "clavel-amarre": {
+        "function": "Potenciador do vingamento",
+        "description": [
+          "Indutor e promotor específico do vingamento, formulado com boro e molibdénio, os micronutrientes essenciais neste processo.",
+          "Atua sobre os órgãos reprodutores da planta: favorece a fecundação, reduz o aborto floral e acelera a divisão celular."
+        ],
+        "composition": [
+          "B 3 %",
+          "Mo 2 %"
+        ]
+      },
+      "clavel-engord": {
+        "function": "Potenciador do engrossamento do fruto",
+        "description": [
+          "Aumenta a absorção de potássio através das membranas celulares, restabelece o equilíbrio hormonal e favorece um desenvolvimento excecional.",
+          "A planta sintetiza novas proteínas e enzimas que aceleram o crescimento e a divisão celular e levam os nutrientes até ao fruto, que ganha em calibre, cor, textura e sabor."
+        ],
+        "composition": [
+          "K₂O 20 %"
+        ]
+      },
+      "clavel-ultimate": {
+        "function": "Potenciador da maturação (Brix, cor e firmeza)",
+        "description": [
+          "Específico para a maturação do fruto: aumenta os graus Brix e melhora a cor e a firmeza.",
+          "Fornece potássio de rápida absorção e extratos vegetais que favorecem a fase final do crescimento e o início da maturação, além de promotores de cor que ajudam a transformar o amido em açúcar."
+        ],
+        "composition": [
+          "K₂O 15 %"
+        ]
+      },
+      "clavel-forte": {
+        "function": "Corretor de cálcio e boro e melhorador da estrutura da planta",
+        "description": [
+          "Mistura especial de cálcio e boro que corrige as suas carências mais rapidamente graças a promotores específicos que reconstroem a estrutura das partes deficientes.",
+          "Mantém a força dos caules e regula a absorção de nutrientes através das membranas celulares."
+        ],
+        "composition": [
+          "CaO 12 %",
+          "B 0,5 %"
+        ]
+      },
+      "clavel-iron": {
+        "function": "Corretor de carências de ferro",
+        "description": [
+          "Ferro sólido quelatado com EDDHA a 6 %, com 5,4 % de isómero orto-orto, o que lhe confere grande eficácia, rapidez de ação e persistência.",
+          "É muito eficaz contra a clorose férrica causada pela falta de absorção de ferro (pH básico de solos calcários, interação com outros elementos ou excesso de água) e ajuda a planta a recuperar o seu potencial fotossintético e produtivo."
+        ],
+        "composition": [
+          "Fe 6 % EDDHA (5,4 % orto-orto)"
+        ]
       }
     }
   },
@@ -536,6 +702,10 @@
       "catalogues": "Que catálogo pretende?",
       "cataloguesHint": "(pode escolher vários)",
       "cataloguesLine": "Catálogos",
+      "product": "Que produto lhe interessa?",
+      "productPlaceholder": "Escolha um produto",
+      "errorProduct": "Escolha o produto sobre o qual pretende informação.",
+      "productLine": "Produto",
       "name": "Nome completo",
       "company": "Empresa ou exploração",
       "email": "E-mail",

@@ -1,0 +1,245 @@
+.cream {
+  background-color: var(--color-cream);
+}
+
+/* Galería a la izquierda (fija al hacer scroll en escritorio) y ficha a la derecha. */
+.layout {
+  padding-block: 64px 80px;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  align-items: start;
+  gap: 56px;
+}
+
+/* ---------- Galería ---------- */
+
+.gallery {
+  position: sticky;
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stage {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-image);
+  background: radial-gradient(
+    circle at 50% 58%,
+    var(--color-white) 0%,
+    var(--color-sprout-soft) 72%
+  );
+}
+
+.stageImage {
+  position: absolute;
+  inset: 8%;
+  width: 84%;
+  height: 84%;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 30px rgba(31, 42, 31, 0.14));
+  animation: stage-in 260ms ease;
+}
+
+@keyframes stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stageImage {
+    animation: none;
+  }
+}
+
+.thumbs {
+  display: flex;
+  gap: 12px;
+}
+
+.thumb {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--color-border-card);
+  border-radius: 16px;
+  background-color: var(--color-white);
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.thumb:hover,
+.thumbActive {
+  border-color: var(--color-green);
+}
+
+.thumb:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.thumbImage {
+  width: 100%;
+  height: 72px;
+  object-fit: contain;
+}
+
+.thumbLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-green);
+}
+
+/* ---------- Ficha ---------- */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--color-ink);
+}
+
+.sheet {
+  border: 1px solid var(--color-border-card);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.sheetTitle {
+  padding: 18px 24px;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.rows {
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) minmax(0, 2.4fr);
+  gap: 16px;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.row + .row {
+  border-top: 1px solid var(--color-border-card);
+}
+
+.row dt {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.row dd {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.element {
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-sprout);
+  color: var(--color-green);
+  font-weight: 700;
+}
+
+/* Caja de contacto con el producto. */
+.request {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px 18px;
+  padding: 26px;
+  border-radius: var(--radius-card);
+  background-color: var(--color-cream);
+}
+
+.requestIcon {
+  color: var(--color-green);
+}
+
+.requestText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+}
+
+.requestTitle {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.requestButton {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+/* ---------- Otros productos de la gama ---------- */
+
+.related {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.relatedTitle {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding-block: 40px 64px;
+  }
+
+  .gallery {
+    position: static;
+  }
+
+  .stage {
+    aspect-ratio: 1 / 1;
+  }
+
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+}

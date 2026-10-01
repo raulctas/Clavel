@@ -67,7 +67,7 @@
     "seeAllNews": "Vedi tutte le notizie",
     "cta": {
       "title": "Vuoi conoscere i nostri prodotti?",
-      "text": "Scopri i nostri marchi Clavel e Agrentis e le loro cinque linee di fertilizzanti."
+      "text": "Scopri le nostre cinque linee di fertilizzanti biologici e la scheda tecnica di ogni prodotto."
     }
   },
   "aboutUs": {
@@ -112,44 +112,210 @@
   "products": {
     "title": "Prodotti",
     "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura.",
-    "brands": {
-      "clavel": {
-        "name": "Clavel",
-        "line": "Fertilizzanti biologici",
-        "text": "Soluzioni specifiche per ogni coltura, formulate con sostanze naturali e biodegradabili e convalidate dal nostro laboratorio di controllo qualità. Consentiti in agricoltura biologica."
-      },
-      "agrentis": {
-        "name": "Agrentis",
-        "line": "Fertilizzanti sostenibili",
-        "text": "Nutrizione e protezione per un'agricoltura più efficiente e rispettosa dell'ambiente, su misura per ogni coltura e ogni fase vegetativa."
-      }
-    },
     "tags": {
       "certified": "Certificato biologico UNE 142500:2017",
       "drone": "Compatibile con drone"
     },
-    "viewRanges": "Vedi le sue linee",
-    "rangesTitle": "Gamme di prodotto",
+    "rangeNumber": "Linea {{number}}",
+    "productCount_one": "{{count}} prodotto",
+    "productCount_other": "{{count}} prodotti",
+    "viewRange": "Vedi la linea",
+    "rangeProductsTitle": "Prodotti della linea",
+    "viewSheet": "Vedi scheda tecnica",
+    "otherRanges": "Altre linee",
+    "relatedTitle": "Altri prodotti della linea {{range}}",
+    "imageAlt": "{{name}}, confezione da {{format}}",
+    "sheet": {
+      "title": "Scheda tecnica",
+      "range": "Linea",
+      "function": "Funzione",
+      "state": "Stato",
+      "composition": "Composizione (p/p)",
+      "formats": "Formati"
+    },
+    "states": {
+      "liquid": "Liquido",
+      "solid": "Solido"
+    },
+    "request": {
+      "title": "Ti interessa {{name}}?",
+      "text": "Scrivici e ti invieremo tutte le informazioni su questo prodotto: dosi, colture consigliate e prezzi.",
+      "button": "Richiedi informazioni"
+    },
     "ranges": {
       "terra": {
         "title": "Terra",
-        "text": "Migliorano la salute del suolo rigenerandolo e apportando sostanza organica, azoto e nutrienti essenziali per la coltura."
+        "text": "Migliorano la salute del suolo rigenerandolo e apportando sostanza organica, azoto e nutrienti essenziali per la coltura.",
+        "intro": "La linea Terra migliora la salute del suolo: lo rigenera e lo prepara per la coltura. La sua formulazione aumenta la ricchezza organica, apporta le giuste dosi di azoto per le piante e ottimizza l'assorbimento dei nutrienti."
       },
       "protection": {
         "title": "Protezione",
-        "text": "Vengono assorbiti rapidamente, correggono le carenze e rafforzano le difese della pianta contro i patogeni fino alla fine del ciclo."
+        "text": "Vengono assorbiti rapidamente, correggono le carenze e rafforzano le difese della pianta contro i patogeni fino alla fine del ciclo.",
+        "intro": "Questi prodotti vengono assorbiti rapidamente, correggono le carenze e rafforzano le difese della pianta, proteggendola dai patogeni e assicurando un ciclo di vita sano."
       },
       "booster": {
         "title": "Potenziatori",
-        "text": "Stimolano la crescita, equilibrano l'attività ormonale e preparano la pianta ad affrontare lo stress."
+        "text": "Stimolano la crescita, equilibrano l'attività ormonale e preparano la pianta ad affrontare lo stress.",
+        "intro": "Stimolano la crescita, equilibrano l'attività ormonale e migliorano la nutrizione, la tolleranza allo stress e la qualità della coltura. Si consigliano prima dell'arrivo di condizioni avverse."
       },
       "nutrition": {
         "title": "Nutrizione",
-        "text": "Ottimizzano lo sviluppo della pianta durante tutto il ciclo per favorire fioritura, allegagione e maturazione."
+        "text": "Ottimizzano lo sviluppo della pianta durante tutto il ciclo per favorire fioritura, allegagione e maturazione.",
+        "intro": "Assicurano lo sviluppo ottimale della pianta e favoriscono fasi chiave come fioritura, allegagione e maturazione, adattandosi a ogni coltura in base alla zona e alle condizioni di semina."
       },
       "correctors": {
         "title": "Correttivi",
-        "text": "Correggono e prevengono le carenze nutrizionali con un equilibrio preciso di nutrienti, in via preventiva o curativa."
+        "text": "Correggono e prevengono le carenze nutrizionali con un equilibrio preciso di nutrienti, in via preventiva o curativa.",
+        "intro": "Correggono e prevengono le carenze nutrizionali con un equilibrio preciso di macro e microelementi. Si applicano in via preventiva o curativa, prima che compaiano sintomi visibili."
+      }
+    },
+    "items": {
+      "clavel-green": {
+        "function": "Crescita vegetativa della pianta",
+        "description": [
+          "Prodotto fondamentale a inizio coltura per apportare un'elevata quantità di azoto organico. Favorisce la formazione di aminoacidi nelle radici e migliora la fissazione del batterio benefico Azotobacter.",
+          "Inoltre, potenzia la crescita vegetale all'inizio del ciclo colturale."
+        ],
+        "composition": [
+          "Aminoacidi vegetali 20%"
+        ]
+      },
+      "clavel-soil": {
+        "function": "Ammendante e miglioratore del suolo",
+        "description": [
+          "Svolge un ruolo vitale nella fertilità del suolo e nella nutrizione delle piante: le colture su suoli con un adeguato contenuto di acidi umici e fulvici danno rese maggiori.",
+          "Apporta al suolo sostanze organiche vegetali ed elementi minerali essenziali, e ne aumenta la ricchezza umica e l'acqua disponibile nei suoli sabbiosi."
+        ],
+        "composition": [
+          "Acido umico 10%",
+          "Acido fulvico 10%",
+          "K₂O 10%"
+        ]
+      },
+      "clavel-libero": {
+        "function": "Sbloccante del suolo e rinforzante radicale",
+        "description": [
+          "Miscela speciale di calcio e magnesio che ne corregge le carenze più rapidamente grazie a promotori specifici che ricostruiscono la struttura delle parti carenti.",
+          "Mantiene la robustezza dei fusti e regola l'assorbimento dei nutrienti attraverso le membrane cellulari."
+        ],
+        "composition": [
+          "CaO 12%",
+          "MgO 1%"
+        ]
+      },
+      "clavel-shield": {
+        "function": "Correttivo di rame (effetto biofungicida)",
+        "description": [
+          "Prodotto specifico per correggere la carenza di rame nelle piante. È complessato per raggiungere la pianta nel modo migliore e agire come nutriente a base di rame."
+        ],
+        "composition": [
+          "Cu 5%"
+        ]
+      },
+      "clavel-protect": {
+        "function": "Potenziatore dell'autodifesa della pianta (effetto bioessiccante ed essiccante)",
+        "description": [
+          "Rafforza i meccanismi di autodifesa della pianta grazie all'apporto di potassio e silicio, che irrobustiscono i tessuti e le pareti cellulari.",
+          "Il suo effetto bioessiccante ed essiccante aiuta a mantenere sana la superficie della pianta in condizioni di umidità che favoriscono i patogeni."
+        ],
+        "composition": [
+          "K₂O 10%",
+          "Si 23%"
+        ]
+      },
+      "clavel-curar": {
+        "function": "Correttivo di carenze (effetto biopesticida)",
+        "description": [
+          "Ha un effetto preventivo e curativo per correggere la carenza di zinco e aiuta a sviluppare nuove foglie.",
+          "Apporta zuccheri ridotti che facilitano l'assimilazione fogliare e l'assorbimento attraverso gli organi verdi, e fornisce energia extra ai processi fisiologici, soprattutto per recuperare i pigmenti verdi della foglia."
+        ],
+        "composition": [
+          "Zn 7%"
+        ]
+      },
+      "clavel-defender": {
+        "function": "Biostimolante antistress e di sviluppo",
+        "description": [
+          "Importante fonte di magnesio e ferro che sostiene la pianta nella crescita vegetativa in tutte le sue fasi.",
+          "La molecola di clorofilla contiene uno ione di magnesio, e le piante hanno bisogno di magnesio e ferro per produrre la clorofilla con cui svolgono la fotosintesi."
+        ],
+        "composition": [
+          "MgO 5%",
+          "Fe 0,5%"
+        ]
+      },
+      "clavel-save": {
+        "function": "Potenziatore antistress e del flusso vascolare",
+        "description": [
+          "Importante fonte di aminoacidi ed estratto di alghe che sostiene la pianta nella crescita vegetativa in tutte le sue fasi."
+        ],
+        "composition": [
+          "Aminoacidi vegetali 10%",
+          "Alghe (Ascophyllum nodosum) 10%"
+        ]
+      },
+      "clavel-flor": {
+        "function": "Potenziatore della pre-fioritura",
+        "description": [
+          "Rende i fiori più fertili e meglio formati: migliora la fertilità del polline e la crescita del tubetto pollinico, e prolunga la fioritura.",
+          "Aumenta la quantità e la qualità dei frutti e agisce da veicolo di azoto e fosforo nella pre-fioritura e nell'attivazione dei tessuti in crescita."
+        ],
+        "composition": [
+          "P₂O₅ 20%",
+          "Mo 0,5%"
+        ]
+      },
+      "clavel-amarre": {
+        "function": "Potenziatore dell'allegagione",
+        "description": [
+          "Induttore e promotore specifico dell'allegagione, formulato con boro e molibdeno, i microelementi essenziali in questo processo.",
+          "Agisce sugli organi riproduttivi della pianta: favorisce la fecondazione, riduce la cascola dei fiori e accelera la divisione cellulare."
+        ],
+        "composition": [
+          "B 3%",
+          "Mo 2%"
+        ]
+      },
+      "clavel-engord": {
+        "function": "Potenziatore dell'ingrossamento del frutto",
+        "description": [
+          "Aumenta l'assorbimento del potassio attraverso le membrane cellulari, ristabilisce l'equilibrio ormonale e favorisce uno sviluppo eccezionale.",
+          "La pianta sintetizza nuove proteine ed enzimi che accelerano la crescita e la divisione cellulare e convogliano i nutrienti verso il frutto, che guadagna in calibro, colore, consistenza e sapore."
+        ],
+        "composition": [
+          "K₂O 20%"
+        ]
+      },
+      "clavel-ultimate": {
+        "function": "Potenziatore della maturazione (Brix, colore e consistenza)",
+        "description": [
+          "Specifico per la maturazione del frutto: aumenta i gradi Brix e migliora il colore e la consistenza.",
+          "Apporta potassio a rapido assorbimento ed estratti vegetali che favoriscono la fase finale della crescita e l'inizio della maturazione, oltre a promotori del colore che aiutano a trasformare l'amido in zucchero."
+        ],
+        "composition": [
+          "K₂O 15%"
+        ]
+      },
+      "clavel-forte": {
+        "function": "Correttivo di calcio e boro e miglioratore della struttura della pianta",
+        "description": [
+          "Miscela speciale di calcio e boro che ne corregge le carenze più rapidamente grazie a promotori specifici che ricostruiscono la struttura delle parti carenti.",
+          "Mantiene la robustezza dei fusti e regola l'assorbimento dei nutrienti attraverso le membrane cellulari."
+        ],
+        "composition": [
+          "CaO 12%",
+          "B 0,5%"
+        ]
+      },
+      "clavel-iron": {
+        "function": "Correttivo delle carenze di ferro",
+        "description": [
+          "Ferro solido chelato con EDDHA al 6%, con il 5,4% di isomero orto-orto, che gli conferisce grande efficacia, rapidità d'azione e persistenza.",
+          "È molto efficace contro la clorosi ferrica causata dal mancato assorbimento del ferro (pH basico dei suoli calcarei, interazione con altri elementi o eccesso d'acqua) e aiuta la pianta a recuperare il suo potenziale fotosintetico e produttivo."
+        ],
+        "composition": [
+          "Fe 6% EDDHA (5,4% orto-orto)"
+        ]
       }
     }
   },
@@ -536,6 +702,10 @@
       "catalogues": "Quale catalogo desideri?",
       "cataloguesHint": "(puoi sceglierne più di uno)",
       "cataloguesLine": "Cataloghi",
+      "product": "Quale prodotto ti interessa?",
+      "productPlaceholder": "Scegli un prodotto",
+      "errorProduct": "Scegli il prodotto su cui desideri informazioni.",
+      "productLine": "Prodotto",
       "name": "Nome e cognome",
       "company": "Azienda o azienda agricola",
       "email": "E-mail",
