@@ -112,8 +112,6 @@
   "products": {
     "title": "Produits",
     "intro": "Engrais, intrants, conseil et technologie pour chaque culture.",
-    "productCount_one": "{{count}} produit",
-    "productCount_other": "{{count}} produits",
     "rangeProductsTitle": "Produits de la gamme",
     "viewSheet": "Voir la fiche technique",
     "visitRange": "Voir la gamme {{range}}",

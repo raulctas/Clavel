@@ -39,14 +39,9 @@ const RangePage = ({ range }: { range: Range }) => {
 
       <section aria-labelledby="range-products-title">
         <Container className={styles.section}>
-          <div className={styles.header}>
-            <h2 id="range-products-title" className={styles.title}>
-              {t('products.rangeProductsTitle')}
-            </h2>
-            <span className={styles.count}>
-              {t('products.productCount', { count: products.length })}
-            </span>
-          </div>
+          <h2 id="range-products-title" className={styles.title}>
+            {t('products.rangeProductsTitle')}
+          </h2>
           <ul className={styles.grid}>
             {products.map((product) => (
               <ProductCard key={product.slug} product={product} />

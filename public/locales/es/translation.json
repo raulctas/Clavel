@@ -112,8 +112,6 @@
   "products": {
     "title": "Productos",
     "intro": "Fertilizantes, insumos, asesoramiento y tecnología para cada cultivo.",
-    "productCount_one": "{{count}} producto",
-    "productCount_other": "{{count}} productos",
     "rangeProductsTitle": "Productos de la gama",
     "viewSheet": "Ver ficha técnica",
     "visitRange": "Ver la gama {{range}}",

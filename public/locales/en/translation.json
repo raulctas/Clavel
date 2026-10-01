@@ -112,8 +112,6 @@
   "products": {
     "title": "Products",
     "intro": "Fertilisers, inputs, advice and technology for every crop.",
-    "productCount_one": "{{count}} product",
-    "productCount_other": "{{count}} products",
     "rangeProductsTitle": "Products in this range",
     "viewSheet": "View technical sheet",
     "visitRange": "See the {{range}} range",

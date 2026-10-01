@@ -112,8 +112,6 @@
   "products": {
     "title": "Prodotti",
     "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura.",
-    "productCount_one": "{{count}} prodotto",
-    "productCount_other": "{{count}} prodotti",
     "rangeProductsTitle": "Prodotti della linea",
     "viewSheet": "Vedi scheda tecnica",
     "visitRange": "Vedi la linea {{range}}",
