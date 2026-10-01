@@ -64,7 +64,8 @@ interface Props {
 
 /**
  * Formulario de contacto: motivo en chips, datos, mensaje y casilla de
- * privacidad. Si el motivo es «Solicitar catálogo», hay que elegir además qué
+ * privacidad. El mensaje viene escrito con un texto breve en el idioma de la
+ * web, según el motivo (y el producto); se puede cambiar. Si el motivo es «Solicitar catálogo», hay que elegir además qué
  * catálogo (uno o varios, uno por gama); si es «Información sobre productos»,
  * de qué producto. Al enviarse se sustituye por la confirmación.
  */
@@ -74,8 +75,22 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
   const [catalogues, setCatalogues] = useState<string[]>([]);
   const [product, setProduct] = useState(initialProduct ?? '');
   const [values, setValues] = useState<FormValues>(EMPTY_FORM);
+  // Hasta que el usuario lo edita, el mensaje es el de por defecto: sigue al
+  // motivo, al producto y al idioma de la web.
+  const [messageEdited, setMessageEdited] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
+
+  const productName = PRODUCTS.find((item) => item.slug === product)?.name;
+  const defaultMessage =
+    reason === 'productInfo' && productName
+      ? t('contact.form.defaultMessage.product', { product: productName })
+      : t(
+          `contact.form.defaultMessage.${
+            reason === 'catalogue' || reason === 'advice' || reason === 'other' ? reason : 'general'
+          }`,
+        );
+  const message = messageEdited ? values.message : defaultMessage;
 
   const validate = (form: FormValues): FormErrors => ({
     ...(!reason && { reason: 'contact.form.errorReason' }),
@@ -138,7 +153,7 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
         ...line('contact.form.company', values.company),
         ...line('contact.form.email', values.email),
         ...line('contact.form.phone', values.phone),
-        ...(values.message.trim() ? ['', values.message.trim()] : []),
+        ...(message.trim() ? ['', message.trim()] : []),
       ],
     });
     setSent(true);
@@ -146,6 +161,7 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
 
   const reset = () => {
     setValues(EMPTY_FORM);
+    setMessageEdited(false);
     setErrors({});
     setReason(initialReason);
     setCatalogues([]);
@@ -307,8 +323,11 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
           name="message"
           rows={5}
           placeholder={t('contact.form.messageHelp')}
-          value={values.message}
-          onChange={(event) => setValue('message', event.target.value)}
+          value={message}
+          onChange={(event) => {
+            setMessageEdited(true);
+            setValue('message', event.target.value);
+          }}
           className={`${styles.input} ${styles.textarea}`}
         />
       </label>

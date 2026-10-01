@@ -710,6 +710,13 @@
       "optional": "optional",
       "message": "Message",
       "messageHelp": "Tell us about your crop, the area or the product you are interested in.",
+      "defaultMessage": {
+        "general": "Hello, I would like more information about your products. Thank you.",
+        "catalogue": "Hello, I would like to receive your catalogue. Thank you.",
+        "advice": "Hello, I would like some advice for my crop. Thank you.",
+        "product": "Hello, I would like more information about {{product}}. Thank you.",
+        "other": "Hello, I have a question for you. Thank you."
+      },
       "privacy": "I have read and accept the <policyLink>privacy policy</policyLink>.",
       "submit": "Send",
       "errorReason": "Please choose what you need.",

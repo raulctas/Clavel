@@ -710,6 +710,13 @@
       "optional": "opcional",
       "message": "Mensaje",
       "messageHelp": "Cuéntanos tu cultivo, la superficie o el producto que te interesa.",
+      "defaultMessage": {
+        "general": "Hola, me gustaría recibir más información sobre vuestros productos. Gracias.",
+        "catalogue": "Hola, me gustaría recibir vuestro catálogo. Gracias.",
+        "advice": "Hola, me gustaría recibir asesoramiento para mi cultivo. Gracias.",
+        "product": "Hola, me gustaría recibir más información sobre {{product}}. Gracias.",
+        "other": "Hola, me gustaría haceros una consulta. Gracias."
+      },
       "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
       "errorReason": "Elige qué necesitas.",
