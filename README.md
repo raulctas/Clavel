@@ -113,6 +113,13 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   marca y el nombre anteriores. Una gama o un producto desconocidos muestran la página 404, y
   las direcciones antiguas (`/products-services`, `/products/clavel`, `/products/agrentis`)
   redirigen a `/products`.
+- **Buscador** (lupa del menú, `src/components/search` y `src/libs/search.ts`): al abrirse por
+  primera vez carga los textos de los cinco idiomas y busca en todos a la vez (sin tildes ni
+  mayúsculas). A partir de 3 letras muestra hasta 8 resultados (`MAX_RESULTS`): primero
+  productos, después noticias y luego el resto de páginas; para entrar en el máximo cuentan
+  antes los que coinciden en el título. Cada resultado enlaza con su página y muestra el
+  fragmento encontrado (con el idioma, si no es el activo). Las páginas y qué textos incluye
+  cada una están en `PAGES`, en `src/libs/search.ts`: una página nueva hay que añadirla ahí.
 - **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
   (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
   varios catálogos, uno por gama (`CATALOGUES` en `src/data/products.ts`). Con «Información

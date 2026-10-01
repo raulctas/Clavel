@@ -26,6 +26,20 @@
     "laboratory": "Laboratory",
     "production": "Production and logistics"
   },
+  "search": {
+    "open": "Search",
+    "close": "Close search",
+    "label": "Search the website",
+    "placeholder": "Search products, news…",
+    "hint": "Type at least 3 letters. Searches every language of the website.",
+    "loading": "Loading…",
+    "noResults": "No results for “{{query}}”.",
+    "types": {
+      "product": "Product",
+      "news": "News",
+      "page": "Page"
+    }
+  },
   "pillars": {
     "sustainableFarming": {
       "title": "Sustainable farming",
