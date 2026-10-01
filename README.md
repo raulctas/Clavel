@@ -114,7 +114,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   sobre productos» hay que elegir el producto; `/contact?reason=productInfo&product=<slug>`
   lo deja ya elegido (es lo que hace el botón de cada ficha).
   El mensaje viene escrito con un texto breve según el motivo y el producto, en el idioma de
-  la web (`contact.form.defaultMessage`); deja de cambiar en cuanto el usuario lo edita.
+  la web (`contact.form.defaultMessage`), con saludo según la hora; deja de cambiar en cuanto
+  el usuario lo edita.
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
 - **Clavel en cifras** (al final de «¿Por qué elegirnos?», en Quiénes somos): cifras en

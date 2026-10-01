@@ -710,7 +710,13 @@
       "message": "Messaggio",
       "messageHelp": "Parlaci della tua coltura, della superficie o del prodotto che ti interessa.",
       "defaultMessage": {
-        "greeting": "Buongiorno,",
+        "greeting": {
+          "morning": "Buongiorno,",
+          "afternoon": "Buon pomeriggio,",
+          "evening": "Buonasera,",
+          "afternoonFrom": 13,
+          "eveningFrom": 18
+        },
         "general": "Vorrei ricevere maggiori informazioni sui Vostri prodotti.",
         "catalogue": "Vi sarei grato se poteste inviarmi il Vostro catalogo dei prodotti.",
         "advice": "Vorrei ricevere una consulenza tecnica per la mia coltura.",

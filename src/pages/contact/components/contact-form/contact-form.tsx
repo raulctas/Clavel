@@ -1,4 +1,4 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Check, CircleCheck, Send } from 'lucide-react';
@@ -43,6 +43,9 @@ const EMPTY_FORM: FormValues = {
 
 const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 
+/** Hora a la que empieza la mañana; antes, el saludo es el de la noche. */
+const MORNING_FROM = 6;
+
 /** Campos de una línea, en el orden de la rejilla. */
 const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string }[] = [
   { field: 'name', type: 'text', autoComplete: 'name' },
@@ -77,6 +80,17 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
   // Hasta que el usuario lo edita, el mensaje es el de por defecto: sigue al
   // motivo, al producto y al idioma de la web.
   const [messageEdited, setMessageEdited] = useState(false);
+  const [now, setNow] = useState(() => new Date());
+
+  // Mientras el mensaje es el de por defecto, el saludo se actualiza si cambia
+  // la parte del día con la página abierta.
+  useEffect(() => {
+    if (messageEdited) {
+      return undefined;
+    }
+    const timer = window.setInterval(() => setNow(new Date()), 60_000);
+    return () => window.clearInterval(timer);
+  }, [messageEdited]);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
 
@@ -89,9 +103,18 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
             reason === 'catalogue' || reason === 'advice' || reason === 'other' ? reason : 'general'
           }`,
         );
+  // Saludo según la hora local; cada idioma fija a qué hora empiezan la tarde y la noche.
+  const hour = now.getHours();
+  const greetingKey = (key: string) => `contact.form.defaultMessage.greeting.${key}`;
+  const partOfDay =
+    hour >= Number(t(greetingKey('eveningFrom'))) || hour < MORNING_FROM
+      ? 'evening'
+      : hour >= Number(t(greetingKey('afternoonFrom')))
+        ? 'afternoon'
+        : 'morning';
   // Saludo, cuerpo y despedida, separados por una línea en blanco.
   const defaultMessage = [
-    t('contact.form.defaultMessage.greeting'),
+    t(greetingKey(partOfDay)),
     body,
     t('contact.form.defaultMessage.closing'),
   ].join('\n\n');

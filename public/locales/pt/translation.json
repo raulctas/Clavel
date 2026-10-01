@@ -710,7 +710,13 @@
       "message": "Mensagem",
       "messageHelp": "Fale-nos da sua cultura, da área ou do produto que lhe interessa.",
       "defaultMessage": {
-        "greeting": "Bom dia,",
+        "greeting": {
+          "morning": "Bom dia,",
+          "afternoon": "Boa tarde,",
+          "evening": "Boa noite,",
+          "afternoonFrom": 12,
+          "eveningFrom": 20
+        },
         "general": "Gostaria de receber mais informações sobre os vossos produtos.",
         "catalogue": "Agradeço que me enviem o vosso catálogo de produtos.",
         "advice": "Gostaria de receber aconselhamento técnico para a minha cultura.",

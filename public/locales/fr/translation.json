@@ -710,7 +710,13 @@
       "message": "Message",
       "messageHelp": "Parlez-nous de votre culture, de la surface ou du produit qui vous intéresse.",
       "defaultMessage": {
-        "greeting": "Madame, Monsieur,",
+        "greeting": {
+          "morning": "Bonjour,",
+          "afternoon": "Bonjour,",
+          "evening": "Bonsoir,",
+          "afternoonFrom": 12,
+          "eveningFrom": 18
+        },
         "general": "Je souhaiterais recevoir de plus amples informations sur vos produits.",
         "catalogue": "Je vous serais reconnaissant de bien vouloir m'envoyer votre catalogue de produits.",
         "advice": "Je souhaiterais bénéficier de conseils techniques pour ma culture.",
