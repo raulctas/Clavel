@@ -96,9 +96,10 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
     una rejilla centrada (tres y dos) de tarjetas, cada una con su ilustración, su título y su descripción
     breve; toda la gama enlaza con su página.
   - `/products/<gama>`: la gama con las tarjetas de sus productos y enlaces a las demás gamas.
-  - `/products/<gama>/<producto>`: la ficha técnica (función, estado, composición y formatos),
-    las fotos de los envases y el botón «Solicitar información», que abre Contactar con el
-    producto ya elegido.
+  - `/products/<gama>/<producto>`: la ficha, con disposición de tienda en línea: galería con
+    miniaturas, «Detalles del producto» desplegables (descripción y ficha técnica) y una caja
+    fija con el formato y el botón «Solicitar información», que abre Contactar con el
+    producto ya elegido. En móvil la caja va justo después del nombre.
 
   Nombres, función y composición siguen la nomenclatura de 2026 (Excel «CLAVEL PRODUCTOS»);
   función, descripción y composición de cada producto están en `products.items.<slug>`. Las
