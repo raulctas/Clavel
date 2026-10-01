@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 
 import { Button } from 'components/button';
 import { LanguageSelector } from 'components/language-selector';
+import { Search } from 'components/search';
 import { routes } from 'constants/routes';
 
 import styles from './header.module.css';
@@ -109,7 +110,11 @@ export const Header = () => {
             </ul>
           </nav>
 
-          <LanguageSelector />
+          {/* Herramientas juntas (buscar e idioma), separadas de las páginas. */}
+          <div className={styles.tools}>
+            <Search />
+            <LanguageSelector />
+          </div>
 
           <Button to={routes.contact} size="sm">
             {t('nav.contact')}
@@ -124,6 +129,7 @@ export const Header = () => {
           </Link>
 
           <div className={styles.barActions}>
+            <Search />
             <LanguageSelector />
             <button
               type="button"

@@ -40,5 +40,9 @@ export const i18nextInit = () => {
       interpolation: {
         escapeValue: false,
       },
+      backend: {
+        // La versión (una por build) evita que la caché sirva textos de otra versión.
+        loadPath: `/locales/{{lng}}/{{ns}}.json?v=${__LOCALES_VERSION__}`,
+      },
     });
 };

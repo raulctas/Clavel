@@ -11,6 +11,8 @@ fidelidad), que no forma parte del repositorio. Los textos vienen de la web de G
 - **Vite + React 18 + TypeScript** (modo estricto)
 - **React Router v6**: rutas centralizadas en `src/constants/routes.ts`
 - **i18next / react-i18next**: textos en `public/locales/<idioma>/translation.json`
+  (se piden con `?v=<versión del build>` para que la caché no sirva textos antiguos; en
+  desarrollo, al cambiar uno, la página se recarga sola)
 - **CSS Modules** + design tokens (`src/styles/design-tokens.css`)
 - Fuentes self-hosted vía `@fontsource` (Barlow Semi Condensed + Barlow)
 - Iconos **Lucide** (`lucide-react`); TikTok, que no está en Lucide, es un SVG propio
@@ -113,6 +115,13 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   marca y el nombre anteriores. Una gama o un producto desconocidos muestran la página 404, y
   las direcciones antiguas (`/products-services`, `/products/clavel`, `/products/agrentis`)
   redirigen a `/products`.
+- **Buscador** (lupa del menú, `src/components/search` y `src/libs/search.ts`): al abrirse por
+  primera vez carga los textos de los cinco idiomas y busca en todos a la vez (sin tildes ni
+  mayúsculas). A partir de 3 letras muestra hasta 5 resultados (`MAX_RESULTS`): primero
+  productos, después noticias y luego el resto de páginas; para entrar en el máximo cuentan
+  antes los que coinciden en el título. Cada resultado enlaza con su página y muestra el
+  fragmento encontrado (con el idioma, si no es el activo). Las páginas y qué textos incluye
+  cada una están en `PAGES`, en `src/libs/search.ts`: una página nueva hay que añadirla ahí.
 - **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
   (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
   varios catálogos, uno por gama (`CATALOGUES` en `src/data/products.ts`). Con «Información

@@ -29,6 +29,20 @@
   box-shadow: var(--shadow-floating);
 }
 
+/* Entre 900 y 1100 px, con la lupa, menos separación para que la cápsula quepa holgada. */
+@media (max-width: 1100px) {
+  .capsule {
+    gap: 20px;
+  }
+}
+
+/* Lupa e idioma, juntos: se leen como un grupo aparte de las páginas. */
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 /* Reserva el sitio del logo; el círculo se sale por arriba y por abajo. */
 .logoSlot {
   position: relative;
