@@ -1,71 +1,97 @@
 .section {
-  padding-block: 72px 88px;
+  padding-block: 80px 96px;
 }
 
-/* Dos tarjetas grandes, una al lado de la otra; apiladas en pantallas estrechas. */
-.brands {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+/*
+ * Rejilla centrada: tres gamas por fila en escritorio y la última fila (dos)
+ * centrada, como en la página de Grupo Alfa.
+ */
+.ranges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 28px;
 }
 
-.brands > li {
+.item {
+  flex: 0 1 calc((100% - 56px) / 3);
+  min-width: 260px;
   display: flex;
 }
 
-.brand {
+/*
+ * Tarjeta con borde suave: indica que la gama se puede pulsar. Al pasar el
+ * ratón se eleva (clase global `hover-lift`) y el borde se tiñe de verde.
+ * Las tarjetas de una fila miden lo mismo aunque el texto varíe.
+ */
+.range {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 48px 44px;
+  align-items: center;
+  gap: 12px;
+  padding: 36px 28px 32px;
   border: 1px solid var(--color-border-card);
-  border-top: 6px solid var(--color-green);
-  border-radius: var(--radius-image);
+  border-radius: var(--radius-card);
   background-color: var(--color-white);
   color: inherit;
+  text-align: center;
   text-decoration: none;
 }
 
-.brand:focus-visible {
+.range:hover {
+  border-color: var(--color-sprout);
+}
+
+.range:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }
 
-.brandName {
-  font-size: clamp(48px, 6vw, 72px);
-  line-height: 1;
-  color: var(--color-green);
+.illustration {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 8px;
+  transition: transform 300ms ease;
 }
 
-.brandText {
-  font-size: 18px;
-  line-height: 1.6;
+.range:hover .illustration {
+  transform: scale(1.06);
+}
+
+.title {
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--color-ink);
+}
+
+.text {
+  max-width: 360px;
+  font-size: 16px;
+  line-height: 1.75;
   color: var(--color-ink-soft);
 }
 
-/* «Ver sus gamas», al pie para alinearlo entre las dos tarjetas. */
-.more {
-  margin-top: auto;
-  padding-top: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--color-green);
+@media (prefers-reduced-motion: reduce) {
+  .range:hover .illustration {
+    transform: none;
+  }
 }
 
-.brand:hover .more svg {
-  transform: translateX(4px);
-}
-
-.more svg {
-  transition: transform var(--transition);
+/* En tablet, dos por fila; en móvil, una. */
+@media (max-width: 900px) {
+  .item {
+    flex-basis: calc((100% - 28px) / 2);
+  }
 }
 
 @media (max-width: 600px) {
-  .brand {
-    padding: 32px 24px;
+  .item {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+
+  .range {
+    padding: 28px 20px 24px;
   }
 }

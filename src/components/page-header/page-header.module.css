@@ -71,3 +71,35 @@
   color: var(--color-ink-soft);
   max-width: 640px;
 }
+
+/* Variante baja (gamas y fichas de producto): da prioridad al contenido. */
+.compact {
+  min-height: 360px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 900px) {
+  .compact {
+    min-height: 480px;
+  }
+}
+
+/*
+ * En la variante baja la entrada describe la gama o el producto: texto más
+ * oscuro y algo más grueso, y velo más denso a la izquierda para que se lea
+ * bien sobre la foto.
+ */
+.compact .intro {
+  color: var(--color-ink);
+  font-weight: 500;
+  max-width: 720px;
+}
+
+.compact .veil {
+  background: linear-gradient(
+    90deg,
+    rgba(250, 246, 238, 0.94) 0%,
+    rgba(250, 246, 238, 0.8) 50%,
+    rgba(250, 246, 238, 0.2) 100%
+  );
+}

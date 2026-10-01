@@ -1,21 +1,21 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 
 import { Container } from 'components/container';
-import { Eyebrow } from 'components/eyebrow';
 import { PageHeader } from 'components/page-header';
-import { ProductTags } from 'components/product-tags';
-import { productBrandPath } from 'constants/routes';
+import { productRangePath } from 'constants/routes';
 import { PAGE_HEADER_IMAGES } from 'data/page-header-images';
-import { BRANDS } from 'data/products';
+import { PRODUCT_RANGES } from 'data/products';
 import { usePageTitle } from 'hooks/use-page-title';
 
 import styles from './products.module.css';
 
 /**
- * Productos: solo las dos marcas de Clavel (Clavel y Agrentis), en tarjetas
- * grandes. Cada tarjeta lleva a la página de la marca, con sus cinco gamas.
+ * Productos: las cinco gamas en una rejilla centrada (tres arriba y dos abajo
+ * en escritorio), cada una en una tarjeta con su ilustración, su título y su
+ * descripción breve. Toda la tarjeta enlaza con la página de la gama, donde
+ * están sus productos; el borde y la elevación al pasar el ratón indican que se
+ * puede pulsar.
  */
 export const Products = () => {
   const { t } = useTranslation();
@@ -32,19 +32,19 @@ export const Products = () => {
 
       <section aria-label={t('products.title')}>
         <Container className={styles.section}>
-          <ul className={styles.brands}>
-            {BRANDS.map(({ key, tags }) => (
-              <li key={key}>
-                {/* Toda la tarjeta es el enlace a la página de la marca. */}
-                <Link to={productBrandPath(key)} className={`${styles.brand} hover-lift`}>
-                  <Eyebrow>{t(`products.brands.${key}.line`)}</Eyebrow>
-                  <h2 className={styles.brandName}>{t(`products.brands.${key}.name`)}</h2>
-                  <p className={styles.brandText}>{t(`products.brands.${key}.text`)}</p>
-                  <ProductTags tags={tags} />
-                  <span className={styles.more}>
-                    {t('products.viewRanges')}
-                    <ArrowRight size={18} aria-hidden />
-                  </span>
+          <ul className={styles.ranges}>
+            {PRODUCT_RANGES.map((range) => (
+              <li key={range.key} className={styles.item}>
+                <Link to={productRangePath(range.key)} className={`${styles.range} hover-lift`}>
+                  <img
+                    src={range.image}
+                    alt=""
+                    className={styles.illustration}
+                    width={480}
+                    height={480}
+                  />
+                  <h2 className={styles.title}>{t(`products.ranges.${range.key}.title`)}</h2>
+                  <p className={styles.text}>{t(`products.ranges.${range.key}.text`)}</p>
                 </Link>
               </li>
             ))}

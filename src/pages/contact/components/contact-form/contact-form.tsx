@@ -1,4 +1,4 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Check, CircleCheck, Send } from 'lucide-react';
@@ -8,7 +8,7 @@ import { IconCircle } from 'components/icon-circle';
 import { TextLink } from 'components/text-link';
 import { CONTACT_REASONS, ContactReason } from 'constants/contact-reasons';
 import { routes } from 'constants/routes';
-import { CATALOGUES, catalogueTitleKey } from 'data/products';
+import { CATALOGUES, catalogueTitleKey, PRODUCT_RANGES, PRODUCTS } from 'data/products';
 import { sendContactRequest } from 'libs/contact-request';
 
 import styles from './contact-form.module.css';
@@ -26,7 +26,9 @@ interface FormValues {
  * Los errores se guardan como claves de traducción y no como textos: así, si
  * el usuario cambia de idioma con errores en pantalla, también se traducen.
  */
-type FormErrors = Partial<Record<'reason' | 'catalogues' | 'name' | 'email' | 'privacy', string>>;
+type FormErrors = Partial<
+  Record<'reason' | 'catalogues' | 'product' | 'name' | 'email' | 'privacy', string>
+>;
 
 type TextField = Exclude<keyof FormValues, 'privacy' | 'message'>;
 
@@ -41,14 +43,16 @@ const EMPTY_FORM: FormValues = {
 
 const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 
+/** Hora a la que empieza la mañana; antes, el saludo es el de la noche. */
+const MORNING_FROM = 6;
+
 /** Campos de una línea, en el orden de la rejilla. */
-const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string; optional?: boolean }[] =
-  [
-    { field: 'name', type: 'text', autoComplete: 'name' },
-    { field: 'company', type: 'text', autoComplete: 'organization', optional: true },
-    { field: 'email', type: 'email', autoComplete: 'email' },
-    { field: 'phone', type: 'tel', autoComplete: 'tel', optional: true },
-  ];
+const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string }[] = [
+  { field: 'name', type: 'text', autoComplete: 'name' },
+  { field: 'company', type: 'text', autoComplete: 'organization' },
+  { field: 'email', type: 'email', autoComplete: 'email' },
+  { field: 'phone', type: 'tel', autoComplete: 'tel' },
+];
 
 interface Props {
   /**
@@ -56,28 +60,71 @@ interface Props {
    * él (entrando desde «Contactar») no hay ninguno marcado y hay que elegirlo.
    */
   initialReason?: ContactReason;
-  /** Catálogo ya marcado (el del producto desde el que se ha llegado). */
-  initialCatalogue?: string;
+  /** Producto ya elegido (el de la ficha desde la que se ha llegado). */
+  initialProduct?: string;
 }
 
 /**
  * Formulario de contacto: motivo en chips, datos, mensaje y casilla de
- * privacidad. Si el motivo es «Solicitar catálogo», hay que elegir además qué
- * catálogo (uno o varios). Al enviarse se sustituye por la confirmación.
+ * privacidad. El mensaje viene escrito con un texto breve en el idioma de la
+ * web, según el motivo (y el producto); se puede cambiar. Si el motivo es «Solicitar catálogo», hay que elegir además qué
+ * catálogo (uno o varios, uno por gama); si es «Información sobre productos»,
+ * de qué producto. Al enviarse se sustituye por la confirmación.
  */
-export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
+export const ContactForm = ({ initialReason, initialProduct }: Props) => {
   const { t } = useTranslation();
   const [reason, setReason] = useState<ContactReason | undefined>(initialReason);
-  const initialCatalogues = initialCatalogue ? [initialCatalogue] : [];
-  const [catalogues, setCatalogues] = useState<string[]>(initialCatalogues);
+  const [catalogues, setCatalogues] = useState<string[]>([]);
+  const [product, setProduct] = useState(initialProduct ?? '');
   const [values, setValues] = useState<FormValues>(EMPTY_FORM);
+  // Hasta que el usuario lo edita, el mensaje es el de por defecto: sigue al
+  // motivo, al producto y al idioma de la web.
+  const [messageEdited, setMessageEdited] = useState(false);
+  const [now, setNow] = useState(() => new Date());
+
+  // Mientras el mensaje es el de por defecto, el saludo se actualiza si cambia
+  // la parte del día con la página abierta.
+  useEffect(() => {
+    if (messageEdited) {
+      return undefined;
+    }
+    const timer = window.setInterval(() => setNow(new Date()), 60_000);
+    return () => window.clearInterval(timer);
+  }, [messageEdited]);
   const [errors, setErrors] = useState<FormErrors>({});
   const [sent, setSent] = useState(false);
+
+  const productName = PRODUCTS.find((item) => item.slug === product)?.name;
+  const body =
+    reason === 'productInfo' && productName
+      ? t('contact.form.defaultMessage.product', { product: productName })
+      : t(
+          `contact.form.defaultMessage.${
+            reason === 'catalogue' || reason === 'advice' || reason === 'other' ? reason : 'general'
+          }`,
+        );
+  // Saludo según la hora local; cada idioma fija a qué hora empiezan la tarde y la noche.
+  const hour = now.getHours();
+  const greetingKey = (key: string) => `contact.form.defaultMessage.greeting.${key}`;
+  const partOfDay =
+    hour >= Number(t(greetingKey('eveningFrom'))) || hour < MORNING_FROM
+      ? 'evening'
+      : hour >= Number(t(greetingKey('afternoonFrom')))
+        ? 'afternoon'
+        : 'morning';
+  // Saludo, cuerpo y despedida, separados por una línea en blanco.
+  const defaultMessage = [
+    t(greetingKey(partOfDay)),
+    body,
+    t('contact.form.defaultMessage.closing'),
+  ].join('\n\n');
+  const message = messageEdited ? values.message : defaultMessage;
 
   const validate = (form: FormValues): FormErrors => ({
     ...(!reason && { reason: 'contact.form.errorReason' }),
     ...(reason === 'catalogue' &&
       catalogues.length === 0 && { catalogues: 'contact.form.errorCatalogue' }),
+    ...(reason === 'productInfo' && !product && { product: 'contact.form.errorProduct' }),
     ...(!form.name.trim() && { name: 'contact.form.errorName' }),
     ...(!EMAIL_REGEX.test(form.email.trim()) && { email: 'contact.form.errorEmail' }),
     ...(!form.privacy && { privacy: 'contact.form.errorPrivacy' }),
@@ -104,6 +151,17 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
     const reasonLabel = t(`contact.form.reasons.${reason}`);
     const line = (labelKey: string, value: string) =>
       value.trim() ? [`${t(labelKey)}: ${value.trim()}`] : [];
+    // «Producto: Green (Terra)», con la gama para que no haya dudas.
+    const productLine = (slug: string) => {
+      const found = PRODUCTS.find((item) => item.slug === slug);
+      return found
+        ? [
+            `${t('contact.form.productLine')}: ${found.name} (${t(
+              `products.ranges.${found.range}.title`,
+            )})`,
+          ]
+        : [];
+    };
 
     await sendContactRequest({
       subject: t('contact.form.mailSubject', { reason: reasonLabel, name: values.name.trim() }),
@@ -118,11 +176,12 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
                 .join(', ')}`,
             ]
           : []),
+        ...(reason === 'productInfo' ? productLine(product) : []),
         ...line('contact.form.name', values.name),
         ...line('contact.form.company', values.company),
         ...line('contact.form.email', values.email),
         ...line('contact.form.phone', values.phone),
-        ...(values.message.trim() ? ['', values.message.trim()] : []),
+        ...(message.trim() ? ['', message.trim()] : []),
       ],
     });
     setSent(true);
@@ -130,9 +189,11 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
 
   const reset = () => {
     setValues(EMPTY_FORM);
+    setMessageEdited(false);
     setErrors({});
     setReason(initialReason);
-    setCatalogues(initialCatalogues);
+    setCatalogues([]);
+    setProduct(initialProduct ?? '');
     setSent(false);
   };
 
@@ -222,16 +283,47 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
         </fieldset>
       )}
 
+      {reason === 'productInfo' && (
+        <label className={styles.field}>
+          <span className={styles.label}>{t('contact.form.product')}</span>
+          <select
+            name="product"
+            value={product}
+            onChange={(event) => {
+              setProduct(event.target.value);
+              setErrors((previous) => ({ ...previous, product: undefined }));
+            }}
+            className={[styles.input, styles.select, errors.product && styles.invalid]
+              .filter(Boolean)
+              .join(' ')}
+            aria-invalid={Boolean(errors.product)}
+            aria-describedby={errors.product ? 'contact-product-error' : undefined}
+          >
+            <option value="">{t('contact.form.productPlaceholder')}</option>
+            {/* Agrupados por gama, en el orden de la página Productos. */}
+            {PRODUCT_RANGES.map((range) => (
+              <optgroup key={range.key} label={t(`products.ranges.${range.key}.title`)}>
+                {PRODUCTS.filter((item) => item.range === range.key).map((item) => (
+                  <option key={item.slug} value={item.slug}>
+                    {item.name}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+          <span id="contact-product-error" className={styles.error}>
+            {errors.product && t(errors.product)}
+          </span>
+        </label>
+      )}
+
       <div className={styles.fields}>
-        {TEXT_FIELDS.map(({ field, type, autoComplete, optional }) => {
+        {TEXT_FIELDS.map(({ field, type, autoComplete }) => {
           const error = field === 'name' || field === 'email' ? errors[field] : undefined;
           const errorId = `contact-${field}-error`;
           return (
             <label key={field} className={styles.field}>
-              <span className={styles.label}>
-                {t(`contact.form.${field}`)}
-                {optional && ` (${t('contact.form.optional')})`}
-              </span>
+              <span className={styles.label}>{t(`contact.form.${field}`)}</span>
               <input
                 type={type}
                 name={field}
@@ -254,10 +346,13 @@ export const ContactForm = ({ initialReason, initialCatalogue }: Props) => {
         <span className={styles.label}>{t('contact.form.message')}</span>
         <textarea
           name="message"
-          rows={5}
+          rows={7}
           placeholder={t('contact.form.messageHelp')}
-          value={values.message}
-          onChange={(event) => setValue('message', event.target.value)}
+          value={message}
+          onChange={(event) => {
+            setMessageEdited(true);
+            setValue('message', event.target.value);
+          }}
           className={`${styles.input} ${styles.textarea}`}
         />
       </label>

@@ -13,13 +13,17 @@ export interface BreadcrumbParent {
 interface Props {
   /** Nombre de la página actual. */
   current: string;
-  /** Nivel intermedio, p. ej. «Noticias» en la página de una noticia. */
-  parent?: BreadcrumbParent;
+  /**
+   * Niveles intermedios, de más general a más concreto: p. ej. «Noticias» en
+   * una noticia, o «Productos» y la gama en la ficha de un producto.
+   */
+  parent?: BreadcrumbParent | BreadcrumbParent[];
 }
 
-/** Ruta «Inicio / [Sección /] Página» de las bandas de título. */
+/** Ruta «Inicio / [Secciones /] Página» de las bandas de título. */
 export const Breadcrumb = ({ current, parent }: Props) => {
   const { t } = useTranslation();
+  const parents = parent ? ([] as BreadcrumbParent[]).concat(parent) : [];
 
   return (
     <nav aria-label={t('common.breadcrumb')}>
@@ -29,13 +33,13 @@ export const Breadcrumb = ({ current, parent }: Props) => {
             {t('nav.home')}
           </Link>
         </li>
-        {parent && (
-          <li className={styles.separated}>
-            <Link to={parent.to} className={styles.link}>
-              {parent.label}
+        {parents.map((item) => (
+          <li key={item.to} className={styles.separated}>
+            <Link to={item.to} className={styles.link}>
+              {item.label}
             </Link>
           </li>
-        )}
+        ))}
         <li className={`${styles.separated} ${styles.current}`} aria-current="page">
           {current}
         </li>

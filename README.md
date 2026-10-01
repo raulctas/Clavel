@@ -48,7 +48,7 @@ public/
     logo/           # logo a color (cabecera) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
-    products/       # Productos: ilustración de cada gama (WebP transparentes)
+    products/       # Productos: ilustración de cada gama y fotos de cada producto (<slug>/)
     provisional/    # foto de muestra del equipo (4:5), hasta tener las reales
     social/         # imagen para compartir en redes (1200×630)
   locales/<idioma>/ # textos estáticos, un fichero por idioma
@@ -90,15 +90,32 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Equipo**: `src/data/team.ts`. Cuando lleguen las fotos (4:5), copiarlas a
   `public/images/team/` y rellenar `photo`, `name`, `email` y `linkedin` de cada miembro. Sin
   foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
-- **Productos** (`/products`; la dirección antigua `/products-services` redirige aquí): las
-  dos marcas, Clavel y Agrentis, en tarjetas grandes. Cada una lleva a su página
-  (`/products/clavel` y `/products/agrentis`) con sus cinco gamas (Terra, Protección,
-  Potenciador, Nutrición y Correctores). Marcas y gamas en `src/data/products.ts`, textos en
-  `products`. Una marca desconocida muestra la página 404.
+- **Productos**, en tres niveles (gamas y productos en `src/data/products.ts`, textos en
+  `products`):
+  - `/products`: las cinco gamas (Terra, Protección, Potenciador, Nutrición y Correctores) en
+    una rejilla centrada (tres y dos) de tarjetas, cada una con su ilustración, su título y su descripción
+    breve; toda la gama enlaza con su página.
+  - `/products/<gama>`: la gama con las tarjetas de sus productos y enlaces a las demás gamas.
+  - `/products/<gama>/<producto>`: la ficha: banda de título con el nombre y la función y, debajo,
+    una disposición de tienda en línea: galería con
+    miniaturas, «Detalles del producto» desplegables (descripción y ficha técnica) y una caja
+    fija con el formato y el botón «Solicitar información», que abre Contactar con el
+    producto ya elegido. En móvil la caja va justo después del nombre.
+
+  Nombres, función y composición siguen la nomenclatura de 2026 (Excel «CLAVEL PRODUCTOS»);
+  función, descripción y composición de cada producto están en `products.items.<slug>`. Las
+  fotos (`public/images/products/<slug>/`) son provisionales: las etiquetas aún muestran la
+  marca y el nombre anteriores. Una gama o un producto desconocidos muestran la página 404, y
+  las direcciones antiguas (`/products-services`, `/products/clavel`, `/products/agrentis`)
+  redirigen a `/products`.
 - **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
   (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
-  varios catálogos, uno por marca (`CATALOGUES` en `src/data/products.ts`). Con
-  `/contact?reason=catalogue&product=<marca>` el de esa marca sale ya marcado.
+  varios catálogos, uno por gama (`CATALOGUES` en `src/data/products.ts`). Con «Información
+  sobre productos» hay que elegir el producto; `/contact?reason=productInfo&product=<slug>`
+  lo deja ya elegido (es lo que hace el botón de cada ficha).
+  El mensaje viene escrito con un texto breve según el motivo y el producto, en el idioma de
+  la web (`contact.form.defaultMessage`), con saludo según la hora; deja de cambiar en cuanto
+  el usuario lo edita.
 - **Laboratorio** (`/laboratory`) y **Producción y logística** (`/production-logistics`): se
   llega desde los enlaces «Descubre más» de Inicio. Textos en `laboratory` y `production`.
 - **Clavel en cifras** (al final de «¿Por qué elegirnos?», en Quiénes somos): cifras en

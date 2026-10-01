@@ -1,0 +1,447 @@
+.cream {
+  background-color: var(--color-cream);
+}
+
+/*
+ * Tres columnas: galería, información (cabecera + detalles) y caja de contacto.
+ * Con áreas para que en tablet y móvil la caja suba justo tras la cabecera.
+ */
+.layout {
+  padding-block: 64px 80px;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 4.4fr) minmax(250px, 2.8fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'gallery head box'
+    'gallery details box';
+  align-items: start;
+  column-gap: 40px;
+  row-gap: 0;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+.info {
+  grid-area: head;
+}
+
+.details {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.box {
+  grid-area: box;
+}
+
+/* ---------- Galería: foto grande y, debajo, las miniaturas ---------- */
+
+.gallery {
+  position: sticky;
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumb {
+  width: 58px;
+  height: 68px;
+  padding: 4px;
+  border: 1px solid var(--color-border-input);
+  border-radius: 10px;
+  background-color: var(--color-white);
+  cursor: pointer;
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.thumb:hover,
+.thumbActive {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 1px var(--color-green);
+}
+
+.thumb:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.thumbImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.stage {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  background-color: var(--color-sprout-soft);
+}
+
+.stageImage {
+  position: absolute;
+  inset: 7%;
+  width: 86%;
+  height: 86%;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 26px rgba(31, 42, 31, 0.14));
+  animation: stage-in 220ms ease;
+}
+
+@keyframes stage-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stageImage {
+    animation: none;
+  }
+}
+
+/* ---------- Información ---------- */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+/* Como «Visita la tienda de…»: enlace a la gama sobre el nombre. */
+.rangeLink {
+  align-self: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+.rangeLink:hover {
+  text-decoration: underline;
+}
+
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.element {
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-sprout);
+  color: var(--color-green);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.rule {
+  margin-block: 14px 6px;
+  border: 0;
+  border-top: 1px solid var(--color-border-card);
+}
+
+.detailsTitle {
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+/* «Detalles del producto»: secciones desplegables, separadas por líneas. */
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  border-bottom: 1px solid var(--color-border-card);
+}
+
+.panel:first-child {
+  border-top: 1px solid var(--color-border-card);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-ink);
+  list-style: none;
+  cursor: pointer;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 6px;
+}
+
+.chevron {
+  flex: none;
+  transition: transform var(--transition);
+}
+
+.panel[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 18px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-ink);
+}
+
+.rows {
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(110px, 1fr) minmax(0, 2fr);
+  gap: 12px;
+  padding-block: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.row + .row {
+  border-top: 1px solid var(--color-border-card);
+}
+
+.row dt {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.row dd {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+/* ---------- Caja de contacto (como la caja de compra) ---------- */
+
+.box {
+  position: sticky;
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--color-border-input);
+  border-radius: 16px;
+  background-color: var(--color-white);
+}
+
+.boxTitle {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.boxText {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-ink-soft);
+}
+
+.formats {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formatsLabel {
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.formatOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.formatOption {
+  padding: 7px 14px;
+  border: 1px solid var(--color-border-input);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ink);
+  cursor: pointer;
+  transition:
+    border-color var(--transition),
+    background-color var(--transition);
+}
+
+.formatOption:hover {
+  border-color: var(--color-green);
+}
+
+.formatActive {
+  border-color: var(--color-green);
+  background-color: var(--color-sprout-soft);
+  box-shadow: 0 0 0 1px var(--color-green);
+  color: var(--color-green);
+}
+
+.formatOption:focus-within {
+  box-shadow: var(--focus-ring);
+}
+
+/* Datos breves en dos columnas, como «Remitente / Vendedor». */
+.boxRows {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.boxRows > div {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.boxRows dt {
+  color: var(--color-ink-soft);
+}
+
+.boxRows dd {
+  margin: 0;
+  color: var(--color-ink);
+}
+
+.boxLink {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.boxLink:hover {
+  text-decoration: underline;
+}
+
+/* A todo el ancho de la caja; el texto puede partirse si la caja es estrecha. */
+.boxButton {
+  width: 100%;
+  justify-content: center;
+  white-space: normal;
+  text-align: center;
+}
+
+/* ---------- Otros productos de la gama ---------- */
+
+.related {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.relatedTitle {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Tablet: galería a la izquierda; cabecera y caja a la derecha; detalles debajo. */
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      'gallery head'
+      'gallery box'
+      'details details';
+    row-gap: 24px;
+  }
+
+  .box {
+    position: static;
+  }
+}
+
+/*
+ * Móvil: una columna. Foto, nombre y, enseguida, la caja de contacto (como el
+ * botón de compra en el móvil); la descripción y la ficha, al final.
+ */
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'gallery'
+      'head'
+      'box'
+      'details';
+    row-gap: 24px;
+    padding-block: 40px 56px;
+  }
+
+  /* Zonas de toque cómodas para el dedo. */
+  .formatOption {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding-inline: 18px;
+  }
+
+  .rule {
+    display: none;
+  }
+
+  .gallery {
+    position: static;
+  }
+
+  .stage {
+    aspect-ratio: 1 / 1;
+  }
+
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+}

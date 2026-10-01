@@ -67,7 +67,7 @@
     "seeAllNews": "Ver todas las noticias",
     "cta": {
       "title": "¿Quieres conocer nuestros productos?",
-      "text": "Descubre nuestras marcas Clavel y Agrentis y sus cinco gamas de fertilizantes."
+      "text": "Descubre nuestras cinco gamas de fertilizantes ecológicos y la ficha técnica de cada producto."
     }
   },
   "aboutUs": {
@@ -112,44 +112,207 @@
   "products": {
     "title": "Productos",
     "intro": "Fertilizantes, insumos, asesoramiento y tecnología para cada cultivo.",
-    "brands": {
-      "clavel": {
-        "name": "Clavel",
-        "line": "Fertilizantes ecológicos",
-        "text": "Soluciones específicas para cada cultivo, formuladas con sustancias naturales y biodegradables y avaladas por nuestro laboratorio de control de calidad. Aptas para agricultura ecológica."
-      },
-      "agrentis": {
-        "name": "Agrentis",
-        "line": "Fertilizantes sostenibles",
-        "text": "Nutrición y protección para una agricultura más eficiente y respetuosa con el entorno, adaptadas a cada cultivo y a cada fase vegetativa."
-      }
+    "rangeProductsTitle": "Productos de la gama",
+    "viewSheet": "Ver ficha técnica",
+    "visitRange": "Ver la gama {{range}}",
+    "detailsTitle": "Detalles del producto",
+    "descriptionTitle": "Descripción",
+    "formatTitle": "Formato",
+    "otherRanges": "Otras gamas",
+    "relatedTitle": "Otros productos de la gama {{range}}",
+    "imageAlt": "{{name}}, envase de {{format}}",
+    "sheet": {
+      "title": "Ficha técnica",
+      "brand": "Marca",
+      "range": "Gama",
+      "function": "Función",
+      "state": "Estado",
+      "composition": "Composición (p/p)",
+      "formats": "Formatos"
     },
-    "tags": {
-      "certified": "Certificado ecológico UNE 142500:2017",
-      "drone": "Compatible con dron"
+    "states": {
+      "liquid": "Líquido",
+      "solid": "Sólido"
     },
-    "viewRanges": "Ver sus gamas",
-    "rangesTitle": "Gamas de producto",
+    "request": {
+      "title": "¿Te interesa {{name}}?",
+      "text": "Escríbenos y te enviamos toda la información de este producto: dosis, cultivos recomendados y precios.",
+      "button": "Solicitar información"
+    },
     "ranges": {
       "terra": {
         "title": "Terra",
-        "text": "Mejoran la salud del suelo regenerándolo y aportando materia orgánica, nitrógeno y nutrientes esenciales para el cultivo."
+        "text": "Mejoran la salud del suelo regenerándolo y aportando materia orgánica, nitrógeno y nutrientes esenciales para el cultivo.",
+        "intro": "La gama Terra mejora la salud del suelo: lo regenera y lo acondiciona para el cultivo. Su formulación aumenta la riqueza orgánica, aporta las dosis de nitrógeno adecuadas para las plantas y optimiza la absorción de nutrientes."
       },
       "protection": {
         "title": "Protección",
-        "text": "Se absorben rápido, corrigen carencias y refuerzan las defensas de la planta frente a patógenos hasta el final del ciclo."
+        "text": "Se absorben rápido, corrigen carencias y refuerzan las defensas de la planta frente a patógenos hasta el final del ciclo.",
+        "intro": "Estos productos se absorben rápido, corrigen carencias y refuerzan las defensas de la planta, protegiéndola frente a patógenos y asegurando un ciclo de vida sano."
       },
       "booster": {
         "title": "Potenciador",
-        "text": "Estimulan el crecimiento, equilibran la actividad hormonal y preparan la planta para afrontar el estrés."
+        "text": "Estimulan el crecimiento, equilibran la actividad hormonal y preparan la planta para afrontar el estrés.",
+        "intro": "Estimulan el crecimiento, equilibran la actividad hormonal y mejoran la nutrición, la tolerancia al estrés y la calidad del cultivo. Se recomiendan antes de que lleguen condiciones adversas."
       },
       "nutrition": {
         "title": "Nutrición",
-        "text": "Optimizan el desarrollo de la planta en todo su ciclo para impulsar la floración, el cuajado y la maduración."
+        "text": "Optimizan el desarrollo de la planta en todo su ciclo para impulsar la floración, el cuajado y la maduración.",
+        "intro": "Aseguran el desarrollo óptimo de la planta y favorecen etapas clave como la floración, el cuajado y la maduración, adaptándose a cada cultivo según la zona y las condiciones de siembra."
       },
       "correctors": {
         "title": "Correctores",
-        "text": "Corrigen y previenen carencias nutricionales con un balance preciso de nutrientes, de forma preventiva o curativa."
+        "text": "Corrigen y previenen carencias nutricionales con un balance preciso de nutrientes, de forma preventiva o curativa.",
+        "intro": "Corrigen y previenen carencias nutricionales con un equilibrio preciso de macro y microelementos. Se aplican de forma preventiva o curativa, antes de que aparezcan síntomas visibles."
+      }
+    },
+    "items": {
+      "green": {
+        "function": "Crecimiento vegetativo de la planta",
+        "description": [
+          "Producto fundamental al inicio del cultivo para aportar una carga importante de nitrógeno orgánico. Favorece la formación de aminoácidos en las raíces y mejora la fijación de la bacteria beneficiosa Azotobacter.",
+          "Además, potencia el crecimiento vegetal al inicio del ciclo del cultivo."
+        ],
+        "composition": [
+          "Aminoácidos vegetales 20 %"
+        ]
+      },
+      "soil": {
+        "function": "Acondicionador y mejorador del suelo",
+        "description": [
+          "Juega un papel vital en la fertilidad del suelo y en la nutrición de las plantas: los cultivos en suelos con ácidos húmicos y fúlvicos adecuados dan mayores rendimientos.",
+          "Aporta al suelo sustancias orgánicas vegetales y elementos minerales esenciales, y aumenta su riqueza húmica y el agua disponible en suelos arenosos."
+        ],
+        "composition": [
+          "Ácido húmico 10 %",
+          "Ácido fúlvico 10 %",
+          "K₂O 10 %"
+        ]
+      },
+      "libero": {
+        "function": "Desbloqueador del suelo y fortalecedor de la raíz",
+        "description": [
+          "Mezcla especial de calcio y magnesio que corrige sus carencias más rápido gracias a promotores específicos que reconstruyen la estructura de las partes deficientes.",
+          "Mantiene la fuerza de los tallos y regula la absorción de nutrientes a través de las membranas celulares."
+        ],
+        "composition": [
+          "CaO 12 %",
+          "MgO 1 %"
+        ]
+      },
+      "shield": {
+        "function": "Corrector de cobre (efecto biofungicida)",
+        "description": [
+          "Producto específico para corregir la carencia de cobre en las plantas. Está complejado para llegar a la planta de la mejor forma y actuar como nutriente de cobre."
+        ],
+        "composition": [
+          "Cu 5 %"
+        ]
+      },
+      "protect": {
+        "function": "Potenciador de la autodefensa de la planta (efecto biodesecante y secante)",
+        "description": [
+          "Refuerza los mecanismos de autodefensa de la planta gracias a su aporte de potasio y silicio, que fortalecen los tejidos y las paredes celulares.",
+          "Su efecto biodesecante y secante ayuda a mantener sana la superficie de la planta en condiciones de humedad que favorecen a los patógenos."
+        ],
+        "composition": [
+          "K₂O 10 %",
+          "Si 23 %"
+        ]
+      },
+      "curar": {
+        "function": "Corrector de carencias (efecto bioplaguicida)",
+        "description": [
+          "Tiene efecto preventivo y curativo para corregir la carencia de zinc y ayuda a generar hojas nuevas.",
+          "Aporta azúcares reducidos que facilitan la asimilación foliar y la absorción a través de los órganos verdes, y da energía extra a los procesos fisiológicos, sobre todo para recuperar los pigmentos verdes de la hoja."
+        ],
+        "composition": [
+          "Zn 7 %"
+        ]
+      },
+      "defender": {
+        "function": "Bioestimulante antiestrés y de desarrollo",
+        "description": [
+          "Fuente importante de magnesio y hierro que ayuda a la planta en su crecimiento vegetativo en todas sus fases.",
+          "La molécula de clorofila contiene un ion de magnesio, y las plantas necesitan magnesio y hierro para producir la clorofila con la que hacen la fotosíntesis."
+        ],
+        "composition": [
+          "MgO 5 %",
+          "Fe 0,5 %"
+        ]
+      },
+      "save": {
+        "function": "Potenciador antiestrés y del movimiento vascular",
+        "description": [
+          "Fuente importante de aminoácidos y extracto de algas que ayuda a la planta en su crecimiento vegetativo en todas sus fases."
+        ],
+        "composition": [
+          "Aminoácidos vegetales 10 %",
+          "Algas (Ascophyllum nodosum) 10 %"
+        ]
+      },
+      "flor": {
+        "function": "Potenciador de la prefloración",
+        "description": [
+          "Hace que las flores sean más fértiles y estén mejor formadas: mejora la fertilidad del polen y el crecimiento del tubo polínico, y alarga la floración.",
+          "Aumenta la cantidad y la calidad de los frutos y actúa como portador de nitrógeno y fósforo en la prefloración y en la activación de los tejidos en crecimiento."
+        ],
+        "composition": [
+          "P₂O₅ 20 %",
+          "Mo 0,5 %"
+        ]
+      },
+      "amarre": {
+        "function": "Potenciador del cuajado",
+        "description": [
+          "Inductor y promotor específico del cuajado, formulado con boro y molibdeno, los micronutrientes esenciales en este proceso.",
+          "Actúa sobre los órganos reproductores de la planta: favorece la fecundación, reduce el aborto floral y acelera la división celular."
+        ],
+        "composition": [
+          "B 3 %",
+          "Mo 2 %"
+        ]
+      },
+      "engord": {
+        "function": "Potenciador del engorde del fruto",
+        "description": [
+          "Aumenta la absorción de potasio a través de las membranas celulares, restablece el equilibrio hormonal y favorece un desarrollo excepcional.",
+          "La planta sintetiza nuevas proteínas y enzimas que aceleran el crecimiento y la división celular y llevan los nutrientes hacia el fruto, que gana en calibre, color, textura y sabor."
+        ],
+        "composition": [
+          "K₂O 20 %"
+        ]
+      },
+      "ultimate": {
+        "function": "Potenciador de la maduración (Brix, color y firmeza)",
+        "description": [
+          "Específico para la maduración del fruto: aumenta los grados Brix y mejora el color y la firmeza.",
+          "Aporta potasio de rápida absorción y extractos vegetales que favorecen la fase final del crecimiento y el inicio de la maduración, además de promotores de color que ayudan a transformar el almidón en azúcar."
+        ],
+        "composition": [
+          "K₂O 15 %"
+        ]
+      },
+      "forte": {
+        "function": "Corrector de calcio y boro y mejorador de la estructura de la planta",
+        "description": [
+          "Mezcla especial de calcio y boro que corrige sus carencias más rápido gracias a promotores específicos que reconstruyen la estructura de las partes deficientes.",
+          "Mantiene la fuerza de los tallos y regula la absorción de nutrientes a través de las membranas celulares."
+        ],
+        "composition": [
+          "CaO 12 %",
+          "B 0,5 %"
+        ]
+      },
+      "iron": {
+        "function": "Corrector de carencias de hierro",
+        "description": [
+          "Hierro sólido quelado con EDDHA al 6 %, con un 5,4 % de isómero orto-orto, lo que le da una gran eficacia, rapidez de acción y persistencia.",
+          "Es muy eficaz frente a la clorosis férrica causada por la falta de absorción de hierro (pH básico de suelos calizos, interacción con otros elementos o exceso de agua) y ayuda a la planta a recuperar su potencial fotosintético y productivo."
+        ],
+        "composition": [
+          "Fe 6 % EDDHA (5,4 % orto-orto)"
+        ]
       }
     }
   },
@@ -536,13 +699,31 @@
       "catalogues": "¿Qué catálogo quieres?",
       "cataloguesHint": "(puedes elegir varios)",
       "cataloguesLine": "Catálogos",
+      "product": "¿Qué producto te interesa?",
+      "productPlaceholder": "Elige un producto",
+      "errorProduct": "Elige el producto del que quieres información.",
+      "productLine": "Producto",
       "name": "Nombre y apellidos",
       "company": "Empresa o explotación",
       "email": "Correo electrónico",
       "phone": "Teléfono",
-      "optional": "opcional",
       "message": "Mensaje",
       "messageHelp": "Cuéntanos tu cultivo, la superficie o el producto que te interesa.",
+      "defaultMessage": {
+        "greeting": {
+          "morning": "Buenos días:",
+          "afternoon": "Buenas tardes:",
+          "evening": "Buenas noches:",
+          "afternoonFrom": 14,
+          "eveningFrom": 21
+        },
+        "general": "Me gustaría recibir más información sobre sus productos.",
+        "catalogue": "Les agradecería que me enviaran su catálogo de productos.",
+        "advice": "Me gustaría recibir asesoramiento técnico para mi cultivo.",
+        "product": "Me gustaría recibir más información sobre el producto {{product}}.",
+        "other": "Me pongo en contacto con ustedes para realizarles una consulta.",
+        "closing": "Un cordial saludo."
+      },
       "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
       "errorReason": "Elige qué necesitas.",

@@ -1,0 +1,61 @@
+.cream {
+  background-color: var(--color-cream);
+}
+
+.section {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+/* Hasta cuatro productos por fila en escritorio. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* ---------- Otras gamas ---------- */
+
+.ranges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.range {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px 14px 14px;
+  border-radius: var(--radius-card);
+  background-color: var(--color-white);
+  color: inherit;
+  text-decoration: none;
+}
+
+.range:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.rangeImage {
+  flex: none;
+  width: 64px;
+  height: 64px;
+}
+
+.rangeTitle {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-green);
+}
