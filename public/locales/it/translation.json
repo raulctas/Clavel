@@ -707,7 +707,6 @@
       "company": "Azienda o azienda agricola",
       "email": "E-mail",
       "phone": "Telefono",
-      "optional": "facoltativo",
       "message": "Messaggio",
       "messageHelp": "Parlaci della tua coltura, della superficie o del prodotto che ti interessa.",
       "defaultMessage": {

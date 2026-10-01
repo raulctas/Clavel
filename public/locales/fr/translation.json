@@ -707,7 +707,6 @@
       "company": "Entreprise ou exploitation",
       "email": "E-mail",
       "phone": "Téléphone",
-      "optional": "facultatif",
       "message": "Message",
       "messageHelp": "Parlez-nous de votre culture, de la surface ou du produit qui vous intéresse.",
       "defaultMessage": {

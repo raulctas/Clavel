@@ -707,7 +707,6 @@
       "company": "Company or farm",
       "email": "Email",
       "phone": "Phone",
-      "optional": "optional",
       "message": "Message",
       "messageHelp": "Tell us about your crop, the area or the product you are interested in.",
       "defaultMessage": {

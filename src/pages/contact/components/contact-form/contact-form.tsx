@@ -44,13 +44,12 @@ const EMPTY_FORM: FormValues = {
 const EMAIL_REGEX = /^\S+@\S+\.\S+$/;
 
 /** Campos de una línea, en el orden de la rejilla. */
-const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string; optional?: boolean }[] =
-  [
-    { field: 'name', type: 'text', autoComplete: 'name' },
-    { field: 'company', type: 'text', autoComplete: 'organization', optional: true },
-    { field: 'email', type: 'email', autoComplete: 'email' },
-    { field: 'phone', type: 'tel', autoComplete: 'tel', optional: true },
-  ];
+const TEXT_FIELDS: { field: TextField; type: string; autoComplete: string }[] = [
+  { field: 'name', type: 'text', autoComplete: 'name' },
+  { field: 'company', type: 'text', autoComplete: 'organization' },
+  { field: 'email', type: 'email', autoComplete: 'email' },
+  { field: 'phone', type: 'tel', autoComplete: 'tel' },
+];
 
 interface Props {
   /**
@@ -290,15 +289,12 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
       )}
 
       <div className={styles.fields}>
-        {TEXT_FIELDS.map(({ field, type, autoComplete, optional }) => {
+        {TEXT_FIELDS.map(({ field, type, autoComplete }) => {
           const error = field === 'name' || field === 'email' ? errors[field] : undefined;
           const errorId = `contact-${field}-error`;
           return (
             <label key={field} className={styles.field}>
-              <span className={styles.label}>
-                {t(`contact.form.${field}`)}
-                {optional && ` (${t('contact.form.optional')})`}
-              </span>
+              <span className={styles.label}>{t(`contact.form.${field}`)}</span>
               <input
                 type={type}
                 name={field}

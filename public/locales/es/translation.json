@@ -707,7 +707,6 @@
       "company": "Empresa o explotación",
       "email": "Correo electrónico",
       "phone": "Teléfono",
-      "optional": "opcional",
       "message": "Mensaje",
       "messageHelp": "Cuéntanos tu cultivo, la superficie o el producto que te interesa.",
       "defaultMessage": {
