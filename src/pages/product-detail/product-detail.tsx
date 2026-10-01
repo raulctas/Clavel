@@ -61,6 +61,16 @@ const ProductSheet = ({ product }: { product: Product }) => {
       <Container as="section" className={styles.layout}>
         {/* ---------- Galería ---------- */}
         <div className={styles.gallery}>
+          <div className={styles.stage}>
+            <img
+              key={image.src}
+              src={image.src}
+              alt={t('products.imageAlt', { name: product.name, format: image.format })}
+              className={styles.stageImage}
+              width={600}
+              height={900}
+            />
+          </div>
           {product.images.length > 1 && (
             <div className={styles.thumbs}>
               {product.images.map((item) => (
@@ -86,16 +96,6 @@ const ProductSheet = ({ product }: { product: Product }) => {
               ))}
             </div>
           )}
-          <div className={styles.stage}>
-            <img
-              key={image.src}
-              src={image.src}
-              alt={t('products.imageAlt', { name: product.name, format: image.format })}
-              className={styles.stageImage}
-              width={600}
-              height={900}
-            />
-          </div>
         </div>
 
         {/* ---------- Información ---------- */}

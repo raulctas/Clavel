@@ -50,18 +50,19 @@
   grid-area: box;
 }
 
-/* ---------- Galería: miniaturas en vertical a la izquierda de la foto ---------- */
+/* ---------- Galería: foto grande y, debajo, las miniaturas ---------- */
 
 .gallery {
   position: sticky;
   top: 140px;
   display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
 .thumbs {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -456,12 +457,6 @@
 
   .gallery {
     position: static;
-    flex-direction: column-reverse;
-  }
-
-  .thumbs {
-    flex-direction: row;
-    justify-content: center;
   }
 
   .stage {
