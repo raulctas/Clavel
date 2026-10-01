@@ -116,7 +116,6 @@
       "certified": "Certificat biologique UNE 142500:2017",
       "drone": "Compatible drone"
     },
-    "rangeNumber": "Gamme {{number}}",
     "productCount_one": "{{count}} produit",
     "productCount_other": "{{count}} produits",
     "viewRange": "Voir la gamme",

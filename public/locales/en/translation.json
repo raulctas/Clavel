@@ -116,7 +116,6 @@
       "certified": "Organic certificate UNE 142500:2017",
       "drone": "Drone compatible"
     },
-    "rangeNumber": "Range {{number}}",
     "productCount_one": "{{count}} product",
     "productCount_other": "{{count}} products",
     "viewRange": "View range",

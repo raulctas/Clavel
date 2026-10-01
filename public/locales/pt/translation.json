@@ -116,7 +116,6 @@
       "certified": "Certificado ecológico UNE 142500:2017",
       "drone": "Compatível com drone"
     },
-    "rangeNumber": "Gama {{number}}",
     "productCount_one": "{{count}} produto",
     "productCount_other": "{{count}} produtos",
     "viewRange": "Ver a gama",

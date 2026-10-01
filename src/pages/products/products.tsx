@@ -65,10 +65,7 @@ export const Products = () => {
               </div>
 
               <div className={styles.content}>
-                <Eyebrow>
-                  {t('products.rangeNumber', { number })} ·{' '}
-                  {t('products.productCount', { count: products.length })}
-                </Eyebrow>
+                <Eyebrow>{t('products.productCount', { count: products.length })}</Eyebrow>
                 <h2 id={titleId} className={styles.title}>
                   <Link to={productRangePath(range.key)} className={styles.titleLink}>
                     {t(`products.ranges.${range.key}.title`)}

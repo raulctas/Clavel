@@ -23,7 +23,6 @@ export const ProductRange = () => {
 const RangePage = ({ range }: { range: Range }) => {
   const { t } = useTranslation();
   const title = t(`products.ranges.${range.key}.title`);
-  const number = String(range.number).padStart(2, '0');
   const products = productsOfRange(range.key);
   const otherRanges = PRODUCT_RANGES.filter((item) => item.key !== range.key);
   usePageTitle(title);
@@ -33,7 +32,6 @@ const RangePage = ({ range }: { range: Range }) => {
       <PageHeader
         page={title}
         parent={{ label: t('products.title'), to: routes.products }}
-        eyebrow={t('products.rangeNumber', { number })}
         title={title}
         intro={t(`products.ranges.${range.key}.intro`)}
         image={PAGE_HEADER_IMAGES.products}
@@ -74,13 +72,8 @@ const RangePage = ({ range }: { range: Range }) => {
                     width={480}
                     height={480}
                   />
-                  <span className={styles.rangeText}>
-                    <span className={styles.rangeNumber}>
-                      {t('products.rangeNumber', { number: String(item.number).padStart(2, '0') })}
-                    </span>
-                    <span className={styles.rangeTitle}>
-                      {t(`products.ranges.${item.key}.title`)}
-                    </span>
+                  <span className={styles.rangeTitle}>
+                    {t(`products.ranges.${item.key}.title`)}
                   </span>
                 </Link>
               </li>
