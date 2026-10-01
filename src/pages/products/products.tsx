@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 
 import { Container } from 'components/container';
 import { PageHeader } from 'components/page-header';
@@ -13,8 +12,10 @@ import styles from './products.module.css';
 
 /**
  * Productos: las cinco gamas en una rejilla centrada (tres arriba y dos abajo
- * en escritorio), cada una con su ilustración, su título y su descripción
- * breve. Toda la gama enlaza con su página, donde están sus productos.
+ * en escritorio), cada una en una tarjeta con su ilustración, su título y su
+ * descripción breve. Toda la tarjeta enlaza con la página de la gama, donde
+ * están sus productos; el borde y la elevación al pasar el ratón indican que se
+ * puede pulsar.
  */
 export const Products = () => {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ export const Products = () => {
           <ul className={styles.ranges}>
             {PRODUCT_RANGES.map((range) => (
               <li key={range.key} className={styles.item}>
-                <Link to={productRangePath(range.key)} className={styles.range}>
+                <Link to={productRangePath(range.key)} className={`${styles.range} hover-lift`}>
                   <img
                     src={range.image}
                     alt=""
@@ -44,10 +45,6 @@ export const Products = () => {
                   />
                   <h2 className={styles.title}>{t(`products.ranges.${range.key}.title`)}</h2>
                   <p className={styles.text}>{t(`products.ranges.${range.key}.text`)}</p>
-                  <span className={styles.more}>
-                    {t('products.viewRange')}
-                    <ArrowRight size={16} aria-hidden />
-                  </span>
                 </Link>
               </li>
             ))}
