@@ -112,6 +112,11 @@
   "products": {
     "title": "Produtos",
     "intro": "Fertilizantes, fatores de produção, aconselhamento e tecnologia para cada cultura.",
+    "viewAll": "Ver todos os produtos",
+    "all": {
+      "title": "Todos os produtos",
+      "intro": "Todos os fertilizantes Clavel juntos, das cinco gamas. Abra cada um para ver a sua ficha técnica."
+    },
     "rangeProductsTitle": "Produtos da gama",
     "viewSheet": "Ver ficha técnica",
     "visitRange": "Ver a gama {{range}}",

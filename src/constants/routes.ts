@@ -6,6 +6,8 @@ export const routes = {
   home: '/',
   aboutUs: '/about-us',
   products: '/products',
+  // Ruta fija: React Router la elige antes que /products/:range.
+  allProducts: '/products/all',
   productRange: '/products/:range',
   productDetail: '/products/:range/:product',
   laboratory: '/laboratory',

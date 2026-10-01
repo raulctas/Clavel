@@ -1,0 +1,10 @@
+.section {
+  padding-block: 72px 96px;
+}
+
+/* La misma rejilla que la página de una gama: hasta cuatro por fila en escritorio. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}

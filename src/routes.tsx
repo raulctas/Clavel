@@ -4,6 +4,7 @@ import { MainLayout } from 'components/main-layout';
 import { RouteError } from 'components/route-error';
 import { legacyRedirects, routes as routePaths } from 'constants/routes';
 import { AboutUs } from 'pages/about-us';
+import { AllProducts } from 'pages/all-products';
 import { Contact } from 'pages/contact';
 import { Home } from 'pages/home';
 import { Laboratory } from 'pages/laboratory';
@@ -28,6 +29,7 @@ export const routes = (
       <Route index element={<Home />} />
       <Route path={routePaths.aboutUs} element={<AboutUs />} />
       <Route path={routePaths.products} element={<Products />} />
+      <Route path={routePaths.allProducts} element={<AllProducts />} />
       <Route path={routePaths.productRange} element={<ProductRange />} />
       <Route path={routePaths.productDetail} element={<ProductDetail />} />
       <Route path={routePaths.laboratory} element={<Laboratory />} />

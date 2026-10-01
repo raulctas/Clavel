@@ -96,7 +96,9 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   `products`):
   - `/products`: las cinco gamas (Terra, Protección, Potenciador, Nutrición y Correctores) en
     una rejilla centrada (tres y dos) de tarjetas, cada una con su ilustración, su título y su descripción
-    breve; toda la gama enlaza con su página.
+    breve; toda la gama enlaza con su página. Debajo, «Ver todos los productos».
+  - `/products/all`: los 14 productos juntos en una rejilla, en el orden de las gamas; cada
+    tarjeta indica su gama («Clavel · Terra») y enlaza con la ficha.
   - `/products/<gama>`: la gama con las tarjetas de sus productos y enlaces a las demás gamas.
   - `/products/<gama>/<producto>`: la ficha: banda de título con el nombre y la función y, debajo,
     una disposición de tienda en línea: galería con

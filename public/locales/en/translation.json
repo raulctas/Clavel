@@ -112,6 +112,11 @@
   "products": {
     "title": "Products",
     "intro": "Fertilisers, inputs, advice and technology for every crop.",
+    "viewAll": "See all products",
+    "all": {
+      "title": "All products",
+      "intro": "All Clavel fertilisers together, from the five ranges. Open any of them to see its technical sheet."
+    },
     "rangeProductsTitle": "Products in this range",
     "viewSheet": "View technical sheet",
     "visitRange": "See the {{range}} range",

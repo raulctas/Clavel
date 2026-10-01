@@ -112,6 +112,11 @@
   "products": {
     "title": "Prodotti",
     "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura.",
+    "viewAll": "Vedi tutti i prodotti",
+    "all": {
+      "title": "Tutti i prodotti",
+      "intro": "Tutti i fertilizzanti Clavel insieme, delle cinque linee. Apri ciascuno per vederne la scheda tecnica."
+    },
     "rangeProductsTitle": "Prodotti della linea",
     "viewSheet": "Vedi scheda tecnica",
     "visitRange": "Vedi la linea {{range}}",

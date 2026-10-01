@@ -112,6 +112,11 @@
   "products": {
     "title": "Produits",
     "intro": "Engrais, intrants, conseil et technologie pour chaque culture.",
+    "viewAll": "Voir tous les produits",
+    "all": {
+      "title": "Tous les produits",
+      "intro": "Tous les engrais Clavel réunis, des cinq gammes. Ouvrez chacun d'eux pour consulter sa fiche technique."
+    },
     "rangeProductsTitle": "Produits de la gamme",
     "viewSheet": "Voir la fiche technique",
     "visitRange": "Voir la gamme {{range}}",

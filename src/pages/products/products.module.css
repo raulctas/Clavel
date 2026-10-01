@@ -48,6 +48,13 @@
   box-shadow: var(--focus-ring);
 }
 
+/* «Ver todos los productos», centrado bajo las gamas. */
+.viewAll {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
 .illustration {
   width: 140px;
   height: 140px;

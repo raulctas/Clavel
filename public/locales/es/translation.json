@@ -112,6 +112,11 @@
   "products": {
     "title": "Productos",
     "intro": "Fertilizantes, insumos, asesoramiento y tecnología para cada cultivo.",
+    "viewAll": "Ver todos los productos",
+    "all": {
+      "title": "Todos los productos",
+      "intro": "Todos los fertilizantes de Clavel juntos, de las cinco gamas. Entra en cada uno para ver su ficha técnica."
+    },
     "rangeProductsTitle": "Productos de la gama",
     "viewSheet": "Ver ficha técnica",
     "visitRange": "Ver la gama {{range}}",
