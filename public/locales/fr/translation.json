@@ -725,6 +725,8 @@
         },
         "general": "Je souhaiterais recevoir de plus amples informations sur vos produits.",
         "catalogue": "Je vous serais reconnaissant de bien vouloir m'envoyer votre catalogue de produits.",
+        "catalogueList_one": "Je vous serais reconnaissant de bien vouloir m'envoyer le catalogue suivant :",
+        "catalogueList_other": "Je vous serais reconnaissant de bien vouloir m'envoyer les catalogues suivants :",
         "advice": "Je souhaiterais bénéficier de conseils techniques pour ma culture.",
         "product": "Je souhaiterais recevoir de plus amples informations sur le produit {{product}}.",
         "other": "Je me permets de vous contacter afin de vous soumettre une question.",

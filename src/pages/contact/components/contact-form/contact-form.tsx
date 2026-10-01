@@ -111,14 +111,23 @@ export const ContactForm = ({ initialReason, initialProduct, initialCatalogue }:
   const [website, setWebsite] = useState('');
 
   const productName = PRODUCTS.find((item) => item.slug === product)?.name;
+  // Catálogos marcados, en el orden de las gamas, como lista con guiones.
+  const selectedCatalogues = CATALOGUES.filter((key) => catalogues.includes(key));
   const body =
     reason === 'productInfo' && productName
       ? t('contact.form.defaultMessage.product', { product: productName })
-      : t(
-          `contact.form.defaultMessage.${
-            reason === 'catalogue' || reason === 'advice' || reason === 'other' ? reason : 'general'
-          }`,
-        );
+      : reason === 'catalogue' && selectedCatalogues.length > 0
+        ? [
+            t('contact.form.defaultMessage.catalogueList', { count: selectedCatalogues.length }),
+            ...selectedCatalogues.map((key) => `- ${t(catalogueTitleKey(key))}`),
+          ].join('\n')
+        : t(
+            `contact.form.defaultMessage.${
+              reason === 'catalogue' || reason === 'advice' || reason === 'other'
+                ? reason
+                : 'general'
+            }`,
+          );
   // Saludo según la hora local; cada idioma fija a qué hora empiezan la tarde y la noche.
   const hour = now.getHours();
   const greetingKey = (key: string) => `contact.form.defaultMessage.greeting.${key}`;
@@ -389,7 +398,8 @@ export const ContactForm = ({ initialReason, initialProduct, initialCatalogue }:
         <span className={styles.label}>{t('contact.form.message')}</span>
         <textarea
           name="message"
-          rows={7}
+          // Crece con el texto (p. ej. la lista de catálogos), entre 7 y 14 líneas.
+          rows={Math.min(14, Math.max(7, message.split('\n').length + 1))}
           placeholder={t('contact.form.messageHelp')}
           value={message}
           onChange={(event) => {

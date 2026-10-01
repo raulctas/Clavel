@@ -725,6 +725,8 @@
         },
         "general": "I would be grateful to receive further information about your products.",
         "catalogue": "I would be grateful if you could send me your product catalogue.",
+        "catalogueList_one": "I would be grateful if you could send me the following catalogue:",
+        "catalogueList_other": "I would be grateful if you could send me the following catalogues:",
         "advice": "I would like to request technical advice for my crop.",
         "product": "I would be grateful to receive further information about {{product}}.",
         "other": "I am writing to you with an enquiry.",

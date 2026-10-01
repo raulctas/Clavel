@@ -725,6 +725,8 @@
         },
         "general": "Gostaria de receber mais informações sobre os vossos produtos.",
         "catalogue": "Agradeço que me enviem o vosso catálogo de produtos.",
+        "catalogueList_one": "Agradeço que me enviem o seguinte catálogo:",
+        "catalogueList_other": "Agradeço que me enviem os seguintes catálogos:",
         "advice": "Gostaria de receber aconselhamento técnico para a minha cultura.",
         "product": "Gostaria de receber mais informações sobre o produto {{product}}.",
         "other": "Venho por este meio colocar-vos uma questão.",
