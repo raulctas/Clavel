@@ -112,7 +112,6 @@
   "products": {
     "title": "Productos",
     "intro": "Fertilizantes, insumos, asesoramiento y tecnología para cada cultivo.",
-    "circleHint": "Una gama para cada fase del cultivo",
     "productCount_one": "{{count}} producto",
     "productCount_other": "{{count}} productos",
     "rangeProductsTitle": "Productos de la gama",

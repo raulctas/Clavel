@@ -1,108 +1,46 @@
 .section {
-  padding-block: 64px 96px;
+  padding-block: 80px 96px;
 }
 
-/* ---------- Círculo de gamas (escritorio y tablet) ---------- */
-
-/* Cuadrado que contiene el anillo; las gamas se colocan en % de su lado. */
-.circle {
-  position: relative;
-  width: min(100%, 880px);
-  aspect-ratio: 1 / 1;
-  margin-inline: auto;
-}
-
-/* Anillo que une las gamas: línea suave, con el mismo radio que su posición. */
-.ring {
-  position: absolute;
-  inset: 12%;
-  border: 2px dashed var(--color-sprout);
-  border-radius: 50%;
-}
-
-/* Centro: disco crema con la flor y el lema o la descripción de la gama activa. */
-.center {
-  position: absolute;
-  inset: 29%;
+/*
+ * Rejilla centrada: tres gamas por fila en escritorio y la última fila (dos)
+ * centrada, como en la página de Grupo Alfa.
+ */
+.ranges {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 7%;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--color-white) 0%, var(--color-cream) 75%);
-  box-shadow: inset 0 0 0 1px var(--color-border-card);
-  text-align: center;
+  gap: 28px;
 }
 
-.centerContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  animation: center-in 220ms ease;
-}
-
-@keyframes center-in {
-  from {
-    opacity: 0;
-    transform: scale(0.96);
-  }
-}
-
-.logo {
-  width: 96px;
-  height: 96px;
-}
-
-.centerHint {
-  max-width: 240px;
-  font-family: var(--font-heading);
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--color-green);
-}
-
-.centerTitle {
-  font-family: var(--font-heading);
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.1;
-  color: var(--color-ink);
-}
-
-.centerText {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--color-ink-soft);
-}
-
-.centerCount {
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-sprout);
-  color: var(--color-green);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-/* Cada gama se centra en su punto del anillo. */
 .item {
-  position: absolute;
-  width: 200px;
-  transform: translate(-50%, -50%);
+  flex: 0 1 calc((100% - 56px) / 3);
+  min-width: 260px;
+  display: flex;
 }
 
+/*
+ * Tarjeta con borde suave: indica que la gama se puede pulsar. Al pasar el
+ * ratón se eleva (clase global `hover-lift`) y el borde se tiñe de verde.
+ * Las tarjetas de una fila miden lo mismo aunque el texto varíe.
+ */
 .range {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 10px;
+  gap: 12px;
+  padding: 36px 28px 32px;
+  border: 1px solid var(--color-border-card);
   border-radius: var(--radius-card);
+  background-color: var(--color-white);
   color: inherit;
   text-align: center;
   text-decoration: none;
+}
+
+.range:hover {
+  border-color: var(--color-sprout);
 }
 
 .range:focus-visible {
@@ -111,157 +49,49 @@
 }
 
 .illustration {
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  background-color: var(--color-white);
-  transition:
-    transform 260ms ease,
-    box-shadow 260ms ease;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 8px;
+  transition: transform 300ms ease;
 }
 
-.range:hover .illustration,
-.rangeActive .illustration {
-  transform: scale(1.08);
-  box-shadow: 0 0 0 4px var(--color-sprout);
+.range:hover .illustration {
+  transform: scale(1.06);
 }
 
 .title {
-  font-family: var(--font-heading);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.15;
+  font-size: 32px;
+  line-height: 1.1;
   color: var(--color-ink);
-  transition: color var(--transition);
 }
 
-.range:hover .title,
-.rangeActive .title {
-  color: var(--color-green);
-}
-
-.rangeText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-/*
- * En el círculo la descripción se ve en el centro, no bajo cada gama: aquí queda
- * oculta a la vista pero disponible para los lectores de pantalla.
- */
 .text {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
+  max-width: 360px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-ink-soft);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .centerContent {
-    animation: none;
-  }
-
-  .range:hover .illustration,
-  .rangeActive .illustration {
+  .range:hover .illustration {
     transform: none;
   }
 }
 
-/* En tablet, el círculo se reduce: gamas e ilustraciones más pequeñas. */
+/* En tablet, dos por fila; en móvil, una. */
 @media (max-width: 900px) {
   .item {
-    width: 150px;
-  }
-
-  .illustration {
-    width: 96px;
-    height: 96px;
-  }
-
-  .title {
-    font-size: 19px;
-  }
-
-  .center {
-    padding: 5%;
-  }
-
-  .centerTitle {
-    font-size: 22px;
-  }
-
-  .centerText {
-    font-size: 13px;
-  }
-
-  .logo {
-    width: 72px;
-    height: 72px;
-  }
-
-  .centerHint {
-    font-size: 18px;
+    flex-basis: calc((100% - 28px) / 2);
   }
 }
 
-/* ---------- Móvil: lista con la descripción de cada gama ---------- */
-
-@media (max-width: 640px) {
-  .circle {
-    aspect-ratio: auto;
-  }
-
-  .ring,
-  .center {
-    display: none;
-  }
-
-  .ranges {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
+@media (max-width: 600px) {
   .item {
-    position: static;
-    width: auto;
-    transform: none;
+    flex-basis: 100%;
+    min-width: 0;
   }
 
   .range {
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-    padding: 16px;
-    border: 1px solid var(--color-border-card);
-    text-align: left;
-  }
-
-  .rangeText {
-    align-items: flex-start;
-  }
-
-  .illustration {
-    flex: none;
-    width: 80px;
-    height: 80px;
-  }
-
-  .text {
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    clip-path: none;
-    white-space: normal;
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--color-ink-soft);
+    padding: 28px 20px 24px;
   }
 }

@@ -112,7 +112,6 @@
   "products": {
     "title": "Produtos",
     "intro": "Fertilizantes, fatores de produção, aconselhamento e tecnologia para cada cultura.",
-    "circleHint": "Uma gama para cada fase da cultura",
     "productCount_one": "{{count}} produto",
     "productCount_other": "{{count}} produtos",
     "rangeProductsTitle": "Produtos da gama",
