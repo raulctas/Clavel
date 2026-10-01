@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { Container } from 'components/container';
 import { NewsCard } from 'components/news-card';
 import { PageHeader } from 'components/page-header';
 import { RichText } from 'components/rich-text';
 import { TextLink } from 'components/text-link';
-import { routes } from 'constants/routes';
+import { newsCategoryPath, routes } from 'constants/routes';
 import { findNewsBySlug, getRelatedNews } from 'data/news';
 import { usePageTitle } from 'hooks/use-page-title';
 import { NewsItem } from 'interfaces/news';
@@ -35,7 +35,6 @@ const NewsArticle = ({ item }: { item: NewsItem }) => {
       <PageHeader
         page={title}
         parent={{ label: t('nav.news'), to: routes.news }}
-        eyebrow={t(`news.categories.${item.category}`)}
         title={title}
         intro={t(`news.items.${item.id}.excerpt`)}
         // La foto de la noticia solo se muestra aquí, en la banda de título.
@@ -44,6 +43,10 @@ const NewsArticle = ({ item }: { item: NewsItem }) => {
 
       <Container as="article" className={styles.article}>
         <div className={styles.content}>
+          {/* Categoría: abre Noticias con ese filtro aplicado. */}
+          <Link to={newsCategoryPath(item.category)} className={styles.category}>
+            {t(`news.categories.${item.category}`)}
+          </Link>
           <RichText blocks={body} />
           {item.videos?.map((videoId) => (
             <VideoEmbed key={videoId} videoId={videoId} title={t('news.videoTitle', { title })} />

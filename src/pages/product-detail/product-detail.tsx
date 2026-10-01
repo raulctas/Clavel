@@ -57,7 +57,6 @@ const ProductSheet = ({ product }: { product: Product }) => {
           { label: t('products.title'), to: routes.products },
           { label: rangeTitle, to: productRangePath(range.key) },
         ]}
-        eyebrow={COMPANY.name}
         title={product.name}
         intro={productFunction}
         image={PAGE_HEADER_IMAGES.products}
@@ -105,6 +104,10 @@ const ProductSheet = ({ product }: { product: Product }) => {
 
         {/* ---------- Información ---------- */}
         <div className={styles.info}>
+          {/* La marca, como «Marca: …» de las tiendas en línea, sobre el enlace a la gama. */}
+          <p className={styles.brandLine}>
+            {t('products.sheet.brand')}: <strong>{COMPANY.name}</strong>
+          </p>
           <Link to={productRangePath(range.key)} className={styles.rangeLink}>
             {t('products.visitRange', { range: rangeTitle })}
           </Link>
