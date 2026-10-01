@@ -710,11 +710,13 @@
       "message": "Mensagem",
       "messageHelp": "Fale-nos da sua cultura, da área ou do produto que lhe interessa.",
       "defaultMessage": {
-        "general": "Olá, gostaria de receber mais informações sobre os vossos produtos. Obrigado.",
-        "catalogue": "Olá, gostaria de receber o vosso catálogo. Obrigado.",
-        "advice": "Olá, gostaria de receber aconselhamento para a minha cultura. Obrigado.",
-        "product": "Olá, gostaria de receber mais informações sobre {{product}}. Obrigado.",
-        "other": "Olá, gostaria de vos colocar uma questão. Obrigado."
+        "greeting": "Bom dia,",
+        "general": "Gostaria de receber mais informações sobre os vossos produtos.",
+        "catalogue": "Agradeço que me enviem o vosso catálogo de produtos.",
+        "advice": "Gostaria de receber aconselhamento técnico para a minha cultura.",
+        "product": "Gostaria de receber mais informações sobre o produto {{product}}.",
+        "other": "Venho por este meio colocar-vos uma questão.",
+        "closing": "Com os melhores cumprimentos."
       },
       "privacy": "Li e aceito a <policyLink>política de privacidade</policyLink>.",
       "submit": "Enviar",

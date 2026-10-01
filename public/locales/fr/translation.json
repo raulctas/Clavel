@@ -710,11 +710,13 @@
       "message": "Message",
       "messageHelp": "Parlez-nous de votre culture, de la surface ou du produit qui vous intéresse.",
       "defaultMessage": {
-        "general": "Bonjour, je souhaiterais recevoir plus d'informations sur vos produits. Merci.",
-        "catalogue": "Bonjour, je souhaiterais recevoir votre catalogue. Merci.",
-        "advice": "Bonjour, je souhaiterais être conseillé pour ma culture. Merci.",
-        "product": "Bonjour, je souhaiterais recevoir plus d'informations sur {{product}}. Merci.",
-        "other": "Bonjour, j'aurais une question à vous poser. Merci."
+        "greeting": "Madame, Monsieur,",
+        "general": "Je souhaiterais recevoir de plus amples informations sur vos produits.",
+        "catalogue": "Je vous serais reconnaissant de bien vouloir m'envoyer votre catalogue de produits.",
+        "advice": "Je souhaiterais bénéficier de conseils techniques pour ma culture.",
+        "product": "Je souhaiterais recevoir de plus amples informations sur le produit {{product}}.",
+        "other": "Je me permets de vous contacter afin de vous soumettre une question.",
+        "closing": "Cordialement."
       },
       "privacy": "J'ai lu et j'accepte la <policyLink>politique de confidentialité</policyLink>.",
       "submit": "Envoyer",

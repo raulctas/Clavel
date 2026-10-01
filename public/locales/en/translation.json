@@ -710,11 +710,13 @@
       "message": "Message",
       "messageHelp": "Tell us about your crop, the area or the product you are interested in.",
       "defaultMessage": {
-        "general": "Hello, I would like more information about your products. Thank you.",
-        "catalogue": "Hello, I would like to receive your catalogue. Thank you.",
-        "advice": "Hello, I would like some advice for my crop. Thank you.",
-        "product": "Hello, I would like more information about {{product}}. Thank you.",
-        "other": "Hello, I have a question for you. Thank you."
+        "greeting": "Dear Sir or Madam,",
+        "general": "I would be grateful to receive further information about your products.",
+        "catalogue": "I would be grateful if you could send me your product catalogue.",
+        "advice": "I would like to request technical advice for my crop.",
+        "product": "I would be grateful to receive further information about {{product}}.",
+        "other": "I am writing to you with an enquiry.",
+        "closing": "Kind regards."
       },
       "privacy": "I have read and accept the <policyLink>privacy policy</policyLink>.",
       "submit": "Send",

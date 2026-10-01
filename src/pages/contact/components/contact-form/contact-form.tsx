@@ -81,7 +81,7 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
   const [sent, setSent] = useState(false);
 
   const productName = PRODUCTS.find((item) => item.slug === product)?.name;
-  const defaultMessage =
+  const body =
     reason === 'productInfo' && productName
       ? t('contact.form.defaultMessage.product', { product: productName })
       : t(
@@ -89,6 +89,12 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
             reason === 'catalogue' || reason === 'advice' || reason === 'other' ? reason : 'general'
           }`,
         );
+  // Saludo, cuerpo y despedida, separados por una línea en blanco.
+  const defaultMessage = [
+    t('contact.form.defaultMessage.greeting'),
+    body,
+    t('contact.form.defaultMessage.closing'),
+  ].join('\n\n');
   const message = messageEdited ? values.message : defaultMessage;
 
   const validate = (form: FormValues): FormErrors => ({
@@ -317,7 +323,7 @@ export const ContactForm = ({ initialReason, initialProduct }: Props) => {
         <span className={styles.label}>{t('contact.form.message')}</span>
         <textarea
           name="message"
-          rows={5}
+          rows={7}
           placeholder={t('contact.form.messageHelp')}
           value={message}
           onChange={(event) => {

@@ -710,11 +710,13 @@
       "message": "Mensaje",
       "messageHelp": "Cuéntanos tu cultivo, la superficie o el producto que te interesa.",
       "defaultMessage": {
-        "general": "Hola, me gustaría recibir más información sobre vuestros productos. Gracias.",
-        "catalogue": "Hola, me gustaría recibir vuestro catálogo. Gracias.",
-        "advice": "Hola, me gustaría recibir asesoramiento para mi cultivo. Gracias.",
-        "product": "Hola, me gustaría recibir más información sobre {{product}}. Gracias.",
-        "other": "Hola, me gustaría haceros una consulta. Gracias."
+        "greeting": "Buenos días:",
+        "general": "Me gustaría recibir más información sobre sus productos.",
+        "catalogue": "Les agradecería que me enviaran su catálogo de productos.",
+        "advice": "Me gustaría recibir asesoramiento técnico para mi cultivo.",
+        "product": "Me gustaría recibir más información sobre el producto {{product}}.",
+        "other": "Me pongo en contacto con ustedes para realizarles una consulta.",
+        "closing": "Un cordial saludo."
       },
       "privacy": "He leído y acepto la <policyLink>política de privacidad</policyLink>.",
       "submit": "Enviar",
