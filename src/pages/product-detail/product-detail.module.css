@@ -124,6 +124,17 @@
   min-width: 0;
 }
 
+/* «Marca: Clavel», discreta, encima del enlace a la gama. */
+.brandLine {
+  font-size: 15px;
+  color: var(--color-ink-soft);
+}
+
+.brandLine strong {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
 /* Como «Visita la tienda de…»: enlace a la gama sobre el nombre. */
 .rangeLink {
   align-self: flex-start;

@@ -11,6 +11,29 @@
   gap: 32px;
 }
 
+/* Etiqueta de la categoría al principio del artículo, como las de composición. */
+.category {
+  align-self: flex-start;
+  margin-bottom: -8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-sprout);
+  color: var(--color-green);
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color var(--transition);
+}
+
+.category:hover {
+  background-color: var(--color-sprout-soft);
+  box-shadow: inset 0 0 0 1px var(--color-green);
+}
+
+.category:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
 .back {
   margin-top: 8px;
 }

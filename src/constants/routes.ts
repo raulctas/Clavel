@@ -35,6 +35,13 @@ export const productRangePath = (range: string) => `${routes.products}/${range}`
 /** Construye la ruta de la ficha de un producto. */
 export const productPath = (range: string, slug: string) => `${productRangePath(range)}/${slug}`;
 
+/** Parámetro de la URL de Noticias con la categoría por la que filtrar. */
+export const NEWS_CATEGORY_PARAM = 'category';
+
+/** Noticias filtradas por una categoría. */
+export const newsCategoryPath = (category: string) =>
+  `${routes.news}?${NEWS_CATEGORY_PARAM}=${category}`;
+
 /** Construye la ruta de una noticia a partir de su slug. */
 export const newsDetailPath = (slug: string) => `${routes.news}/${slug}`;
 
