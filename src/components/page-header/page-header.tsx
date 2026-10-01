@@ -15,7 +15,7 @@ interface Props {
   intro: string;
   /** Imagen de fondo, decorativa. Se muestra atenuada para que el texto se lea bien. */
   image: string;
-  /** Banda más baja que la común (fichas de producto). */
+  /** Banda más baja que la común (gamas y fichas de producto). */
   compact?: boolean;
 }
 
