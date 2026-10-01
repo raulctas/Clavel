@@ -74,13 +74,13 @@
 
 /* Variante baja (gamas y fichas de producto): da prioridad al contenido. */
 .compact {
-  min-height: 280px;
+  min-height: 360px;
   padding-bottom: 40px;
 }
 
 @media (min-width: 900px) {
   .compact {
-    min-height: 400px;
+    min-height: 480px;
   }
 }
 
