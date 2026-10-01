@@ -36,6 +36,13 @@
   }
 }
 
+/* Lupa e idioma, juntos: se leen como un grupo aparte de las páginas. */
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 /* Reserva el sitio del logo; el círculo se sale por arriba y por abajo. */
 .logoSlot {
   position: relative;
