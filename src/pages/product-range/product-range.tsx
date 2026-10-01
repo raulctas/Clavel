@@ -35,7 +35,6 @@ const RangePage = ({ range }: { range: Range }) => {
         title={title}
         intro={t(`products.ranges.${range.key}.intro`)}
         image={PAGE_HEADER_IMAGES.products}
-        compact
       />
 
       <section aria-labelledby="range-products-title">

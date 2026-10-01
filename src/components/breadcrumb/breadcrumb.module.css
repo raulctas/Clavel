@@ -1,7 +1,11 @@
+/*
+ * Siempre en una línea: los niveles intermedios se ven enteros y el actual (el
+ * título de la página, que puede ser largo) se recorta con «…».
+ */
 .list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  min-width: 0;
   gap: 4px 10px;
   list-style: none;
   padding: 0;
@@ -20,6 +24,11 @@
 }
 
 /* El separador va en CSS: es decoración y no debe leerse ni traducirse. */
+.list > li {
+  flex: none;
+  white-space: nowrap;
+}
+
 .separated::before {
   content: '/';
   margin-right: 10px;
@@ -27,7 +36,11 @@
   color: var(--color-separator);
 }
 
-.current {
+.list > .current {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 600;
   color: var(--color-pink-text);
 }

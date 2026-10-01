@@ -15,18 +15,16 @@ interface Props {
   intro: string;
   /** Imagen de fondo, decorativa. Se muestra atenuada para que el texto se lea bien. */
   image: string;
-  /** Banda más baja que la común (gamas y fichas de producto). */
-  compact?: boolean;
 }
 
 /**
  * Banda de título de las páginas interiores: imagen de fondo atenuada sobre
- * crema, ruta, H1 y entrada. Todas miden lo mismo, salvo la variante `compact`,
- * más baja. Es el primer bloque de la
- * página, así que lleva el hueco de la cabecera flotante.
+ * crema, ruta, H1 y entrada. Todas las páginas (salvo Inicio, que tiene su
+ * portada) la usan con el mismo alto y el mismo formato. Es el primer bloque de
+ * la página, así que lleva el hueco de la cabecera flotante.
  */
-export const PageHeader = ({ page, parent, eyebrow, title, intro, image, compact }: Props) => (
-  <section className={compact ? `${styles.band} ${styles.compact}` : styles.band}>
+export const PageHeader = ({ page, parent, eyebrow, title, intro, image }: Props) => (
+  <section className={styles.band}>
     <img src={image} alt="" className={styles.background} />
     <div className={styles.veil} aria-hidden />
     <Container className={styles.container}>
