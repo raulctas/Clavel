@@ -59,6 +59,7 @@ const ProductSheet = ({ product }: { product: Product }) => {
         title={product.name}
         intro={productFunction}
         image={PAGE_HEADER_IMAGES.products}
+        compact
       />
 
       <Container as="section" className={styles.layout}>

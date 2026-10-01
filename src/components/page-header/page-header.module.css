@@ -71,3 +71,15 @@
   color: var(--color-ink-soft);
   max-width: 640px;
 }
+
+/* Variante baja (fichas de producto): acerca el contenido al título. */
+.compact {
+  min-height: 280px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 900px) {
+  .compact {
+    min-height: 400px;
+  }
+}
