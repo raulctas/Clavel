@@ -112,10 +112,6 @@
   "products": {
     "title": "Produtos",
     "intro": "Fertilizantes, fatores de produção, aconselhamento e tecnologia para cada cultura.",
-    "tags": {
-      "certified": "Certificado ecológico UNE 142500:2017",
-      "drone": "Compatível com drone"
-    },
     "productCount_one": "{{count}} produto",
     "productCount_other": "{{count}} produtos",
     "viewRange": "Ver a gama",

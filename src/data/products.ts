@@ -1,11 +1,7 @@
-export type ProductTag = 'certified' | 'drone';
-
 export type RangeKey = 'terra' | 'protection' | 'booster' | 'nutrition' | 'correctors';
 
 export interface ProductRange {
   key: RangeKey;
-  /** Número de la gama (1-5), como en el catálogo. */
-  number: number;
   /** Ilustración en círculo blanco, con fondo transparente. */
   image: string;
 }
@@ -28,19 +24,16 @@ export interface Product {
   images: { src: string; format: string }[];
 }
 
-/** Etiquetas comunes a todos los productos de Clavel (página Productos). */
-export const PRODUCT_TAGS: ProductTag[] = ['certified', 'drone'];
-
 /**
  * Las cinco gamas de producto, en orden. Textos en products.ranges.<key>
  * (title, text e intro). La gama es también el segmento de la URL.
  */
 export const PRODUCT_RANGES: ProductRange[] = [
-  { key: 'terra', number: 1, image: '/images/products/range-terra.webp' },
-  { key: 'protection', number: 2, image: '/images/products/range-protection.webp' },
-  { key: 'booster', number: 3, image: '/images/products/range-booster.webp' },
-  { key: 'nutrition', number: 4, image: '/images/products/range-nutrition.webp' },
-  { key: 'correctors', number: 5, image: '/images/products/range-correctors.webp' },
+  { key: 'terra', image: '/images/products/range-terra.webp' },
+  { key: 'protection', image: '/images/products/range-protection.webp' },
+  { key: 'booster', image: '/images/products/range-booster.webp' },
+  { key: 'nutrition', image: '/images/products/range-nutrition.webp' },
+  { key: 'correctors', image: '/images/products/range-correctors.webp' },
 ];
 
 const images = (slug: string, formats: string[]) =>

@@ -112,10 +112,6 @@
   "products": {
     "title": "Prodotti",
     "intro": "Fertilizzanti, mezzi tecnici, consulenza e tecnologia per ogni coltura.",
-    "tags": {
-      "certified": "Certificato biologico UNE 142500:2017",
-      "drone": "Compatibile con drone"
-    },
     "productCount_one": "{{count}} prodotto",
     "productCount_other": "{{count}} prodotti",
     "viewRange": "Vedi la linea",

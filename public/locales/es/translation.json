@@ -112,10 +112,6 @@
   "products": {
     "title": "Productos",
     "intro": "Fertilizantes, insumos, asesoramiento y tecnología para cada cultivo.",
-    "tags": {
-      "certified": "Certificado ecológico UNE 142500:2017",
-      "drone": "Compatible con dron"
-    },
     "productCount_one": "{{count}} producto",
     "productCount_other": "{{count}} productos",
     "viewRange": "Ver la gama",

@@ -112,10 +112,6 @@
   "products": {
     "title": "Products",
     "intro": "Fertilisers, inputs, advice and technology for every crop.",
-    "tags": {
-      "certified": "Organic certificate UNE 142500:2017",
-      "drone": "Drone compatible"
-    },
     "productCount_one": "{{count}} product",
     "productCount_other": "{{count}} products",
     "viewRange": "View range",

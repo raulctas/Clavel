@@ -112,10 +112,6 @@
   "products": {
     "title": "Produits",
     "intro": "Engrais, intrants, conseil et technologie pour chaque culture.",
-    "tags": {
-      "certified": "Certificat biologique UNE 142500:2017",
-      "drone": "Compatible drone"
-    },
     "productCount_one": "{{count}} produit",
     "productCount_other": "{{count}} produits",
     "viewRange": "Voir la gamme",
