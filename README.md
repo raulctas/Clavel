@@ -117,7 +117,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   redirigen a `/products`.
 - **Buscador** (lupa del menú, `src/components/search` y `src/libs/search.ts`): al abrirse por
   primera vez carga los textos de los cinco idiomas y busca en todos a la vez (sin tildes ni
-  mayúsculas). A partir de 3 letras muestra hasta 8 resultados (`MAX_RESULTS`): primero
+  mayúsculas). A partir de 3 letras muestra hasta 5 resultados (`MAX_RESULTS`): primero
   productos, después noticias y luego el resto de páginas; para entrar en el máximo cuentan
   antes los que coinciden en el título. Cada resultado enlaza con su página y muestra el
   fragmento encontrado (con el idioma, si no es el activo). Las páginas y qué textos incluye

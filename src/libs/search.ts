@@ -19,7 +19,7 @@ import { PRODUCT_RANGES, PRODUCTS } from 'data/products';
 /** Caracteres mínimos para buscar. */
 export const MIN_QUERY_LENGTH = 3;
 /** Resultados como máximo. */
-export const MAX_RESULTS = 8;
+export const MAX_RESULTS = 5;
 
 export type SearchResultType = 'product' | 'news' | 'page';
 
