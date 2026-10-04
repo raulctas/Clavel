@@ -153,6 +153,20 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Imagen provisional**: `public/images/provisional/team-4x5.png`, la foto de muestra de las
   fichas del equipo mientras no haya fotos reales (ver «Equipo»).
 
+## Despliegue
+
+`yarn build` genera `dist/`. Su **contenido** se sube a la raíz de la web del hosting (`/www`), no
+dentro de `cgi-bin`, sobrescribiendo los ficheros. Van incluidos dos `.htaccess` (Apache):
+
+- `public/.htaccess`: todas las rutas sirven `index.html` (React Router) y fija la caché:
+  `index.html` y los `translation.json` se comprueban siempre; imágenes y demás ficheros de
+  `public/`, un día, porque conservan su nombre aunque se sustituyan.
+- `public/assets/.htaccess`: acaba en `dist/assets/` y deja guardar un año el código y las fuentes
+  de Vite, que cambian de nombre en cada versión.
+
+Las fotos de producto llevan además `?v=<PHOTOS_VERSION>` (`src/data/products.ts`): al sustituir
+fotos conservando el nombre, sube ese número para que se vean al momento.
+
 ## Pendiente
 
 - **Envío del formulario en el hosting**: necesita PHP con `mail()` y correo saliente. El

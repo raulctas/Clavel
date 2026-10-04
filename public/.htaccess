@@ -1,0 +1,26 @@
+# SPA (react-router con BrowserRouter): cualquier ruta que no sea un fichero
+# o carpeta real se sirve con index.html para que el router la resuelva.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Caché del navegador.
+# - Imágenes, fuentes y demás ficheros de public/ (images/, favicon…): un día.
+#   Conservan su nombre aunque se sustituyan, así que no pueden guardarse mucho
+#   más o la gente seguiría viendo las versiones antiguas.
+# - index.html y los textos (translation.json): siempre se comprueban.
+# - assets/ (código y fuentes de Vite, con huella en el nombre) tiene su propio
+#   .htaccess (public/assets/.htaccess) que los guarda un año.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|woff2?|png|jpe?g|svg|ico|webp|webmanifest)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  <FilesMatch "(index\.html|translation\.json)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
