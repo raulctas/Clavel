@@ -15,7 +15,7 @@ fidelidad), que no forma parte del repositorio. Los textos vienen de la web de G
   desarrollo, al cambiar uno, la página se recarga sola)
 - **CSS Modules** + design tokens (`src/styles/design-tokens.css`)
 - Fuentes self-hosted vía `@fontsource` (Barlow Semi Condensed + Barlow)
-- Iconos **Lucide** (`lucide-react`); TikTok, que no está en Lucide, es un SVG propio
+- Iconos **Lucide** (`lucide-react`)
 
 Convenciones (las mismas que Wio.Front y Sysoil.Front): ficheros y carpetas en `kebab-case`,
 una carpeta por componente con barrel `index.ts`, componentes como arrow functions,
