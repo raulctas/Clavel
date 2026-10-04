@@ -15,7 +15,8 @@
 #   más o la gente seguiría viendo las versiones antiguas.
 # - index.html y los textos (translation.json): siempre se comprueban.
 # - assets/ (código y fuentes de Vite, con huella en el nombre) tiene su propio
-#   .htaccess (public/assets/.htaccess) que los guarda un año.
+#   .htaccess (public/assets/.htaccess) que los guarda un año; también con
+#   <FilesMatch>, para que se imponga a la regla de un día de este fichero.
 <IfModule mod_headers.c>
   <FilesMatch "\.(js|css|woff2?|png|jpe?g|svg|ico|webp|webmanifest)$">
     Header set Cache-Control "public, max-age=86400"
