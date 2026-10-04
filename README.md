@@ -15,7 +15,7 @@ fidelidad), que no forma parte del repositorio. Los textos vienen de la web de G
   desarrollo, al cambiar uno, la página se recarga sola)
 - **CSS Modules** + design tokens (`src/styles/design-tokens.css`)
 - Fuentes self-hosted vía `@fontsource` (Barlow Semi Condensed + Barlow)
-- Iconos **Lucide** (`lucide-react`); TikTok, que no está en Lucide, es un SVG propio
+- Iconos **Lucide** (`lucide-react`)
 
 Convenciones (las mismas que Wio.Front y Sysoil.Front): ficheros y carpetas en `kebab-case`,
 una carpeta por componente con barrel `index.ts`, componentes como arrow functions,
@@ -164,8 +164,6 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   `src/constants/company.ts`. La dirección (Bétera) está en `contact.address` de cada
   `translation.json` y se muestra como texto, sin enlace. Se ven en el pie y en el apartado
   «Responsable del tratamiento» de la política de privacidad; Contactar no los muestra.
-- **Redes sociales**: URLs en `SOCIAL_LINKS` (`src/constants/company.ts`). Mientras valgan
-  `undefined`, el icono se muestra en el pie pero no enlaza.
 - **Nombres, cargos y fotos del equipo**.
 - **Revisión legal de la política de privacidad** (`/privacy`, textos en `privacy` de
   cada `translation.json`): el texto es una base estándar del RGPD y conviene que lo revise un

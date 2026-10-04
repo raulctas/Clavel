@@ -464,20 +464,6 @@
           "Investire nella salute del suolo significa investire nel futuro dell'agricoltura. Un suolo fertile ed equilibrato è la base di colture più produttive, sostenibili e di qualità superiore. Con pratiche di arricchimento responsabili non solo otterrai raccolti migliori, ma contribuirai anche a un'agricoltura più rispettosa dell'ambiente e delle generazioni future."
         ]
       },
-      "fruitVegetables": {
-        "title": "Miglioramento di frutta e verdura",
-        "excerpt": "Il miglioramento del limone di Carmen, passo dopo passo.",
-        "body": [
-          "Ti mostriamo, passo dopo passo, come abbiamo migliorato l'albero di limone di Carmen: lo stato iniziale della pianta, il trattamento con fertilizzanti biologici che abbiamo applicato e i risultati visibili in campo."
-        ]
-      },
-      "citrusFertilisation": {
-        "title": "Concimazione organica negli agrumi",
-        "excerpt": "Abbiamo girato un video con Juan Manuel Martínez nella sua azienda agrumicola.",
-        "body": [
-          "Abbiamo girato un video con Juan Manuel Martínez nella sua azienda agrumicola, dove ci racconta la sua esperienza con la concimazione organica e i risultati ottenuti sui suoi alberi."
-        ]
-      },
       "trialFields": {
         "title": "Il ruolo dei campi sperimentali",
         "excerpt": "I campi sperimentali sono essenziali per convalidare l'uso dei fertilizzanti biologici rispetto all'agricoltura convenzionale.",
@@ -894,7 +880,6 @@
     "claim": "Soluzioni agricole sostenibili, con esperienza, innovazione e impegno per il futuro dell'agricoltura.",
     "pages": "Pagine",
     "contact": "Contatti",
-    "social": "Social network",
     "copyright": "© {{year}} Clavel. Tutti i diritti riservati."
   },
   "notFound": {

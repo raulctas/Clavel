@@ -32,20 +32,6 @@ export const NEWS: NewsItem[] = [
     image: newsImage('soil-quality'),
   },
   {
-    id: 'fruitVegetables',
-    slug: 'fruit-vegetables',
-    category: 'fruitVegetables',
-    image: newsImage('fruit-vegetables'),
-    videos: ['4hBg74CwdrA', 'YRNSerMEc04'],
-  },
-  {
-    id: 'citrusFertilisation',
-    slug: 'citrus-fertilisation',
-    category: 'fruitVegetables',
-    image: newsImage('citrus-fertilisation'),
-    videos: ['Av6-vaycs7U'],
-  },
-  {
     id: 'trialFields',
     slug: 'trial-fields',
     category: 'organic',
