@@ -1,10 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Linkedin, LucideIcon, Mail, Youtube } from 'lucide-react';
 
 import { Container } from 'components/container';
-import { TikTokIcon } from 'components/tiktok-icon';
-import { COMPANY, SOCIAL_LINKS } from 'constants/company';
 import { routes } from 'constants/routes';
 import { useContactDetails } from 'hooks/use-contact-details';
 
@@ -17,21 +14,6 @@ const PAGES = [
   { to: routes.news, labelKey: 'nav.news' },
   { to: routes.team, labelKey: 'nav.team' },
   { to: routes.contact, labelKey: 'nav.contact' },
-];
-
-interface SocialItem {
-  name: string;
-  icon: LucideIcon | typeof TikTokIcon;
-  href?: string;
-}
-
-const SOCIAL: SocialItem[] = [
-  { name: 'Facebook', icon: Facebook, href: SOCIAL_LINKS.facebook },
-  { name: 'Instagram', icon: Instagram, href: SOCIAL_LINKS.instagram },
-  { name: 'YouTube', icon: Youtube, href: SOCIAL_LINKS.youtube },
-  { name: 'LinkedIn', icon: Linkedin, href: SOCIAL_LINKS.linkedin },
-  { name: 'TikTok', icon: TikTokIcon, href: SOCIAL_LINKS.tiktok },
-  { name: 'Email', icon: Mail, href: `mailto:${COMPANY.email}` },
 ];
 
 export const Footer = () => {
@@ -51,28 +33,6 @@ export const Footer = () => {
               className={styles.logo}
             />
             <p className={styles.claim}>{t('footer.claim')}</p>
-            <ul className={styles.social} aria-label={t('footer.social')}>
-              {SOCIAL.map(({ name, icon: Icon, href }) => (
-                <li key={name}>
-                  {/* Sin URL confirmada, el icono se muestra pero no enlaza a ningún sitio. */}
-                  {href ? (
-                    <a
-                      href={href}
-                      className={styles.socialLink}
-                      aria-label={name}
-                      title={name}
-                      {...(href.startsWith('http') && { target: '_blank', rel: 'noopener' })}
-                    >
-                      <Icon size={20} aria-hidden />
-                    </a>
-                  ) : (
-                    <span className={styles.socialLink} role="img" aria-label={name} title={name}>
-                      <Icon size={20} aria-hidden />
-                    </span>
-                  )}
-                </li>
-              ))}
-            </ul>
           </div>
 
           <nav className={styles.column} aria-label={t('footer.pages')}>

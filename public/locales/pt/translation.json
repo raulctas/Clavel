@@ -464,20 +464,6 @@
           "Investir na saúde do solo é investir no futuro da agricultura. Um solo fértil e equilibrado é a base de culturas mais produtivas, sustentáveis e de maior qualidade. Com práticas de enriquecimento responsáveis, não só obterá melhores colheitas: contribuirá também para uma agricultura mais respeitadora do ambiente e das gerações futuras."
         ]
       },
-      "fruitVegetables": {
-        "title": "Melhoria de frutas e legumes",
-        "excerpt": "A melhoria do limoeiro da Carmen, passo a passo.",
-        "body": [
-          "Mostramos-lhe, passo a passo, como melhorámos o limoeiro da Carmen: o estado inicial da árvore, o tratamento com fertilizantes ecológicos que aplicámos e os resultados que se podem ver no campo."
-        ]
-      },
-      "citrusFertilisation": {
-        "title": "Adubação orgânica em citrinos",
-        "excerpt": "Gravámos com Juan Manuel Martínez na sua exploração de citrinos.",
-        "body": [
-          "Gravámos com Juan Manuel Martínez na sua exploração de citrinos, onde nos fala da sua experiência com a adubação orgânica e dos resultados que obteve nas suas árvores."
-        ]
-      },
       "trialFields": {
         "title": "O papel dos campos de ensaio",
         "excerpt": "Os campos de ensaio são essenciais para validar a utilização de fertilizantes ecológicos face à agricultura convencional.",
@@ -894,7 +880,6 @@
     "claim": "Soluções agrícolas sustentáveis, com experiência, inovação e compromisso com o futuro do campo.",
     "pages": "Páginas",
     "contact": "Contacto",
-    "social": "Redes sociais",
     "copyright": "© {{year}} Clavel. Todos os direitos reservados."
   },
   "notFound": {

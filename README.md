@@ -164,8 +164,6 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   `src/constants/company.ts`. La dirección (Bétera) está en `contact.address` de cada
   `translation.json` y se muestra como texto, sin enlace. Se ven en el pie y en el apartado
   «Responsable del tratamiento» de la política de privacidad; Contactar no los muestra.
-- **Redes sociales**: URLs en `SOCIAL_LINKS` (`src/constants/company.ts`). Mientras valgan
-  `undefined`, el icono se muestra en el pie pero no enlaza.
 - **Nombres, cargos y fotos del equipo**.
 - **Revisión legal de la política de privacidad** (`/privacy`, textos en `privacy` de
   cada `translation.json`): el texto es una base estándar del RGPD y conviene que lo revise un

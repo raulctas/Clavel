@@ -464,20 +464,6 @@
           "Invertir en la salud del suelo es invertir en el futuro de la agricultura. Un suelo fértil y equilibrado es la base de cultivos más productivos, sostenibles y de mayor calidad. Con prácticas de enriquecimiento responsables no solo obtendrás mejores cosechas: también contribuirás a una agricultura más respetuosa con el medio ambiente y con las generaciones futuras."
         ]
       },
-      "fruitVegetables": {
-        "title": "Mejora de frutas y verduras",
-        "excerpt": "La mejora del limonero de Carmen, paso a paso.",
-        "body": [
-          "Te enseñamos, paso a paso, cómo mejoramos el limonero de Carmen: el estado de partida del árbol, el tratamiento con fertilizantes ecológicos que aplicamos y los resultados que se pueden ver en campo."
-        ]
-      },
-      "citrusFertilisation": {
-        "title": "Abonado orgánico en cítricos",
-        "excerpt": "Grabamos con Juan Manuel Martínez en su explotación de cítricos.",
-        "body": [
-          "Grabamos con Juan Manuel Martínez en su explotación de cítricos, donde nos cuenta su experiencia con el abonado orgánico y los resultados que ha obtenido en sus árboles."
-        ]
-      },
       "trialFields": {
         "title": "El papel de los campos de ensayo",
         "excerpt": "Los campos de ensayo son esenciales para validar el uso de fertilizantes ecológicos frente a la agricultura convencional.",
@@ -894,7 +880,6 @@
     "claim": "Soluciones agrícolas sostenibles, con experiencia, innovación y compromiso con el futuro del campo.",
     "pages": "Páginas",
     "contact": "Contacto",
-    "social": "Redes sociales",
     "copyright": "© {{year}} Clavel. Todos los derechos reservados."
   },
   "notFound": {

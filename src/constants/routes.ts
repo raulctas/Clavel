@@ -21,12 +21,16 @@ export const routes = {
 
 /**
  * Direcciones antiguas que redirigen a la actual (para no romper enlaces
- * guardados): la página «Productos y servicios» y las de las antiguas marcas.
+ * guardados): la página «Productos y servicios», las de las antiguas marcas y
+ * las noticias retiradas.
  */
 export const legacyRedirects = [
   { from: '/products-services', to: routes.products },
   { from: '/products/clavel', to: routes.products },
   { from: '/products/agrentis', to: routes.products },
+  // Noticias retiradas.
+  { from: '/news/fruit-vegetables', to: routes.news },
+  { from: '/news/citrus-fertilisation', to: routes.news },
 ] as const;
 
 /** Construye la ruta de una gama de producto. */

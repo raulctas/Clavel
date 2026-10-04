@@ -464,20 +464,6 @@
           "Investir dans la santé du sol, c'est investir dans l'avenir de l'agriculture. Un sol fertile et équilibré est la base de cultures plus productives, plus durables et de meilleure qualité. Grâce à des pratiques d'enrichissement responsables, vous obtiendrez non seulement de meilleures récoltes, mais vous contribuerez aussi à une agriculture plus respectueuse de l'environnement et des générations futures."
         ]
       },
-      "fruitVegetables": {
-        "title": "Amélioration des fruits et légumes",
-        "excerpt": "L'amélioration du citronnier de Carmen, étape par étape.",
-        "body": [
-          "Nous vous montrons, étape par étape, comment nous avons amélioré le citronnier de Carmen : l'état initial de l'arbre, le traitement aux engrais biologiques que nous avons appliqué et les résultats visibles au champ."
-        ]
-      },
-      "citrusFertilisation": {
-        "title": "Fertilisation organique des agrumes",
-        "excerpt": "Tournage avec Juan Manuel Martínez dans son exploitation d'agrumes.",
-        "body": [
-          "Nous avons tourné avec Juan Manuel Martínez dans son exploitation d'agrumes, où il nous parle de son expérience de la fertilisation organique et des résultats obtenus sur ses arbres."
-        ]
-      },
       "trialFields": {
         "title": "Le rôle des champs d'essai",
         "excerpt": "Les champs d'essai sont essentiels pour valider l'utilisation des engrais biologiques face à l'agriculture conventionnelle.",
@@ -894,7 +880,6 @@
     "claim": "Des solutions agricoles durables, avec expérience, innovation et engagement pour l'avenir de l'agriculture.",
     "pages": "Pages",
     "contact": "Contact",
-    "social": "Réseaux sociaux",
     "copyright": "© {{year}} Clavel. Tous droits réservés."
   },
   "notFound": {

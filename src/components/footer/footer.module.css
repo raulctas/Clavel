@@ -54,24 +54,6 @@
   max-width: 380px;
 }
 
-.social {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-top: 4px;
-}
-
-.socialLink {
-  display: flex;
-  color: var(--color-cream);
-  opacity: 0.85;
-  transition: opacity var(--transition);
-}
-
-a.socialLink:hover {
-  opacity: 1;
-}
-
 .column {
   min-width: 0;
   display: flex;

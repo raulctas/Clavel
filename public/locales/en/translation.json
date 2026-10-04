@@ -464,20 +464,6 @@
           "Investing in soil health is investing in the future of farming. Fertile, balanced soil is the basis for more productive, sustainable, higher-quality crops. With responsible enrichment practices you will not only get better harvests: you will also contribute to farming that respects the environment and future generations."
         ]
       },
-      "fruitVegetables": {
-        "title": "Improving fruit and vegetables",
-        "excerpt": "Improving Carmen’s lemon tree, step by step.",
-        "body": [
-          "We show you, step by step, how we improved Carmen's lemon tree: the tree's starting condition, the organic fertiliser treatment we applied and the results you can see in the field."
-        ]
-      },
-      "citrusFertilisation": {
-        "title": "Organic fertilisation in citrus",
-        "excerpt": "We filmed with Juan Manuel Martínez on his citrus farm.",
-        "body": [
-          "We filmed with Juan Manuel Martínez on his citrus farm, where he tells us about his experience with organic fertilisation and the results he has seen on his trees."
-        ]
-      },
       "trialFields": {
         "title": "The role of trial fields",
         "excerpt": "Trial fields are essential to validate organic fertilisers against conventional agriculture.",
@@ -894,7 +880,6 @@
     "claim": "Sustainable agricultural solutions, with experience, innovation and a commitment to the future of farming.",
     "pages": "Pages",
     "contact": "Contact",
-    "social": "Social media",
     "copyright": "© {{year}} Clavel. All rights reserved."
   },
   "notFound": {
