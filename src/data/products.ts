@@ -47,7 +47,7 @@ const LITRES = ['1 L', '5 L', '20 L'];
 /**
  * Productos de Clavel, con la nomenclatura de 2026 (Excel «CLAVEL PRODUCTOS»).
  * Función, descripción y composición están en products.items.<slug>. Las fotos
- * son provisionales: las etiquetas aún muestran la marca y el nombre anteriores.
+ * (public/images/products/<slug>/) llevan ya la etiqueta de Clavel.
  */
 export const PRODUCTS: Product[] = [
   {
@@ -72,7 +72,6 @@ export const PRODUCTS: Product[] = [
     range: 'terra',
     state: 'liquid',
     formats: LITRES,
-    // Sin foto propia del bidón de 20 L: `20l.webp` es, de momento, la de Soil.
     images: images('libero', LITRES),
   },
   {

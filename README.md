@@ -111,8 +111,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 
   Nombres, función y composición siguen la nomenclatura de 2026 (Excel «CLAVEL PRODUCTOS»);
   función, descripción y composición de cada producto están en `products.items.<slug>`. Las
-  fotos (`public/images/products/<slug>/`) son provisionales: las etiquetas aún muestran la
-  marca y el nombre anteriores. Una gama o un producto desconocidos muestran la página 404, y
+  fotos (`public/images/products/<slug>/`: `main`, `5l` y `20l`, en WebP transparente de 900 px
+  de alto) llevan ya la etiqueta de Clavel. Una gama o un producto desconocidos muestran la página 404, y
   las direcciones antiguas (`/products-services`, `/products/clavel`, `/products/agrentis`)
   redirigen a `/products`.
 - **Buscador** (lupa del menú, `src/components/search` y `src/libs/search.ts`): al abrirse por
