@@ -111,8 +111,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 
   Nombres, función y composición siguen la nomenclatura de 2026 (Excel «CLAVEL PRODUCTOS»);
   función, descripción y composición de cada producto están en `products.items.<slug>`. Las
-  fotos (`public/images/products/<slug>/`) son provisionales: las etiquetas aún muestran la
-  marca y el nombre anteriores. Una gama o un producto desconocidos muestran la página 404, y
+  fotos (`public/images/products/<slug>/`: `main`, `5l` y `20l`, en WebP transparente de 900 px
+  de alto) llevan ya la etiqueta de Clavel. Una gama o un producto desconocidos muestran la página 404, y
   las direcciones antiguas (`/products-services`, `/products/clavel`, `/products/agrentis`)
   redirigen a `/products`.
 - **Buscador** (lupa del menú, `src/components/search` y `src/libs/search.ts`): al abrirse por
@@ -152,6 +152,20 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   portada de Inicio y Quiénes somos.
 - **Imagen provisional**: `public/images/provisional/team-4x5.png`, la foto de muestra de las
   fichas del equipo mientras no haya fotos reales (ver «Equipo»).
+
+## Despliegue
+
+`yarn build` genera `dist/`. Su **contenido** se sube a la raíz de la web del hosting (`/www`), no
+dentro de `cgi-bin`, sobrescribiendo los ficheros. Van incluidos dos `.htaccess` (Apache):
+
+- `public/.htaccess`: todas las rutas sirven `index.html` (React Router) y fija la caché:
+  `index.html` y los `translation.json` se comprueban siempre; imágenes y demás ficheros de
+  `public/`, un día, porque conservan su nombre aunque se sustituyan.
+- `public/assets/.htaccess`: acaba en `dist/assets/` y deja guardar un año el código y las fuentes
+  de Vite, que cambian de nombre en cada versión.
+
+Las fotos de producto llevan además `?v=<PHOTOS_VERSION>` (`src/data/products.ts`): al sustituir
+fotos conservando el nombre, sube ese número para que se vean al momento.
 
 ## Pendiente
 
