@@ -49,7 +49,7 @@ public/
     contact/        # Contactar: banda de título
     home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
     laboratory/     # Laboratorio: banda de título, sección principal, iconos de «Qué hacemos» y galería
-    logo/           # logo a color (cabecera) e inverso (pie)
+    logo/           # logo «Fertilizantes Eco» a color (cabecera) e inverso (pie), WebP 360 px
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
     products/       # Productos: ilustración de cada gama y fotos de cada producto (<slug>/)
@@ -162,6 +162,10 @@ dentro de `cgi-bin`, sobrescribiendo los ficheros. Van incluidos dos `.htaccess`
 Las fotos de producto llevan además `?v=<PHOTOS_VERSION>` (`src/data/products.ts`): al sustituir
 fotos conservando el nombre, sube ese número para que se vean al momento.
 
+Para el resto de imágenes (logo, fotos de páginas, noticias…), al sustituirlas conviene darles
+**un nombre nuevo** y actualizar la referencia: hasta octubre de 2026 el hosting dejaba guardarlas
+un año sin volver a preguntar, y quien las tenga de entonces no vería la nueva con el mismo nombre.
+
 ## Pendiente
 
 - **Envío del formulario en el hosting**: necesita PHP con `mail()` y correo saliente. El
@@ -176,4 +180,4 @@ fotos conservando el nombre, sube ese número para que se vean al momento.
 - **Revisión legal de la política de privacidad** (`/privacy`, textos en `privacy` de
   cada `translation.json`): el texto es una base estándar del RGPD y conviene que lo revise un
   asesor antes de publicar, añadiendo la razón social y el NIF definitivos de Clavel.
-- **Logo vectorial**: el logo es un PNG; conviene vectorizarlo.
+- **Logo vectorial**: el logo es una imagen (WebP a partir de un PNG); conviene vectorizarlo.

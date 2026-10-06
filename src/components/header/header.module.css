@@ -70,8 +70,8 @@
 }
 
 .logoBadge img {
-  width: 116px;
-  height: 116px;
+  width: 104px;
+  height: auto;
 }
 
 .nav {
@@ -121,8 +121,8 @@
 }
 
 .mobileLogo img {
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: auto;
 }
 
 .barActions {
