@@ -1,0 +1,59 @@
+/* Página sencilla: fondo crema, la tarjeta arriba y el enlace debajo, centrados. */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 16px;
+  background-color: var(--color-cream);
+}
+
+/* Botones en una fila; en pantallas estrechas, uno bajo otro. */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.link,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 26px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 17px;
+  transition: background-color var(--transition);
+}
+
+.link:hover {
+  background-color: var(--color-green-night);
+}
+
+/* «Descargar tarjeta»: blanco con borde verde, pareja del botón principal. */
+.secondary {
+  background-color: var(--color-white);
+  color: var(--color-green);
+  box-shadow: inset 0 0 0 2px var(--color-green);
+}
+
+.secondary:hover {
+  background-color: var(--color-sprout-soft);
+}
+
+.link:focus-visible,
+.secondary:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+@media (min-width: 600px) {
+  .page {
+    padding-top: 72px;
+  }
+}

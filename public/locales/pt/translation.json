@@ -872,6 +872,12 @@
     "contact": "Contacto",
     "copyright": "© {{year}} Clavel. Todos os direitos reservados."
   },
+  "businessCard": {
+    "alt": "Cartão de visita de {{name}}, Clavel Fertilizantes ECO",
+    "saveContact": "Guardar contacto",
+    "download": "Descarregar cartão",
+    "visitWebsite": "Visite o nosso site"
+  },
   "notFound": {
     "title": "Página não encontrada",
     "text": "A página que procura não existe ou mudou de endereço.",
