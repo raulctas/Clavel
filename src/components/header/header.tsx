@@ -31,7 +31,7 @@ const MOBILE_NAV: NavItem[] = [
   { to: routes.contact, labelKey: 'nav.contact' },
 ];
 
-/** Logo de 360 × 344 px; se muestra a 104 px de ancho (escritorio) y 100 (móvil). */
+/** Logo de 360 × 344 px; se muestra a 100 px de ancho (escritorio y móvil). */
 const LOGO_SRC = '/images/logo/clavel-logo-eco.webp';
 
 const linkClass =
@@ -94,7 +94,7 @@ export const Header = () => {
         <div className={styles.capsule}>
           <Link to={routes.home} className={styles.logoSlot} aria-label={t('common.homeLink')}>
             <span className={styles.logoBadge}>
-              <img src={LOGO_SRC} alt={t('common.companyName')} width={104} height={99} />
+              <img src={LOGO_SRC} alt={t('common.companyName')} width={100} height={96} />
             </span>
           </Link>
 
