@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, Navigate, useParams } from 'react-router-dom';
-import { ArrowRight, Download, UserPlus } from 'lucide-react';
+import { Navigate, useParams } from 'react-router-dom';
+import { Download, UserPlus } from 'lucide-react';
 
 import { routes } from 'constants/routes';
 import { findBusinessCard } from 'data/business-cards';
@@ -14,9 +14,9 @@ import styles from './business-card.module.css';
 /**
  * Página de una tarjeta de presentación: /cards/<slug>. Página sencilla, sin la
  * cabecera ni el pie del resto de la web: la tarjeta (construida en la web, con
- * teléfono, correo y web pulsables) y, debajo, «Guardar contacto» (vCard),
- * «Descargar tarjeta» (PNG en alta resolución) y «Visita nuestra web». Es para
- * compartir (p. ej. con un código QR), así que no se indexa. Una tarjeta
+ * teléfono, correo y web pulsables) y, debajo, «Guardar contacto» (vCard) y
+ * «Descargar tarjeta» (PNG en alta resolución). La web ya se abre desde la propia
+ * tarjeta. Es para compartir (p. ej. con un código QR), así que no se indexa. Una tarjeta
  * desconocida lleva a Inicio.
  */
 export const BusinessCard = () => {
@@ -51,10 +51,6 @@ export const BusinessCard = () => {
           <Download size={18} aria-hidden />
           {t('businessCard.download')}
         </a>
-        <Link to={routes.home} className={styles.secondary}>
-          {t('businessCard.visitWebsite')}
-          <ArrowRight size={18} aria-hidden />
-        </Link>
       </div>
     </main>
   );
