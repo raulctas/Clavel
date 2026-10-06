@@ -16,7 +16,6 @@ import { Production } from 'pages/production';
 import { ProductDetail } from 'pages/product-detail';
 import { ProductRange } from 'pages/product-range';
 import { Products } from 'pages/products';
-import { Team } from 'pages/team';
 
 /**
  * Importación directa (eager) de las páginas: con tan pocas páginas, y ligeras, el
@@ -36,7 +35,6 @@ export const routes = (
       <Route path={routePaths.production} element={<Production />} />
       <Route path={routePaths.news} element={<News />} />
       <Route path={routePaths.newsDetail} element={<NewsDetail />} />
-      <Route path={routePaths.team} element={<Team />} />
       <Route path={routePaths.contact} element={<Contact />} />
       <Route path={routePaths.privacy} element={<Privacy />} />
       {legacyRedirects.map(({ from, to }) => (

@@ -22,7 +22,6 @@ const DESKTOP_NAV: NavItem[] = [
   { to: routes.aboutUs, labelKey: 'nav.aboutUs' },
   { to: routes.products, labelKey: 'nav.products' },
   { to: routes.news, labelKey: 'nav.news' },
-  { to: routes.team, labelKey: 'nav.team' },
 ];
 
 /** Páginas del menú móvil: todas. */

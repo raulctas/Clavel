@@ -121,11 +121,10 @@ export const ContactForm = ({ initialReason, initialProduct, initialCatalogue }:
             t('contact.form.defaultMessage.catalogueList', { count: selectedCatalogues.length }),
             ...selectedCatalogues.map((key) => `- ${t(catalogueTitleKey(key))}`),
           ].join('\n')
-        : t(
+        : // Sin motivo, o «Información sobre productos» sin producto: el general.
+          t(
             `contact.form.defaultMessage.${
-              reason === 'catalogue' || reason === 'advice' || reason === 'other'
-                ? reason
-                : 'general'
+              reason && reason !== 'productInfo' ? reason : 'general'
             }`,
           );
   // Saludo según la hora local; cada idioma fija a qué hora empiezan la tarde y la noche.

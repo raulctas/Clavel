@@ -18,7 +18,6 @@
     "aboutUs": "Quiénes somos",
     "products": "Productos",
     "news": "Noticias",
-    "team": "Equipo",
     "contact": "Contactar",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
@@ -677,19 +676,6 @@
     "relatedTitle": "Otras noticias",
     "videoTitle": "Vídeo: {{title}}"
   },
-  "team": {
-    "title": "Las personas detrás de Clavel",
-    "intro": "Un equipo pequeño y cercano, con experiencia en agronomía, laboratorio y atención al agricultor.",
-    "namePending": "Nombre Apellido",
-    "photoPending": "Foto próximamente",
-    "emailLabel": "Escribir a {{name}}",
-    "linkedinLabel": "LinkedIn de {{name}}",
-    "roles": {
-      "generalManagement": "Dirección general",
-      "technicalDirection": "Dirección técnica y laboratorio",
-      "salesSupport": "Atención comercial"
-    }
-  },
   "contact": {
     "title": "Hablemos de tu cultivo",
     "intro": "Déjanos tus datos y te respondemos por correo o por teléfono. Si lo necesitas, te enviamos el catálogo de productos.",
@@ -700,6 +686,8 @@
         "catalogue": "Solicitar catálogo",
         "advice": "Pedir asesoramiento",
         "productInfo": "Información sobre productos",
+        "distributor": "Quiero ser distribuidor",
+        "job": "Quiero trabajar en Clavel",
         "other": "Otra consulta"
       },
       "catalogues": "¿Qué catálogo quieres?",
@@ -729,6 +717,8 @@
         "catalogueList_other": "Les agradecería que me enviaran los siguientes catálogos:",
         "advice": "Me gustaría recibir asesoramiento técnico para mi cultivo.",
         "product": "Me gustaría recibir más información sobre el producto {{product}}.",
+        "distributor": "Me gustaría distribuir los productos de Clavel en mi zona. Les agradecería que me informaran de las condiciones para ser distribuidor.",
+        "job": "Me gustaría formar parte del equipo de Clavel. Les agradecería que me tuvieran en cuenta en sus próximos procesos de selección.",
         "other": "Me pongo en contacto con ustedes para realizarles una consulta.",
         "closing": "Un cordial saludo."
       },

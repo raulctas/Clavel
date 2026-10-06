@@ -18,7 +18,6 @@
     "aboutUs": "About us",
     "products": "Products",
     "news": "News",
-    "team": "Team",
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -677,19 +676,6 @@
     "relatedTitle": "More news",
     "videoTitle": "Video: {{title}}"
   },
-  "team": {
-    "title": "The people behind Clavel",
-    "intro": "A small, approachable team with experience in agronomy, laboratory work and farmer support.",
-    "namePending": "First Last",
-    "photoPending": "Photo coming soon",
-    "emailLabel": "Email {{name}}",
-    "linkedinLabel": "{{name}} on LinkedIn",
-    "roles": {
-      "generalManagement": "Managing director",
-      "technicalDirection": "Technical and laboratory director",
-      "salesSupport": "Sales support"
-    }
-  },
   "contact": {
     "title": "Let’s talk about your crop",
     "intro": "Leave your details and we will reply by email or phone. If you need it, we will send you our product catalogue.",
@@ -700,6 +686,8 @@
         "catalogue": "Request catalogue",
         "advice": "Ask for advice",
         "productInfo": "Product information",
+        "distributor": "I want to become a distributor",
+        "job": "I want to work at Clavel",
         "other": "Other enquiry"
       },
       "catalogues": "Which catalogue do you want?",
@@ -729,6 +717,8 @@
         "catalogueList_other": "I would be grateful if you could send me the following catalogues:",
         "advice": "I would like to request technical advice for my crop.",
         "product": "I would be grateful to receive further information about {{product}}.",
+        "distributor": "I would like to distribute Clavel products in my area. I would be grateful if you could tell me the conditions for becoming a distributor.",
+        "job": "I would like to join the Clavel team. I would be grateful if you could consider me for your future recruitment processes.",
         "other": "I am writing to you with an enquiry.",
         "closing": "Kind regards."
       },

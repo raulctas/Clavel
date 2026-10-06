@@ -12,8 +12,6 @@ export const PAGE_HEADER_IMAGES = {
   production: '/images/production/header.jpg',
   // La misma que la portada de Inicio.
   news: '/images/home/hero.jpg',
-  // La misma que Quiénes somos.
-  team: '/images/about-us/header.jpg',
   contact: '/images/contact/header.jpg',
   // La misma que Quiénes somos.
   privacy: '/images/about-us/header.jpg',
