@@ -83,7 +83,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 
 ## Contenido
 
-- **Tarjetas de presentación** (`/card/<slug>`, p. ej. `/card/libero-parri`): página sencilla, sin
+- **Tarjetas de presentación** (`/cards/<slug>`, p. ej. `/cards/libero-parri`): página sencilla, sin
   cabecera ni pie, con la imagen de la tarjeta y los botones «Descargar tarjeta» y «Visita nuestra
   web». No se indexa en buscadores. Para añadir una: en `public/images/business-cards/`, la imagen
   `<slug>.webp` (1360 px de ancho) y el PNG en alta resolución `<slug>.png` para la descarga; y

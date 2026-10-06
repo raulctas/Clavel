@@ -10,7 +10,7 @@ import { usePageTitle } from 'hooks/use-page-title';
 import styles from './business-card.module.css';
 
 /**
- * Página de una tarjeta de presentación: /card/<slug>. Página sencilla, sin la
+ * Página de una tarjeta de presentación: /cards/<slug>. Página sencilla, sin la
  * cabecera ni el pie del resto de la web: la tarjeta arriba y, debajo, los
  * botones «Descargar tarjeta» (PNG en alta resolución) y «Visita nuestra web». Es para compartir (p. ej. con un código QR), así que no se indexa.
  * Una tarjeta desconocida lleva a Inicio.

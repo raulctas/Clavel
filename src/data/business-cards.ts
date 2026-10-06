@@ -1,5 +1,5 @@
 /**
- * Tarjetas de presentación: cada una tiene su página, /card/<slug>, con la
+ * Tarjetas de presentación: cada una tiene su página, /cards/<slug>, con la
  * imagen de la tarjeta, un enlace a la web y un botón para descargarla. Para
  * añadir una: copiar la imagen a `public/images/business-cards/<slug>.webp`, el
  * PNG en alta resolución a `<slug>.png` y darla de alta aquí.
