@@ -874,6 +874,7 @@
   },
   "businessCard": {
     "alt": "Biglietto da visita di {{name}}, Clavel Fertilizantes ECO",
+    "download": "Scarica il biglietto",
     "visitWebsite": "Visita il nostro sito"
   },
   "notFound": {

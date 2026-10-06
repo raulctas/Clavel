@@ -18,7 +18,16 @@
   box-shadow: var(--shadow-floating);
 }
 
-.link {
+/* Botones en una fila; en pantallas estrechas, uno bajo otro. */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.link,
+.secondary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -35,7 +44,19 @@
   background-color: var(--color-green-night);
 }
 
-.link:focus-visible {
+/* «Descargar tarjeta»: blanco con borde verde, pareja del botón principal. */
+.secondary {
+  background-color: var(--color-white);
+  color: var(--color-green);
+  box-shadow: inset 0 0 0 2px var(--color-green);
+}
+
+.secondary:hover {
+  background-color: var(--color-sprout-soft);
+}
+
+.link:focus-visible,
+.secondary:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }
