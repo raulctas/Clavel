@@ -46,6 +46,7 @@ public/
   images/
     favicon/        # favicon con la flor (pestaña del navegador) y apple-touch-icon
     about-us/       # Quiénes somos: banda de título, ¿Por qué elegirnos? y Calidad
+    business-cards/ # tarjetas de presentación: <slug>.webp (página /card/<slug>)
     contact/        # Contactar: banda de título
     home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
     laboratory/     # Laboratorio: banda de título, sección principal, iconos de «Qué hacemos» y galería
@@ -82,6 +83,10 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 
 ## Contenido
 
+- **Tarjetas de presentación** (`/card/<slug>`, p. ej. `/card/libero-parri`): página sencilla, sin
+  cabecera ni pie, con la imagen de la tarjeta y el enlace «Visita nuestra web». No se indexa en
+  buscadores. Para añadir una: imagen en `public/images/business-cards/<slug>.webp` (WebP de
+  1360 px de ancho) y alta en `src/data/business-cards.ts`.
 - **Noticias**: `src/data/news.ts` (slug, categoría, imagen y vídeos de YouTube opcionales) +
   `news.items.<id>` en cada `translation.json` (título, extracto y cuerpo). Cada noticia tiene su
   página en `/news/<slug>`. Su imagen es `public/images/news/<slug>.jpg`: JPG de unos 1200 px

@@ -1,0 +1,47 @@
+/* Página sencilla: fondo crema, la tarjeta arriba y el enlace debajo, centrados. */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 16px;
+  background-color: var(--color-cream);
+}
+
+/* La imagen ya trae el borde redondeado de la tarjeta; solo se le da sombra. */
+.card {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-floating);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 26px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 17px;
+  transition: background-color var(--transition);
+}
+
+.link:hover {
+  background-color: var(--color-green-night);
+}
+
+.link:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+@media (min-width: 600px) {
+  .page {
+    padding-top: 72px;
+  }
+}

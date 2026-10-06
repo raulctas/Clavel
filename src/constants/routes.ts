@@ -16,6 +16,8 @@ export const routes = {
   newsDetail: '/news/:slug',
   contact: '/contact',
   privacy: '/privacy',
+  /** Tarjeta de presentación: página sencilla, sin cabecera ni pie. */
+  businessCard: '/card/:slug',
 } as const;
 
 /**
