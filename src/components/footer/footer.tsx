@@ -28,7 +28,7 @@ export const Footer = () => {
               src="/images/logo/clavel-logo-eco-inverso.webp"
               alt={t('common.companyName')}
               width={120}
-              height={112}
+              height={115}
               className={styles.logo}
             />
             <p className={styles.claim}>{t('footer.claim')}</p>
