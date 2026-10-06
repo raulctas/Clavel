@@ -9,15 +9,6 @@
   background-color: var(--color-cream);
 }
 
-/* La imagen ya trae el borde redondeado de la tarjeta; solo se le da sombra. */
-.card {
-  width: 100%;
-  max-width: 680px;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: var(--shadow-floating);
-}
-
 /* Botones en una fila; en pantallas estrechas, uno bajo otro. */
 .actions {
   display: flex;

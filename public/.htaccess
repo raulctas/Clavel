@@ -9,6 +9,12 @@
   RewriteRule . /index.html [L]
 </IfModule>
 
+# Fichas de contacto de las tarjetas de presentación (public/vcards/): con este
+# tipo, el móvil las abre en Contactos para guardarlas.
+<IfModule mod_mime.c>
+  AddType text/vcard .vcf
+</IfModule>
+
 # Caché del navegador.
 # - Imágenes, fuentes y demás ficheros de public/ (images/, favicon…): un día.
 #   Conservan su nombre aunque se sustituyan, así que no pueden guardarse mucho

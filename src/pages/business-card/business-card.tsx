@@ -1,19 +1,23 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, UserPlus } from 'lucide-react';
 
 import { routes } from 'constants/routes';
 import { findBusinessCard } from 'data/business-cards';
 import { usePageTitle } from 'hooks/use-page-title';
 
+import { CardMockup } from './components/card-mockup';
+
 import styles from './business-card.module.css';
 
 /**
  * Página de una tarjeta de presentación: /cards/<slug>. Página sencilla, sin la
- * cabecera ni el pie del resto de la web: la tarjeta arriba y, debajo, los
- * botones «Descargar tarjeta» (PNG en alta resolución) y «Visita nuestra web». Es para compartir (p. ej. con un código QR), así que no se indexa.
- * Una tarjeta desconocida lleva a Inicio.
+ * cabecera ni el pie del resto de la web: la tarjeta (construida en la web, con
+ * teléfono, correo y web pulsables) y, debajo, «Guardar contacto» (vCard),
+ * «Descargar tarjeta» (PNG en alta resolución) y «Visita nuestra web». Es para
+ * compartir (p. ej. con un código QR), así que no se indexa. Una tarjeta
+ * desconocida lleva a Inicio.
  */
 export const BusinessCard = () => {
   const { t } = useTranslation();
@@ -36,19 +40,18 @@ export const BusinessCard = () => {
 
   return (
     <main className={styles.page}>
-      <img
-        src={card.image}
-        alt={t('businessCard.alt', { name: card.name })}
-        className={styles.card}
-        width={1360}
-        height={880}
-      />
+      <CardMockup card={card} />
       <div className={styles.actions}>
+        {/* Sin `download`: en el móvil, la ficha se abre directamente en Contactos. */}
+        <a href={card.vcard} className={styles.link}>
+          <UserPlus size={18} aria-hidden />
+          {t('businessCard.saveContact')}
+        </a>
         <a href={card.download} download={card.downloadName} className={styles.secondary}>
           <Download size={18} aria-hidden />
           {t('businessCard.download')}
         </a>
-        <Link to={routes.home} className={styles.link}>
+        <Link to={routes.home} className={styles.secondary}>
           {t('businessCard.visitWebsite')}
           <ArrowRight size={18} aria-hidden />
         </Link>

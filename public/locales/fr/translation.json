@@ -874,6 +874,7 @@
   },
   "businessCard": {
     "alt": "Carte de visite de {{name}}, Clavel Fertilizantes ECO",
+    "saveContact": "Enregistrer le contact",
     "download": "Télécharger la carte",
     "visitWebsite": "Visitez notre site"
   },
