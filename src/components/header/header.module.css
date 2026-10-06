@@ -71,13 +71,13 @@
 
 /*
  * El logo no es redondo: el clavel (arriba) es estrecho y «FERTILIZANTES ECO»
- * (abajo) es ancho. A 100 px y subido 11 px, todo queda dentro del círculo con
- * 5 px de margen; más ancho, el texto de abajo se sale.
+ * (abajo) es ancho. A 100 px y subido 7 px, todo queda dentro del círculo con
+ * 3 px de margen; más ancho o más bajo (subido 2 px o menos), el texto se sale.
  */
 .logoBadge img {
   width: 100px;
   height: auto;
-  transform: translateY(-11px);
+  transform: translateY(-7px);
 }
 
 .nav {
