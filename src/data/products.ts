@@ -25,23 +25,29 @@ export interface Product {
 }
 
 /**
+ * Versión de las imágenes de productos (fotos de envases e ilustraciones de las
+ * gamas), en su dirección (`?v=`). Hasta octubre de 2026 el hosting dejaba que
+ * el navegador guardara las imágenes un año sin volver a preguntar, y quien las
+ * descargó entonces conserva esa copia. Como las imágenes nuevas mantienen su
+ * nombre, hay que subir este número cada vez que se sustituyan, para que nadie
+ * siga viendo las antiguas.
+ */
+const PHOTOS_VERSION = 2;
+
+/** Ilustración de una gama: public/images/products/range-<gama>.webp. */
+const rangeImage = (key: RangeKey) => `/images/products/range-${key}.webp?v=${PHOTOS_VERSION}`;
+
+/**
  * Las cinco gamas de producto, en orden. Textos en products.ranges.<key>
  * (title, text e intro). La gama es también el segmento de la URL.
  */
 export const PRODUCT_RANGES: ProductRange[] = [
-  { key: 'terra', image: '/images/products/range-terra.webp' },
-  { key: 'protection', image: '/images/products/range-protection.webp' },
-  { key: 'booster', image: '/images/products/range-booster.webp' },
-  { key: 'nutrition', image: '/images/products/range-nutrition.webp' },
-  { key: 'correctors', image: '/images/products/range-correctors.webp' },
+  { key: 'terra', image: rangeImage('terra') },
+  { key: 'protection', image: rangeImage('protection') },
+  { key: 'booster', image: rangeImage('booster') },
+  { key: 'nutrition', image: rangeImage('nutrition') },
+  { key: 'correctors', image: rangeImage('correctors') },
 ];
-
-/**
- * Versión de las fotos de producto. El hosting deja que el navegador guarde las
- * imágenes un año; como las fotos nuevas conservan su nombre, hay que subir este
- * número cada vez que se sustituyan, para que nadie siga viendo las antiguas.
- */
-const PHOTOS_VERSION = 2;
 
 const images = (slug: string, formats: string[]) =>
   formats.map((format, index) => ({
