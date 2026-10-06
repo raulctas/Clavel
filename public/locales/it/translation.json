@@ -18,7 +18,6 @@
     "aboutUs": "Chi siamo",
     "products": "Prodotti",
     "news": "Notizie",
-    "team": "Team",
     "contact": "Contatti",
     "openMenu": "Apri menu",
     "closeMenu": "Chiudi menu",
@@ -677,19 +676,6 @@
     "relatedTitle": "Altre notizie",
     "videoTitle": "Video: {{title}}"
   },
-  "team": {
-    "title": "Le persone dietro Clavel",
-    "intro": "Un team piccolo e disponibile, con esperienza in agronomia, laboratorio e assistenza agli agricoltori.",
-    "namePending": "Nome Cognome",
-    "photoPending": "Foto in arrivo",
-    "emailLabel": "Scrivi a {{name}}",
-    "linkedinLabel": "LinkedIn di {{name}}",
-    "roles": {
-      "generalManagement": "Direzione generale",
-      "technicalDirection": "Direzione tecnica e laboratorio",
-      "salesSupport": "Assistenza commerciale"
-    }
-  },
   "contact": {
     "title": "Parliamo della tua coltura",
     "intro": "Lasciaci i tuoi dati e ti risponderemo via e-mail o per telefono. Se ne hai bisogno, ti invieremo il catalogo dei prodotti.",
@@ -700,6 +686,8 @@
         "catalogue": "Richiedi catalogo",
         "advice": "Richiedi consulenza",
         "productInfo": "Informazioni sui prodotti",
+        "distributor": "Voglio diventare distributore",
+        "job": "Voglio lavorare in Clavel",
         "other": "Altra richiesta"
       },
       "catalogues": "Quale catalogo desideri?",
@@ -729,6 +717,8 @@
         "catalogueList_other": "Vi sarei grato se poteste inviarmi i seguenti cataloghi:",
         "advice": "Vorrei ricevere una consulenza tecnica per la mia coltura.",
         "product": "Vorrei ricevere maggiori informazioni sul prodotto {{product}}.",
+        "distributor": "Vorrei distribuire i prodotti Clavel nella mia zona. Vi sarei grato se poteste indicarmi le condizioni per diventare distributore.",
+        "job": "Vorrei entrare a far parte del team di Clavel. Vi sarei grato se poteste tenermi in considerazione per i prossimi processi di selezione.",
         "other": "Vi contatto per sottoporVi una domanda.",
         "closing": "Cordiali saluti."
       },

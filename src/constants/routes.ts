@@ -14,20 +14,21 @@ export const routes = {
   production: '/production-logistics',
   news: '/news',
   newsDetail: '/news/:slug',
-  team: '/team',
   contact: '/contact',
   privacy: '/privacy',
 } as const;
 
 /**
  * Direcciones antiguas que redirigen a la actual (para no romper enlaces
- * guardados): la página «Productos y servicios», las de las antiguas marcas y
- * las noticias retiradas.
+ * guardados): la página «Productos y servicios», las de las antiguas marcas, la
+ * página Equipo y las noticias retiradas.
  */
 export const legacyRedirects = [
   { from: '/products-services', to: routes.products },
   { from: '/products/clavel', to: routes.products },
   { from: '/products/agrentis', to: routes.products },
+  // Página Equipo, retirada: lo más cercano es Quiénes somos.
+  { from: '/team', to: routes.aboutUs },
   // Noticias retiradas.
   { from: '/news/fruit-vegetables', to: routes.news },
   { from: '/news/citrus-fertilisation', to: routes.news },

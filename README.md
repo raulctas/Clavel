@@ -1,7 +1,7 @@
 # Clavel.Front
 
 Web corporativa de **Clavel**, empresa de fertilizantes ecológicos con sede en Valencia.
-Cinco páginas (Inicio, Quiénes somos, Noticias, Equipo y Contactar) en español e inglés.
+Páginas de Inicio, Quiénes somos, Productos, Laboratorio, Producción y logística, Noticias, Contactar y Privacidad, en cinco idiomas (español, inglés, francés, portugués e italiano).
 
 El diseño sale del handoff de diseño «design_handoff_clavel_web» (cabecera «Mínimo», alta
 fidelidad), que no forma parte del repositorio. Los textos vienen de la web de Grupo Alfa.
@@ -53,14 +53,13 @@ public/
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
     products/       # Productos: ilustración de cada gama y fotos de cada producto (<slug>/)
-    provisional/    # foto de muestra del equipo (4:5), hasta tener las reales
     social/         # imagen para compartir en redes (1200×630)
   locales/<idioma>/ # textos estáticos, un fichero por idioma
 src/
   components/       # componentes compartidos (cabecera, pie, botones, tarjetas…)
   pages/            # una carpeta por página; sus piezas propias en pages/<página>/components/
   constants/        # rutas, idiomas, datos de empresa, motivos de contacto
-  data/             # contenido estructurado: noticias, equipo, pilares, portada
+  data/             # contenido estructurado: noticias, productos, pilares, portada
   hooks/            # pase de diapositivas, título de pestaña, datos de contacto…
   interfaces/       # tipos del contenido
   libs/             # inicialización de i18n y envío del formulario
@@ -91,9 +90,6 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Textos largos** (cuerpo de las noticias y política de privacidad): son listas de bloques en
   `translation.json`. Un bloque que empieza por `## ` es un subtítulo, por `### ` un subtítulo
   menor y por `- ` un elemento de lista; el resto son párrafos. Así se traducen sin tocar código.
-- **Equipo**: `src/data/team.ts`. Cuando lleguen las fotos (4:5), copiarlas a
-  `public/images/team/` y rellenar `photo`, `name`, `email` y `linkedin` de cada miembro. Sin
-  foto, la ficha muestra la provisional con la etiqueta «Foto próximamente».
 - **Productos**, en tres niveles (gamas y productos en `src/data/products.ts`, textos en
   `products`):
   - `/products`: las cinco gamas (Terra, Protección, Potenciador, Nutrición y Correctores) en
@@ -122,8 +118,9 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   antes los que coinciden en el título. Cada resultado enlaza con su página y muestra el
   fragmento encontrado (con el idioma, si no es el activo). Las páginas y qué textos incluye
   cada una están en `PAGES`, en `src/libs/search.ts`: una página nueva hay que añadirla ahí.
-- **Contactar**: hay un motivo por cada botón o enlace que lleva a la página
-  (`src/constants/contact-reasons.ts`). Con «Solicitar catálogo» hay que elegir además uno o
+- **Contactar**: motivos en `src/constants/contact-reasons.ts` (catálogo, asesoramiento, productos,
+  distribuidor, trabajar en Clavel y otra consulta); algunos botones llegan con uno ya elegido.
+  Con «Solicitar catálogo» hay que elegir además uno o
   varios catálogos, uno por gama (`CATALOGUES` en `src/data/products.ts`). Con «Información
   sobre productos» hay que elegir el producto; `/contact?reason=productInfo&product=<slug>`
   lo deja ya elegido (es lo que hace el botón de cada ficha). Del mismo modo,
@@ -148,10 +145,8 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   flechas ni indicadores); con varias, se alternan cada 6 s.
 - **Fondos de las bandas de título** (todas las páginas interiores):
   `src/data/page-header-images.ts`. Se muestran atenuadas para que el texto se lea bien.
-  Productos, Noticias, Equipo y Privacidad reutilizan las fotos de Contactar, la
+  Productos, Noticias y Privacidad reutilizan las fotos de Contactar, la
   portada de Inicio y Quiénes somos.
-- **Imagen provisional**: `public/images/provisional/team-4x5.png`, la foto de muestra de las
-  fichas del equipo mientras no haya fotos reales (ver «Equipo»).
 
 ## Despliegue
 
@@ -178,7 +173,6 @@ fotos conservando el nombre, sube ese número para que se vean al momento.
   `src/constants/company.ts`. La dirección (Bétera) está en `contact.address` de cada
   `translation.json` y se muestra como texto, sin enlace. Se ven en el pie y en el apartado
   «Responsable del tratamiento» de la política de privacidad; Contactar no los muestra.
-- **Nombres, cargos y fotos del equipo**.
 - **Revisión legal de la política de privacidad** (`/privacy`, textos en `privacy` de
   cada `translation.json`): el texto es una base estándar del RGPD y conviene que lo revise un
   asesor antes de publicar, añadiendo la razón social y el NIF definitivos de Clavel.

@@ -26,7 +26,7 @@ const MAIL_FROM_NAME = 'Web Clavel';
 const MAX_LINES = 40;
 const MAX_LINE_LENGTH = 5000;
 // Motivos y catálogos (uno por gama) que admite el formulario.
-const REASONS = ['catalogue', 'advice', 'productInfo', 'other'];
+const REASONS = ['catalogue', 'advice', 'productInfo', 'distributor', 'job', 'other'];
 const CATALOGUES = ['terra', 'protection', 'booster', 'nutrition', 'correctors'];
 
 header('Content-Type: application/json; charset=utf-8');

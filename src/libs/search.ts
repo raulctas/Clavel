@@ -148,7 +148,6 @@ const PAGES: { path: string; titleKey: string; subtitleKey?: string; keys: strin
     subtitleKey: 'news.intro',
     keys: ['news.title', 'news.intro'],
   },
-  { path: routes.team, titleKey: 'nav.team', subtitleKey: 'team.intro', keys: ['team'] },
   {
     path: routes.contact,
     titleKey: 'nav.contact',

@@ -18,7 +18,6 @@
     "aboutUs": "Quem somos",
     "products": "Produtos",
     "news": "Notícias",
-    "team": "Equipa",
     "contact": "Contactar",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu",
@@ -677,19 +676,6 @@
     "relatedTitle": "Outras notícias",
     "videoTitle": "Vídeo: {{title}}"
   },
-  "team": {
-    "title": "As pessoas por detrás da Clavel",
-    "intro": "Uma equipa pequena e próxima, com experiência em agronomia, laboratório e apoio ao agricultor.",
-    "namePending": "Nome Apelido",
-    "photoPending": "Foto em breve",
-    "emailLabel": "Escrever a {{name}}",
-    "linkedinLabel": "LinkedIn de {{name}}",
-    "roles": {
-      "generalManagement": "Direção geral",
-      "technicalDirection": "Direção técnica e laboratório",
-      "salesSupport": "Apoio comercial"
-    }
-  },
   "contact": {
     "title": "Falemos da sua cultura",
     "intro": "Deixe-nos os seus dados e respondemos por e-mail ou por telefone. Se precisar, enviamos-lhe o catálogo de produtos.",
@@ -700,6 +686,8 @@
         "catalogue": "Pedir catálogo",
         "advice": "Pedir aconselhamento",
         "productInfo": "Informação sobre produtos",
+        "distributor": "Quero ser distribuidor",
+        "job": "Quero trabalhar na Clavel",
         "other": "Outro pedido"
       },
       "catalogues": "Que catálogo pretende?",
@@ -729,6 +717,8 @@
         "catalogueList_other": "Agradeço que me enviem os seguintes catálogos:",
         "advice": "Gostaria de receber aconselhamento técnico para a minha cultura.",
         "product": "Gostaria de receber mais informações sobre o produto {{product}}.",
+        "distributor": "Gostaria de distribuir os produtos Clavel na minha zona. Agradeço que me informem das condições para ser distribuidor.",
+        "job": "Gostaria de fazer parte da equipa da Clavel. Agradeço que me tenham em conta nos vossos próximos processos de recrutamento.",
         "other": "Venho por este meio colocar-vos uma questão.",
         "closing": "Com os melhores cumprimentos."
       },

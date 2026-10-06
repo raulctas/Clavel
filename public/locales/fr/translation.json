@@ -18,7 +18,6 @@
     "aboutUs": "Qui sommes-nous",
     "products": "Produits",
     "news": "Actualités",
-    "team": "Équipe",
     "contact": "Contact",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
@@ -677,19 +676,6 @@
     "relatedTitle": "Autres actualités",
     "videoTitle": "Vidéo : {{title}}"
   },
-  "team": {
-    "title": "Les personnes derrière Clavel",
-    "intro": "Une équipe à taille humaine et proche de vous, forte d'une expérience en agronomie, en laboratoire et en accompagnement des agriculteurs.",
-    "namePending": "Prénom Nom",
-    "photoPending": "Photo à venir",
-    "emailLabel": "Écrire à {{name}}",
-    "linkedinLabel": "LinkedIn de {{name}}",
-    "roles": {
-      "generalManagement": "Direction générale",
-      "technicalDirection": "Direction technique et laboratoire",
-      "salesSupport": "Service commercial"
-    }
-  },
   "contact": {
     "title": "Parlons de votre culture",
     "intro": "Laissez-nous vos coordonnées et nous vous répondrons par e-mail ou par téléphone. Si vous le souhaitez, nous vous enverrons notre catalogue de produits.",
@@ -700,6 +686,8 @@
         "catalogue": "Demander le catalogue",
         "advice": "Demander conseil",
         "productInfo": "Informations produits",
+        "distributor": "Je souhaite devenir distributeur",
+        "job": "Je souhaite travailler chez Clavel",
         "other": "Autre demande"
       },
       "catalogues": "Quel catalogue souhaitez-vous ?",
@@ -729,6 +717,8 @@
         "catalogueList_other": "Je vous serais reconnaissant de bien vouloir m'envoyer les catalogues suivants :",
         "advice": "Je souhaiterais bénéficier de conseils techniques pour ma culture.",
         "product": "Je souhaiterais recevoir de plus amples informations sur le produit {{product}}.",
+        "distributor": "Je souhaiterais distribuer les produits Clavel dans ma région. Je vous serais reconnaissant de bien vouloir m'indiquer les conditions pour devenir distributeur.",
+        "job": "Je souhaiterais rejoindre l'équipe de Clavel. Je vous serais reconnaissant de bien vouloir tenir compte de ma candidature lors de vos prochains recrutements.",
         "other": "Je me permets de vous contacter afin de vous soumettre une question.",
         "closing": "Cordialement."
       },
