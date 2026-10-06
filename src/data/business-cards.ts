@@ -1,7 +1,7 @@
 /**
  * Tarjetas de presentación: cada una tiene su página, /cards/<slug>, con la
  * tarjeta construida en la web (datos pulsables) y los botones «Guardar
- * contacto», «Descargar tarjeta» y «Visita nuestra web». Para añadir una:
+ * contacto» y «Descargar tarjeta». Para añadir una:
  * - darla de alta aquí con sus datos;
  * - el PNG de la tarjeta, para descargarla, en `public/images/business-cards/<slug>.png`;
  * - la ficha de contacto en `public/vcards/<slug>.vcf` (copiar la de otra y cambiar los datos).

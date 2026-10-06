@@ -86,7 +86,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
 - **Tarjetas de presentación** (`/cards/<slug>`, p. ej. `/cards/libero-parri`): página sencilla, sin
   cabecera ni pie. La tarjeta se construye en la web (`pages/business-card/components/card-mockup`,
   con la onda en SVG y medidas proporcionales al ancho), con teléfono, correo y web pulsables;
-  debajo, «Guardar contacto» (vCard), «Descargar tarjeta» (PNG) y «Visita nuestra web». No se
+  debajo, «Guardar contacto» (vCard) y «Descargar tarjeta» (PNG). No se
   indexa en buscadores. Para añadir una: alta en `src/data/business-cards.ts` con sus datos, el PNG
   en `public/images/business-cards/<slug>.png` y la ficha en `public/vcards/<slug>.vcf`.
 - **Noticias**: `src/data/news.ts` (slug, categoría, imagen y vídeos de YouTube opcionales) +
