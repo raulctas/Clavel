@@ -18,8 +18,7 @@ interface Props {
  * Banda de título de las páginas interiores: imagen de fondo atenuada sobre
  * crema, ruta, H1 y entrada (sin antetítulo: el rosa queda solo para la página
  * actual en la ruta). Todas las páginas (salvo Inicio, que tiene su
- * portada) la usan con el mismo alto y el mismo formato. Es el primer bloque de
- * la página, así que lleva el hueco de la cabecera flotante.
+ * portada) la usan con el mismo alto y el mismo formato.
  */
 export const PageHeader = ({ page, parent, title, intro, image }: Props) => (
   <section className={styles.band}>

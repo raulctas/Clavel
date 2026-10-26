@@ -2,6 +2,7 @@
   "common": {
     "companyName": "Clavel",
     "homeLink": "Ir al inicio",
+    "skipToContent": "Saltar al contenido",
     "languageSelector": "Seleccionar idioma",
     "breadcrumb": "Ruta de navegación",
     "readMore": "Leer más",
@@ -16,6 +17,7 @@
     "main": "Navegación principal",
     "home": "Inicio",
     "aboutUs": "Quiénes somos",
+    "company": "Empresa",
     "products": "Productos",
     "news": "Noticias",
     "contact": "Contactar",
@@ -873,7 +875,7 @@
     "copyright": "© {{year}} Clavel. Todos los derechos reservados."
   },
   "businessCard": {
-    "alt": "Tarjeta de presentación de {{name}}, Clavel Fertilizantes ECO",
+    "alt": "Tarjeta de presentación de {{name}}, Clavel Eco Fertilizantes",
     "saveContact": "Guardar contacto",
     "download": "Descargar tarjeta"
   },

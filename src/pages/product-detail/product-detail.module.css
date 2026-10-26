@@ -43,7 +43,7 @@
 
 .gallery {
   position: sticky;
-  top: 140px;
+  top: 136px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -263,7 +263,7 @@
 
 .box {
   position: sticky;
-  top: 140px;
+  top: 136px;
   display: flex;
   flex-direction: column;
   gap: 14px;

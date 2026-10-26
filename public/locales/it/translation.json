@@ -2,6 +2,7 @@
   "common": {
     "companyName": "Clavel",
     "homeLink": "Vai alla home",
+    "skipToContent": "Vai al contenuto",
     "languageSelector": "Seleziona lingua",
     "breadcrumb": "Percorso di navigazione",
     "readMore": "Leggi di più",
@@ -16,6 +17,7 @@
     "main": "Navigazione principale",
     "home": "Home",
     "aboutUs": "Chi siamo",
+    "company": "Azienda",
     "products": "Prodotti",
     "news": "Notizie",
     "contact": "Contatti",
@@ -873,7 +875,7 @@
     "copyright": "© {{year}} Clavel. Tutti i diritti riservati."
   },
   "businessCard": {
-    "alt": "Biglietto da visita di {{name}}, Clavel Fertilizantes ECO",
+    "alt": "Biglietto da visita di {{name}}, Clavel Eco Fertilizantes",
     "saveContact": "Salva contatto",
     "download": "Scarica il biglietto"
   },

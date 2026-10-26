@@ -47,11 +47,9 @@
   position: relative;
 }
 
-/* Hueco de la cabecera flotante «Mínimo», que no ocupa altura en el flujo. */
 @media (min-width: 900px) {
   .band {
-    min-height: 540px;
-    padding-top: 166px;
+    min-height: 480px;
   }
 }
 

@@ -25,10 +25,10 @@ export const Footer = () => {
         <div className={styles.grid}>
           <div className={styles.brand}>
             <img
-              src="/images/logo/clavel-logo-eco-inverso.webp"
+              src="/images/logo/clavel-logo-inverso-v3.svg"
               alt={t('common.companyName')}
-              width={120}
-              height={115}
+              width={160}
+              height={106}
               className={styles.logo}
             />
             <p className={styles.claim}>{t('footer.claim')}</p>

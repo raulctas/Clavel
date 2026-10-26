@@ -1,19 +1,21 @@
 /**
  * Tokens de diseño de Clavel. Son los del kit de marca
  * (design_handoff_clavel_web/prototipo/assets/web-kit/clavel-web.css) ampliados
- * con la escala, las formas y las sombras que usa el prototipo.
+ * con la escala, las formas y las sombras que usa el prototipo. El verde y el
+ * rosa principales son los del logo (kit 4b); los demás rosas son del mismo tono,
+ * oscurecido o aclarado para cumplir el contraste AA.
  */
 :root {
   /* Verde */
-  --color-green: #1a5c23; /* principal: titulares, botones, enlaces */
-  --color-green-night: #123f18; /* pie, hover del botón primario */
+  --color-green: #275217; /* verde marca del logo: titulares, botones, enlaces */
+  --color-green-night: #123f18; /* verde fondo del logo: pie, hover del botón primario */
   --color-sprout: #e4eedc; /* círculos de iconos, hover suave, foco de inputs */
   --color-sprout-soft: #f2f5ee; /* hover de opciones del menú de idioma */
 
   /* Rosa */
-  --color-pink: #e6286f; /* solo detalles o titulares de 24px o más */
-  --color-pink-text: #b8175a; /* antetítulos, cargos, categorías, errores */
-  --color-pink-petal: #f6a5c2; /* rosa sobre fondos oscuros */
+  --color-pink: #e66a80; /* rosa clavel del logo: solo detalles o titulares de 24px o más en negrita */
+  --color-pink-text: #ca2f4c; /* antetítulos, cargos, categorías, errores */
+  --color-pink-petal: #f2a1b0; /* rosa sobre fondos oscuros */
 
   /* Neutros */
   --color-white: #ffffff;
@@ -52,7 +54,6 @@
 
   --shadow-card-hover: 0 10px 28px rgba(31, 42, 31, 0.1);
   --shadow-floating: 0 10px 30px rgba(31, 42, 31, 0.1);
-  --shadow-logo: 0 10px 26px rgba(31, 42, 31, 0.14);
   --shadow-menu: 0 14px 32px rgba(31, 42, 31, 0.14);
   --focus-ring: 0 0 0 3px var(--color-sprout);
 

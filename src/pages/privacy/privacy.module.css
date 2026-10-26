@@ -19,7 +19,7 @@
 
   .index {
     position: sticky;
-    top: 150px;
+    top: 136px;
   }
 }
 
@@ -86,12 +86,12 @@
   gap: 40px;
 }
 
-/* Al saltar desde el índice, el título no queda tapado por la cabecera flotante. */
+/* Al saltar desde el índice, el título no queda tapado por la cabecera. */
 .block {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 136px;
 }
 
 .title {

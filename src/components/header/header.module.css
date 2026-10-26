@@ -1,37 +1,52 @@
-/* ---------- Escritorio: cápsula «Mínimo» ---------- */
+/* ---------- Escritorio: barra translúcida de ancho completo ---------- */
 
-/* Sticky y de altura 0: la cápsula flota sobre el primer bloque de la página. */
-.desktop {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  height: 0;
-  overflow: visible;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 24px;
-  pointer-events: none;
+/*
+ * La barra es fija, así que este hueco ocupa su sitio en el flujo: 107px en
+ * escritorio y 72px en móvil.
+ */
+.spacer {
+  height: 107px;
 }
 
-.capsule {
-  pointer-events: auto;
-  margin-top: 38px;
+/*
+ * Barra tradicional: blanco al 55 % con desenfoque arriba del todo; al bajar
+ * pasa al 85 %, para que el menú se lea bien sobre cualquier contenido.
+ */
+.desktop {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border-card);
+  box-shadow: 0 4px 18px rgba(31, 42, 31, 0.06);
+  transition: background-color 250ms ease;
+}
+
+.desktop.scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* 106px + el borde = 107px. */
+.inner {
+  max-width: var(--container-max);
+  height: 106px;
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
   display: flex;
   align-items: center;
   gap: 28px;
-  padding: 6px 6px 6px 0;
-  border-radius: var(--radius-full);
-  background-color: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--color-border-floating);
-  box-shadow: var(--shadow-floating);
 }
 
-/* Entre 900 y 1100 px, con la lupa, menos separación para que la cápsula quepa holgada. */
+/* Las páginas, a la derecha del logo. */
+.desktopNav {
+  margin-left: auto;
+}
+
+/* Entre 900 y 1100 px, con la lupa, menos separación para que todo quepa holgado. */
 @media (max-width: 1100px) {
-  .capsule {
+  .inner {
     gap: 20px;
   }
 }
@@ -43,41 +58,14 @@
   gap: 2px;
 }
 
-/* Reserva el sitio del logo; el círculo se sale por arriba y por abajo. */
-.logoSlot {
-  position: relative;
-  width: 126px;
-  height: 52px;
+.logo {
   flex: none;
-}
-
-/*
- * `left: -1px` compensa el borde: el círculo coincide con el de la cápsula.
- * `top` lo centra en vertical sobre el hueco de 52px: (52 - 128) / 2.
- */
-.logoBadge {
-  position: absolute;
-  left: -1px;
-  top: -38px;
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  background-color: var(--color-white);
-  box-shadow: var(--shadow-logo);
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/*
- * El logo no es redondo: el clavel (arriba) es estrecho y «FERTILIZANTES ECO»
- * (abajo) es ancho. A 100 px y subido 7 px, todo queda dentro del círculo con
- * 3 px de margen; más ancho o más bajo (subido 2 px o menos), el texto se sale.
- */
-.logoBadge img {
-  width: 100px;
+.logo img {
+  width: 124px;
   height: auto;
-  transform: translateY(-7px);
 }
 
 .nav {
@@ -86,12 +74,30 @@
   gap: 22px;
 }
 
+/* Raya rosa bajo la página actual, que también aparece al pasar el ratón. */
 .navLink {
-  font-size: 17px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
   font-weight: 600;
+  line-height: 1.4;
   white-space: nowrap;
   color: var(--color-ink-soft);
   transition: color var(--transition);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-pink);
+  transform: scaleX(0);
+  transition: transform var(--transition);
 }
 
 .navLink:hover,
@@ -99,27 +105,93 @@
   color: var(--color-green);
 }
 
+.navLink:hover::after,
+.navLink.active::after {
+  transform: scaleX(1);
+}
+
+/* ---------- Desplegable «Empresa» ---------- */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownTrigger {
+  gap: 4px;
+}
+
+.chevron {
+  transition: transform var(--transition);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: -12px;
+  min-width: 240px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 14px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-floating);
+  box-shadow: var(--shadow-menu);
+}
+
+.dropdownLink {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  color: var(--color-ink);
+  transition: background-color var(--transition);
+}
+
+.dropdownLink:hover,
+.dropdownLinkActive {
+  background-color: var(--color-sprout-soft);
+}
+
+.dropdownLinkActive {
+  color: var(--color-green);
+}
+
 /* ---------- Móvil: barra con menú desplegable ---------- */
 
 .mobile {
   display: none;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  inset: 0 0 auto;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--color-border-card);
+  transition: background-color 250ms ease;
 }
 
+.mobile.scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* 71px + el borde = 72px. */
 .bar {
   max-width: var(--container-max);
+  height: 71px;
   margin: 0 auto;
-  padding: 8px var(--container-pad);
+  padding: 0 var(--container-pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
 }
 
 .mobileLogo {
@@ -127,7 +199,7 @@
 }
 
 .mobileLogo img {
-  width: 100px;
+  width: 84px;
   height: auto;
 }
 
@@ -173,6 +245,10 @@
 }
 
 @media (max-width: 899px) {
+  .spacer {
+    height: 72px;
+  }
+
   .desktop {
     display: none;
   }

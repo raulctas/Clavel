@@ -3,7 +3,8 @@
  * tarjeta construida en la web (datos pulsables) y los botones «Guardar
  * contacto» y «Descargar tarjeta». Para añadir una:
  * - darla de alta aquí con sus datos;
- * - el PNG de la tarjeta, para descargarla, en `public/images/business-cards/<slug>.png`;
+ * - el PNG de la tarjeta, para descargarla, en `public/images/business-cards/<slug>.png`
+ *   (al sustituirlo, con versión en el nombre, p. ej. `<slug>-v2.png`, por la caché);
  * - la ficha de contacto en `public/vcards/<slug>.vcf` (copiar la de otra y cambiar los datos).
  */
 export interface BusinessCard {
@@ -30,8 +31,8 @@ export const BUSINESS_CARDS: BusinessCard[] = [
     phone: '+34 629 49 17 60',
     email: 'info@agro-clavel.com',
     website: 'agro-clavel.com',
-    download: '/images/business-cards/libero-parri.png',
-    downloadName: 'Líbero Parri - Clavel Fertilizantes ECO.png',
+    download: '/images/business-cards/libero-parri-v3.png',
+    downloadName: 'Líbero Parri - Clavel Eco Fertilizantes.png',
     vcard: '/vcards/libero-parri.vcf',
   },
 ];

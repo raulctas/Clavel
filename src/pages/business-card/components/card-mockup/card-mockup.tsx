@@ -6,8 +6,8 @@ import { BusinessCard } from 'data/business-cards';
 
 import styles from './card-mockup.module.css';
 
-/** Logo de la tarjeta (el de la cabecera de la web). */
-const LOGO_SRC = '/images/logo/clavel-logo-eco.webp';
+/** Logo vertical de la tarjeta. */
+const LOGO_SRC = '/images/logo/clavel-logo-v3.svg';
 
 /*
  * Onda verde de la tarjeta, medida sobre el diseño original (viewBox de
@@ -44,13 +44,13 @@ export const CardMockup = ({ card }: { card: BusinessCard }) => {
         aria-hidden
         focusable="false"
       >
-        <path d={DARK_PATH} fill="#1a5c23" />
-        <path d={BAND_PATH} fill="#3e7a4a" />
+        <path d={DARK_PATH} fill="#275217" />
+        <path d={BAND_PATH} fill="#4e7a3e" />
         <path d={LINE_PATH} fill="none" stroke="#ffffff" strokeWidth="4" />
       </svg>
 
       <h1 className={styles.name}>{card.name}</h1>
-      <img src={LOGO_SRC} alt="Clavel Fertilizantes ECO" className={styles.logo} />
+      <img src={LOGO_SRC} alt="Clavel Eco Fertilizantes" className={styles.logo} />
 
       <ul className={styles.contacts}>
         {contacts.map(({ key, icon: Icon, text, href }) => (

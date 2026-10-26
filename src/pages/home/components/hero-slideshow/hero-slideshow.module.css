@@ -54,7 +54,7 @@
   );
 }
 
-/* 56px arriba en móvil; 166px en escritorio, por la cabecera flotante. */
+/* 56px arriba en móvil y 96px en escritorio, bajo la cabecera. */
 .content {
   position: relative;
   padding-top: 56px;
@@ -63,7 +63,7 @@
 
 @media (min-width: 900px) {
   .content {
-    padding-top: 166px;
+    padding-top: 96px;
   }
 }
 
@@ -136,7 +136,7 @@
   width: 10px;
   height: 6px;
   border-radius: var(--radius-full);
-  background-color: rgba(26, 92, 35, 0.3);
+  background-color: rgba(39, 82, 23, 0.3);
   transition:
     width 0.4s ease,
     background-color 0.4s ease;

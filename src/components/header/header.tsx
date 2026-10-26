@@ -8,6 +8,8 @@ import { LanguageSelector } from 'components/language-selector';
 import { Search } from 'components/search';
 import { routes } from 'constants/routes';
 
+import { CompanyMenu } from './company-menu';
+import { COMPANY_PAGES } from './company-pages';
 import styles from './header.module.css';
 
 interface NavItem {
@@ -17,22 +19,31 @@ interface NavItem {
   end?: boolean;
 }
 
-/** Páginas de la cápsula de escritorio: Inicio va en el logo y Contactar en el botón. */
+/**
+ * Páginas de la barra de escritorio tras el desplegable «Empresa»: Inicio va en
+ * el logo y Contactar en el botón.
+ */
 const DESKTOP_NAV: NavItem[] = [
-  { to: routes.aboutUs, labelKey: 'nav.aboutUs' },
   { to: routes.products, labelKey: 'nav.products' },
   { to: routes.news, labelKey: 'nav.news' },
 ];
 
-/** Páginas del menú móvil: todas. */
+/** Páginas del menú móvil: todas, también las de «Empresa». */
 const MOBILE_NAV: NavItem[] = [
   { to: routes.home, labelKey: 'nav.home', end: true },
+  ...COMPANY_PAGES,
   ...DESKTOP_NAV,
   { to: routes.contact, labelKey: 'nav.contact' },
 ];
 
-/** Logo de 360 × 344 px; se muestra a 100 px de ancho (escritorio y móvil). */
-const LOGO_SRC = '/images/logo/clavel-logo-eco.webp';
+/** A partir de este desplazamiento (px) la barra se vuelve más opaca. */
+const SCROLLED_FROM = 16;
+
+/**
+ * Logo vertical (el principal), en SVG: a 124 px de ancho en la barra de
+ * escritorio y a 84 px en la de móvil.
+ */
+const LOGO_SRC = '/images/logo/clavel-logo-v3.svg';
 
 const linkClass =
   (base: string, active: string) =>
@@ -40,19 +51,27 @@ const linkClass =
     [base, isActive && active].filter(Boolean).join(' ');
 
 /**
- * Cabecera «Mínimo»: cápsula blanca flotante y centrada, con el logo en un
- * círculo que sobresale por arriba y por abajo. No ocupa altura en el flujo,
- * así que el primer bloque de cada página llega hasta arriba (y reserva el
- * hueco con su propio padding superior).
+ * Cabecera tradicional: barra translúcida de ancho completo, fija arriba, con
+ * el logo vertical a la izquierda y las páginas, la búsqueda, el idioma y
+ * «Contactar» a la derecha. Al bajar por la página se vuelve más opaca. Como es
+ * fija, deja en su sitio un hueco de su altura para que no tape el contenido.
  *
- * Por debajo de 900px se sustituye por una barra con logo, interruptor de
- * idioma y botón de menú que despliega las cinco páginas.
+ * Por debajo de 900px se sustituye por una barra con logo, búsqueda, idioma y
+ * botón de menú que despliega todas las páginas.
  */
 export const Header = () => {
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const mobileRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > SCROLLED_FROM);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   // Cierra el menú móvil al navegar.
   useEffect(() => {
@@ -90,16 +109,19 @@ export const Header = () => {
 
   return (
     <>
-      <header className={styles.desktop}>
-        <div className={styles.capsule}>
-          <Link to={routes.home} className={styles.logoSlot} aria-label={t('common.homeLink')}>
-            <span className={styles.logoBadge}>
-              <img src={LOGO_SRC} alt={t('common.companyName')} width={100} height={96} />
-            </span>
+      <div className={styles.spacer} aria-hidden />
+
+      <header className={[styles.desktop, scrolled && styles.scrolled].filter(Boolean).join(' ')}>
+        <div className={styles.inner}>
+          <Link to={routes.home} className={styles.logo} aria-label={t('common.homeLink')}>
+            <img src={LOGO_SRC} alt={t('common.companyName')} width={124} height={82} />
           </Link>
 
-          <nav aria-label={t('nav.main')}>
+          <nav className={styles.desktopNav} aria-label={t('nav.main')}>
             <ul className={styles.nav}>
+              <li>
+                <CompanyMenu />
+              </li>
               {DESKTOP_NAV.map((item) => (
                 <li key={item.to}>
                   <NavLink to={item.to} className={linkClass(styles.navLink, styles.active)}>
@@ -122,10 +144,13 @@ export const Header = () => {
         </div>
       </header>
 
-      <header className={styles.mobile} ref={mobileRef}>
+      <header
+        className={[styles.mobile, scrolled && styles.scrolled].filter(Boolean).join(' ')}
+        ref={mobileRef}
+      >
         <div className={styles.bar}>
           <Link to={routes.home} className={styles.mobileLogo} aria-label={t('common.homeLink')}>
-            <img src={LOGO_SRC} alt={t('common.companyName')} width={100} height={96} />
+            <img src={LOGO_SRC} alt={t('common.companyName')} width={84} height={55} />
           </Link>
 
           <div className={styles.barActions}>

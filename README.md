@@ -3,8 +3,9 @@
 Web corporativa de **Clavel**, empresa de fertilizantes ecológicos con sede en Valencia.
 Páginas de Inicio, Quiénes somos, Productos, Laboratorio, Producción y logística, Noticias, Contactar y Privacidad, en cinco idiomas (español, inglés, francés, portugués e italiano).
 
-El diseño sale del handoff de diseño «design_handoff_clavel_web» (cabecera «Mínimo», alta
-fidelidad), que no forma parte del repositorio. Los textos vienen de la web de Grupo Alfa.
+El diseño sale del handoff de diseño «design_handoff_clavel_web» (alta
+fidelidad), que no forma parte del repositorio; la cabecera es ahora una barra blanca de ancho
+completo con el logo vertical. Los textos vienen de la web de Grupo Alfa.
 
 ## Stack
 
@@ -50,7 +51,7 @@ public/
     contact/        # Contactar: banda de título
     home/           # Inicio: portada, pilares (WebP transparentes), Laboratorio y Fabricación
     laboratory/     # Laboratorio: banda de título, sección principal, iconos de «Qué hacemos» y galería
-    logo/           # logo «Fertilizantes Eco» a color (cabecera) e inverso (pie), WebP 360 px
+    logo/           # logo vertical en SVG (kit «Rebranding Clavel 20261026»): a color (cabecera y tarjeta) e inverso (pie)
     news/           # imagen de cada noticia: <slug>.jpg
     production/     # Producción y logística: banda de título, Fabricación y Logística
     products/       # Productos: ilustración de cada gama y fotos de cada producto (<slug>/)
@@ -88,7 +89,7 @@ El selector de idioma y i18next lo detectan solos. La elección del usuario se r
   con la onda en SVG y medidas proporcionales al ancho), con teléfono, correo y web pulsables;
   debajo, «Guardar contacto» (vCard) y «Descargar tarjeta» (PNG). No se
   indexa en buscadores. Para añadir una: alta en `src/data/business-cards.ts` con sus datos, el PNG
-  en `public/images/business-cards/<slug>.png` y la ficha en `public/vcards/<slug>.vcf`.
+  en `public/images/business-cards/<slug>.png` (al sustituirlo, con versión: `<slug>-v2.png`…) y la ficha en `public/vcards/<slug>.vcf`.
 - **Noticias**: `src/data/news.ts` (slug, categoría, imagen y vídeos de YouTube opcionales) +
   `news.items.<id>` en cada `translation.json` (título, extracto y cuerpo). Cada noticia tiene su
   página en `/news/<slug>`. Su imagen es `public/images/news/<slug>.jpg`: JPG de unos 1200 px
@@ -172,6 +173,9 @@ fotos conservando el nombre, sube ese número para que se vean al momento.
 Para el resto de imágenes (logo, fotos de páginas, noticias…), al sustituirlas conviene darles
 **un nombre nuevo** y actualizar la referencia: hasta octubre de 2026 el hosting dejaba guardarlas
 un año sin volver a preguntar, y quien las tenga de entonces no vería la nueva con el mismo nombre.
+Por eso el logo, los favicons, el manifest, la imagen social y las tarjetas llevan versión en el
+nombre (ahora `-v3` el logo, la imagen social y la tarjeta; `-v2` los favicons y el manifest): al
+cambiarlos de nuevo, sube la versión en el fichero y en sus referencias.
 
 ## Pendiente
 
