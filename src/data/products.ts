@@ -34,8 +34,8 @@ export interface Product {
  */
 const PHOTOS_VERSION = 2;
 
-/** Ilustración de una gama: public/images/products/range-<gama>.webp. */
-const rangeImage = (key: RangeKey) => `/images/products/range-${key}.webp?v=${PHOTOS_VERSION}`;
+/** Ilustración de una gama, en SVG: public/images/products/range-<gama>.svg. */
+const rangeImage = (key: RangeKey) => `/images/products/range-${key}.svg`;
 
 /**
  * Las cinco gamas de producto, en orden. Textos en products.ranges.<key>
