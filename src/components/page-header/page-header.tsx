@@ -1,5 +1,6 @@
 import { Breadcrumb, BreadcrumbParent } from 'components/breadcrumb';
 import { Container } from 'components/container';
+import { PAGE_HEADER_FOCUS } from 'data/page-header-images';
 
 import styles from './page-header.module.css';
 
@@ -22,7 +23,12 @@ interface Props {
  */
 export const PageHeader = ({ page, parent, title, intro, image }: Props) => (
   <section className={styles.band}>
-    <img src={image} alt="" className={styles.background} />
+    <img
+      src={image}
+      alt=""
+      className={styles.background}
+      style={{ objectPosition: PAGE_HEADER_FOCUS[image] }}
+    />
     <div className={styles.veil} aria-hidden />
     <Container className={styles.container}>
       <div className={styles.content}>

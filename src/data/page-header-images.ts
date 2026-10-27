@@ -16,3 +16,12 @@ export const PAGE_HEADER_IMAGES = {
   // La misma que Quiénes somos.
   privacy: '/images/about-us/header.jpg',
 } as const;
+
+/**
+ * Encuadre vertical de las fotos que no deben recortarse por el centro: la
+ * banda es muy apaisada y, centrada, a la del campo se le cortan las cabezas.
+ * Valor de `object-position`; las que no aparecen aquí van centradas.
+ */
+export const PAGE_HEADER_FOCUS: Record<string, string> = {
+  '/images/contact/header.jpg': 'center 15%',
+};
